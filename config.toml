@@ -1,0 +1,52 @@
+baseURL = "https://www.secretfader.com/"
+disableHugoGeneratorInject = true 
+disableKinds = ["taxonomyTerm"]
+languageCode = "en-us"
+title = "Nicholas Young"
+theme = ["reveal-hugo", "fader"]
+copyright = "2018 Nicholas Young. All rights reserved."
+ignoreFiles = ["README.md"]
+
+[params]
+author = "Nicholas Young"
+description = "Hacker, educator, and artist Nicholas \"Fader\" Young."
+[params.twitter]
+handle = "@secretfader"
+url = "https://twitter.com/secretfader"
+
+[imaging]
+quality = 75
+
+[outputs]
+home = ["html"]
+page = ["html"]
+section = ["rss", "jsonfeed"]
+taxonomy = ["html", "rss", "jsonfeed"]
+taxonomyTerm = ["html", "rss", "jsonfeed"]
+
+[outputFormats]
+[outputFormats.rss]
+baseName = "feed"
+
+[outputFormats.jsonfeed]
+baseName = "feed"
+mediaType = "application/json"
+
+[outputFormats.reveal]
+baseName = "index"
+mediaType = "text/html"
+isHTML = true
+
+[permalinks]
+blog = "/blog/:year/:month/:slug/"
+category = "/blog/category/:slug/"
+
+[taxonomies]
+category = "category"
+
+[menu]
+[[menu.main]]
+identifier = "resume"
+name = "Resume"
+url = "https://resume.secretfader.com"
+weight = 300 

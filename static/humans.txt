@@ -1,0 +1,7 @@
+/* TEAM */
+Designed and developed by Nicholas Young (@secretfader)
+https://www.secretfader.com
+
+/* SITE */
+Powered by Hugo 
+https://gohugo.io

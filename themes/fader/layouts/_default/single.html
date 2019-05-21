@@ -1,0 +1,39 @@
+{{ partial "header.html" . }}
+<article class="post">
+  <header class="post-header">
+    {{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}
+    {{ with $img }}
+    {{ $big := $img.Resize "x800" }}
+    {{ $small := $big.Resize "x512" }}
+    <img
+      alt="{{ $img.Title }}"
+      src="{{ $big.RelPermalink }}"
+      srcset="{{ $small.RelPermalink }} 512w, {{ $big.RelPermalink }} 1024w"
+      sizes="(min-width: 1570px) 822px, (max-width: 1569px) and (min-width: 960px) 50vw, 93vw"
+      width="{{ $big.Width }}"
+			class="featured"
+    >
+    {{ end }}
+    <a class="post-link" href="{{ .Permalink }}">
+      <h1 class="post-title">{{ .Title }}</h1>
+    </a>
+    <span class="post-meta">
+      {{- if or .Params.author .Site.Params.author -}}
+      {{ .Params.author | default .Site.Params.author }} &middot; {{ end }}
+      <time dateTime="{{ .Date }}">
+      {{- .Date.Format "2006.01.02" -}}
+      <time>
+      {{ if .Param "tag" }}
+      {{ partial "tags.html" . }}
+      {{ end }}
+      {{ if .Param "category" }}
+      <span class="links">
+        Filed under:
+        {{ partial "categories.html" . }}
+      </span>
+      {{ end }}
+    </span>
+  </header>
+  <div class="post-content">{{ .Content }}</div>
+</article>
+{{ partial "footer.html" . }}

@@ -1,0 +1,20 @@
+image: ubuntu:bionic
+
+before_script:
+  - bash setup.sh
+  - git submodule sync
+  - git submodule update --init
+
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - hugo
+  only:
+    - master
+  artifacts:
+    expire_in: '1 week'
+    paths:
+      - public/
