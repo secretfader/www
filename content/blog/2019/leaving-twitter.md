@@ -23,7 +23,7 @@ Twitter.
 Recently, my relationship with the network became strained by a lack of
 everything I once valued: the ability to read only tweets (and re-tweets) from
 accounts I followed, in reverse-chronological order, was being replaced by
-a focus on "topics," While CEO Jack Dorsey's admitted that he has zero interest
+a focus on "topics," while CEO Jack Dorsey admitted that he has zero interest
 in censoring white supremacist content. These decisions and comments eroded
 their users' trust, mine especially. Add in a clear look at the outrage machine
 that Twitter's modern platform has become, where accounts who thrive on
