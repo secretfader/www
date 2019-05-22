@@ -22,13 +22,13 @@ Twitter.
 
 Recently, my relationship with the network became strained by a lack of
 everything I once valued: the ability to read only tweets (and re-tweets) from
-accounts I followed, in reverse-chronological order; the focus on "topics"
-instead of individual tweets; and, of course, CEO Jack Dorsey's admission that
-he has zero interest in censoring white supremacist content all eroded users'
-trust. Add in a clear look at the outrage machine that Twitter's modern
-platform has become, where accounts who thrive on discontent contort language
-to misrepresent your intentions, and it was all too much for this longtime
-user.
+accounts I followed, in reverse-chronological order, was being replaced by
+a focus on "topics," While CEO Jack Dorsey's admitted that he has zero interest
+in censoring white supremacist content. These decisions and comments eroded
+their users' trust, mine especially. Add in a clear look at the outrage machine
+that Twitter's modern platform has become, where accounts who thrive on
+discontent contort language to misrepresent your intentions, and it was all too
+much for this longtime user.
 
 Will I fill out a Mastodon profile with tiny missives? Probably not, but only
 time will tell. Until then, anything I have to say can, and will be said here;
