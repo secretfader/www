@@ -381,3 +381,15 @@ ul.share-buttons li.linkedin:hover {
     margin-bottom: 0;
   }
 }
+
+.two-up {
+  display: flex;
+}
+
+.two-up img {
+  height: 100%;
+}
+
+.two-up img:last-child {
+  margin-left: 20px;
+}
