@@ -247,3 +247,7 @@ body.single main article.post .post-content pre {
   box-sizing: border-box;
   font-size: .9em;
 }
+
+body.single main article.post .post-content img {
+  margin-bottom: 20px;
+}
