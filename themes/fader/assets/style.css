@@ -54,7 +54,7 @@ header.main {
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin: 15px auto;
+  margin: 15px auto 0 auto;
 }
 
 header.main h1, header.main h2 {
@@ -106,7 +106,7 @@ main {
 
 body.home main .introduction {
   font-size: 1.2em;
-  margin: 15vh 0;
+  margin: 10vh 0;
   width: 90%;
 }
 
@@ -116,7 +116,7 @@ body.home main .introduction p {
 }
 
 body.home main .introduction h2 {
-  margin-bottom: 1em;
+  margin-bottom: .7em;
 }
 
 body.home .block h3 {
