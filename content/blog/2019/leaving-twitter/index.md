@@ -5,6 +5,9 @@ date = 2019-05-22T00:00:00.000Z
 draft = false
 layout = "post"
 title = "Leaving Twitter"
+summary = """
+Changes in the platform and the constant evolution ofhow I use media have created too many incompatibilities.
+"""
 +++
 
 In November of 2007, most likely sitting inside an East

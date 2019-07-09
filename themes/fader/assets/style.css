@@ -103,33 +103,47 @@ main {
   margin: 0 auto;
 }
 
-body.home main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 800px;
-}
-
 body.home main .introduction {
-  padding: 10vh 30px;
   font-size: 1.2em;
-  background: white;
-}
-
-@media screen and (min-width: 500px) {
-  body.home main .introduction {
-    background: white;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+  margin: 15vh 0;
 }
 
 body.home main .introduction h2 {
   margin-bottom: 1em;
 }
 
-body.home main .introduction p {
-  margin-bottom: .7em;
+body.home .block h3 {
+  font-size: 1.5em;
+}
+
+body.home ul.shortlist {
+  display: flex;
+  border-top: rgba(0, 0, 0, .1) 1px solid;
+  margin-top: 2em;
+  padding-top: 2em;
+}
+
+body.home ul.shortlist li {
+  width: 50%;
+  margin-right: 1.5em;
+}
+
+body.home ul.shortlist li:last-child {
+  margin-right: 0;
+}
+
+body.home ul.shortlist img {
+  margin-bottom: .5em;
+}
+
+body.home ul.shortlist li h4 {
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+body.home ul.shortlist li p {
+  font-size: .8em;
 }
 
 body.list main .list-header {
@@ -341,5 +355,22 @@ ul.share-buttons li.linkedin:hover {
 @media screen and (max-width: 600px) {
   ul.share-buttons li {
     width: 75%;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  body.home ul.shortlist {
+    flex-direction: column;
+  }
+
+  body.home ul.shortlist li {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.5em;
+  }
+
+  body.home ul.shortlist li:last-child {
+    margin-bottom: 0;
   }
 }

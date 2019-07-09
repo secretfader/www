@@ -6,6 +6,7 @@ title = "Nicholas Young"
 theme = ["reveal-hugo", "fader"]
 copyright = "2018 Nicholas Young. All rights reserved."
 ignoreFiles = ["README.md"]
+summaryLength = 28
 
 [params]
 author = "Nicholas Young"

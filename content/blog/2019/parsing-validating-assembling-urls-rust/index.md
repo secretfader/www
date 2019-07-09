@@ -6,6 +6,9 @@ draft = false
 layout = "post"
 title = "Parsing, Validating, and Assembling URLs in Rust"
 slug = "parsing-validating-assembling-urls-rust"
+summary = """
+Why you should care about type-safe concepts instead of assembling string fragments.
+"""
 +++
 
 These days, we hardly think about URLs. Popular content management tools

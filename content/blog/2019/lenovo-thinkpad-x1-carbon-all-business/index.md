@@ -6,6 +6,9 @@ draft = false
 layout = "post"
 title = "Lenovo's ThinkPad X1 Carbon is All Business"
 slug = "lenovo-thinkpad-x1-carbon-all-business"
+summary = """
+How leaving Apple's "walled garden" reignited my passion for open-source computing.
+"""
 +++
 
 A few months ago, my [2015 MacBook Pro][mbp] began showing signs of failure. It
