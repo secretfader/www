@@ -101,11 +101,18 @@ header.main nav.menu ul li:last-child {
 main {
   width: 90%;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 body.home main .introduction {
   font-size: 1.2em;
   margin: 15vh 0;
+  width: 90%;
+}
+
+body.home main .introduction p {
+  margin-bottom: 1.7rem;
+  max-width: 850px;
 }
 
 body.home main .introduction h2 {
