@@ -1,8 +1,9 @@
 +++
 category = ["spec-work", "professional-ethics", "creative-values"]
-date = 2012-08-19T00:00:00.000Z
-title = "Speculative Work is Bad (For Everyone)"
+date = "2012-08-19T00:00:00Z"
 slug = "spec-work-is-bad-for-everyone"
+title = "Speculative Work is Bad (For Everyone)"
+
 +++
 
 I thought this debate was dead. Over. Fini. But recently, a rather heated thread on Twitter illustrated how wrong I was.

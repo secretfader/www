@@ -1,9 +1,10 @@
 +++
 category = ["chicago", "travel-guide", "moving"]
-date = 2016-05-25T00:00:00.000Z
+date = "2016-05-25T00:00:00Z"
 layout = "post"
 path = "/the-ex-residents-guide-to-chicago"
 title = "The Ex-Resident's Guide to Chicago"
+
 +++
 
 By mid-June, the Young Family will be living in Colorado. While this move is [positive overall](/2016/04/going-west/), I also feel a certain trepidation: Chicago was where I launched [The Machine](/topics/the-machine/), re-ignited my love for software, and kindled a new dedication to speaking. It's also where I lost my religion, morphing from a lukewarm christian into a staunch atheist.

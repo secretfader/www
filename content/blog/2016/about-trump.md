@@ -1,9 +1,10 @@
 +++
 category = ["history", "politics", "uncertainty", "social-commentary"]
-date = 2016-12-20T00:00:00.000Z
+date = "2016-12-20T00:00:00Z"
 layout = "post"
 path = "/about-trump"
 title = "About Trump"
+
 +++
 
 It’s a chilly Tuesday afternoon in Denver as I pen this essay to you. Rest assured that I have other, far more enjoyable items on today’s agenda other than writing About Trump, and yet, I’m once again compelled to do so.

@@ -1,11 +1,12 @@
 +++
 authors = ["Nicholas Young"]
 category = ["healthcare", "politics", "writing"]
-date = 2017-12-02T00:00:00.000Z
+date = "2017-12-02T00:00:00Z"
 draft = false
 layout = "post"
 slug = "turn-the-page"
 title = "Turn the Page"
+
 +++
 
 I've often found that the words you write are less important than ones left

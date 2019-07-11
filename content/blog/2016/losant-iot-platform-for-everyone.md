@@ -1,9 +1,10 @@
 +++
 category = ["software", "engineering", "review", "internet-of-things"]
-date = 2016-09-01T00:00:00.000Z
+date = "2016-09-01T00:00:00Z"
 layout = "post"
 slug = "losant-iot-platform-for-everyone"
 title = "Losant: the IoT Platform for Everyone"
+
 +++
 
 This year has been filled with wonderful events, some were [expected](/sloan-alexis/), while others, wholly unthinkable in early January, have [also became reality.](/going-west/)

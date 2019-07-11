@@ -1,9 +1,10 @@
 +++
 category = ["engineering", "software", "javascript"]
-date = 2014-05-01T00:00:00.000Z
+date = "2014-05-01T00:00:00Z"
 layout = "post"
 path = "/distill"
 title = "Distill"
+
 +++
 
 One of the major challenges I've had to overcome with Node.js is a task that's relatively simple in Ruby. You wouldn't think this would be difficult, but serializing JSON can be frustrating, even though you're working entirely in JavaScript. If you needed to quickly rename properties or embed values from items in an array, you were out of luck... until now. Data doesn't always come out of your database in the format you would prefer, and Node.js is exceptionally good at designing RESTful API interfaces that expose their data over HTTP, so a tool for re-arranging JSON is definitely needed.

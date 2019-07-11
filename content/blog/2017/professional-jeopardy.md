@@ -1,6 +1,6 @@
 +++
 category = ["career", "health", "chronic-illness", "ehlers-danlos-syndrome", "tinnitus", "disability"]
-date = 2017-10-28T00:00:00.000Z
+date = "2017-10-28T00:00:00Z"
 draft = false
 layout = "post"
 title = "Professional Jeopardy"
@@ -18,6 +18,7 @@ title = "Professional Jeopardy"
 [meta]
   duration = "3:36"
   explicit = false
+
 +++
 
 Pain is a companion. It accompanies me when I rise, only allows brief privacy to shower, and returns with every step, turn, and bend. I tell myself this journey is temporary; not because there is a magical future when I'll rid myself of the second shadow, but that I now have tools and medication to dim its presence.

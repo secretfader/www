@@ -1,14 +1,13 @@
 +++
 authors = ["Nicholas Young"]
 category = ["tech", "review", "hardware"]
-date = 2019-02-25T00:00:00.000Z
+date = "2019-02-25T00:00:00Z"
 draft = false
 layout = "post"
-title = "Lenovo's ThinkPad X1 Carbon is All Business"
 slug = "lenovo-thinkpad-x1-carbon-all-business"
-summary = """
-How leaving Apple's "walled garden" reignited my passion for open-source computing.
-"""
+summary = "How leaving Apple's \"walled garden\" reignited my passion for open-source computing.\n"
+title = "Lenovo's ThinkPad X1 Carbon is All Business"
+
 +++
 
 A few months ago, my [2015 MacBook Pro][mbp] began showing signs of failure. It

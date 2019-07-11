@@ -1,9 +1,10 @@
 +++
 category = ["engineering", "apple", "hardware"]
-date = 2016-01-17T00:00:00.000Z
+date = "2016-01-17T00:00:00Z"
 layout = "post"
-title = "Apple's Power Play"
 slug = "apples-power-play"
+title = "Apple's Power Play"
+
 +++
 
 I bought a MacBook in 2006. The white, polycarbonate-clad machine was my first serious laptop. It was far superior to the family PCs in every way. I was excited about the purchase, yes, but I also understood that it was a tool. There was also a very apparent downside of owning a Macintosh: as the owner of a "pretty" machine intended for mass-adoption, I was the target of more than a few hacker jokes. Linux, they insisted, was where true power lies. Every one of these loudmouths, in reality, ran Windows.

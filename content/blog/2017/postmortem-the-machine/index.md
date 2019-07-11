@@ -1,12 +1,13 @@
 +++
 category = ["project-diary", "postmortem"]
-date = 2017-08-11T00:00:00.000Z
+date = "2017-08-11T00:00:00Z"
 draft = false
 image = "artwork-collage.jpg"
 keywords = ["machinefm", "the machine", "the machine broadcasting network", "dispatch", "inside the machine", "nicholas young"]
 layout = "post"
 title = "Postmortem: The Machine"
 topics = ["the-machine"]
+
 +++
 
 Over breakfast this past weekend, I described a group of folks predisposed to become engineers as "naturally curious." Like any intellectually stimulating field, it draws a unique group of tinkerers who often think in ways that allow them to step through a given problem, reducing complexity along the way. However, unlike some other professions, our curiosity is required to be evenly distributed, covering both the dense and sparse portions within a field of study. Some even study outside their own field to better understand challenges faced by their clientele.

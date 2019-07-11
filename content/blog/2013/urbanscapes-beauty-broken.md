@@ -1,9 +1,10 @@
 +++
-title = "UrbanScapes: Beauty in the Broken"
 categories = ["photography", "project diary"]
-date = 2013-01-01T00:00:00.000Z
+date = "2013-01-01T00:00:00Z"
 layout = "post"
 slug = "urbanscapes-beauty-in-the-broken"
+title = "UrbanScapes: Beauty in the Broken"
+
 +++
 As a photographer, few things compare to capturing emotion. Whether it's a band sweating on stage, a painter focused on their canvas, or the hustle of a city at night, I think about emotion every time I release the shutter. I'm freezing a moment in time; distilling emotion from an otherwise chaotic day, hopefully causing the viewer to pause and consider what they see.
 

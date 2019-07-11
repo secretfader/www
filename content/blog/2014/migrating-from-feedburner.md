@@ -1,10 +1,11 @@
 +++
 category = ["tutorial", "rss", "podcasting", "radio"]
-date = 2014-01-14T00:00:00.000Z
+date = "2014-01-14T00:00:00Z"
 layout = "post"
 path = "/migrating-from-feedburner-a-helpful-guide"
 title = "Migrating from Feedburner: a Helpful Guide"
 topics = ["the-machine"]
+
 +++
 
 Launched in 2004, Feedburner was a once popular tool that re-formatted often messy RSS feeds, prepping them for mass consumption. Over the years, it became a trusted platform for bloggers, podcasters, and anyone else with something to say. It provided basic analytics, spitting out reports of who subscribed to your feed, and where podcast listeners were. At the time, it was wonderful. I embraced it, along with most of my podcasting colleagues, who also launched their first shows in 2005.

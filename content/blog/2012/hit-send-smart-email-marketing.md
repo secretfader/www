@@ -1,7 +1,8 @@
 +++
 category = ["email-marketing", "marketing", "compliance"]
-date = 2012-12-19T00:00:00.000Z
+date = "2012-12-19T00:00:00Z"
 title = "Hit Send: Smart Email Marketing"
+
 +++
 
 Whether you love or loathe it, email ranks highly among the most transformative technologies. It changed how we communicate well before Facebook or Twitter, you can access it from practically any device, and now - forty-plus years after it's invention - the biggest social destinations are integrating email systems into their platform. But even with its rich history and ability to display any content you choose, many companies and individuals still ignore or misunderstand it. Why?

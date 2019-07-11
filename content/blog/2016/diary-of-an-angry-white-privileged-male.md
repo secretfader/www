@@ -1,9 +1,10 @@
 +++
 category = ["software", "engineering", "privilege", "social-commentary"]
-date = 2016-03-04T00:00:00.000Z
+date = "2016-03-04T00:00:00Z"
 layout = "post"
 path = "/the-diary-of-an-angry-white-privileged-male"
 title = "The Diary of an Angry, White, Privileged Male"
+
 +++
 
 For years, I've heard rumblings of misogyny, sexual misconduct, and other [troubling events](http://martinfowler.com/bliki/SmutOnRails.html) in the Ruby community. Female friends have discussed their stories with me at length: some are concerned (but still participate), while others have left the community altogether. Both choices are perfectly valid.

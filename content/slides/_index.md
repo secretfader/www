@@ -1,5 +1,6 @@
 +++
-title = "Slides"
 menu = "main"
 outputs = ["HTML"]
+title = "Slides"
+
 +++

@@ -1,9 +1,10 @@
 +++
 category = ["advice", "parenting", "business"]
-date = 2016-06-02T00:00:00.000Z
+date = "2016-06-02T00:00:00Z"
 layout = "post"
 path = "/ignorant-advice"
 title = "Ignorant Advice"
+
 +++
 
 In four months time, I've realized that building a business and raising a child are incredibly similar.

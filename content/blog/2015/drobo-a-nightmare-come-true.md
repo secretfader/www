@@ -1,9 +1,10 @@
 +++
 category = ["customer-service", "gripes"]
-date = 2015-02-27T00:00:00.000Z
+date = "2015-02-27T00:00:00Z"
 layout = "post"
 path = "/drobo-a-nightmare-come-true"
 title = "Drobo: a Nightmare Come True"
+
 +++
 
 Settle in, dear reader. I'm here to share a story of frustration, unbelievably offensive customer service, and ultimately, a brand gone astray.

@@ -1,9 +1,10 @@
 +++
 category = ["business", "prioritization", "rules"]
-date = 2016-04-28T00:00:00.000Z
+date = "2016-04-28T00:00:00Z"
 layout = "post"
 path = "/no-you-cannot-pick-my-brain"
 title = "No, You Cannot Pick My Brain"
+
 +++
 
 I'm an educator: I advise clients around the globe, speak to almost any audience that will have me, write on a myriad of important topics, and contribute to open source. Still, I'm often asked &mdash; occasionally by total strangers &mdash; if they can "pick my brain."

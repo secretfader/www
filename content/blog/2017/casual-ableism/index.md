@@ -1,10 +1,11 @@
 +++
 authors = ["Nicholas Young"]
 category = ["ehlers-danlos-syndrome", "chronic-illness", "disability", "eds-awareness-month", "dysautonomia", "postural-orthostatic-tachycardia-syndrome", "accessibility"]
-date = 2017-06-09T00:00:00.000Z
+date = "2017-06-09T00:00:00Z"
 draft = false
 layout = "post"
 title = "Casual Ableism"
+
 +++
 
 In order to help you best understand the past few weeks, we begin this post listening in on a recent conversation with my neurologist.

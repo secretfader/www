@@ -1,7 +1,8 @@
 +++
 category = ["guidelines", "creative-values"]
-date = 2012-12-14T00:00:00.000Z
+date = "2012-12-14T00:00:00Z"
 title = "Creative Guard Rails"
+
 +++
 
 Like most artists, I'm often inspired by those around me. A friendly smile, stimulating conversation, and gentle encouragement are often what push me beyond my self-imposed creative boundaries. As creators, we should never forget the value of like-minded (or not-so-like-minded) friends.

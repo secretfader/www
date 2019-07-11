@@ -1,7 +1,7 @@
 +++
 authors = ["Nicholas Young"]
 category = ["healthcare", "amputation", "hacking", "writing"]
-date = 2018-10-09T00:00:00.000Z
+date = "2018-10-09T00:00:00Z"
 draft = false
 layout = "post"
 title = "Erasing Yesterday"

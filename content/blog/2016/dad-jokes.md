@@ -1,10 +1,11 @@
 +++
 category = ["fatherhood", "dadthings", "life"]
-date = 2016-01-27T00:00:00.000Z
+date = "2016-01-27T00:00:00Z"
 layout = "post"
 path = "/dad-jokes"
 title = "Dad Jokes"
 topics = ["sloan-alexis"]
+
 +++
 
 **5:05 A.M.**

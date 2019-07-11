@@ -1,12 +1,13 @@
 +++
 authors = ["Nicholas Young"]
 category = ["ehlers-danlos-syndrome", "disability", "chronic-illness", "eds-awareness-month", "medical-cannabis"]
-date = 2017-05-13T00:00:00.000Z
+date = "2017-05-13T00:00:00Z"
 draft = false
 keywords = ["ehlers danlos syndrome", "disability", "chronic illness", "ehlers danlos awareness momth"]
 layout = "post"
 path = "/becoming-disabled"
 title = "Becoming Disabled"
+
 +++
 
 This past week has been one of the most difficult on record. It began with

@@ -1,9 +1,10 @@
 +++
 category = ["ehlers-danlos-syndrome", "chronic-illness", "medical-cannabis", "colorado", "moving"]
-date = 2016-06-17T00:00:00.000Z
+date = "2016-06-17T00:00:00Z"
 layout = "post"
 path = "/life-on-the-inside-part-ii"
 title = "Life on the Inside, Part II"
+
 +++
 
 Lifting a [14-pound child,](/dad-jokes) radical weather changes, rising levels of acute pain, and emerging chronic fatigue symptoms are changing my daily routine.

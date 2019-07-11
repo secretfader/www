@@ -1,9 +1,10 @@
 +++
 category = ["software", "engineering", "javascript", "retrospective"]
-date = 2016-01-27T00:00:00.000Z
+date = "2016-01-27T00:00:00Z"
 layout = "post"
 path = "/state-js-2016-javascript-here-and-now"
 title = "State.js 2016: JavaScript, Here and Now"
+
 +++
 
 While Twitter, for many individuals, has taken the place of blogging &mdash; instead, for me, it's the place where ideas are fostered and allowed to grow before expanding into fully formed pieces of prose.

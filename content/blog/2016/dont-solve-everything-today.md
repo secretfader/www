@@ -1,9 +1,10 @@
 +++
 category = ["business", "goals", "prioritization"]
-date = 2016-03-18T00:00:00.000Z
+date = "2016-03-18T00:00:00Z"
 layout = "post"
 path = "/dont-solve-everything-today"
 title = "Don't Solve Everything Today"
+
 +++
 
 This one is for the doers: those who have stepped out of the dark, set aim for the heavens, and vowed to realize their dreams &mdash; costs be damned.

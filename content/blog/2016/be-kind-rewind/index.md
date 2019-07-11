@@ -1,10 +1,11 @@
 +++
 category = ["project-diary", "radio", "new-beginnings"]
-date = 2016-01-16T00:00:00.000Z
+date = "2016-01-16T00:00:00Z"
 layout = "post"
 path = "/be-kind-rewind"
 title = "Be Kind, Rewind"
 topics = ["the-machine"]
+
 +++
 
 Weekend mornings were made for reflection. I have a strong cup freshly ground coffee in my hand, and a head full of ideas. Shall we begin?

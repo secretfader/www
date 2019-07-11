@@ -1,9 +1,10 @@
 +++
 category = ["critical-thinking", "media-criticism", "criticism", "disability", "healthcare"]
-date = 2017-07-28T00:00:00.000Z
+date = "2017-07-28T00:00:00Z"
 draft = false
 layout = "post"
 title = "The Politics of Terror"
+
 +++
 
 If healthcare reform is a stage play, the curtain rose anew in November, 2016.  The audience, hopeful if unsure, beheld a ragtag group of players flanking our most ill-advised main character. During the intervening months, [four radically different pieces of healthcare legislation](http://www.kff.org/interactive/proposals-to-replace-the-affordable-care-act/) have also entered the stage, [each scoring progressively worse on issues of public health.](https://www.cbo.gov/publication/52752)

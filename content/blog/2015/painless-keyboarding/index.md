@@ -1,9 +1,10 @@
 +++
 category = ["software", "engineering", "keyboards", "health", "chronic-illness", "ehlers-danlos-syndrome"]
-date = 2015-11-30T00:00:00.000Z
+date = "2015-11-30T00:00:00Z"
 layout = "post"
 path = "/painless-keyboarding"
 title = "Painless Keyboarding"
+
 +++
 
 What is your first thoughts in reaction to the term "mechanical keyboard"? Nostalgia? The obnoxious "clicky" sound you hoped to leave behind? If you're relatively young, you may have no recollection of this product at all. If you're a programmer, whose hands are on a keyboard for hours each day, then maybe, you've grown quite fond of these devices.

@@ -1,9 +1,10 @@
 +++
 category = ["healthcare", "allyship", "advocacy", "politics", "disability"]
-date = 2017-11-22T00:00:00.000Z
+date = "2017-11-22T00:00:00Z"
 draft = false
 layout = "post"
 title = "True Colors"
+
 +++
 
 Writing in Tuesday's edition of the [Fairbanks Daily News-Miner][op-ed], Senator

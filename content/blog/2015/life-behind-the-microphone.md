@@ -1,10 +1,11 @@
 +++
 category = ["project-diary", "radio"]
-date = 2015-09-25T00:00:00.000Z
+date = "2015-09-25T00:00:00Z"
 layout = "post"
 path = "/life-behind-the-microphone"
 title = "Life Behind the Microphone"
 topics = ["the-machine"]
+
 +++
 
 Growing up, adults would consistently regale me with stories from their past. A recurring theme was how time passed faster, increasing in speed with each year. Looking back as I near thirty, and several years into the largest venture I've undertaken thus far, I understand.

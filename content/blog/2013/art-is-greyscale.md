@@ -1,9 +1,10 @@
 +++
 category = ["creative-values", "criticism", "encouragement"]
-date = 2013-04-17T00:00:00.000Z
+date = "2013-04-17T00:00:00Z"
 layout = "post"
 path = "/art-is-greyscale"
 title = "Art is Greyscale"
+
 +++
 
 Doubt. It's something we all face, but rarely discuss. Artists stare it down daily, in a power struggle between beauty and the absence of it. Between light, and the dark, soundless, matterless void. Amidst a sea of creative hurdles, some worthier of caution, we fear doubt the most. But why?

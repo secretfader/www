@@ -1,10 +1,11 @@
 +++
 category = ["engineering", "software", "people-ops"]
-date = 2016-01-14T00:00:00.000Z
+date = "2016-01-14T00:00:00Z"
+draft = false
 layout = "post"
 path = "/whats-in-a-title"
 title = "What's In a Title?"
-draft = false
+
 +++
 
 Knowledge is the most important tool that any developer can possess. With the explosion of platforms like CodeSchool, PluralSight, and many others, the cost of education is plummeting.

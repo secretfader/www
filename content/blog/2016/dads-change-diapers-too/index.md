@@ -1,10 +1,11 @@
 +++
 category = ["parenting", "life", "dadthings", "accessibility"]
-date = 2016-07-30T00:00:00.000Z
+date = "2016-07-30T00:00:00Z"
 layout = "post"
 path = "/dads-change-diapers-too"
 title = "Dads Change Diapers, Too"
 topic = ["sloan-alexis"]
+
 +++
 
 The process of becoming a parent teaches lessons you never expected to learn. There are, of course, many small nuggets of wisdom that lodge in your brain; the prevailing signs of a wet diaper (thanks to modern technology, diaper wetness can be scientifically verified), and your child's entertainment preferences (or, how to overcome your fear of acting foolish in public).

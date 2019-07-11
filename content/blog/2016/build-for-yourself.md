@@ -1,9 +1,10 @@
 +++
 category = ["business", "goals", "prioritization"]
-date = 2016-03-06T00:00:00.000Z
+date = "2016-03-06T00:00:00Z"
 layout = "post"
 path = "/build-for-yourself"
 title = "Build For Yourself"
+
 +++
 
 Whether you're a developer, musician, producer, photographer, or a creative of any other profession &mdash; you rely heavily on the work of others. It may be uncomfortable to admit, but rarely is an idea truly novel. Often, it has been evaluated by another artist, somewhere across the gulf of time or space; who found it to be too costly, irrelevant, or simply uninteresting for the time being.

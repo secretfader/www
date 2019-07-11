@@ -1,14 +1,13 @@
 +++
 authors = ["Nicholas Young"]
 category = ["rust", "hacking"]
-date = 2019-01-08T13:46:23.000Z
+date = "2019-01-08T13:46:23Z"
 draft = false
 layout = "post"
-title = "Parsing, Validating, and Assembling URLs in Rust"
 slug = "parsing-validating-assembling-urls-rust"
-summary = """
-Why you should care about type-safe concepts instead of assembling string fragments.
-"""
+summary = "Why you should care about type-safe concepts instead of assembling string fragments.\n"
+title = "Parsing, Validating, and Assembling URLs in Rust"
+
 +++
 
 These days, we hardly think about URLs. Popular content management tools

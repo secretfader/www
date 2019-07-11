@@ -1,9 +1,10 @@
 +++
 category = ["social-media", "habits", "social-commentary"]
-date = 2013-06-04T00:00:00.000Z
+date = "2013-06-04T00:00:00Z"
 layout = "post"
 path = "/our-instagram-life"
 title = "Our Instagram Life"
+
 +++
 
 Tweet. Post. Comment. Like. This era has it's own lingo; a jargon-addled psuedolanguage that sometimes barely resembles recognized speech or written words. Children, teenagers, and adults alike all speak it; as everyone desperately tries to capture fleeting memories with short blocks of text, a blurry photograph, or an unlistenable audio clip. Most attempts fail, falling short of the moment when they were written or snapped.

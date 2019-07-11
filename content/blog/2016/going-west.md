@@ -1,9 +1,10 @@
 +++
 category = ["moving", "colorado"]
-date = 2016-04-13T00:00:00.000Z
+date = "2016-04-13T00:00:00Z"
 layout = "post"
 path = "/going-west"
 title = "Going West"
+
 +++
 
 I've lived in Chicago for almost six years, but this June, it's time to say goodbye. There's another place my rambling soul craves to be: Denver, Colorado.

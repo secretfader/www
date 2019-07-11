@@ -1,9 +1,10 @@
 +++
 category = ["burnout", "creative-values", "guidelines"]
-date = 2013-01-01T00:00:00.000Z
+date = "2013-01-01T00:00:00Z"
 layout = "post"
 path = "/new-years-dissolution"
 title = "New Years Dissolution"
+
 +++
 
 It's January 2, 2013, and dreams abound. The year is young, with 363 days ahead of us - each one full of promise and countless opportunities to transform your dreams into reality - but will you?

@@ -1,10 +1,11 @@
 +++
 category = ["project-diary", "radio"]
-date = 2013-08-01T00:00:00.000Z
+date = "2013-08-01T00:00:00Z"
 layout = "post"
 path = "/introducing-the-machine"
 title = "Introducing The Machine"
 topics = ["the-machine"]
+
 +++
 
 If we've met &mdash; online or in person &mdash; I've probably spoken to you about radio, and my endless love for the medium. *This American Life*, *Radiolab*, and *Freakonomics Radio* are staples in my weekly soundtrack. Nothing fuels my mind like a great conversation, and NPR is full of them.
