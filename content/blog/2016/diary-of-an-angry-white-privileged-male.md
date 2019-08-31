@@ -1,5 +1,6 @@
 +++
-category = ["software", "engineering", "privilege", "social-commentary"]
+categories = ["software", "engineering", "privilege", "social-commentary"]
+authors = ["Nicholas Young"]
 date = "2016-03-04T00:00:00Z"
 layout = "post"
 path = "/the-diary-of-an-angry-white-privileged-male"

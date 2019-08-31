@@ -1,5 +1,6 @@
 +++
-category = ["engineering", "software", "javascript"]
+categories = ["engineering", "software", "javascript"]
+authors = ["Nicholas Young"]
 date = "2014-04-24T00:00:00Z"
 layout = "post"
 path = "/embracing-javascript"

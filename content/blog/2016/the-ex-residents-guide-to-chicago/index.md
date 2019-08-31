@@ -1,5 +1,6 @@
 +++
-category = ["chicago", "travel-guide", "moving"]
+categories = ["chicago", "travel-guide", "moving"]
+authors = ["Nicholas Young"]
 date = "2016-05-25T00:00:00Z"
 layout = "post"
 path = "/the-ex-residents-guide-to-chicago"

@@ -1,5 +1,6 @@
 +++
-category = ["project-diary", "radio"]
+categories = ["project-diary", "radio"]
+authors = ["Nicholas Young"]
 date = "2015-09-25T00:00:00Z"
 layout = "post"
 path = "/life-behind-the-microphone"

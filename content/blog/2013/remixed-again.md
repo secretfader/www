@@ -1,5 +1,6 @@
 +++
-category = ["design-refresh", "content-management", "personal-branding"]
+categories = ["design-refresh", "content-management", "personal-branding"]
+authors = ["Nicholas Young"]
 date = "2013-04-11T00:00:00Z"
 layout = "post"
 path = "/remixed-again"

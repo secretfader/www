@@ -1,5 +1,6 @@
 +++
-category = ["business", "prioritization", "rules"]
+categories = ["business", "prioritization", "rules"]
+authors = ["Nicholas Young"]
 date = "2016-04-28T00:00:00Z"
 layout = "post"
 path = "/no-you-cannot-pick-my-brain"

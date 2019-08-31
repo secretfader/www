@@ -1,5 +1,6 @@
 +++
-category = ["customer-service", "gripes"]
+categories = ["customer-service", "gripes"]
+authors = ["Nicholas Young"]
 date = "2015-02-27T00:00:00Z"
 layout = "post"
 path = "/drobo-a-nightmare-come-true"

@@ -1,10 +1,10 @@
 +++
-category = ["healthcare", "allyship", "advocacy", "politics"]
+categories = ["healthcare", "allyship", "advocacy", "politics"]
 date = "2017-09-24T00:00:00Z"
 draft = false
 layout = "post"
 title = "Talking Points to Oppose Graham-Cassidy"
-
+author = ["Nicholas Young"]
 +++
 
 As the Senate rushes towards yet another attempt to replace the Patient Protection and Affordable Care Act, several outlets, including [Politico][politico-safe], are reporting that the long-besieged healthcare bill may remain intact, for now.

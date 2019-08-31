@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-category = ["healthcare", "politics", "writing"]
+categories = ["healthcare", "politics", "writing"]
 date = "2017-12-02T00:00:00Z"
 draft = false
 layout = "post"

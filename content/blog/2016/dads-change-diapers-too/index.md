@@ -1,5 +1,6 @@
 +++
-category = ["parenting", "life", "dadthings", "accessibility"]
+categories = ["parenting", "life", "dadthings", "accessibility"]
+authors = ["Nicholas Young"]
 date = "2016-07-30T00:00:00Z"
 layout = "post"
 path = "/dads-change-diapers-too"

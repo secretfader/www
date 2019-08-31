@@ -1,5 +1,6 @@
 +++
-category = ["project-diary", "radio", "new-beginnings"]
+categories = ["project-diary", "radio", "new-beginnings"]
+authors = ["Nicholas Young"]
 date = "2016-01-16T00:00:00Z"
 layout = "post"
 path = "/be-kind-rewind"

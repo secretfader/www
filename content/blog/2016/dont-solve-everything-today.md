@@ -1,5 +1,6 @@
 +++
-category = ["business", "goals", "prioritization"]
+categories = ["business", "goals", "prioritization"]
+authors = ["Nicholas Young"]
 date = "2016-03-18T00:00:00Z"
 layout = "post"
 path = "/dont-solve-everything-today"

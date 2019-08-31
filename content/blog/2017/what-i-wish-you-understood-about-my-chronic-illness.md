@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-category = ["ehlers-danlos-syndrome", "chronic-illness", "faq", "eds-awareness-month"]
+categories = ["ehlers-danlos-syndrome", "chronic-illness", "faq", "eds-awareness-month"]
 date = "2017-05-21T00:00:00Z"
 layout = "post"
 path = "/what-i-wish-you-understood-about-my-chronic-illness/"

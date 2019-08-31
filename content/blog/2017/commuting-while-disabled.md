@@ -1,5 +1,6 @@
 +++
-category = ["ehlers-danlos-syndrome", "chronic-illness", "allergies", "etiquette", "travel", "disability"]
+categories = ["ehlers-danlos-syndrome", "chronic-illness", "allergies", "etiquette", "travel", "disability"]
+authors = ["Nicholas Young"]
 date = "2017-08-17T00:00:00Z"
 draft = false
 layout = "post"

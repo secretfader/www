@@ -1,5 +1,5 @@
 +++
-category = ["chronic-illness", "disability", "media-representation", "ehlers-danlos-syndrome", "criticism", "medical-cannabis"]
+categories = ["chronic-illness", "disability", "media-representation", "ehlers-danlos-syndrome", "criticism", "medical-cannabis"]
 date = "2017-06-25T00:00:00Z"
 draft = false
 keywords = ["the cannabist", "ehlers danlos syndrome", "the cannabist show", "disability in media", "chronic illness in media"]

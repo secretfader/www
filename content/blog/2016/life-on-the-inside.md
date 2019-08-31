@@ -1,5 +1,6 @@
 +++
-category = ["ehlers-danlos-syndrome", "chronic-illness"]
+categories = ["ehlers-danlos-syndrome", "chronic-illness"]
+authors = ["Nicholas Young"]
 date = "2016-05-27T00:00:00Z"
 layout = "post"
 path = "/life-on-the-inside"

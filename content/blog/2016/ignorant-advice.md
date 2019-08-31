@@ -1,5 +1,6 @@
 +++
-category = ["advice", "parenting", "business"]
+categories = ["advice", "parenting", "business"]
+authors = ["Nicholas Young"]
 date = "2016-06-02T00:00:00Z"
 layout = "post"
 path = "/ignorant-advice"

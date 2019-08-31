@@ -1,5 +1,6 @@
 +++
-category = ["engineering", "apple", "hardware"]
+categories = ["engineering", "apple", "hardware"]
+authors = ["Nicholas Young"]
 date = "2016-01-17T00:00:00Z"
 layout = "post"
 slug = "apples-power-play"

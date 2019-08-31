@@ -1,12 +1,11 @@
 +++
 authors = ["Nicholas Young"]
-category = ["journal", "social media"]
+categories = ["Journal", "Social Media"]
 date = "2019-05-22T00:00:00Z"
 draft = false
 layout = "post"
 summary = "Changes in the platform and the constant evolution ofhow I use media have created too many incompatibilities.\n"
 title = "Leaving Twitter"
-
 +++
 
 In November of 2007, most likely sitting inside an East

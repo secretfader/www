@@ -1,5 +1,6 @@
 +++
-category = ["toolmaking", "informed-opinions"]
+categories = ["toolmaking", "informed-opinions"]
+authors = ["Nicholas Young"]
 date = "2013-04-03T00:00:00Z"
 layout = "post"
 path = "/its-not-about-your-tools"

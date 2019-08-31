@@ -1,5 +1,6 @@
 +++
-category = ["moving", "colorado"]
+categories = ["moving", "colorado"]
+authors = ["Nicholas Young"]
 date = "2016-04-13T00:00:00Z"
 layout = "post"
 path = "/going-west"

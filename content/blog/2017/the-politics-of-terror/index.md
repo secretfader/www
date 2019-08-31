@@ -1,5 +1,6 @@
 +++
-category = ["critical-thinking", "media-criticism", "criticism", "disability", "healthcare"]
+categories = ["critical-thinking", "media-criticism", "criticism", "disability", "healthcare"]
+authors = ["Nicholas Young"]
 date = "2017-07-28T00:00:00Z"
 draft = false
 layout = "post"
