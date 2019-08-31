@@ -1,2 +1,2 @@
 [lfs "transfer"]
-	maxtretries = 10
+	maxretries = 10
