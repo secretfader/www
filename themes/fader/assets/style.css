@@ -387,7 +387,8 @@ ul.share-buttons li.linkedin:hover {
 }
 
 .two-up img {
-  height: 100%;
+  max-width: 50%;
+  height: auto;
 }
 
 .two-up img:last-child {
