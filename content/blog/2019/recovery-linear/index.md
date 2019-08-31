@@ -10,7 +10,7 @@ illustrationDescription = "A tranquil scene along the banks of Denver's South Pl
 
 Several months ago, I received a message from a reader who asked how my recovery was going. Until then, I hadn't realized my pre-occupation with newfound programming languages (namely [Rust](/blog/category/rust/)), writing [technology reviews](/blog/category/hardware/), and [giving presentations](/slides/rising-with-tide) during a large part of this past year. Looking back, I've written about nearly every other life activity and left my biggest challenge of the year unaddressed.
 
-Today, I'm [fulfulling a promise][erasing] and discussing my experience after returning home from the hospital with fewer body parts than when I entered.
+Today, I'm [fulfulling a promise][erasing] and discussing my experience after returning home from the hospital with fewer limbs than when I entered.
 
 ## Health Report
 
