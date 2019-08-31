@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["Journal", "Cycling", "Catrike", "Ehlers-Danlos Syndrome"]
+categories = ["Journal", "Recovery", "Cycling", "Adaptive Sports", "Catrike", "Ehlers-Danlos Syndrome"]
 date = 2019-08-31T00:00:00.000Z
 draft = false
 layout = "post"
