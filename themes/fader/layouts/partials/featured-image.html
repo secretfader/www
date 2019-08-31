@@ -1,4 +1,4 @@
-{{ $img := (.Resources.ByType "image").GetMatch "*feature*" }}
+{{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}
 <figure>
 {{ with $img }}
   {{ $big := $img.Fill "1600x1200 Center q90" }}

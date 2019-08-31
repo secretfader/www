@@ -1,10 +1,11 @@
 +++
 authors = ["Nicholas Young"]
-category = ["journal"]
+categories = ["journal"]
 date = 2019-08-31T00:00:00.000Z
 draft = false
 layout = "post"
 title = "Recovery Isn't Linear"
+illustrationDescription = "A tranquil scene along the banks of Denver's South Platte River."
 +++
 
 Several months ago, I received a message from a reader who asked how my recovery was going. Until then, I hadn't realized my pre-occupation with newfound programming languages (namely [Rust](/blog/category/rust/)), writing [technology reviews](/blog/category/hardware/), and [giving presentations](/slides/rising-with-tide) during a large part of this past year. Looking back, I've written about nearly every other life activity and left my biggest challenge of the year unaddressed.

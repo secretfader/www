@@ -40,10 +40,12 @@ isHTML = true
 
 [permalinks]
 blog = "/blog/:year/:month/:slug/"
-category = "/blog/category/:slug/"
+categories = "/blog/category/:slug/"
+authors = "/blog/author/:slug/"
 
 [taxonomies]
-category = "category"
+category = "categories"
+author = "authors"
 
 [menu]
 [[menu.main]]
