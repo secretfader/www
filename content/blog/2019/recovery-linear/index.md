@@ -23,7 +23,7 @@ It should be said that the Pro-Flex wasn't my initial foot. When I first receive
 
 ## Mountain Adventures
 
-Only a couple weeks after the above photo was taken, I felt confident enough to tackle a short hike with my family at [Lair o' the Bear Park](https://www.jeffco.us/1254/Lair-o-the-Bear-Park). During May and eearly June, we tackled several miles of mountainous trail throughout the park, and I took every possible opportunity to climb!
+Only a couple weeks after the above photo was taken, I felt confident enough to tackle a short hike with my family at [Lair o' the Bear Park](https://www.jeffco.us/1254/Lair-o-the-Bear-Park). During May and early June, we tackled several miles of mountainous trail throughout the park, and I took every possible opportunity to climb!
 
 <div class="two-up">
 {{<imgresize src="family-smiles.jpg" alt="Mother, father, and 3-year-old smile for a selfie against a rocky alpine backdrop." >}}
@@ -36,7 +36,7 @@ Unfortunately, I often found increased pain and instability in my biological leg
 
 Anyone who has followed my story likely knows that a cycling injury is what ultimately led to my amputation. It wasn't the sole factor ([Ehlers-Danlos Syndrome](/blog/category/ehlers-danlos-syndrome/) was a major contributor, also), but my genetic condition made the accident several times worse. Still, I enjoy the feeling of traveling under my own power and refuse to allow an accident to dampen my enthuiasm for the sport.
 
-My first attempt at cycling was a total failure. After rolling around the neighborhood only to realize I was unable to keep my foot planted on the pedal. My wife, Susan, suggested a clever idea of wrapping both with short length of soft-backed hook and loop fastener. I thought it was genius! I set off up the trail, and it worked excellent for a while. I was able to cycle several miles with my shoe affixed to the pedal, but when stopping, the system had a flaw: I tipped over and crashed into a tree while attempting to stop and dismount, unable to remove my foot from its restraint.
+My first attempt at cycling was a total failure. After rolling around the neighborhood only to realize I was unable to keep my foot planted on the pedal. My wife, Susan, suggested a clever idea of wrapping both with short length of soft-backed hook and loop fastener. I thought it was genius! I set off up the trail, and it worked excellent for a while. I was able to cycle several miles with my shoe affixed to the pedal, but when stopping, the system had a flaw: I tipped over and crashed into a tree while attempting to stop and dismount, unable to remove my foot from its restraint. I was unhurt, and frustration quickly turned to humor upon imagining how the scene must've looked to bystanders.
 
 In my physical therapy appointment the following day, I discussed the fall and was recommended that I look at recumbent tricycles. As luck would have it, I had one of the nation's most respected dealers nearby. On the next weekend, I paid them a visit. After a few minutes on the trike, I was sold: the comfort was unmatched by any diamond frame bicycle, and my feet could be safely clipped in. Without the need to quickly dismount, an entire class of safety concerns rapidly evaporates.
 
@@ -45,8 +45,8 @@ However, one major hurdle remained: cost. Recumbent tricycles aren't exactly a m
 Fortunately, my physical therapy team came through again and put me in touch with the patient advocate who works alongside my surgeon. Together, we researched nonprofits that work with amputees, and ultimately decided to apply for a grant from the [Limb Preservation Foundation][lpf]'s [Bloom Again Fund][bloom-again]. It wasn't long before I was informed that my request was approved! With a huge smile, I set off to order my new ride.
 
 <div class="two-up">
-{{<imgresize src="trike-store.jpg" alt="Right below-knee amputee proudly standing atop a fallen log, with prosthesis showing." >}}
-{{<imgresize src="trike-store-close.jpg" alt="Mother, father, and 3-year-old smile for a selfie against a rocky alpine backdrop." >}}
+{{<imgresize src="trike-store.jpg" alt="A custom recubent tricycle on display, sitting amonst other models, ready to obe ridden." >}}
+{{<imgresize src="trike-store-close.jpg" alt="Close up of the front right wheel, steering, and disc brake assembly." >}}
 </div>
 
 Named "Heatwave" and introduced to the world with a four mile out-and-back on the South Platte River trail, this 2019 Lava Red [Catrike](https://www.catrike.com) Trail has already taken me over 120 miles. I'm extremely grateful to the Limb Preservation Society for helping me return to a sport I love, even if it also took something from me. I hope, someday, to pay this gift forward.
