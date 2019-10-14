@@ -4,7 +4,7 @@ categories = ["Journal", "Social Media"]
 date = "2019-05-22T00:00:00Z"
 draft = false
 layout = "post"
-summary = "Changes in the platform and the constant evolution ofhow I use media have created too many incompatibilities.\n"
+summary = "Changes in the platform and the constant evolution of how I use media have created too many incompatibilities."
 title = "Leaving Twitter"
 +++
 
