@@ -61,7 +61,7 @@ During the next month, I need to ration my energy. Some days, you'll see me on f
 
 Raise a glass to chronic illness and all it's forms, before I go test another drug that is contraindicated with alcohol.
 
-[erasing]: /blog/2018/10/erasing-yesterday/
+[erasing]: {{< relref path="../2018/erasing-yesterday.md" >}}
 [proflex]: https://www.ossur.com/prosthetic-solutions/products/dynamic-solutions/pro-flex-xc
 [talux]: https://www.ossur.com/prosthetic-solutions/products/dynamic-solutions/talux
 [lpf]: https://limbpreservation.org
