@@ -5,6 +5,7 @@ date = 2019-08-31T00:00:00.000Z
 draft = false
 layout = "post"
 title = "Recovery Isn't Linear"
+description = "Sometimes the healing process is more complex than it originally seemed."
 illustrationDescription = "A tranquil scene along the banks of Denver's South Platte River."
 +++
 
