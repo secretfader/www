@@ -416,3 +416,10 @@ body.single main article.post .post-meta ul.post-categories li, ul.post-authors 
 body.single main article.post .post-meta span.links {
   display: block;
 }
+
+body.single main article.post .post-summary {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
