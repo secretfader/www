@@ -1,9 +1,9 @@
 {{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}
 <figure>
 {{ with $img }}
-  {{ $big := $img.Fill "1600x1200 Center q90" }}
-  {{ $med := $img.Fill "800x600 Center q90" }}
-  {{ $small := $big.Fill "500x375 Center q90" }}
+  {{ $big := $img.Fit "1600x1200 Center q90" }}
+  {{ $med := $img.Fit "800x600 Center q90" }}
+  {{ $small := $big.Fit "500x375 Center q90" }}
   <img
     alt="{{ $img.Title }}"
     src="{{ $big.RelPermalink }}"
