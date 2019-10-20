@@ -21,7 +21,7 @@ From December of last year until mid-February, I mostly focused on learning how 
 
 {{< imgresize src="proflex.jpg" alt="Right foot bionic, left foot biological." >}}
 
-It should be said that the Pro-Flex wasn't my initial foot. When I first received my prosthesis, the team had already installed an [Ossur Talux][talux], which would automatically level so long as I contacted the ground at a reasonable angle. I used this foot for several months before moving beyond the features it provided due to my naturally aggressive walking pattern. Compared to a Talux, the Pro-Flex foot is very rigid, which allows it to store energy while under load, before releasing it at toe-off: a welcome feature, since transtibial amputees expend roughly 20-40% energy to ambulate when compared to people with two biological limbs.
+It should be said that the Pro-Flex wasn't my initial foot. When I first received my prosthesis, the team had already installed an [Ossur Talux][talux], which would automatically level so long as I contacted the ground at a reasonable angle. I used this foot for several months before moving beyond the features it provided due to my naturally aggressive walking pattern. Compared to a Talux, the Pro-Flex foot is very rigid, which allows it to store energy while under load, before releasing it at toe-off: a welcome feature, since transtibial amputees expend roughly 20-40% more energy to ambulate when compared to people with two biological limbs.
 
 ## Mountain Adventures
 
