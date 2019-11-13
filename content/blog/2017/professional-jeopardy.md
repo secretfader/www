@@ -1,9 +1,8 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["career", "health", "chronic-illness", "ehlers-danlos-syndrome", "tinnitus", "disability"]
+categories = ["Chronic Illness", "Career", "Disability", "Ehlers-Danlos Syndrome", "Hearing Loss"]
 date = "2017-10-28T00:00:00Z"
 draft = false
-layout = "post"
 title = "Professional Jeopardy"
 
 [[assets]]

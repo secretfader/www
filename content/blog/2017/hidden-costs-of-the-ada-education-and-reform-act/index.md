@@ -1,5 +1,5 @@
 +++
-categories = ["accessibility", "disability", "criticism", "critical-thinking", "healthcare", "allyship"]
+categories = ["Accessibility", "Disability", "Critical Thinking", "Healthcare", "Allyship"]
 date = "2017-09-13T00:00:00Z"
 draft = false
 image = "share.jpg"

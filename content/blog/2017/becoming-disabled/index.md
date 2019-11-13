@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["ehlers-danlos-syndrome", "disability", "chronic-illness", "eds-awareness-month", "medical-cannabis"]
+categories = ["Ehlers-Danlos Syndrome", "Disability", "Chronic Illness", "EDS Awareness Month", "Medical Cannabis"]
 date = "2017-05-13T00:00:00Z"
 draft = false
 keywords = ["ehlers danlos syndrome", "disability", "chronic illness", "ehlers danlos awareness momth"]

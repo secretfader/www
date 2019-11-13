@@ -1,5 +1,5 @@
 +++
-categories = ["accessibility", "disability", "ehlers-danlos-syndrome", "healthcare", "allyship", "criticism", "critical-thinking"]
+categories = ["Accessibility", "Disability", "Ehlers-Danlos Syndrome", "Healthcare", "Allyship", "Critical Thinking"]
 date = "2017-09-21T00:00:00Z"
 draft = false
 layout = "post"

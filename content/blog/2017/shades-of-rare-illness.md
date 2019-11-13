@@ -1,11 +1,9 @@
 +++
-categories = ["chronic-illness", "disability", "media-representation", "ehlers-danlos-syndrome", "criticism", "medical-cannabis"]
+categories = ["Chronic Illness", "Disability", "Media Criticism", "Ehlers-Danlos Syndrome", "Medical Cannabis"]
 date = "2017-06-25T00:00:00Z"
 draft = false
 keywords = ["the cannabist", "ehlers danlos syndrome", "the cannabist show", "disability in media", "chronic illness in media"]
-layout = "post"
 title = "Shades of Rare Illness"
-
 +++
 
 I submitted the following essay to The Cannabist last Friday in response to
