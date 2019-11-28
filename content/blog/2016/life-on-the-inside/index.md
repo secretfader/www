@@ -5,7 +5,7 @@ date = "2016-05-27T00:00:00Z"
 layout = "post"
 path = "/life-on-the-inside"
 title = "Life on the Inside, Part I"
-
+illustrationDescription = "A dazzle of zebras. (Photo courtesy of Jon Mountjoy on Flicker. Used under a Creative Commons BY License.)"
 +++
 
 I wake up, though not by choice. The alarm clock isn't ringing, and the apartment is quiet. My bedsheets wrap me in a warm, kind hug; and although the bed is comfortable, I'm miles away from a blissful state of mind.
@@ -16,7 +16,7 @@ This is how I begin every day. Some are worse, usually when the weather changes 
 
 Despite working, living, and writing in the public sphere, I'm a decently private person. I've never discussed my condition in public, but today, I choose to join the voices of those who are also suffering. May is an important time: *our* awareness month.
 
-I've cried, prayed, spent countless dollars on western medicine, all to finally realize that life will never be normal again. I'm among a handful of patients who fight an incurable, chronic disease. 
+I've cried, prayed, spent countless dollars on western medicine, all to finally realize that life will never be normal again. I'm among a handful of patients who fight an incurable, chronic disease.
 
 I have [Ehlers-Danlos Syndrome](http://ehlers-danlos.com).
 
@@ -38,7 +38,7 @@ As an adult who finally secured decent health insurance (thanks to the [Affordab
 
 [Some diagnosticians](http://www.prevention.com/health/9-conditions-that-are-all-in-your-head) would say it's all in my head. That, at some point, my body decided it liked pain, then quickly created a new, dedicated highway system *just for pain*. Perhaps they would [cite my mind as the cause of it.](https://en.wikipedia.org/wiki/Psychosomatic_medicine)
 
-While we're just learning about how [chronic pain affects communication in the brain,](http://neuroscience.uth.tmc.edu/s2/chapter07.html) nothing could be farther than the truth. Chronic pain sufferers aren't head cases. Researchers are filing data that proves [the pain is real](http://themighty.com/2016/01/when-you-find-out-the-chronic-pain-you-feel-isnt-all-in-your-head), and whether these records are being kept in true scientific fashion or are purely observational, the diversity of reporting still validates our suffering. Our medical community would do well to catch up. 
+While we're just learning about how [chronic pain affects communication in the brain,](http://neuroscience.uth.tmc.edu/s2/chapter07.html) nothing could be farther than the truth. Chronic pain sufferers aren't head cases. Researchers are filing data that proves [the pain is real](http://themighty.com/2016/01/when-you-find-out-the-chronic-pain-you-feel-isnt-all-in-your-head), and whether these records are being kept in true scientific fashion or are purely observational, the diversity of reporting still validates our suffering. Our medical community would do well to catch up.
 
 ## What is Ehlers-Danlos Syndrome
 
