@@ -2,6 +2,6 @@
 {{ $alt := .Get "alt" }}
 {{ $class:= .Get "class" | default "resized" }}
 {{ $width := .Get "width" | default "800x q100" }}
-{{ with $image.Resize $width }}
+{{ with $image | images.Filter (images.UnsharpMask $image .6 1.2) }}
 <img src="{{ .RelPermalink }}" alt="{{ $alt }}" class="{{ $class }}">
 {{ end }}
