@@ -15,7 +15,7 @@ Publishing an annual recap post is a [time-honored tradition here on secretfader
 
 ## Colorado Gold Rust
 
-In September, Rust engineers from around the world [converged on Colorado for two days of in-depth workshops and presentations][goldrustweb]. It was more successful than any first-year conference has a right to be, and as a co-founder, I couldn't be more excited. In February, I was approached by J. Haigh, organizer of the Denver Rust Meetup about helping organize a conference later in the year. Within a few weeks time, we settled on late September and began selling early bird tickets, which allowed the event to book and announce the venue.
+In September, Rust engineers from around the world [converged on Colorado for two days of in-depth workshops and presentations][goldrustweb]. It was more successful than any first-year conference has a right to be, and as a co-founder, I couldn't be more excited. In February, I was approached by [J. Haigh][debugsteven], organizer of the [Denver/Boulder Rust][denverrs] Meetup about helping present a conference later in the year. Within a few weeks time, we settled on late September and began selling early bird tickets, which allowed the event to book and announce the venue.
 
 By then, we knew it was happening: [Colorado Gold Rust][goldrustweb] was officially launched!
 
@@ -49,6 +49,8 @@ You'll hear more on this topic, and I'll be reigniting several other fires from 
 [goldrust]: https://www.youtube.com/watch?v=3XlECN8qUeY&list=PLPysEbGO9rtNZKYK5KlCEnsTmL5JMv8Cf
 [tlpf]: https://limbpreservation.org
 [bloomagain]: https://limbpreservation.org/resources/bloom-again-fund.html
+[denverrs]: https://www.meetup.com/Rust-Boulder-Denver/
+[debugsteven]: https://optimistictypes.com/
 [docsrs]: https://docs.rs
 [docsrspr]: https://github.com/rust-lang/docs.rs/commit/3bebf1c79bcda76cf8536bb536135f633b6b2ff2
 [rss]: /blog/feed.xml
