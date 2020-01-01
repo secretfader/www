@@ -21,7 +21,7 @@ By then, we knew it was happening: [Colorado Gold Rust][goldrustweb] was officia
 
 {{<imgresize src="cogoldrust.jpg" alt="A large roomful of Rust nerds in Denver, Colorado." >}}
 
-I'll write more about how the event came together later on (knowledge gleaned from posts by other organizers like Carol Nichols Goulding were extremely helpful and we hope to give back through sharing ours), but in the meantime, I hope you enjoy the [videos of our speakers' presentations on YouTube][goldrust].
+I'll write more about how the event came together later on (knowledge gleaned from posts by other organizers were extremely helpful and we hope to give back through sharing ours), but in the meantime, I hope you enjoy the [videos of our speakers' presentations on YouTube][goldrust].
 
 ## Adaptive Cycling
 
