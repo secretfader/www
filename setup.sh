@@ -3,7 +3,7 @@
 export DEBIAN_FRONTEND=noninteractive
 
 HUGO_URL=https://github.com/gohugoio/hugo/releases/download
-HUGO_VERSION=0.55.6
+HUGO_VERSION="0.62.0"
 HUGO_PLATFORM=Linux-64bit
 
 # Install curl, git
