@@ -1,5 +1,5 @@
 +++
-categories = ["burnout", "creative-values", "guidelines"]
+categories = ["burnout", "creative-values", "guidelines", "year in review"]
 authors = ["Nicholas Young"]
 date = "2013-01-01T00:00:00Z"
 layout = "post"

@@ -1,5 +1,5 @@
 +++
-categories = ["project-diary", "radio", "new-beginnings"]
+categories = ["project-diary", "radio", "new-beginnings", "Year in Review"]
 authors = ["Nicholas Young"]
 date = "2016-01-16T00:00:00Z"
 layout = "post"
