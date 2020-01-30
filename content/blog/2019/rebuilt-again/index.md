@@ -26,7 +26,9 @@ As we pulled into school, Sloan indicated that she understood my upcoming hospit
 ---
 **Update 2020-01-30:**
 
-Since this post was initially published, I've scheduled surgery, cancelled the procedure, rescheduled with a different provider, and ultimately underwent a second below-knee amputation using the Ertl technique on January 23, 2020. If that read like a whirlwind then it is true to life; what I went through cannot be described better.
+Since this post was initially published, I've scheduled surgery, cancelled the procedure, rescheduled with a different provider, and ultimately underwent a second below-knee amputation using the Ertl technique on January 23, 2020.
+
+If that read like a whirlwind then it is true to life; what I went through cannot be described better.
 
 I'm now recovering at home and will be back to full steam very soon.
 
