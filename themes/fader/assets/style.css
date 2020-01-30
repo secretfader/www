@@ -154,6 +154,12 @@ body.home ul.shortlist li p {
   font-size: .8em;
 }
 
+body.home ul.shortlist li .post-meta {
+  font-size: .7em;
+  position: relative;
+  margin: -10px 0 .7em 0;
+}
+
 body.list main .list-header {
   margin: 30px 0;
 }
