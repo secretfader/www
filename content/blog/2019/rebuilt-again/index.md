@@ -23,4 +23,9 @@ I can't pretend the road ahead will be easy. Having taken this route last year, 
 
 As we pulled into school, Sloan indicated that she understood my upcoming hospital stay, promised to climb on my bed for cuddles, and looked forward to future adventures on two prosthetic legs. For anyone who wonders, Dad is still functional; he just needs a few parts replaced.
 
+---
+**Update 2020-01-30:** Since this post was published, I've scheduled surgery, cancelled the procedure, rescheduled with a different provider, and ultimately underwent a second below-knee amputation using the Ertl technique on January 23, 2020. If that read like a whirlwind then it is true to life; what I went through cannot be described better.
+
+I'm now recovering at home and will be back to full steam very soon.
+
 [adventures]: {{< relref path="recovery-linear" >}}
