@@ -25,7 +25,7 @@ I'll write more about how the event came together later on (knowledge gleaned fr
 
 ## Adaptive Cycling
 
-As longtime readers will note, [road cycling has long been a passion of mine](/blog/category/cycling/). However, in 2015, it also launched a healthcare saga that would ultimately result in the [amputation of my right foot](/blog/categories/amputation/) three years later.
+As longtime readers will note, [road cycling has long been a passion of mine](/blog/category/cycling/). However, in 2015, it also launched a healthcare saga that would ultimately result in the [amputation of my right foot](/blog/category/amputation/) three years later.
 
 This past year, I staged a triumphant return to my chosen sport by acquiring a Catrike Trail recumbent tricycle in late July. Between then and mid-September (when I began to be limited by pain in my left leg), I managed to rack up over 200 miles: an impressive start for my new adaptive sports efforts.
 
