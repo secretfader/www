@@ -6,6 +6,7 @@ draft = false
 layout = "post"
 title = "New Horizons"
 illustrationDescription = "Two people stand and write on white paper at a wooden desk. Photo courtesy of Nik MacMillan on Unsplash."
+summary = "After a decade of self-employment, I've accepted a job offer and shuttered my consultancy."
 +++
 
 After being self-employed for most of the last decade, I recently decided it was time for a change of pace.
