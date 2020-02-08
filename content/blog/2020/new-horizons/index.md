@@ -8,7 +8,7 @@ title = "New Horizons"
 illustrationDescription = "Two people stand and write on white paper at a wooden desk. Photo courtesy of Nik MacMillan on Unsplash."
 +++
 
-After being self-employed for most of the last decade, I've decided it was time for a change of pace.
+After being self-employed for most of the last decade, I recently decided it was time for a change of pace.
 
 In late January, I [dissolved the LLC for my consultancy, Uptime Ventures][uv], in order to accept a senior-level engineering position from a local company where I'll be tasked, in part, with expanding their use of Rust. This role feels like a natural fit, since my last year was spent contributing to Rust's `async` networking stack and various web frameworks in the ecosystem.
 
