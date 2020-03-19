@@ -1,5 +1,8 @@
 image: ubuntu:bionic
 
+variables:
+  HUGO_VERSION: '0.67.1'
+
 before_script:
   - bash setup.sh
   - git submodule sync

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-
+set -e
 export DEBIAN_FRONTEND=noninteractive
 
 HUGO_URL=https://github.com/gohugoio/hugo/releases/download
-HUGO_VERSION="0.67.1"
+HUGO_VERSION=${HUGO_VERSION:=0.67.1}
 HUGO_PLATFORM=Linux-64bit
 
 # Install curl, git
