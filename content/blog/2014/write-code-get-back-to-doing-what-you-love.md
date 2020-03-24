@@ -1,6 +1,6 @@
 +++
-categories = ["engineering", "software", "javascript", "talks"]
 authors = ["Nicholas Young"]
+categories = ["engineering", "software", "javascript", "talks"]
 date = "2014-06-26T00:00:00Z"
 layout = "post"
 path = "/write-code-and-get-back-to-doing-what-you-love"

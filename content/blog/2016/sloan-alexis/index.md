@@ -1,6 +1,6 @@
 +++
-categories = ["fatherhood", "dadthings", "parenting", "life"]
 authors = ["Nicholas Young"]
+categories = ["fatherhood", "dadthings", "parenting", "life"]
 date = "2016-01-28T00:00:00Z"
 layout = "post"
 path = "/sloan-alexis"

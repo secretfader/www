@@ -3,6 +3,7 @@ authors = ["Nicholas Young"]
 categories = ["Ehlers-Danlos Syndrome", "Chronic Illness", "FAQ", "EDS Awareness Month"]
 date = "2017-05-21T00:00:00Z"
 title = "What I Wish You Understood (About My Chronic Illness)"
+
 +++
 
 May is [Ehlers-Danlos Syndrome Awareness

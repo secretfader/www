@@ -1,8 +1,8 @@
 +++
+authors = ["Nicholas Young"]
 categories = ["guidelines", "creative-values"]
 date = "2012-12-14T00:00:00Z"
 title = "Creative Guard Rails"
-authors = ["Nicholas Young"]
 
 +++
 

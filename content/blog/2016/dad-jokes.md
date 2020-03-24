@@ -1,6 +1,6 @@
 +++
-categories = ["fatherhood", "dadthings", "life"]
 authors = ["Nicholas Young"]
+categories = ["fatherhood", "dadthings", "life"]
 date = "2016-01-27T00:00:00Z"
 layout = "post"
 path = "/dad-jokes"

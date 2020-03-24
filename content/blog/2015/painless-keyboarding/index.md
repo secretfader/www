@@ -1,6 +1,6 @@
 +++
-categories = ["software", "engineering", "keyboards", "health", "chronic-illness", "ehlers-danlos-syndrome"]
 authors = ["Nicholas Young"]
+categories = ["software", "engineering", "keyboards", "health", "chronic-illness", "ehlers-danlos-syndrome"]
 date = "2015-11-30T00:00:00Z"
 layout = "post"
 path = "/painless-keyboarding"

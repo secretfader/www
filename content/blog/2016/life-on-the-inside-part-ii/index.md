@@ -1,6 +1,6 @@
 +++
-categories = ["ehlers-danlos-syndrome", "chronic-illness", "medical-cannabis", "colorado", "moving"]
 authors = ["Nicholas Young"]
+categories = ["ehlers-danlos-syndrome", "chronic-illness", "medical-cannabis", "colorado", "moving"]
 date = "2016-06-17T00:00:00Z"
 layout = "post"
 path = "/life-on-the-inside-part-ii"

@@ -1,6 +1,6 @@
 +++
-categories = ["tutorial", "rss", "podcasting", "radio"]
 authors = ["Nicholas Young"]
+categories = ["tutorial", "rss", "podcasting", "radio"]
 date = "2014-01-14T00:00:00Z"
 layout = "post"
 path = "/migrating-from-feedburner-a-helpful-guide"

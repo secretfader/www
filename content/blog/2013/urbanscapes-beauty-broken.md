@@ -1,6 +1,6 @@
 +++
-categories = ["photography", "project diary"]
 authors = ["Nicholas Young"]
+categories = ["photography", "project diary"]
 date = "2013-01-01T00:00:00Z"
 layout = "post"
 slug = "urbanscapes-beauty-in-the-broken"

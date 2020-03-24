@@ -1,10 +1,11 @@
 +++
+authors = ["Nicholas Young"]
 categories = ["Accessibility", "Disability", "Ehlers-Danlos Syndrome", "Healthcare", "Allyship", "Critical Thinking", "Year in Review"]
 date = "2017-09-21T00:00:00Z"
 draft = false
 layout = "post"
 title = "If I Left You Behind"
-authors = ["Nicholas Young"]
+
 +++
 
 I have spent most of 2017 writing [long-form non-fiction pieces](/blog/category/healthcare/) concerning flaws in the American healthcare system, often attempting to communicate why we, as a country, shouldn't embrace changes that would [severely limit access to care](/blog/category/disability/) for chronically ill and disabled citizens.

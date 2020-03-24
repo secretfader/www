@@ -1,12 +1,13 @@
 +++
 authors = ["Nicholas Young"]
 categories = ["Journal", "Rust", "Community"]
-date = 2020-02-07T00:00:00.000Z
+date = "2020-02-07T00:00:00Z"
 draft = false
-layout = "post"
-title = "New Horizons"
 illustrationDescription = "Two people stand and write on white paper at a wooden desk. Photo courtesy of Nik MacMillan on Unsplash."
+layout = "post"
 summary = "After a decade of self-employment, I've accepted a job offer and shuttered my consultancy."
+title = "New Horizons"
+
 +++
 
 After being self-employed for most of the last decade, I recently decided it was time for a change of pace.

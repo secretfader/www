@@ -1,11 +1,12 @@
 +++
-categories = ["ehlers-danlos-syndrome", "chronic-illness"]
 authors = ["Nicholas Young"]
+categories = ["ehlers-danlos-syndrome", "chronic-illness"]
 date = "2016-05-27T00:00:00Z"
+illustrationDescription = "A dazzle of zebras. (Photo courtesy of Jon Mountjoy on Flicker. Used under a Creative Commons BY License.)"
 layout = "post"
 path = "/life-on-the-inside"
 title = "Life on the Inside, Part I"
-illustrationDescription = "A dazzle of zebras. (Photo courtesy of Jon Mountjoy on Flicker. Used under a Creative Commons BY License.)"
+
 +++
 
 I wake up, though not by choice. The alarm clock isn't ringing, and the apartment is quiet. My bedsheets wrap me in a warm, kind hug; and although the bed is comfortable, I'm miles away from a blissful state of mind.

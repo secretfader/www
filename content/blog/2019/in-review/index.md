@@ -1,13 +1,14 @@
 +++
 authors = ["Nicholas Young"]
 categories = ["Journal", "Event Planning", "Media Production", "Cycling", "Amputation", "Prosthetics", "Year in Review"]
-date = 2019-12-31T00:00:00.000Z
+date = "2019-12-31T00:00:00Z"
 draft = false
+illustrationDescription = "A small foot-and-cycling bridge along the Bear Creek Trail passes over Bear Creek (and a Beaver dam) in Lakewood, Colorado."
 layout = "post"
-title = "2019 in Review"
 slug = "in-review"
 summary = "Celebrating what I've accomplished over the last twelve months, and preparing for new challenges."
-illustrationDescription = "A small foot-and-cycling bridge along the Bear Creek Trail passes over Bear Creek (and a Beaver dam) in Lakewood, Colorado."
+title = "2019 in Review"
+
 +++
 Even though I recently [penned several ambigously positive entries about healthcare issues](/blog/category/ehlers-danlos-syndrome/), 2019 was honestly a successful year. In reality, much of what I've done this past year was offline and has failed to appear in this journal, until now.
 

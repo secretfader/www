@@ -5,6 +5,7 @@ date = "2018-10-09T00:00:00Z"
 draft = false
 layout = "post"
 title = "Erasing Yesterday"
+
 +++
 
 At precisely ten o'clock local time on October 23rd, I will be soundly asleep as

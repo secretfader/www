@@ -1,12 +1,13 @@
 +++
 authors = ["Nicholas Young"]
 categories = ["Journal", "Ehlers-Danlos Syndrome", "Amputation", "Prosthetics"]
-date = 2019-11-13T00:00:00.000Z
+date = "2019-11-13T00:00:00Z"
 draft = false
-layout = "post"
-title = "Rebuilt, Again"
-summary = "Conversations with my three-year-old, as I prepare to become a bilateral amputee."
 illustrationDescription = "Trees, mountains, and sky; as seen from the Peak to Peak Highway near Black Hawk, Colorado. (Photo by Susan Young)"
+layout = "post"
+summary = "Conversations with my three-year-old, as I prepare to become a bilateral amputee."
+title = "Rebuilt, Again"
+
 +++
 
 A small voice called from the backseat. "Dad? After the surgery, you won't have toes anymore!" "That's right," I responded, realizing that even our short drive to school left plenty of time for questions from a curious kid. Sloan, my three-year-old, is nothing if not inquisitive. Her line of inquiry continued. "You don't want your toes?"

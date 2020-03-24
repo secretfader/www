@@ -1,6 +1,6 @@
 +++
-categories = ["social-media", "habits", "social-commentary"]
 authors = ["Nicholas Young"]
+categories = ["social-media", "habits", "social-commentary"]
 date = "2013-06-04T00:00:00Z"
 layout = "post"
 path = "/our-instagram-life"

@@ -3,10 +3,11 @@ authors = ["Nicholas Young"]
 categories = ["Journal", "Social Media"]
 date = "2019-05-22T00:00:00Z"
 draft = false
+illustrationDescription = "An open tab in Chrome invites you to login at Twitter, maybe for the last time. (Image courtesy of Unsplash)"
 layout = "post"
 summary = "Changes in the platform and the constant evolution of how I use media have created too many incompatibilities."
 title = "Leaving Twitter"
-illustrationDescription = "An open tab in Chrome invites you to login at Twitter, maybe for the last time. (Image courtesy of Unsplash)"
+
 +++
 
 In November of 2007, most likely sitting inside an East

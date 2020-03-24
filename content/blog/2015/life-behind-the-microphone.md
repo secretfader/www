@@ -1,6 +1,6 @@
 +++
-categories = ["project-diary", "radio", "Year in Review"]
 authors = ["Nicholas Young"]
+categories = ["project-diary", "radio", "Year in Review"]
 date = "2015-09-25T00:00:00Z"
 layout = "post"
 path = "/life-behind-the-microphone"

@@ -1,9 +1,10 @@
 +++
-categories = ["Ehlers-Danlos Syndrome", "Chronic Illness", "Allergies", "Etiquette", "Disability"]
 authors = ["Nicholas Young"]
+categories = ["Ehlers-Danlos Syndrome", "Chronic Illness", "Allergies", "Etiquette", "Disability"]
 date = "2017-08-17T00:00:00Z"
 draft = false
 title = "Commuting While Disabled"
+
 +++
 
 During the last several months, I've written much concerning how disabled people are [only valuable to the media for their redemption stories](/2017/06/shades-of-rare-illness/), and [why it is difficult to attain proper medical care](/2017/06/casual-ableism/). Last June I discussed [the increase in my pain levels due to an advancing genetic condition](/2016/06/life-on-the-inside-part-ii/), after I wrote an introductory post introducing you to [Ehlers-Danlos Syndrome](/blog/category/ehlers-danlos-syndrome/). To say I've spilled ink is an understatement; I even took you deep into my life with [chronic illness](/blog/category/chronic-illness/), writing my own personal [frequently asked questions](/2017/05/what-i-wish-you-understood-about-my-chronic-illness/) addressing what I wish you understood about my fluid, but still disabling condition.
