@@ -24,7 +24,7 @@ In today's news environment, chronically ill patients are being thanked for thei
 
 Like most disabled activists who carried this torch before, I never intended to become a political commentator. Instead, I watched as the world around me moved to politicize my very existence. Had I chose not to speak out, the only alternative was to be silent; allowing my voice, and eventually, life to be taken without a fight. How could I do anything else?
 
-In a quote I [encountered on Instagram a few days ago][ig], Author Adrienne Maree Brown suggests how "our own future may depend on learning to listen, listen without assumptions or defenses." In a past life, I became a storyteller and documentarian because I saw the power of a narrative to enact positive changes in our society. I hoped to avoid needless loss of life and health, for myself and others like me by sharing my take, but I suppose that was expecting too much. Now, our country paying with the lives of anyone [deemed unworthy by the medical system][dnr].
+In a quote I [encountered on Instagram a few days ago][ig], Author Adrienne Maree Brown suggests how "our own future may depend on learning to listen, listen without assumptions or defenses." In a past life, I became a storyteller and documentarian because I saw the power of a narrative to enact positive changes in our society. I hoped to avoid needless loss of life and health, for myself and others like me by sharing my take, but I suppose that was expecting too much. Now, our country is paying with the lives of anyone [deemed unworthy by the medical system][dnr].
 
 Perhaps I was the foolish one for thinking anyone still knew how to listen.
 
