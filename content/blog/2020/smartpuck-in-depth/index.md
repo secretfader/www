@@ -6,7 +6,7 @@ draft = false
 layout = "post"
 title = "Keeping My Leg On with the SmartPuck from 5280 Prosthetics"
 summary = "Six months of full-time experience with the 5280 Prosthetics SmartPuck elevated vacuum prosthetic suspension system. It's time for an in-depth, real-world review."
-illustrationDescription = "The SmartPuck pump itself, which fits into the bottom of a user's prosthetic socket."
+illustrationDescription = "The SmartPuck pump itself, which fits into the bottom of a user's prosthetic socket. (Image courtesy of 5280 Prosthetics)"
 +++
 
 Last November, while discussing my second below-knee amputation, [I briefly mentioned changing my prosthetic suspension system][mention] and promised a full review sometime in the future. Unfortunately, [life got in the way][life] and I [found myself covering other topics][covid] first.
