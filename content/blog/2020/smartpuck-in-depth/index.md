@@ -7,6 +7,7 @@ layout = "post"
 title = "Keeping My Leg On with the SmartPuck from 5280 Prosthetics"
 summary = "Six months of full-time experience with the 5280 Prosthetics SmartPuck elevated vacuum prosthetic suspension system. It's time for an in-depth, real-world review."
 illustrationDescription = "The SmartPuck pump itself, which fits into the bottom of a user's prosthetic socket. (Image courtesy of 5280 Prosthetics)"
+keywords = ["SmartPuck", "5280 Prosthetics", "Elevated vacuum suspension", "Prosthetics"]
 +++
 
 Last November, while discussing my second below-knee amputation, [I briefly mentioned changing my prosthetic suspension system][mention] and promised a full review sometime in the future. As you probably expected, [life got in the way][life] and I [found myself covering other topics][covid] first.
@@ -41,7 +42,7 @@ Unfortunately, not everything is as advertised. As of this writing, the SmartPuc
 
 My Pixel 2's recent upgrade to Android 10 broke connectivity entirely, and for the past several weeks, my vacuum level has been stuck at walking levels, even though I'm currently using a wheelchair.
 
-I've brought these issues to the company's attention and while they've been attentive, I'm not aware of work going on to resolve the user experience concerns. I wish that I had a timeline to share, because it would make recommending the SmartPuck to all of you a much easier proposal. However, I am discussing solutions to my bug reports with the team (since the problems they have are ones I have experience resolving), and hope to have more I can share soon.
+I've brought these issues to the company's attention and while they've been outwardly receptive, I'm not aware of work going on to resolve the user experience concerns. I wish that I had a timeline to share, because it would make recommending the SmartPuck to all of you a much easier proposal. However, I am discussing solutions to my bug reports with the team (since the problems they have are ones I have experience resolving), and hope to have more I can share soon.
 
 ## Future Plans
 
