@@ -14,7 +14,7 @@ Last November, while discussing my second below-knee amputation, [I briefly ment
 
 I'll cover the basics of prosthetic suspension before diving in, but feel free to [skip ahead](#choosing-a-vacuum-solution) if you're already familiar.
 
-## A Quick Introduction Prosthetic Suspension
+## A Quick Introduction to Prosthetic Suspension
 
 Like most new amputees, my first leg used a [shuttle lock][suspension-types]. Systems of this type consist of a single, ridged pin that inserts into a lock at the distal end of your socket and prevents your residual limb from slipping out unless the lock is disengaged. My experience was that this design also required a very tight fitting socket to reach an acceptable level of proprioception (which ended up causing circulation issues).
 
