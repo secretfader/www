@@ -1,6 +1,6 @@
-# Secret Fader
+# [Nicholas Young][dotcom]
 
-Digital home of hacker, photographer, and activist Nicholas Young.
+The digital home of engineer, educator, photographer, and activist [Nicholas Young][dotcom].
 
 ## Development Notes 
 
@@ -10,5 +10,6 @@ This repository utilizes [`git-lfs`][git-lfs] to conveniently store large files.
 
 (C) Copyright 2018 Nicholas Young. All rights reserved.
 
+[dotcom]: https://www.nicholaswyoung.com/
 [git-scm]: https://https://git-scm.com/
 [git-lfs]: https://git-lfs.github.com/
