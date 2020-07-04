@@ -35,6 +35,11 @@ body {
   line-height: 1.6;
 }
 
+body[data-theme="dark"] {
+  background: #212121;
+  color: rgba(255, 255, 255, .8);
+}
+
 a {
   color: inherit;
 }
@@ -131,6 +136,10 @@ body.home ul.shortlist {
   padding-top: 2em;
 }
 
+body[data-theme="dark"].home ul.shortlist {
+  border-top: rgba(255, 255, 255, .3) 1px solid;
+}
+
 body.home ul.shortlist li {
   width: 50%;
   margin-right: 1.5em;
@@ -193,6 +202,10 @@ body.list main article.post-entry .post-footer {
   font-size: .9em;
 }
 
+body[data-theme="dark"].list main article.post-entry .post-footer {
+  color: rgba(255, 255, 255, .7);
+}
+
 body.list main .list-footer {
   margin: 10vh 0;
 }
@@ -233,6 +246,10 @@ body.single main article.post .post-header a {
 body.single main article.post .post-meta {
   font-size: .9em;
   color: rgba(0, 0, 0, .6);
+}
+
+body[data-theme="dark"].single main article.post .post-meta {
+  color: rgba(255, 255, 255, .7);
 }
 
 body.single main article.post .post-meta ul.post-categories {
@@ -409,6 +426,10 @@ body.single main article.post figcaption {
   font-size: .75em;
   background: rgba(0, 0, 0, .04);
   padding: 1em;
+}
+
+body[data-theme="dark"].single main article.post figcaption {
+  background: rgba(255, 255, 255, .1);
 }
 
 body.single main article.post .post-meta ul.post-categories, ul.post-authors {
