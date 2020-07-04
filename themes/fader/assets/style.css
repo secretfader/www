@@ -27,17 +27,20 @@ img {
  * secretfader.com
  * Designed by Nicholas "Fader" Young
  */
-body {
+html[data-theme="light"] {
   background: #f9f9f9;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 20px;
   color: rgba(0, 0, 0, .8);
-  line-height: 1.6;
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
   background: #212121;
   color: rgba(255, 255, 255, .8);
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 a {
@@ -136,7 +139,7 @@ body.home ul.shortlist {
   padding-top: 2em;
 }
 
-body[data-theme="dark"].home ul.shortlist {
+html[data-theme="dark"] body.home ul.shortlist {
   border-top: rgba(255, 255, 255, .3) 1px solid;
 }
 
@@ -202,7 +205,7 @@ body.list main article.post-entry .post-footer {
   font-size: .9em;
 }
 
-body[data-theme="dark"].list main article.post-entry .post-footer {
+html[data-theme="dark"] body.list main article.post-entry .post-footer {
   color: rgba(255, 255, 255, .7);
 }
 
@@ -248,7 +251,7 @@ body.single main article.post .post-meta {
   color: rgba(0, 0, 0, .6);
 }
 
-body[data-theme="dark"].single main article.post .post-meta {
+html[data-theme="dark"] body.single main article.post .post-meta {
   color: rgba(255, 255, 255, .7);
 }
 
@@ -428,7 +431,7 @@ body.single main article.post figcaption {
   padding: 1em;
 }
 
-body[data-theme="dark"].single main article.post figcaption {
+html[data-theme="dark"] body.single main article.post figcaption {
   background: rgba(255, 255, 255, .1);
 }
 
