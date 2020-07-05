@@ -39,7 +39,7 @@ img {
     --surface: #212121;
     --text: rgba(255, 255, 255, .8);
     --highlight: #00C896;
-    --meta: rgba(255, 255, 255, 6);
+    --meta: rgba(255, 255, 255, .1);
   }
 }
 
@@ -427,12 +427,8 @@ body.single main article.post header figure {
 
 body.single main article.post figcaption {
   font-size: .75em;
-  background: rgba(0, 0, 0, .04);
+  background: var(--meta);
   padding: 1em;
-}
-
-html[data-theme="dark"] body.single main article.post figcaption {
-  background: rgba(255, 255, 255, .1);
 }
 
 body.single main article.post .post-meta ul.post-categories, ul.post-authors {
