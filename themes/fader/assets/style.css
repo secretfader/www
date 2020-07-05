@@ -24,17 +24,28 @@ img {
 }
 
 /**
- * secretfader.com
- * Designed by Nicholas "Fader" Young
+ * nicholaswyoung.com 
+ * Copyright 2020 Nicholas Young. All rights reserved.
  */
-html[data-theme="light"] {
-  background: #f9f9f9;
-  color: rgba(0, 0, 0, .8);
+:root {
+  --background: #F9F9F9;
+  --text: rgba(0, 0, 0, .8);
+  --highlight: #00754B;
+  --meta: rgba(0, 0, 0, .6);
 }
 
-html[data-theme="dark"] {
-  background: #212121;
-  color: rgba(255, 255, 255, .8);
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #212121;
+    --text: rgba(255, 255, 255, .8);
+    --highlight: #00C896;
+    --meta: rgba(255, 255, 255, 6);
+  }
+}
+
+html {
+  background: var(--surface);
+  color: var(--text);
 }
 
 body {
@@ -57,7 +68,6 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
-/* Site header */
 header.main {
   display: flex;
   flex-direction: column;
@@ -105,7 +115,6 @@ header.main nav.menu ul li:last-child {
   }
 }
 
-/* Main content */
 main {
   width: 90%;
   margin: 0 auto;
@@ -139,8 +148,8 @@ body.home ul.shortlist {
   padding-top: 2em;
 }
 
-html[data-theme="dark"] body.home ul.shortlist {
-  border-top: rgba(255, 255, 255, .3) 1px solid;
+body.home ul.shortlist {
+  border-top: var(--highlight) 1px solid;
 }
 
 body.home ul.shortlist li {
@@ -201,12 +210,8 @@ body.list main article.post-entry p.post-summary {
 }
 
 body.list main article.post-entry .post-footer {
-  color: rgba(0, 0, 0, .6);
+  color: var(--text);
   font-size: .9em;
-}
-
-html[data-theme="dark"] body.list main article.post-entry .post-footer {
-  color: rgba(255, 255, 255, .7);
 }
 
 body.list main .list-footer {
@@ -247,12 +252,8 @@ body.single main article.post .post-header a {
 }
 
 body.single main article.post .post-meta {
+  color: var(--text);
   font-size: .9em;
-  color: rgba(0, 0, 0, .6);
-}
-
-html[data-theme="dark"] body.single main article.post .post-meta {
-  color: rgba(255, 255, 255, .7);
 }
 
 body.single main article.post .post-meta ul.post-categories {
@@ -278,7 +279,7 @@ body.single main article.post .post-content p:last-child {
 
 body.single main article.post .post-content hr {
   margin: 50px auto;
-  color: white;
+  color: var(--highlight);
 }
 
 body.single main article.post .post-content h2, h3 {
@@ -318,7 +319,6 @@ ul.share-buttons a {
   display: flex;
   justify-content: center;
   padding: 5px;
-  color: white;
   text-decoration: none;
 }
 

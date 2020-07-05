@@ -9,6 +9,7 @@ function toggleThemeMode(e) {
   localStorage.setItem('color-mode', 'light');
 }
 
-document.querySelectorAll('.theme-toggle').forEach(button => {
+const buttons = document.querySelectorAll('.theme-toggle');
+buttons.forEach(button => {
   button.addEventListener('click', toggleThemeMode);
 });
