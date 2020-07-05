@@ -5,7 +5,7 @@ date = "2018-10-09T00:00:00Z"
 draft = false
 layout = "post"
 title = "Erasing Yesterday"
-
+illustrationDescription = "Adventures with my little explorer, like this one, are high on my bucket list post-amputation. Image by the author."
 +++
 
 At precisely ten o'clock local time on October 23rd, I will be soundly asleep as
