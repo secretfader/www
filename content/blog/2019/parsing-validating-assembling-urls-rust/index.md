@@ -7,7 +7,7 @@ layout = "post"
 slug = "parsing-validating-assembling-urls-rust"
 summary = "Why you should care about type-safe concepts instead of assembling string fragments.\n"
 title = "Parsing, Validating, and Assembling URLs in Rust"
-
+illustrationDescription = "Bright red Rust spreading across a metal surface, causing flecks of residual blue paint to fall off. Image courtesy of Jimmy Ofisia on Unsplash."
 +++
 
 These days, we hardly think about URLs. Popular content management tools
