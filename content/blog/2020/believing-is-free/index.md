@@ -6,7 +6,7 @@ draft = false
 layout = "post"
 title = "Believing Is Free"
 summary = "When it comes to healthcare topics in the United States (and around the world), listening to disabled activists might have helped avoid the current human toll of COVID-19."
-illustrationDescription = "The author being wheeled briskly away for surgery."
+illustrationDescription = "The author being wheeled briskly away for surgery. Photo courtesy of Susan Young."
 +++
 The American Healthcare Industry is a war zone. Don't believe me? I've been [issuing dispatches from the front-lines for years][healthcare].
 
