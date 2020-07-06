@@ -24,28 +24,64 @@ img {
 }
 
 /**
- * nicholaswyoung.com 
+ * nicholaswyoung.com
  * Copyright 2020 Nicholas Young. All rights reserved.
  */
+
+/* Light (default) color scheme: */
 :root {
   --background: #F9F9F9;
   --text: rgba(0, 0, 0, .8);
   --highlight: #00754B;
   --meta: rgba(0, 0, 0, .6);
+  color-scheme: light dark;
+}
+
+/* If light color scheme is enabled, hide enabling controls. */
+:root[color-scheme="light"] .hide-light {
+  display: none;
+}
+
+/* When light color scheme is enabled, display controls to switch. */
+:root[color-scheme="light"] .hide-dark {
+  display: inherit;
 }
 
 @media (prefers-color-scheme: dark) {
+  /* Dark color scheme: */
   :root {
     --surface: #212121;
     --text: rgba(255, 255, 255, .8);
     --highlight: #00C896;
     --meta: rgba(255, 255, 255, .1);
   }
+
+  :root[color-scheme="light"] {
+    background: #F9F9F9;
+    --text: rgba(0, 0, 0, .8);
+    --highlight: #00754B;
+    --meta: rgba(0, 0, 0, .6);
+  }
+
+  .hide-dark {
+    display: none;
+  }
+}
+
+button.theme-toggle {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  line-height: 52px;
+  padding: 0 0;
+  cursor: pointer;
+  color: var(--text);
 }
 
 html {
-  background: var(--surface);
-  color: var(--text);
+  background-color: #F9F9F9;
+  background: var(--surface, #F9F9F9);
+  color: var(--text, rgba(0, 0, 0, .8));
 }
 
 body {
@@ -296,98 +332,6 @@ body.single main article.post .post-content pre {
 body.single main article.post .post-content img {
   margin-bottom: 20px;
 }
-
-ul.share-buttons {
-  font-size: .8em;
-  max-width: 800px;
-  margin: 0 auto;
-  margin-bottom: 2em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-ul.share-buttons li {
-  width: 30%;
-  margin-right: 15px;
-  margin-bottom: 15px; 
-  border-radius: 5px;
-  border: rgba(0, 0, 0, .1) 1px solid;
-}
-
-ul.share-buttons a {
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-  text-decoration: none;
-}
-
-ul.share-buttons svg {
-  width: 25px;
-}
-
-ul.share-buttons svg path {
-  fill: white;
-}
-
-ul.share-buttons span {
-  margin-left: 10px; 
-}
-
-ul.share-buttons li.facebook {
-  background: #3b5998;
-}
-
-ul.share-buttons li.facebook:hover {
-  background: #2d4373;
-}
-
-ul.share-buttons li.twitter {
-  background: #55acee;
-}
-
-ul.share-buttons li.twitter:hover {
-  background: #2795e9;
-}
-
-ul.share-buttons li.email {
-  background: #777;
-}
-
-ul.share-buttons li.email:hover {
-  background: #5e5e5e;
-}
-
-ul.share-buttons li.telegram {
-  background: #0088cc;
-}
-
-ul.share-buttons li.telegram:hover {
-  background: #006394;
-}
-
-ul.share-buttons li.whatsapp {
-  background: #25d366;
-}
-
-ul.share-buttons li.whatsapp:hover {
-  background: #1da851;
-}
-
-ul.share-buttons li.linkedin {
-  background: #0077b5;
-}
-
-ul.share-buttons li.linkedin:hover {
-  background: #046293;
-}
-
-@media screen and (max-width: 600px) {
-  ul.share-buttons li {
-    width: 75%;
-  }
-}
-
 
 @media screen and (max-width: 800px) {
   body.home ul.shortlist {
