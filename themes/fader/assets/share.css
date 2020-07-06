@@ -21,6 +21,7 @@ ul.share-buttons a {
   justify-content: center;
   padding: 5px;
   text-decoration: none;
+  color: white;
 }
 
 ul.share-buttons svg {
