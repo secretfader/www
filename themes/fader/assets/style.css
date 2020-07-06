@@ -33,8 +33,15 @@ img {
   --background: #F9F9F9;
   --text: rgba(0, 0, 0, .8);
   --highlight: #00754B;
-  --meta: rgba(0, 0, 0, .6);
+  --meta: rgba(0, 0, 0, .1);
   color-scheme: light dark;
+}
+
+:root[color-scheme="dark"] {
+  --surface: #212121;
+  --text: rgba(255, 255, 255, .8);
+  --highlight: #00C896;
+  --meta: rgba(255, 255, 255, .1);
 }
 
 /* If light color scheme is enabled, hide enabling controls. */
@@ -60,7 +67,7 @@ img {
     background: #F9F9F9;
     --text: rgba(0, 0, 0, .8);
     --highlight: #00754B;
-    --meta: rgba(0, 0, 0, .6);
+    --meta: rgba(0, 0, 0, .1);
   }
 
   .hide-dark {
@@ -371,7 +378,7 @@ body.single main article.post header figure {
 
 body.single main article.post figcaption {
   font-size: .75em;
-  background: var(--meta);
+  background-color: var(--meta);
   padding: 1em;
 }
 

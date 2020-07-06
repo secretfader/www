@@ -13,17 +13,22 @@ function toggleThemeMode(e) {
 }
 
 function detectUserColorMode() {
-  if (localStorage.getItem('color-scheme') === 'dark' ||
-    (window.matchMedia('(prefers-color-scheme: dark)').matches &&
-      !localStorage.getItem('color-scheme')))
-  {
-    document.documentElement.setAttribute('color-scheme', 'dark');
+  let preset = localStorage.getItem('color-scheme');
+
+  if (preset) {
+    setColorMode(preset);
+    return;
+  }
+
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    setColorMode('dark');
+  } else {
+    setColorMode('light');
   }
 }
 
 detectUserColorMode();
 
-const buttons = document.querySelectorAll('.theme-toggle');
-buttons.forEach(button => {
+document.querySelectorAll('button.theme-toggle').forEach(button => {
   button.addEventListener('click', toggleThemeMode);
 });
