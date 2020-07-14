@@ -1,16 +1,9 @@
 +++
 date = "2019-04-18T00:00:00Z"
 description = "Evaluating Tide, Rust's latest community-driven web framework."
-draft = false
-layout = "bundle"
-outputs = ["reveal"]
+draft = true
+outputs = []
 title = "Rising with the Tide"
-
-[reveal_hugo]
-  custom_theme = "reveal-theme.scss"
-  custom_theme_compile = true
-  transition = "none"
-
 +++
 
 # Rising with the Tide
