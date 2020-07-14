@@ -1,6 +1,4 @@
 +++
-menu = "main"
-outputs = ["HTML"]
+outputs = []
 title = "Slides"
-
 +++
