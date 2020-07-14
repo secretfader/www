@@ -411,4 +411,5 @@ body.single main article.post ol {
 body.single main article.post ol li {
   font-weight: bold;
   font-size: 1.4rem;
+  margin-bottom: 10px;
 }
