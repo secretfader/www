@@ -10,6 +10,9 @@ feed-subcategory = "Design"
 layout = "show"
 title = "Dispatch"
 
+[media]
+host = "https://ia801409.us.archive.org/26/items/machinefm"
+
 [[feeds]]
   title = "RSS"
   url = "/programs/dispatch.xml"

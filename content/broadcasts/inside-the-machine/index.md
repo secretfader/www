@@ -7,6 +7,9 @@ explicit = false
 layout = "show"
 title = "Inside the Machine"
 
+[media]
+host = "https://ia801409.us.archive.org/26/items/machinefm"
+
 [[feeds]]
   title = "RSS"
   url = "/programs/inside-the-machine.xml"

@@ -9,6 +9,9 @@ explicit = false
 layout = "show"
 title = "Chick Habit"
 
+[media]
+host = "https://ia801409.us.archive.org/26/items/machinefm"
+
 [[feeds]]
   title = "RSS"
   url = "/programs/chick-habit.xml"

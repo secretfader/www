@@ -11,10 +11,14 @@ timeout = 30000
 
 [params]
 author = "Nicholas Young"
-description = "Hacker, educator, and artist Nicholas \"Fader\" Young."
+description = "Hacker, educator, and artist Nicholas Young."
+
 [params.twitter]
 handle = "@secretfader"
 url = "https://twitter.com/secretfader"
+
+[params.media]
+host = "https://ia801409.us.archive.org/26/items/machinefm"
 
 [imaging]
 quality = 75
