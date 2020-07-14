@@ -1,6 +1,9 @@
 </main>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
-{{ $js := resources.Get "theme.js" | minify | fingerprint }}
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+{{ $js := resources.Get "theme.js" }}
+{{ if eq (getenv "HUGO_ENV") "production" | or  (eq .Site.Params.env "production") }}
+  {{ $js = $js | minify | fingerprint }}
+{{ end }}
 <script src="{{ $js.Permalink }}"></script>
 </body>
 </html>
