@@ -401,3 +401,14 @@ body.single main article.post .post-summary {
   font-weight: 400;
   margin-bottom: 15px;
 }
+
+body.single main article.post ol {
+  width: 95%;
+  margin: 0 auto;
+  list-style-type: decimal;
+}
+
+body.single main article.post ol li {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
