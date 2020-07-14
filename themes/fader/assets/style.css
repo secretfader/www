@@ -402,6 +402,14 @@ body.single main article.post .post-summary {
   margin-bottom: 15px;
 }
 
+body.single main article.post ul {
+  list-style-type: inherit;
+}
+
+body.single main article.post ul li {
+  margin-bottom: 20px;
+}
+
 body.single main article.post ol {
   width: 95%;
   margin: 0 auto;
