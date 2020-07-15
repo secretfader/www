@@ -180,8 +180,17 @@ body.home main .introduction h2 {
   margin-bottom: .7em;
 }
 
+body.home .block {
+  margin-bottom: 4em;
+}
+
 body.home .block h3 {
   font-size: 1.5em;
+}
+
+body.home .block p.subtext {
+  margin-bottom: 0;
+  max-width: 80%;
 }
 
 body.home ul.shortlist {

@@ -1,0 +1,12 @@
+heading = "Projects"
+description = "Recently published open-source tools, libraries, or product updates."
+
+[[featured]]
+name = "Matter"
+description = "Universal frontmatter parser, supporting YAML, TOML, and JSON formats. Written in Rust and designed for embedding."
+href = "https://github.com/nicholaswyoung/matter"
+
+[[featured]]
+name = "Webmention"
+description = "Utilities for sending and receiving Webmentions, a standard from the IndieWeb ecosystem, in Rust."
+href = "https://github.com/nicholaswyoung/matter"
