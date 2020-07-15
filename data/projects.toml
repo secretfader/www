@@ -9,4 +9,4 @@ href = "https://github.com/nicholaswyoung/matter"
 [[featured]]
 name = "Webmention"
 description = "Utilities for sending and receiving Webmentions, a standard from the IndieWeb ecosystem, in Rust."
-href = "https://github.com/nicholaswyoung/matter"
+href = "https://github.com/nicholaswyoung/webmention-rs"
