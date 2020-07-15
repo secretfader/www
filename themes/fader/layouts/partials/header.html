@@ -1,5 +1,7 @@
-{{ $headshot := resources.Get "headshot-sq.jpg" }}
-{{ $headshot := $headshot.Resize "x100" }}
+{{ $headshot := (resources.Get "headshot-sq.jpg").Resize "x100" }}
+{{ if eq (getenv "HUGO_ENV") "production" | or  (eq .Site.Params.env "production") }}
+  {{ $headshot = $headshot | minify | fingerprint }}
+{{ end }}
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 <head>
