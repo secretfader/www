@@ -3,7 +3,11 @@
   {{ .Content }}
 </div>
 <div class="block">
-  <h3>Journal</h3>
+  {{ $blog := .GetPage "blog/_index.md" }}
+  <h3>{{ $blog.Title }}</h3>
+  <p class="subtext">
+    {{ $blog.Content }}
+  </p>
   {{ with .GetPage "blog" }}
   <ul class="shortlist">
     {{ range first 3 .Pages }}
@@ -35,5 +39,19 @@
     {{ end }}
   </ul>
   {{ end }}
+</div>
+<div class="block">
+  <h3>{{ .Site.Data.projects.heading }}</h3>
+  <p class="subtext">{{ .Site.Data.projects.description }}</p>
+  <ul class="shortlist">
+    {{ range .Site.Data.projects.featured }}
+    <li>
+      <a href="{{ .href }}">
+        <h4>{{ .name }}</h4>
+      </a>
+      <p>{{ .description }}</p>
+    </li>
+    {{ end }}
+  </ul>
 </div>
 {{ partial "footer.html" . }}
