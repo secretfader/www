@@ -1,4 +1,10 @@
 </main>
+<footer>
+  <div class="block credits">
+    <h4>Credits</h4>
+    <p>Designed by Nicholas Young with Firefox, Vim, and Hugo. Images, unless otherwise specified, are courtesy of Unsplash. Web hosting and optimization provided by Netlify; media hosting provided by the Internet Archive.</p>
+  </div>
+</footer>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
 {{ $js := resources.Get "theme.js" }}
 {{ if eq (getenv "HUGO_ENV") "production" | or  (eq .Site.Params.env "production") }}
