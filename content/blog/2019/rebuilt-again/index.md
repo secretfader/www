@@ -16,7 +16,7 @@ I responded that even though my left (and remaining biological) foot hurt very b
 
 What wasn't an option was losing the opportunity to explore alongside my little mountaineer.
 
-{{<imgresize src="carousel.jpg" alt="Sloan and Nicholas smile on the Carousel of Happiness in Nederland, Colorado." >}}
+{{<img src="carousel.jpg" alt="Sloan and Nicholas smile on the Carousel of Happiness in Nederland, Colorado." >}}
 
 On November 27th, I will no longer have biological footprints; as I'll be joining joining the ranks of bilateral amputees who wear prosthetics as a primary mode of transport. Additionally, during the lead-up to my second amputation, I'm testing a new prosthetic suspension system that I hope to share more about soon.
 

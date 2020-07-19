@@ -20,7 +20,7 @@ In September, Rust engineers from around the world [converged on Colorado for tw
 
 By then, we knew it was happening: [Colorado Gold Rust][goldrustweb] was officially launched!
 
-{{<imgresize src="cogoldrust.jpg" alt="A large roomful of Rust nerds in Denver, Colorado." >}}
+{{<img src="cogoldrust.jpg" alt="A large roomful of Rust nerds in Denver, Colorado." >}}
 
 I'll write more about how the event came together later on (knowledge gleaned from posts by other organizers were extremely helpful and we hope to give back through sharing ours), but in the meantime, I hope you enjoy the [videos of our speakers' presentations on YouTube][goldrust].
 
@@ -30,7 +30,7 @@ As longtime readers will note, [road cycling has long been a passion of mine](/b
 
 This past year, I staged a triumphant return to my chosen sport by acquiring a Catrike Trail recumbent tricycle in late July. Between then and mid-September (when I began to be limited by pain in my left leg), I managed to rack up over 200 miles: an impressive start for my new adaptive sports efforts.
 
-{{<imgresize src="southplatte.jpg" alt="Catrike Trail and hitched trailer (occupied by a smiling kid) parked on the South Platte River bank." >}}
+{{<img src="southplatte.jpg" alt="Catrike Trail and hitched trailer (occupied by a smiling kid) parked on the South Platte River bank." >}}
 
 Once again, I'm here in part because of my team: [The Limb Preservation Foundation][tlpf] provided a grant to partially cover the purchase of my trike (from their [fund in honor of Molly Bloom][bloomagain]), and I'd like to extend thanks to Katie, Inger, and Donna at Presbyterian St. Luke's Physical Therapy for continuing to push me further, and providing support when needed.
 

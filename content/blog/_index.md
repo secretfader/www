@@ -1,8 +1,7 @@
 +++
-menu = "main"
+menu = ["main", "footer"]
 outputs = ["HTML", "RSS", "JSONFeed"]
 title = "Blog"
-
 +++
 
 Fresh thoughts on engineering, accessibility, mobility technologies, and creative

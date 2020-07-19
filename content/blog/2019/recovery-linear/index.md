@@ -20,7 +20,7 @@ If you're new to this journal, welcome. In October of last year, I [checked in f
 
 From December of last year until mid-February, I mostly focused on learning how to walk with my prosthesis; a process I found to be unexpectedly intuitive. Having dealt with loose joints and stretchy skin most of my life, I'm excited to have a solid foundation! In fact, I posted the following photo in May and invited friends to "guess which is my good foot?" after upgrading to a new energy-saving carbon fiber foot, the [Ossur Pro-Flex XC][proflex].
 
-{{< imgresize src="proflex.jpg" alt="Right foot bionic, left foot biological." >}}
+{{< img src="proflex.jpg" alt="Right foot bionic, left foot biological." >}}
 
 It should be said that the Pro-Flex wasn't my initial foot. When I first received my prosthesis, the team had already installed an [Ossur Talux][talux], which would automatically level so long as I contacted the ground at a reasonable angle. I used this foot for several months before moving beyond the features it provided due to my naturally aggressive walking pattern. Compared to a Talux, the Pro-Flex foot is very rigid, which allows it to store energy while under load, before releasing it at toe-off: a welcome feature, since transtibial amputees expend roughly 20-40% more energy to ambulate when compared to people with two biological limbs.
 
@@ -28,10 +28,10 @@ It should be said that the Pro-Flex wasn't my initial foot. When I first receive
 
 Only a couple weeks after the above photo was taken, I felt confident enough to tackle a short hike with my family at [Lair o' the Bear Park](https://www.jeffco.us/1254/Lair-o-the-Bear-Park). During May and early June, we tackled several miles of mountainous trail throughout the park, and I took every possible opportunity to climb!
 
-<div class="two-up">
-{{<imgresize src="family-smiles.jpg" alt="Mother, father, and 3-year-old smile for a selfie against a rocky alpine backdrop." >}}
-{{<imgresize src="nicholas-log.jpg" alt="Right below-knee amputee proudly standing atop a fallen log, with prosthesis showing." >}}
-</div>
+{{< figure class="grid two" figcaption="Exploring in the mountains." >}}
+{{<img src="family-smiles.jpg" alt="Mother, father, and 3-year-old smile for a selfie against a rocky alpine backdrop." >}}
+{{<img src="nicholas-log.jpg" alt="Right below-knee amputee proudly standing atop a fallen log, with prosthesis showing." >}}
+{{< /figure >}}
 
 Unfortunately, I often found increased pain and instability in my biological leg after these outings. Even so, being outside  was incredibly beneficial to my mental health. Returning to an inactive life spent largely simply indoors wasn't an option. I needed to find an outdoor sport vigorous enough to sustain my focus, while lessening impact on my lower extremities. Cautiously, I began exploring the world of adaptive cycling.
 
@@ -47,10 +47,10 @@ However, one major hurdle remained: cost. Recumbent tricycles aren't exactly a m
 
 Fortunately, my physical therapy team came through again and put me in touch with the patient advocate who works alongside my surgeon. Together, we researched nonprofits that work with amputees, and ultimately decided to apply for a grant from the [Limb Preservation Foundation][lpf]'s [Bloom Again Fund][bloom-again]. It wasn't long before I was informed that my request was approved! With a huge smile, I set off to order my new ride.
 
-<div class="two-up">
-{{<imgresize src="trike-store.jpg" alt="A custom recubent tricycle on display, sitting amonst other models, ready to obe ridden." >}}
-{{<imgresize src="trike-store-close.jpg" alt="Close up of the front right wheel, steering, and disc brake assembly." >}}
-</div>
+{{< figure class="grid two">}}
+{{<img src="trike-store.jpg" alt="A custom recubent tricycle on display, sitting amonst other models, ready to obe ridden." >}}
+{{<img src="trike-store-close.jpg" alt="Close up of the front right wheel, steering, and disc brake assembly." >}}
+{{< /figure >}}
 
 Named "Heatwave" and introduced to the world with a four mile out-and-back on the South Platte River trail, this 2019 Lava Red [Catrike](https://www.catrike.com) Trail has already taken me over 120 miles. I'm extremely grateful to the Limb Preservation Society for helping me return to a sport I love, even if it also took something from me. I hope, someday, to pay this gift forward.
 

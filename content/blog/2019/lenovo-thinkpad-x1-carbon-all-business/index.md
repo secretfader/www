@@ -57,7 +57,7 @@ offerings. A few conversations at my local hackerspace told me one device was
 more prevalent among members than any other: the [Lenovo ThinkPad X1
 Carbon][thinkpad].
 
-{{< imgresize src="thinkpad-on-desk.jpg" alt="ThinkPad on the desk." >}}
+{{< img src="thinkpad-on-desk.jpg" alt="ThinkPad on the desk." >}}
 
 Had I remained in the Apple ecosystem, I would've entrusted Cupertino with
 making sensible choices for me, while I selected the highest performing MacBook
@@ -83,7 +83,7 @@ enough to satisfy this [keyboard nerd][painless-keyboarding]. In fact, writing
 medium length posts (like this one) on my X1 Carbon is the most satisfying
 laptop typing experience I've had in most of a decade.
 
-{{< imgresize src="thinkpad-keyboard.jpg" alt="Close-up of the keyboard." >}}
+{{< img src="thinkpad-keyboard.jpg" alt="Close-up of the keyboard." >}}
 
 ## Work and Play
 
