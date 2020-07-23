@@ -1,0 +1,181 @@
+/* Minimal CSS reset from alligator.io */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+ * Theme Variables
+ */
+
+:root {
+  --background: #FFFFFF;
+  --surface: #FAFAFA;
+  --divider: #999999;
+  --base-font-size: 20px;
+}
+
+/* If light color scheme is enabled, hide enabling controls. */
+:root.color-scheme-light, :root[color-scheme="light"] .hide-light {
+  display: none;
+}
+
+/* When light color scheme is enabled, display controls to switch. */
+:root.color-scheme-light, :root[color-scheme="light"] .hide-dark {
+  display: inherit;
+}
+
+/* Re-define variables if user has manually indicated a preference */
+@media (prefers-color-scheme: dark) {
+  .hide-dark {
+    display: none;
+  }
+}
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/**
+ * Backgrounds, font sizes, and text colors
+ */
+
+:root {
+  background-color: var(--background);
+  color: var(--text);
+  font-size: var(--base-font-size);
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.page {
+  background-color: var(--surface);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+a {
+  color: inherit;
+}
+
+header.main {
+  position: relative;
+}
+
+header.main a.title h1, header.main a.title h2 {
+  display: none;
+}
+
+header.main nav.menu ul {
+  display: flex;
+}
+
+header.main nav.menu ul li {
+  margin-right: .5em;
+  position: relative;
+}
+
+header.main nav.menu ul li:last-child {
+  margin-right: 0;
+}
+
+/**
+ * Grid Layout
+ */
+
+body > header a.title h1, body > header a.title h2 {
+  display: none;
+}
+
+footer.the-end {
+  border-top: 1px solid var(--divider);
+  font-size: .8rem;
+  padding: 2em 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer.the-end h4 {
+  margin-bottom: .5em;
+}
+
+footer.the-end .credits {
+  max-width: 40%;
+}

@@ -1,0 +1,5 @@
+{{ $about := .Site.GetPage "about.md" }}
+<div class="about">
+  <h3>A brief introduction</h3>
+  <p>{{ $about.Summary | plainify | htmlUnescape }}</p>
+</div>

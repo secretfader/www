@@ -1,7 +1,4 @@
-{{ partial "header.html" . }}
-<div class="introduction">
-  {{ .Content }}
-</div>
+{{ partial "header.html" . -}}
 <div class="block">
   {{ $blog := .GetPage "blog/_index.md" }}
   <h3>{{ $blog.Title }}</h3>
@@ -14,16 +11,6 @@
     <li>
       {{ $img := (.Resources.ByType "image").GetMatch "*feature*" }}
       <a href="{{ .RelPermalink }}">
-        {{ with $img }}
-          {{ $lg := $img.Fill "600x450 Center" }}
-          <img
-            alt="{{ $img.Title }}"
-            src="{{ $lg.RelPermalink }}"
-            srcset="{{ $lg.RelPermalink }} 600w"
-            sizes="(min-width: 1570px) 300vw, (max-width: 1569px) and (min-width: 960px) 50vw, 93vw"
-            width="{{ $lg.Width }}"
-          >
-        {{ end }}
         <h4>{{ .Title }}</h4>
       </a>
       <div class="post-meta small">

@@ -24,7 +24,7 @@
         {{ partial "categories-list.html" . }}
       </div>
       {{ end }}
-      {{ partial "featured-image" . }}
+      {{ $featured := (.Resources.ByType "image").GetMatch "*feature*" }}
     </div>
   </header>
   <div class="post-content">{{ .Content }}</div>

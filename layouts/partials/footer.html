@@ -1,0 +1,29 @@
+  </main>
+</div>
+<footer class="the-end">
+  <div class="block menu">
+    <h4>Navigation</h4>
+    <ul>
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.footer }}
+      <li class="{{ if $currentPage.IsMenuCurrent `main` . }}active{{else}}menu-item{{ end }}">
+          <a href="{{ .URL }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+  <div class="block credits">
+    {{ $credits := .GetPage "credits.md" }}
+    <h4>{{ $credits.Title }}</h4>
+    {{ $credits.Content }}
+    <p>{{ .Site.Copyright }}</p>
+  </div>
+</footer>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+{{ $js := resources.Get "theme.js" }}
+{{ if eq (getenv "HUGO_ENV") "production" | or  (eq .Site.Params.env "production") }}
+  {{ $js = $js | minify | fingerprint }}
+{{ end }}
+<script src="{{ $js.Permalink }}"></script>
+</body>
+</html>

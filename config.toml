@@ -3,11 +3,11 @@ disableHugoGeneratorInject = true
 disableKinds = ["taxonomyTerm"]
 languageCode = "en-us"
 title = "Nicholas Young"
-theme = ["fader"]
-copyright = "2018 Nicholas Young. All rights reserved."
+copyright = "Copyright 2020 Nicholas Young. All rights reserved."
 ignoreFiles = ["README.md"]
 summaryLength = 28
 timeout = 30000
+lastmod = [":fileModTime", ":default"]
 
 [params]
 author = "Nicholas Young"
@@ -54,7 +54,7 @@ author = "authors"
 
 [menu]
 [[menu.main]]
-identifier = "github"
+identifier = "me"
 name = "GitHub"
 url = "https://github.com/secretfader"
 weight = 200

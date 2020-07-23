@@ -1,5 +1,8 @@
 +++
 title = "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+date = "{{ .Date }}"
 draft = true
+categories = []
+authors = ["Nicholas Young"]
+illustrationDescription = ""
 +++

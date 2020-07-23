@@ -3,17 +3,8 @@ function setColorMode(mode) {
   localStorage.setItem('color-scheme', mode);
 }
 
-function toggleThemeMode(e) {
-  if (e.currentTarget.className.indexOf('light') !== -1) {
-    setColorMode('light');
-    return;
-  }
-
-  setColorMode('dark');
-}
-
 function detectUserColorMode() {
-  let preset = localStorage.getItem('color-scheme');
+  const preset = localStorage.getItem('color-scheme');
 
   if (preset) {
     setColorMode(preset);
@@ -28,7 +19,3 @@ function detectUserColorMode() {
 }
 
 detectUserColorMode();
-
-document.querySelectorAll('button.theme-toggle').forEach(button => {
-  button.addEventListener('click', toggleThemeMode);
-});
