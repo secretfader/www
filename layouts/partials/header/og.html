@@ -1,0 +1,6 @@
+{{ $featured := (.Page.Resources.ByType "image").GetMatch "*featured*" -}}
+{{ if $featured }}
+{{- $resized := $featured.Resize "x500" }}
+<meta name="og:image" content="{{ $resized.Permalink }}">
+{{- end -}}
+<meta name="twitter:card" content="summary">

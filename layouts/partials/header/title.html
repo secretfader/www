@@ -1,0 +1,11 @@
+<title>
+  {{- if not .IsHome -}}
+    {{- if eq .Kind "page" -}}
+      {{ .Title }} -
+    {{- else if eq .Data.Singular "category" -}}
+      {{ .Data.Term }}
+    {{- else if eq .Page.Kind "section" -}}
+      {{ .Title }} -
+    {{- end -}}
+  {{ end }} {{ .Site.Title -}}
+</title>
