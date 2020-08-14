@@ -1,32 +1,6 @@
-/* Minimal CSS reset from alligator.io */
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 /**
  * Theme Variables
  */
-
 :root {
   --background: #FFFFFF;
   --surface: #FAFAFA;
@@ -113,17 +87,24 @@ input:checked + .slider:before {
   background-color: var(--background);
   color: var(--text);
   font-size: var(--base-font-size);
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .page {
   background-color: var(--surface);
+  margin: 0 auto 0 auto;
+  max-width: 1400px;
+}
+
+body.list .page {
+  padding: 0 2rem 0 2rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 700;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
@@ -178,4 +159,17 @@ footer.the-end h4 {
 
 footer.the-end .credits {
   max-width: 40%;
+}
+
+div.intro {
+  font-size: 2rem;
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+img.profile {
+  max-width: 300px;
+  border-radius: 50%;
 }
