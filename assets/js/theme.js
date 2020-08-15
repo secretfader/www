@@ -12,6 +12,10 @@ function toggleThemeMode(e) {
 }
 
 export function setupThemeSelector() {
+  if (!toggle) {
+    return;
+  }
+
   toggle.addEventListener('change', (e) => {
     toggleThemeMode(e);
   }, false);
