@@ -31,17 +31,12 @@ taxonomy = ["html", "rss", "jsonfeed"]
 taxonomyTerm = ["html", "rss", "jsonfeed"]
 
 [outputFormats]
-[outputFormats.rss]
-baseName = "feed"
+  [outputFormats.rss]
+  baseName = "feed"
 
-[outputFormats.jsonfeed]
-baseName = "feed"
-mediaType = "application/json"
-
-[outputFormats.reveal]
-baseName = "index"
-mediaType = "text/html"
-isHTML = true
+  [outputFormats.jsonfeed]
+  baseName = "feed"
+  mediaType = "application/json"
 
 [permalinks]
 writing = "/writing/:year/:month/:slug/"
@@ -53,14 +48,14 @@ topic = "topics"
 author = "authors"
 
 [menu]
-[[menu.main]]
-identifier = "me"
-name = "GitHub"
-url = "https://github.com/secretfader"
-weight = 200
+  [[menu.main]]
+  identifier = "me"
+  name = "GitHub"
+  url = "https://github.com/secretfader"
+  weight = 200
 
-[[menu.main]]
-identifier = "resume"
-name = "Resume"
-url = "https://resume.secretfader.com"
-weight = 300 
+  [[menu.main]]
+  identifier = "resume"
+  name = "Resume"
+  url = "https://resume.secretfader.com"
+  weight = 300 

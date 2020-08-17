@@ -1,4 +1,7 @@
 {{ partial "header.html" . -}}
+<div class="intro">
+  {{ .Content }}
+</div>
 <div class="block">
   {{ $blog := .GetPage "blog/_index.md" }}
   <h3>{{ $blog.Title }}</h3>

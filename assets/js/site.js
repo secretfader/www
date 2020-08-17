@@ -4,11 +4,15 @@ import Turbolinks from 'turbolinks';
 import { Application } from 'stimulus';
 
 import { Contact } from './controllers/contact';
-import { setupThemeSelector } from './theme.js';
+import { Slideshow } from './controllers/slideshow';
+import { Audio } from './controllers/audio-player';
+import { setupThemeSelector } from './theme';
 
 Turbolinks.start();
 
 const app = Application.start();
 app.register('contact', Contact);
+app.register('slideshow', Slideshow);
+app.register('player:audio', Audio);
 
 setupThemeSelector();
