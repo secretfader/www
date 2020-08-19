@@ -13,6 +13,6 @@ Turbolinks.start();
 const app = Application.start();
 app.register('contact', Contact);
 app.register('slideshow', Slideshow);
-app.register('player:audio', Audio);
+app.register('audio-player', Audio);
 
 setupThemeSelector();
