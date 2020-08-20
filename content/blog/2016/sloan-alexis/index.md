@@ -1,12 +1,8 @@
 +++
 authors = ["Nicholas Young"]
-topics = ["fatherhood", "dadthings", "parenting", "life"]
 date = "2016-01-28T00:00:00Z"
-layout = "post"
-path = "/sloan-alexis"
 title = "Introducing Sloan Alexis Young"
-topics = ["sloan-alexis"]
-
+topics = ["Fatherhood", "Parenting", "Life", "Sloan Alexis"]
 +++
 
 If you read my earlier piece on the [emotions associated with becoming a Dad,](/2016/01/dad-jokes/) then you'll also understand why I'm proud to say this. While the context will help, as it always does, this announcement is still very exciting.

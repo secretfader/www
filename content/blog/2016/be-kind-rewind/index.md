@@ -1,12 +1,8 @@
 +++
 authors = ["Nicholas Young"]
-topics = ["project-diary", "radio", "new-beginnings", "Year in Review"]
 date = "2016-01-16T00:00:00Z"
-layout = "post"
-path = "/be-kind-rewind"
 title = "Be Kind, Rewind"
-topics = ["the-machine"]
-
+topics = ["Project Diary", "Radio", "New Beginnings", "Year in Review"]
 +++
 
 Weekend mornings were made for reflection. I have a strong cup freshly ground coffee in my hand, and a head full of ideas. Shall we begin?
@@ -19,7 +15,7 @@ This post is the update my friends and contacts were likely expecting.
 
 Last year was an infinitely complex rollercoaster of emotion, and the latter months were it's climax. In early November, as I was preparing for [my talk](/speaking) at [Nodevember](http://nodevember.org), a couple of crucial pieces of studio gear began to fail. In fact, my main console failed while we were on the air.
 
-If you're a new friend, you may not realize that the past two years of my life were spent running The Machine, an online broadcasting network. We were a tightly knit group of volunteer radio storytellers, brought together by the common goal of creating fiercely educational, intelligent programming. The Machine was home to Dispatch, Inside the Machine, The Chillcast, Chick Habit &mdash; many others came and went, but these programs were mainstays in the lives of listeners around the globe.
+If you're a friend, you may not realize that the past two years of my life were spent running The Machine, an online broadcasting network. We were a tightly knit group of volunteer radio storytellers, brought together by the common goal of creating fiercely educational, intelligent programming. The Machine was home to Dispatch, Inside the Machine, The Chillcast, Chick Habit &mdash; many others came and went, but these programs were mainstays in the lives of listeners around the globe.
 
 We worked with local and nationally-recognized acts, shared the stories of local businesses, and provided insightful cultural critique when it was required. Bands like [The Cellphones](http://cellphonesband.com) (pictured below) rocked our live performance series &mdash; I wanted this to continue forever.
 
