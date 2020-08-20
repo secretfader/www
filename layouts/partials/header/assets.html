@@ -1,0 +1,13 @@
+{{- $style := resources.Get "css/site.scss" | resources.ToCSS -}} 
+{{ if eq (getenv "HUGO_ENV") "production" }}
+  {{ $style = $style | minify | fingerprint }}
+{{ end }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+{{- $detect := resources.Get "js/detect.js" -}}
+{{- $js := resources.Get "js/site.js" | js.Build -}}
+{{- if eq (getenv "HUGO_ENV") "production" -}}
+{{ $detect = $detect | minify | fingerprint }}
+  {{ $js = $js | minify | fingerprint }}
+{{ end }}
+<script src="{{ $detect.Permalink }}"></script>
+<script src="{{ $js.Permalink }}" defer></script>
