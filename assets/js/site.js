@@ -4,7 +4,7 @@ import Turbolinks from 'turbolinks';
 import { Application } from 'stimulus';
 
 import { Contact } from './controllers/contact';
-import { setupThemeSelector } from './theme.js';
+import { setupThemeSelector } from './theme';
 
 Turbolinks.start();
 
