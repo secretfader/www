@@ -45,7 +45,7 @@ isHTML = true
 
 [permalinks]
 blog = "/blog/:year/:month/:slug/"
-categories = "/blog/category/:slug/"
+topics = "/blog/topics/:slug/"
 authors = "/blog/author/:slug/"
 
 [taxonomies]
