@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["Journal", "Event Planning", "Media Production", "Cycling", "Amputation", "Prosthetics", "Year in Review"]
+topics = ["Journal", "Event Planning", "Media Production", "Cycling", "Amputation", "Prosthetics", "Year in Review"]
 date = "2019-12-31T00:00:00Z"
 draft = false
 illustrationDescription = "A small foot-and-cycling bridge along the Bear Creek Trail passes over Bear Creek (and a Beaver dam) in Lakewood, Colorado."

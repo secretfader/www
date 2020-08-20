@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["Journal", "Ehlers-Danlos Syndrome", "Amputation", "Prosthetics"]
+topics = ["Journal", "Ehlers-Danlos Syndrome", "Amputation", "Prosthetics"]
 date = "2019-11-13T00:00:00Z"
 draft = false
 illustrationDescription = "Trees, mountains, and sky; as seen from the Peak to Peak Highway near Black Hawk, Colorado. (Photo by Susan Young)"

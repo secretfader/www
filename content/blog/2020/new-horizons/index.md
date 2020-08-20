@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["Journal", "Rust", "Community"]
+topics = ["Journal", "Rust", "Community"]
 date = "2020-02-07T00:00:00Z"
 draft = false
 illustrationDescription = "Two people stand and write on white paper at a wooden desk. Photo courtesy of Nik MacMillan on Unsplash."

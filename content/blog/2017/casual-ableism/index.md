@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["Ehlers-Danlos Syndrome", "Chronic Illness", "Disability", "EDS Awareness Month", "Dysautonomia", "Postural Orthostatic Tachycardia Syndrome", "Accessibility"]
+topics = ["Ehlers-Danlos Syndrome", "Chronic Illness", "Disability", "EDS Awareness Month", "Dysautonomia", "Postural Orthostatic Tachycardia Syndrome", "Accessibility"]
 date = "2017-06-09T00:00:00Z"
 draft = false
 layout = "post"

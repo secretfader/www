@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["Accessibility", "Disability", "Critical Thinking", "Healthcare", "Allyship"]
+topics = ["Accessibility", "Disability", "Critical Thinking", "Healthcare", "Allyship"]
 date = "2017-09-13T00:00:00Z"
 draft = false
 image = "share.jpg"

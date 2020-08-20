@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["engineering", "apple", "hardware"]
+topics = ["engineering", "apple", "hardware"]
 date = "2016-01-17T00:00:00Z"
 layout = "post"
 slug = "apples-power-play"

@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["Journal", "Recovery", "Cycling", "Adaptive Sports", "Catrike", "Ehlers-Danlos Syndrome"]
+topics = ["Journal", "Recovery", "Cycling", "Adaptive Sports", "Catrike", "Ehlers-Danlos Syndrome"]
 date = "2019-08-31T00:00:00Z"
 draft = false
 illustrationDescription = "A tranquil scene along the banks of Denver's South Platte River."

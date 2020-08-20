@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["engineering", "software", "javascript"]
+topics = ["engineering", "software", "javascript"]
 date = "2014-04-24T00:00:00Z"
 layout = "post"
 path = "/embracing-javascript"

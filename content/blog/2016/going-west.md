@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["moving", "colorado"]
+topics = ["moving", "colorado"]
 date = "2016-04-13T00:00:00Z"
 layout = "post"
 path = "/going-west"

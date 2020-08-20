@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["politics", "history", "uncertainty"]
+topics = ["politics", "history", "uncertainty"]
 date = "2016-11-08T00:00:00Z"
 layout = "post"
 path = "/history-in-the-making"

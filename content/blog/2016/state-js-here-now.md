@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["software", "engineering", "javascript", "retrospective"]
+topics = ["software", "engineering", "javascript", "retrospective"]
 date = "2016-01-27T00:00:00Z"
 layout = "post"
 path = "/state-js-2016-javascript-here-and-now"

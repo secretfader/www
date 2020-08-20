@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["project-diary", "radio", "new-beginnings", "Year in Review"]
+topics = ["project-diary", "radio", "new-beginnings", "Year in Review"]
 date = "2016-01-16T00:00:00Z"
 layout = "post"
 path = "/be-kind-rewind"

@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["design-refresh", "content-management", "personal-branding"]
+topics = ["design-refresh", "content-management", "personal-branding"]
 date = "2013-04-11T00:00:00Z"
 layout = "post"
 path = "/remixed-again"

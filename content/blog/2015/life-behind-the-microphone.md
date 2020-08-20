@@ -1,12 +1,8 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["project-diary", "radio", "Year in Review"]
 date = "2015-09-25T00:00:00Z"
-layout = "post"
-path = "/life-behind-the-microphone"
 title = "Life Behind the Microphone"
-topics = ["the-machine"]
-
+topics = ["Project Diary", "Radio", "Year In Review", "The Machine"]
 +++
 
 Growing up, adults would consistently regale me with stories from their past. A recurring theme was how time passed faster, increasing in speed with each year. Looking back as I near thirty, and several years into the largest venture I've undertaken thus far, I understand.

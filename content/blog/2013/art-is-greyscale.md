@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["Creative Values", "Constructive Criticism", "Encouragement"]
+topics = ["Creative Values", "Constructive Criticism", "Encouragement"]
 date = "2013-04-17T00:00:00Z"
 layout = "post"
 title = "Art is Greyscale"

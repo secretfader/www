@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["spec-work", "professional-ethics", "creative-values"]
+topics = ["spec-work", "professional-ethics", "creative-values"]
 date = "2012-08-19T00:00:00Z"
 slug = "spec-work-is-bad-for-everyone"
 title = "Speculative Work is Bad (For Everyone)"

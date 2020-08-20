@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["email-marketing", "marketing", "compliance"]
+topics = ["email-marketing", "marketing", "compliance"]
 date = "2012-12-19T00:00:00Z"
 title = "Hit Send: Smart Email Marketing"
 

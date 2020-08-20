@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["Rust", "Hacking"]
+topics = ["Rust", "Hacking"]
 date = "2019-01-08T13:46:23Z"
 draft = false
 layout = "post"

@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["Amputation", "Prosthetics"]
+topics = ["Amputation", "Prosthetics"]
 date = "2020-03-31T00:00:00Z"
 draft = false
 layout = "post"

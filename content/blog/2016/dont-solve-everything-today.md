@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["business", "goals", "prioritization"]
+topics = ["business", "goals", "prioritization"]
 date = "2016-03-18T00:00:00Z"
 layout = "post"
 path = "/dont-solve-everything-today"

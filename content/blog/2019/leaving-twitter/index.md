@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["Journal", "Social Media"]
+topics = ["Journal", "Social Media"]
 date = "2019-05-22T00:00:00Z"
 draft = false
 illustrationDescription = "An open tab in Chrome invites you to login at Twitter, maybe for the last time. (Image courtesy of Unsplash)"

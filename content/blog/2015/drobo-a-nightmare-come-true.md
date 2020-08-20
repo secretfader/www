@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["customer-service", "gripes"]
+topics = ["customer-service", "gripes"]
 date = "2015-02-27T00:00:00Z"
 layout = "post"
 path = "/drobo-a-nightmare-come-true"

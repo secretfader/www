@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["starting-over", "personal-branding", "personal-goals"]
+topics = ["starting-over", "personal-branding", "personal-goals"]
 date = "2012-11-19T00:00:00Z"
 title = "Hard Reboot"
 

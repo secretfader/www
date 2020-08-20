@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["Tech", "Review", "Hardware", "Linux", "Ubuntu Linux", "Fedora Linux"]
+topics = ["Tech", "Review", "Hardware", "Linux", "Ubuntu Linux", "Fedora Linux"]
 date = "2019-02-25T00:00:00Z"
 draft = false
 layout = "post"

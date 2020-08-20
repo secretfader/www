@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["parenting", "life", "dadthings", "accessibility"]
+topics = ["parenting", "life", "dadthings", "accessibility"]
 date = "2016-07-30T00:00:00Z"
 layout = "post"
 path = "/dads-change-diapers-too"

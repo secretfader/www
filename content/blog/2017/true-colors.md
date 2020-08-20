@@ -1,5 +1,5 @@
 +++
-categories = ["Healthcare", "Disability", "Allyship", "Politics", "Advocacy"]
+topics = ["Healthcare", "Disability", "Allyship", "Politics", "Advocacy"]
 date = "2017-11-22T00:00:00Z"
 draft = false
 title = "True Colors"

@@ -1,12 +1,8 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["fatherhood", "dadthings", "life"]
 date = "2016-01-27T00:00:00Z"
-layout = "post"
-path = "/dad-jokes"
 title = "Dad Jokes"
-topics = ["sloan-alexis"]
-
+topics = ["Fatherhood", "Life"]
 +++
 
 **5:05 A.M.**

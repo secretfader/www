@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["Chronic Illness", "Career", "Disability", "Ehlers-Danlos Syndrome", "Hearing Loss"]
+topics = ["Chronic Illness", "Career", "Disability", "Ehlers-Danlos Syndrome", "Hearing Loss"]
 date = "2017-10-28T00:00:00Z"
 draft = false
 title = "Professional Jeopardy"

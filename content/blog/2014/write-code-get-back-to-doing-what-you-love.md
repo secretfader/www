@@ -1,12 +1,8 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["engineering", "software", "javascript", "talks"]
 date = "2014-06-26T00:00:00Z"
-layout = "post"
-path = "/write-code-and-get-back-to-doing-what-you-love"
 title = "Write Code and Get Back to Doing What You Love"
-topics = ["the-machine"]
-
+topics = ["Engineering", "Software", "JavaScript", "Talks", "The Machine"]
 +++
 
 A few weeks ago, I gave a talk at the [Chicago Node.js](http://www.meetup.com/Chicago-Nodejs) meetup about our technology stack for [The Machine](http://nicholaswyoung.com/work/machinefm). I've only been working with Node.js for a couple of months, but in that time, I've learned many difficult lessons. The biggest one, by far, is how *not to build a monolith*.

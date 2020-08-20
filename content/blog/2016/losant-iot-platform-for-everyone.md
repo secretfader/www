@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["software", "engineering", "review", "internet-of-things"]
+topics = ["software", "engineering", "review", "internet-of-things"]
 date = "2016-09-01T00:00:00Z"
 layout = "post"
 slug = "losant-iot-platform-for-everyone"

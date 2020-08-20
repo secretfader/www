@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["burnout", "creative-values", "guidelines", "year in review"]
+topics = ["burnout", "creative-values", "guidelines", "year in review"]
 date = "2013-01-01T00:00:00Z"
 layout = "post"
 path = "/new-years-dissolution"

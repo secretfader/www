@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["history", "politics", "uncertainty", "social-commentary"]
+topics = ["history", "politics", "uncertainty", "social-commentary"]
 date = "2016-12-20T00:00:00Z"
 layout = "post"
 path = "/about-trump"

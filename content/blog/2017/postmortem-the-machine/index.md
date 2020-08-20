@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["Project Diary", "Postmortem"]
+topics = ["Project Diary", "Postmortem"]
 date = "2017-08-11T00:00:00Z"
 draft = false
 image = "artwork-collage.jpg"

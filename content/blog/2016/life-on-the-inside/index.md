@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["ehlers-danlos-syndrome", "chronic-illness"]
+topics = ["ehlers-danlos-syndrome", "chronic-illness"]
 date = "2016-05-27T00:00:00Z"
 illustrationDescription = "A dazzle of zebras. (Photo courtesy of Jon Mountjoy on Flicker. Used under a Creative Commons BY License.)"
 layout = "post"

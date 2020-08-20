@@ -49,7 +49,7 @@ categories = "/blog/category/:slug/"
 authors = "/blog/author/:slug/"
 
 [taxonomies]
-category = "categories"
+topic = "topics"
 author = "authors"
 
 [menu]

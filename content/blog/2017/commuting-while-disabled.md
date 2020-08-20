@@ -1,6 +1,6 @@
 +++
 authors = ["Nicholas Young"]
-categories = ["Ehlers-Danlos Syndrome", "Chronic Illness", "Allergies", "Etiquette", "Disability"]
+topics = ["Ehlers-Danlos Syndrome", "Chronic Illness", "Allergies", "Etiquette", "Disability"]
 date = "2017-08-17T00:00:00Z"
 draft = false
 title = "Commuting While Disabled"
