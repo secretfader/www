@@ -30,10 +30,10 @@ Perhaps I was the foolish one for thinking anyone still knew how to listen.
 
 [healthcare]: /blog/category/healthcare/
 [eds]: /blog/category/ehlers-danlos-syndrome/
-[means]: {{< relref path="blog/2017/the-politics-of-terror" >}}
-[aca]: {{< relref path="blog/2017/turn-the-page" >}}
-[twisted]: {{< relref path="blog/2017/hidden-costs-of-the-ada-education-and-reform-act" >}}
-[euthanize]: {{< relref path="blog/2017/turn-the-page" >}}
+[means]: {{< relref path="writing/2017/the-politics-of-terror" >}}
+[aca]: {{< relref path="writing/2017/turn-the-page" >}}
+[twisted]: {{< relref path="writing/2017/hidden-costs-of-the-ada-education-and-reform-act" >}}
+[euthanize]: {{< relref path="writing/2017/turn-the-page" >}}
 [eichenwald]: https://twitter.com/kurteichenwald/status/1242480859485257728
 [sacrifice]: https://www.buzzfeednews.com/article/tanyachen/kaiser-permanente-lupus-chloroquine
 [ig]: https://www.instagram.com/p/B-M3xaIgFG6/

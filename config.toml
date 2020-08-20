@@ -44,9 +44,9 @@ mediaType = "text/html"
 isHTML = true
 
 [permalinks]
-blog = "/blog/:year/:month/:slug/"
-topics = "/blog/topics/:slug/"
-authors = "/blog/author/:slug/"
+writing = "/writing/:year/:month/:slug/"
+topics = "/writing/topics/:slug/"
+authors = "/writing/author/:slug/"
 
 [taxonomies]
 topic = "topics"

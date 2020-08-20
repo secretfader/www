@@ -18,5 +18,5 @@ On a personal note, I'm glad for an opportunity to *use* tools instead of *build
 
 I sign on later this month. With any luck, this new role will see me become more involved in local and international Rust communities, not less.
 
-[uv]: https://www.uptime.ventures/blog/2020/02/shutdown/
+[uv]: https://www.uptime.ventures/writing/2020/02/shutdown/
 [goldrust]: https://www.cogoldrust.com

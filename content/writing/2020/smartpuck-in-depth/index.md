@@ -54,10 +54,10 @@ I chose to enter the ecosystem as an amputee technologist becuse I'd like to see
 
 If you're prepared to be a trailblazer, I'd welcome the company. That said, unless you have a dedicated controller (like an old iPhone or Android device) that can be locked to a known good version of operating system and SmartPuck application, I'd say hold off for the time being. While the potential of a true "smart socket" exists, it has yet to be fully realized.
 
-[mention]: {{< relref path="blog/2019/rebuilt-again" >}}
-[life]: {{< relref path="blog/2020/new-horizons" >}}
-[covid]: {{< relref path="blog/2020/believing-is-free" >}}
-[linear]: {{< relref path="blog/2019/recovery-linear" >}}
+[mention]: {{< relref path="writing/2019/rebuilt-again" >}}
+[life]: {{< relref path="writing/2020/new-horizons" >}}
+[covid]: {{< relref path="writing/2020/believing-is-free" >}}
+[linear]: {{< relref path="writing/2019/recovery-linear" >}}
 [cycling]: /blog/category/cycling/
 [suspension-types]: https://www.ottobockus.com/prosthetics/info-for-new-amputees/prosthetics-101/keeping-your-leg-on-(suspension)/
 [amputation]: /blog/category/amputation/
