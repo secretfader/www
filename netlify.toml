@@ -1,7 +1,8 @@
 [build]
 publish = "public"
 command = "hugo"
-environment = { HUGO_VERSION = "0.72.0", HUGO_ENV = "production", RUBY_VERSION = "2.6.2" }
+
+environment = { HUGO_VERSION = "0.74.3", HUGO_ENV = "production" }
 
 [context.deploy-preview]
 environment = { HUGO_ENV = "staging" }
