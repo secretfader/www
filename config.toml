@@ -56,7 +56,7 @@ author = "authors"
 [[menu.main]]
 identifier = "me"
 name = "GitHub"
-url = "https://github.com/secretfader"
+url = "https://github.com/nicholaswyoung"
 weight = 200
 
 [[menu.main]]
