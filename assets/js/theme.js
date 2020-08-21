@@ -1,8 +1,5 @@
 // Copyright 2020 Nicholas Young. All rights reserved.
 
-const select = '.theme-toggle input[type="checkbox"]';
-const toggle = document.querySelector(select);
-
 function toggleThemeMode(e) {
   if (e.target.checked) {
     setColorMode('dark')
@@ -12,6 +9,9 @@ function toggleThemeMode(e) {
 }
 
 export function setupThemeSelector() {
+  const select = '.theme-toggle input[type="checkbox"]';
+  const toggle = document.querySelector(select);
+
   if (!toggle) {
     return;
   }
@@ -19,4 +19,16 @@ export function setupThemeSelector() {
   toggle.addEventListener('change', (e) => {
     toggleThemeMode(e);
   }, false);
+}
+
+export function setupExternalLinks() {
+  const selector = document.querySelectorAll('a');
+
+  for (el of selector) {
+    const ext = !(el.href && el.href.indexOf(document.domain) !== -1);
+
+    if (ext) {
+      el.setAttribute('target', '_blank');
+    }
+  }
 }
