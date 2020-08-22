@@ -9,7 +9,7 @@ import { setupThemeSelector, setupExternalLinks } from './theme';
 Turbolinks.start();
 
 const app = Application.start();
-app.register('contact', Contact);
+app.register('contact-form', Contact);
 
 setupThemeSelector();
 setupExternalLinks();
