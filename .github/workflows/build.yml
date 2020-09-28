@@ -1,0 +1,22 @@
+name: Build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install OS dependencies
+        run: sudo apt-get install -qy git git-lfs curl jq
+      - uses: actions/checkout@v2
+        with:
+          lfs: true
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '14'
+      - name: Setup
+        run: sh scripts/setup.sh
+      - name: Build
+        run: $HOME/bin/hugo
