@@ -9,6 +9,3 @@ mkdir -p $HOME/bin
 
 # Install Hugo
 curl -sSL $HUGO_URL | tar -xzf - -C $HOME/bin
-
-# Install npm dependencies
-npm ci
