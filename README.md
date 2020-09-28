@@ -1,5 +1,8 @@
 # Secret Fader
 
+![Current Build Status](https://github.com/secretfader/www/workflows/Build/badge.svg)
+[![Made by Fader](https://img.shields.io/badge/made_by-Fader-purple.svg)](https://www.secretfader.com)
+
 The digital home of engineer, educator, photographer, and activist [Nicholas "Fader"
 Young][dotcom].
 
