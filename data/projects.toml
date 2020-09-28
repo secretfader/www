@@ -4,9 +4,9 @@ description = "Recently published open-source tools, libraries, or product updat
 [[featured]]
 name = "Matter"
 description = "Universal frontmatter parser, supporting YAML, TOML, and JSON formats. Written in Rust and designed for embedding."
-href = "https://github.com/nicholaswyoung/matter"
+href = "https://github.com/secretfader/matter"
 
 [[featured]]
 name = "Webmention"
 description = "Utilities for sending and receiving Webmentions, a standard from the IndieWeb ecosystem, in Rust."
-href = "https://github.com/nicholaswyoung/webmention-rs"
+href = "https://github.com/secretfader/webmention-rs"
