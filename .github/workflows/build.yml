@@ -2,6 +2,7 @@ name: Build
 
 on:
   push:
+    branches: [ main ]
   pull_request:
 
 jobs:
@@ -10,7 +11,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'skip-ci')"
     steps:
       - name: Install OS dependencies
-        run: sudo apt-get install -qy git git-lfs curl jq
+        run: sudo apt-get install -qy curl jq
       - uses: actions/checkout@v2
         with:
           lfs: true
