@@ -58,9 +58,9 @@ If you're prepared to be a trailblazer, I'd welcome the company. That said, unle
 [life]: {{< relref path="writing/2020/new-horizons" >}}
 [covid]: {{< relref path="writing/2020/believing-is-free" >}}
 [linear]: {{< relref path="writing/2019/recovery-linear" >}}
-[cycling]: /blog/category/cycling/
+[cycling]: /writing/topics/cycling/
 [suspension-types]: https://www.ottobockus.com/prosthetics/info-for-new-amputees/prosthetics-101/keeping-your-leg-on-(suspension)/
-[amputation]: /blog/category/amputation/
+[amputation]: /writing/topics/amputation/
 [vass]: https://www.scheckandsiress.com/patient-information/care-and-use-of-your-device/knee-prosthesis-vacuum-assisted-socket-system-vass/
 [limblogic]: https://www.willowwoodco.com/products-services/elevated-vacuum/limblogic/
 [smartpuck]: https://www.5280prosthetics.com/products/smartpuck/

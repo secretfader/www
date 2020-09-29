@@ -8,7 +8,7 @@ title = "If I Left You Behind"
 
 +++
 
-I have spent most of 2017 writing [long-form non-fiction pieces](/blog/category/healthcare/) concerning flaws in the American healthcare system, often attempting to communicate why we, as a country, shouldn't embrace changes that would [severely limit access to care](/blog/category/disability/) for chronically ill and disabled citizens.
+I have spent most of 2017 writing [long-form non-fiction pieces](/writing/topics/healthcare/) concerning flaws in the American healthcare system, often attempting to communicate why we, as a country, shouldn't embrace changes that would [severely limit access to care](/writing/topics/disability/) for chronically ill and disabled citizens.
 
 Most words, I fear, were skimmed or disregarded; even by individuals who had offered support in the past. One by one, friends have become strangers when asked to share my articles or take simple political action that will enhance my life and the lives of those around me. The common phrase "if there's anything I can do..." has lost all meaning.
 
@@ -18,7 +18,7 @@ At first, I asked myself what I'd done to push them away, but quickly uncovered 
 
 My experience with the American healthcare complex varies wildly from the midline. For instance, when I entered treatment for a locking knee in late 2016, I hoped the constant excruciating pain and my inability to walk would guide doctors to a quick solution. Instead, I was booked for multiple office visits, [subjected to many years worth of radiation,](https://www.radiologyinfo.org/en/info.cfm?pg=safety-xray) and eventually, offered a slot on the surgical calendar in February.
 
-I suspect that doctors would take reports of discomfort far more seriously if my body wasn't [broken by design.](/blog/category/ehlers-danlos-syndrome/)
+I suspect that doctors would take reports of discomfort far more seriously if my body wasn't [broken by design.](/writing/topics/ehlers-danlos-syndrome/)
 
 On November 9, 2016, in the midst of this struggle, I wrote a lengthy email addressing a former friend who had expressed anger at rising insurance premiums. I told the story of becoming an unofficial standard-bearer for the often-maligned Affordable Care Act, not because insurance premiums decreased in the law's wake ([in many cases they didn't](http://www.kff.org/health-reform/perspective/how-aca-marketplace-premiums-measure-up-to-expectations/)), but that I could [access care](/2016/06/life-on-the-inside-part-ii/) after struggling with chronic pain, frequent joint dislocations, insomnia, CPTSD, and a plethora of other conditions for over a decade, mostly alone.
 

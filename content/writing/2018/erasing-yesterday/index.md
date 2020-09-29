@@ -24,7 +24,7 @@ bay.
 
 Every day, I arose and began to slog through the pain and fatigue caused by
 what I would later learn is [Ehlers-Danlos
-Syndrome](/blog/category/ehlers-danlos-syndrome/) (though I wouldn't be
+Syndrome](/writing/topics/ehlers-danlos-syndrome/) (though I wouldn't be
 given a diagnosis until late 2015). With each new morning came a fresh
 challenge to push my limits. Until my front bicycle tire landed in a deep
 Chicago pothole, at a relatively high rate of speed, that is.

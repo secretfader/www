@@ -36,7 +36,7 @@ much as the name of my medical enemy, I was finally granted answers in 2015.
 What felt like a lifetime of genetic testing and clinical observation culminated
 in one terrifying moment when I was diagnosed with a rare, incurable genetic
 connective tissue disorder, [Ehlers-Danlos
-Syndrome](/blog/category/ehlers-danlos-syndrome/).
+Syndrome](/writing/topics/ehlers-danlos-syndrome/).
 
 Ehlers-Danlos Syndrome (hereafter referred to as "EDS") affects the body's
 ability to produce collagen, a crucial structural protein. [Thirteen subtypes
@@ -94,7 +94,7 @@ hesitant to label a patient with limitations. All it takes is reading a handful
 of articles on [The Mighty](https://themighty.com/ehlers-danlos-syndrome/), or
 another publication primarily authored by chronic illness warriors and you'll
 find that [most of us are accused of faking
-symptoms](/blog/category/chronic-illness/) in order to be seen.
+symptoms](/writing/topics/chronic-illness/) in order to be seen.
 
 In writing this piece, I've found myself between two worlds. I strongly believe
 the pharmaceutical industry has wrought untold damage in its' years of economic

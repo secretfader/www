@@ -10,7 +10,7 @@ title = "Recovery Isn't Linear"
 
 +++
 
-Several months ago, I received a message from a reader who asked how my recovery was going. Until then, I hadn't realized my pre-occupation with newfound programming languages (namely [Rust](/blog/category/rust/)), writing [technology reviews](/blog/category/hardware/), and [giving presentations](/slides/rising-with-tide) during a large part of this past year. Looking back, I've written about nearly every other life activity and left my biggest challenge of the year unaddressed.
+Several months ago, I received a message from a reader who asked how my recovery was going. Until then, I hadn't realized my pre-occupation with newfound programming languages (namely [Rust](/writing/topics/rust/)), writing [technology reviews](/writing/topics/hardware/), and [giving presentations](/slides/rising-with-tide) during a large part of this past year. Looking back, I've written about nearly every other life activity and left my biggest challenge of the year unaddressed.
 
 Today, I'm [fulfulling a promise][erasing] and discussing my experience after returning home from the hospital with fewer limbs than when I entered.
 
@@ -37,7 +37,7 @@ Unfortunately, I often found increased pain and instability in my biological leg
 
 ## Pedaling Into The Future
 
-Anyone who has followed my story likely knows that a cycling injury is what ultimately led to my amputation. It wasn't the sole factor ([Ehlers-Danlos Syndrome](/blog/category/ehlers-danlos-syndrome/) was a major contributor, also), but my genetic condition made the accident several times worse. Still, I enjoy the feeling of traveling under my own power and refuse to allow an accident to dampen my enthuiasm for the sport.
+Anyone who has followed my story likely knows that a cycling injury is what ultimately led to my amputation. It wasn't the sole factor ([Ehlers-Danlos Syndrome](/writing/topics/ehlers-danlos-syndrome/) was a major contributor, also), but my genetic condition made the accident several times worse. Still, I enjoy the feeling of traveling under my own power and refuse to allow an accident to dampen my enthuiasm for the sport.
 
 My first attempt at cycling was a total failure. After rolling around the neighborhood only to realize I was unable to keep my foot planted on the pedal. As a potential remedy, my wife, Susan, suggested a clever idea of wrapping both with short length of soft-backed hook and loop fastener. I thought it was genius! I set off up the trail a second time, and it worked excellent for a while. I was able to cycle several miles with my shoe affixed to the pedal, but when stopping, the system had a flaw: I tipped over and crashed into a tree while attempting to stop and dismount, unable to remove my foot from its restraint. I was unhurt, and frustration quickly turned to humor upon imagining how the scene must've looked to bystanders.
 

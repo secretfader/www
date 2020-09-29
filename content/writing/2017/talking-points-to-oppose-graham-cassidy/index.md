@@ -71,11 +71,11 @@ We must defeat this bill now.
 [cbpp-report]: https://www.cbpp.org/research/health/like-other-aca-repeal-bills-cassidy-graham-plan-would-add-millions-to-uninsured "Like Other ACA Repeal Bills, Cassidy-Graham Plan Would Add Millions to Uninsured, Destabilize Individual Market"
 [bg-report]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2690386/ "Making Medicaid a Block Grant Program: An Analysis of the Implications of Past Proposals"
 [mb-quarterly]: http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1468-0009
-[moving]: /blog/category/moving/ "Moving"
+[moving]: /writing/topics/moving/ "Moving"
 [disabled-evac]: https://www.romper.com/p/not-every-family-can-evacuate-ahead-of-hurricane-irma-heres-why-81441
 [funding-risk]: http://www.kff.org/medicaid/issue-brief/what-coverage-and-financing-at-risk-under-repeal-of-aca-medicaid-expansion/ "What Coverage and Financing is at Risk Under a Repeal of the ACA Medicaid Expansion?"
 [cs-monitor]: https://www.csmonitor.com/Business/Robert-Reich/2013/1028/The-irony-of-Republican-disapproval-of-Obamacare "The irony of Republican disapproval of Obamacare"
 [switchboard]: https://www.senate.gov/general/contacting.htm "Contacting Your Senators"
-[healthcare-tags]: /blog/category/healthcare/
+[healthcare-tags]: /writing/topics/healthcare/
 [jk-test]:
 https://www.vox.com/culture/2017/9/22/16345720/jimmy-kimmel-health-care-graham-cassidy-obamacare "Jimmy Kimmel’s unexpected evolution"

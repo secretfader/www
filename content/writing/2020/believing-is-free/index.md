@@ -28,8 +28,8 @@ In a quote I [encountered on Instagram a few days ago][ig], Author Adrienne Mare
 
 Perhaps I was the foolish one for thinking anyone still knew how to listen.
 
-[healthcare]: /blog/category/healthcare/
-[eds]: /blog/category/ehlers-danlos-syndrome/
+[healthcare]: /writing/topics/healthcare/
+[eds]: /writing/topics/ehlers-danlos-syndrome/
 [means]: {{< relref path="writing/2017/the-politics-of-terror" >}}
 [aca]: {{< relref path="writing/2017/turn-the-page" >}}
 [twisted]: {{< relref path="writing/2017/hidden-costs-of-the-ada-education-and-reform-act" >}}

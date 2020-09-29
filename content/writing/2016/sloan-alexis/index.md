@@ -17,6 +17,6 @@ Her first name, ["Sloan", is Gaelic in origin](http://www.sheknows.com/baby-name
 
 The most honorable fights are those which elevate and free the oppressed among us.
 
-As any new parent should, I'll be taking an extended leave of absence, not just from client work and [my consultancy,](https://secretfader.com) but also from [writing.](/) I'll try to [chronicle her early life in written form](/blog/category/dadthings/) as I can, but I expect those dispatches to be few and happen infrequently.
+As any new parent should, I'll be taking an extended leave of absence, not just from client work and [my consultancy,](https://secretfader.com) but also from [writing.](/) I'll try to [chronicle her early life in written form](/writing/topics/dadthings/) as I can, but I expect those dispatches to be few and happen infrequently.
 
 In my absence, [be excellent to each other.](https://www.youtube.com/watch?v=N_yJFLvmjJY)
