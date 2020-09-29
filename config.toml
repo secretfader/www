@@ -38,11 +38,6 @@ baseName = "feed"
 baseName = "feed"
 mediaType = "application/json"
 
-[outputFormats.reveal]
-baseName = "index"
-mediaType = "text/html"
-isHTML = true
-
 [permalinks]
 writing = "/writing/:year/:month/:slug/"
 topics = "/writing/topics/:slug/"
