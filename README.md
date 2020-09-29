@@ -12,6 +12,16 @@ This repository utilizes [`git-lfs`][git-lfs] to conveniently store large
 files. If your build system doesn't yet support the `git lfs` command, please
 install it before continuing.
 
+## Tools in Use
+
+Each generation of this site brings new tools and best practices. Provided here
+is a list of technologies currently in use, and their roles.
+
+- **Hugo** provides the framework for building out reliable static HTML pages from Go templates
+- **npm** keeps JavaScript packages up-to-date
+- **Stimulus** decorates static HTML to provide an interactive user experience
+- **Sass** makes everything look pretty
+
 ## License
 
 (C) Copyright 2001-2020 Nicholas Young. All rights reserved.
