@@ -1,5 +1,5 @@
 +++
 title = "Contact"
 type = "contact"
-menu = ["footer"]
+menu = ["main", "footer"]
 +++
