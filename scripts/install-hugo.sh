@@ -1,4 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/env /bin/sh
+
+# Terminate early on pipeline failure, since we use pipes below
 set -e
 
 # Retrieve the latest stable, extended release version from GitHub

@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
+#!/usr/bin/env /bin/sh
 HUGO_ENV=production hugo
 netlify deploy --prod
