@@ -1,16 +1,16 @@
 // Copyright 2020 Nicholas Young. All rights reserved.
 
-import { Controller } from 'stimulus';
+import { Controller } from "stimulus";
 
 const email = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-const isEmail = input => input.match(email);
+const isEmail = (input) => input.match(email);
 
 export class Contact extends Controller {
-  static targets = ['form'];
+  static targets = ["form"];
   static rules = {
-    name: { required: true, },
-    email: { required: true, format: isEmail, },
-    message: { required: true, },
+    name: { required: true },
+    email: { required: true, format: isEmail },
+    message: { required: true },
   };
   values = {};
   errors = {};
@@ -30,8 +30,7 @@ export class Contact extends Controller {
     return false;
   }
 
-  validate() {
-  }
+  validate() {}
 
   process(e) {
     e.preventDefault();
