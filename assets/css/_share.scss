@@ -1,3 +1,13 @@
+/**
+ * Responsive Share Buttons
+ * (C) Copyright 2021 Nicholas Young. All rights reserved.
+ *
+ * Usage and distribution of this file are governed by the Mozilla Public
+ * License ("MPL"), version 2.0. See the file "LICENSE-MPL" at the root
+ * of this source repository or visit https://www.mozilla.org/en-US/MPL
+ * to acquire a copy.
+ */
+
 ul.share-buttons {
   font-size: .8em;
   max-width: 800px;
@@ -88,7 +98,4 @@ ul.share-buttons li.linkedin:hover {
   ul.share-buttons li {
     width: 75%;
   }
-}
-
-input.theme-toggle {
 }
