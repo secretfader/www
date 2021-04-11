@@ -12,19 +12,21 @@
  * Theme Variables
  */
 :root {
-  --background: #FFFFFF;
-  --surface: #FAFAFA;
+  --background: #ffffff;
+  --surface: #fafafa;
   --divider: #999999;
   --base-font-size: 20px;
 }
 
 /* If light color scheme is enabled, hide enabling controls. */
-:root.color-scheme-light, :root[color-scheme="light"] .hide-light {
+:root.color-scheme-light,
+:root[color-scheme="light"] .hide-light {
   display: none;
 }
 
 /* When light color scheme is enabled, display controls to switch. */
-:root.color-scheme-light, :root[color-scheme="light"] .hide-dark {
+:root.color-scheme-light,
+:root[color-scheme="light"] .hide-dark {
   display: inherit;
 }
 
@@ -59,7 +61,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -69,7 +71,7 @@
   height: 26px;
   left: 4px;
   position: absolute;
-  transition: .4s;
+  transition: 0.4s;
   width: 26px;
 }
 
@@ -97,7 +99,7 @@ input:checked + .slider:before {
   background-color: var(--background);
   color: var(--text);
   font-size: var(--base-font-size);
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .page {
@@ -110,11 +112,16 @@ body.list .page {
   padding: 0 2rem 0 2rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lora", serif;
 }
 
 p {
@@ -130,7 +137,8 @@ header.main {
   position: relative;
 }
 
-header.main a.title h1, header.main a.title h2 {
+header.main a.title h1,
+header.main a.title h2 {
   display: none;
 }
 
@@ -139,7 +147,7 @@ header.main nav.menu ul {
 }
 
 header.main nav.menu ul li {
-  margin-right: .5em;
+  margin-right: 0.5em;
   position: relative;
 }
 
@@ -151,20 +159,21 @@ header.main nav.menu ul li:last-child {
  * Grid Layout
  */
 
-body > header a.title h1, body > header a.title h2 {
+body > header a.title h1,
+body > header a.title h2 {
   display: none;
 }
 
 footer.the-end {
   border-top: 1px solid var(--divider);
-  font-size: .8rem;
+  font-size: 0.8rem;
   padding: 2em 5%;
   display: flex;
   justify-content: space-between;
 }
 
 footer.the-end h4 {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 footer.the-end .credits {
