@@ -6,9 +6,6 @@
       {{ partial "menu.html" . }}
     </div>
     <div class="block credits">
-      {{ $credits := .GetPage "credits.md" }}
-      <h4>{{ $credits.Title }}</h4>
-      {{ $credits.Content }}
       <p>{{ .Site.Copyright }}</p>
     </div>
   </footer>
