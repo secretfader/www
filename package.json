@@ -4,7 +4,9 @@
   "private": true,
   "description": "Digital home of engineer, educator, photographer, and activist Nicholas Young.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "jest --passWithNoTests test/**/**.test.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nicholaswyoung/www.git"
@@ -16,6 +18,9 @@
   },
   "homepage": "https://github.com/nicholaswyoung/www#readme",
   "devDependencies": {
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "mutationobserver-shim": "^0.3.7",
     "stimulus": "^1.1.1",
     "turbolinks": "^5.2.0"
   }
