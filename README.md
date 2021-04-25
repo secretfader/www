@@ -14,7 +14,7 @@ install it before continuing.
 
 ## License
 
-(C) Copyright 2001-2020 Nicholas Young. All rights reserved.
+(C) Copyright 2001-2021 Nicholas Young. All rights reserved.
 
 HTML Markup, stylesheets, and configuration is released under the [Mozilla
 Public License, version 2.0](LICENSE-MPL), and may be reused under its terms.
