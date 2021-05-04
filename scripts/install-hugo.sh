@@ -4,7 +4,7 @@
 set -e
 
 # Retrieve the latest stable, extended release version from GitHub
-DOWNLOAD_URL=$(curl --silent -H 'Accept: application/json' \
+DOWNLOAD_URL=$(curl -sS -H 'Accept: application/json' \
     https://api.github.com/repos/gohugoio/hugo/releases | \
     jq -r "(.[0] |
     (select(.draft == false) | select(.prerelease == false)).assets[] |
