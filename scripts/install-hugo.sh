@@ -13,7 +13,7 @@ RELEASE_FILTER="(.[0] |
     ).browser_download_url"
 
 # Retrieve the latest stable, extended release version of from GitHub
-HUGO_DOWNLOAD_URL=$(jq -r "$RELEASE_FILTER" <<< $HUGO_RELEASES)
+HUGO_DOWNLOAD_URL=$(printf "%s" "$HUGO_RELEASES" | jq -r "$RELEASE_FILTER")
 
 # Make a directory at $HOME/bin to contain downloaded binaries
 mkdir -p $HOME/bin
