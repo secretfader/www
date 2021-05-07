@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-node@v2-beta
         with:
           node-version: "14"
-      - name: Install Node dependencies
+      - name: Install npm dependencies
         run: npm ci
       - name: Install Hugo
         run: ./scripts/install-hugo.sh
