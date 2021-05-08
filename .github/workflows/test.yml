@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v2-beta
         with:
           node-version: "14"
-      - name: Install npm dependencies
-        run: npm ci
-      - name: Run Tests
+      - name: Install dependencies
+        run: ./scripts/setup.sh
+      - name: Run tests
         run: npm test
