@@ -9,14 +9,15 @@ Young][dotcom].
 ## System Requirements
 
 This repository is configured largely for personal contributions and reflects the work preferences of its author (although work is ongoing to change that). If you intend to contribute, here are a few guidelines that will ease the process.
+
 ### Environment
 
 Before diving in, ensure the following tools are configured on your system:
 
-* [Git][git-scm]
-* [Git LFS][gif-lfs]
-* [Node.js][nodejs] (version `14` or greater)
-* [Hugo][hugo]
+- [Git][git-scm]
+- [Git LFS][gif-lfs]
+- [Node.js][nodejs] (version `14` or greater)
+- [Hugo][hugo]
 
 Once you have basic system dependencies installed, read over the scripts in [`scripts/`](scripts/) and CI workflow files in [`.github/workflows/`](.github/workflows/). For instance, [`scripts/setup.sh`](scripts/setup.sh) handles installing a supported version of [Hugo][hugo] (the static site generator) to `$HOME/bin`, where it can be run from scripts later in the build pipeline.
 
@@ -31,7 +32,7 @@ HTML, CSS, JavaScript, and Markdown files are formatted with [Prettier][prettier
 HTML Markup, stylesheets, and configuration is released under the [Mozilla
 Public License, version 2.0](LICENSE-MPL), and may be reused under its terms.
 
-[Photography, including works of illustration, and article text may not be
+Artistic works published in this repository or on `secretfader.com`, including photography, illustration, and article text [may not be
 republished or reused without explicit authorization.](LICENSE)
 
 [dotcom]: https://www.secretfader.com
