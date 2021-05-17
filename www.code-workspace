@@ -4,8 +4,5 @@
       "path": "."
     }
   ],
-  "settings": {
-    "terminal.integrated.shell.linux": "flatpak-spawn",
-    "terminal.integrated.shellArgs.linux": ["--host", "toolbox", "run", "zsh"]
-  }
+  "settings": {}
 }
