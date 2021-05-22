@@ -1,0 +1,7 @@
+[build]
+publish = "public"
+command = "scripts/build.sh"
+
+[build.environment]
+HUGO_VERSION = "0.83.1"
+NODE_VERSION = "16"
