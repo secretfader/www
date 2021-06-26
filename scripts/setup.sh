@@ -17,10 +17,9 @@ LINUX_GNU="select(.name | contains(\"${KERNEL,,}-gnu\"))"
 
 LATEST_HUGO="$LATEST_VERSION |
         select(.name | contains(\"extended\")) |
-        select(.name | contains(\"$KERNEL-"$BIT"bit.tar.gz\"))"
+        select(.name | contains(\"$KERNEL-${BIT}bit.tar.gz\"))"
 
-LATEST_SD="$LATEST_VERSION |
-    select(.name | contains(\"linux-gnu\"))"
+LATEST_SD="$LATEST_VERSION | $LINUX_GNU"
 
 HUGO_RELEASES=$(curl -sS -H 'Accept: application/json' \
     https://api.github.com/repos/gohugoio/hugo/releases
@@ -37,11 +36,11 @@ HUGO_DOWNLOAD_URL=$(printf "%s" "$HUGO_RELEASES" | jq -r "(.[0] | $LATEST_HUGO).
 SD_DOWNLOAD_URL=$(printf "%s" "$SD_RELEASES" | jq -r "(.[0] | $LATEST_SD).browser_download_url")
 
 # Make a directory at $HOME/bin to contain downloaded binaries
-mkdir -p $HOME/bin
+mkdir -p "$HOME/bin"
 
 # Download the Hugo binary and extract the tar.gz archive $HOME/bin
-curl -sSL $HUGO_DOWNLOAD_URL | tar -xzf - -C $HOME/bin
-curl -sSL $SD_DOWNLOAD_URL -o $HOME/bin/sd
+curl -sSL "$HUGO_DOWNLOAD_URL" | tar -xzf - -C "$HOME/bin"
+curl -sSL "$SD_DOWNLOAD_URL" -o "$HOME/bin/sd"
 
 # Install npm dependencies (in CI mode)
 npm ci
