@@ -13,13 +13,11 @@ fi
 
 LATEST_VERSION="select(.draft == false) | select(.prerelease == false) .assets[]"
 
-LINUX_GNU="select(.name | contains(\"${KERNEL,,}-gnu\"))"
-
 LATEST_HUGO="$LATEST_VERSION |
         select(.name | contains(\"extended\")) |
         select(.name | contains(\"$KERNEL-${BIT}bit.tar.gz\"))"
 
-LATEST_SD="$LATEST_VERSION | $LINUX_GNU"
+LATEST_SD="$LATEST_VERSION | select(.name | contains(\"$(printf "%s" "$KERNEL" | tr "[:upper:]" "[:lower:]")-gnu\"))"
 
 HUGO_RELEASES=$(curl -sS -H 'Accept: application/json' \
     https://api.github.com/repos/gohugoio/hugo/releases
