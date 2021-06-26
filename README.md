@@ -25,6 +25,14 @@ Once you have basic system dependencies installed, read over the scripts in [`sc
 
 HTML, CSS, JavaScript, and Markdown files are formatted with [Prettier][prettier], shell code is formatted with [Beautysh][beautysh]. The JavaScript front-end (however rudimentary) is tested with [Jest][jest].
 
+### Basic Workflow
+
+- Start Hugo development server (`hugo server`, assuming that the binary is in your `$PATH`)
+- Optionally, add test to `test/` folder, at an appropriate sub-path
+- Edit HTML templates, JavaScript, CSS, or Markdown content
+- Observe the change in a connected browser
+- Commit and push to a PR branch
+
 ## Goals
 
 - Provide an approachable introduction, with both personal and professional areas of focus
