@@ -25,6 +25,11 @@ Once you have basic system dependencies installed, read over the scripts in [`sc
 
 HTML, CSS, JavaScript, and Markdown files are formatted with [Prettier][prettier], shell code is formatted with [Beautysh][beautysh]. The JavaScript front-end (however rudimentary) is tested with [Jest][jest].
 
+## Goals
+
+- Provide an approachable introduction, with both personal and professional areas of focus
+- Facilitate soft real-time connection via social channels
+- Empower opportunities for advocacy and education
 ## License
 
 (C) Copyright 2001-2021 Nicholas Young. All rights reserved.
