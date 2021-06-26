@@ -3,13 +3,21 @@
 # Terminate early on pipeline failure, since we use pipes below
 set -e
 
+KERNEL="$(uname -s)"
+BIT="$(getconf LONG_BIT)"
+
+if [[ $BIT != "64" ]]; then
+    echo "Only 64-bit architectures are supported"
+    exit 1
+fi
+
 LATEST_VERSION="select(.draft == false) | select(.prerelease == false) .assets[]"
 
-LINUX_GNU="select(.name | contains(\"linux-gnu\"))"
+LINUX_GNU="select(.name | contains(\"${KERNEL,,}-gnu\"))"
 
 LATEST_HUGO="$LATEST_VERSION |
         select(.name | contains(\"extended\")) |
-        select(.name | contains(\"Linux-64bit.tar.gz\"))"
+        select(.name | contains(\"$KERNEL-"$BIT"bit.tar.gz\"))"
 
 LATEST_SD="$LATEST_VERSION |
     select(.name | contains(\"linux-gnu\"))"
