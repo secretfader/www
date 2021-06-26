@@ -3,6 +3,8 @@
 # Terminate early on pipeline failure, since we use pipes below
 set -e
 
+JSON="Accept: application/json"
+GITHUB="https://api.github.com/repos"
 KERNEL="$(uname -s)"
 BIT="$(getconf LONG_BIT)"
 
@@ -14,18 +16,14 @@ fi
 LATEST_VERSION="select(.draft == false) | select(.prerelease == false) .assets[]"
 
 LATEST_HUGO="$LATEST_VERSION |
-        select(.name | contains(\"extended\")) |
-        select(.name | contains(\"$KERNEL-${BIT}bit.tar.gz\"))"
+select(.name | contains(\"extended\")) |
+select(.name | contains(\"$KERNEL-${BIT}bit.tar.gz\"))"
 
 LATEST_SD="$LATEST_VERSION | select(.name | contains(\"$(printf "%s" "$KERNEL" | tr "[:upper:]" "[:lower:]")-gnu\"))"
 
-HUGO_RELEASES=$(curl -sS -H 'Accept: application/json' \
-    https://api.github.com/repos/gohugoio/hugo/releases
-)
+HUGO_RELEASES=$(curl -sS -H "$JSON" "$GITHUB/gohugoio/hugo/releases")
 
-SD_RELEASES=$(curl -sS -H 'Accept: application/json' \
-    https://api.github.com/repos/chmln/sd/releases
-)
+SD_RELEASES=$(curl -sS -H "$JSON" "$GITHUB/chmln/sd/releases")
 
 # Retrieve the latest stable, extended release version of Hugo from GitHub
 HUGO_DOWNLOAD_URL=$(printf "%s" "$HUGO_RELEASES" | jq -r "(.[0] | $LATEST_HUGO).browser_download_url")
