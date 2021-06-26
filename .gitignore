@@ -21,8 +21,5 @@ public/
 .cache
 resources/
 
-# IDE specific
-.vscode/
-
 # Local Netlify folder
 .netlify
