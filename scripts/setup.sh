@@ -13,24 +13,16 @@ LATEST_HUGO="$LATEST_VERSION |
 select(.name | contains(\"extended\")) |
 select(.name | contains(\"$KERNEL-${BIT}bit.tar.gz\"))"
 
-LATEST_SD="$LATEST_VERSION | select(.name | contains(\"$(printf "%s" "$KERNEL" | tr "[:upper:]" "[:lower:]")-gnu\"))"
-
 HUGO_RELEASES=$(curl -sS -H "$JSON" "$GITHUB/gohugoio/hugo/releases")
-
-SD_RELEASES=$(curl -sS -H "$JSON" "$GITHUB/chmln/sd/releases")
 
 # Retrieve the latest stable, extended release version of Hugo from GitHub
 HUGO_DOWNLOAD_URL=$(printf "%s" "$HUGO_RELEASES" | jq -r "(.[0] | $LATEST_HUGO).browser_download_url")
-
-# Retrieve the latest stable version of `sd` from GitHub
-SD_DOWNLOAD_URL=$(printf "%s" "$SD_RELEASES" | jq -r "(.[0] | $LATEST_SD).browser_download_url")
 
 # Make a directory at $HOME/bin to contain downloaded binaries
 mkdir -p "$HOME/bin"
 
 # Download the Hugo binary and extract the tar.gz archive $HOME/bin
 curl -sSL "$HUGO_DOWNLOAD_URL" | tar -xzf - -C "$HOME/bin"
-curl -sSL "$SD_DOWNLOAD_URL" -o "$HOME/bin/sd"
 
 # Install npm dependencies (in CI mode)
 npm ci
