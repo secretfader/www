@@ -7,12 +7,6 @@ JSON="Accept: application/json"
 GITHUB="https://api.github.com/repos"
 KERNEL="$(uname -s)"
 BIT="$(getconf LONG_BIT)"
-
-if [[ $BIT != "64" ]]; then
-    echo "Only 64-bit architectures are supported"
-    exit 1
-fi
-
 LATEST_VERSION="select(.draft == false) | select(.prerelease == false) .assets[]"
 
 LATEST_HUGO="$LATEST_VERSION |
