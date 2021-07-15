@@ -1,5 +1,9 @@
 name: Build
 
+strategy:
+  matrix:
+    os: [ubuntu-latest]
+
 on:
   push:
     branches: [main]
@@ -8,7 +12,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     if: "!contains(github.event.head_commit.message, 'skip-ci')"
     steps:
       - name: Install OS dependencies
