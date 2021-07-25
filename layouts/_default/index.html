@@ -6,25 +6,25 @@
     {{ $blog.Content }}
   </p>
   {{ with .GetPage "blog" }}
-  <ul class="shortlist">
-    {{ range first 3 .Pages }}
-    <li>
-      {{ $img := (.Resources.ByType "image").GetMatch "*feature*" }}
-      <a href="{{ .RelPermalink }}">
-        <h4>{{ .Title }}</h4>
-      </a>
-      <div class="post-meta small">
-        Published on:
-        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">
-        {{- .Date.Format "2006.01.02" -}}
-        </time>
-      </div>
-      <p>
-        {{ .Summary | plainify | htmlUnescape }}
-      </p>
-    </li>
-    {{ end }}
-  </ul>
+    <ul class="shortlist">
+      {{ range first 3 .Pages }}
+        <li>
+          {{ $img := (.Resources.ByType "image").GetMatch "*feature*" }}
+          <a href="{{ .RelPermalink }}">
+            <h4>{{ .Title }}</h4>
+          </a>
+          <div class="post-meta small">
+            Published on:
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">
+              {{- .Date.Format "2006.01.02" -}}
+            </time>
+          </div>
+          <p>
+            {{ .Summary | plainify | htmlUnescape }}
+          </p>
+        </li>
+      {{ end }}
+    </ul>
   {{ end }}
 </div>
 <div class="block">
@@ -32,12 +32,12 @@
   <p class="subtext">{{ .Site.Data.projects.description }}</p>
   <ul class="shortlist">
     {{ range .Site.Data.projects.featured }}
-    <li>
-      <a href="{{ .href }}">
-        <h4>{{ .name }}</h4>
-      </a>
-      <p>{{ .description }}</p>
-    </li>
+      <li>
+        <a href="{{ .href }}">
+          <h4>{{ .name }}</h4>
+        </a>
+        <p>{{ .description }}</p>
+      </li>
     {{ end }}
   </ul>
 </div>

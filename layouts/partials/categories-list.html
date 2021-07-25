@@ -1,12 +1,12 @@
 {{ $taxonomy := "categories" }}
 {{ with .Param $taxonomy }}
-<ul class="post-categories">
-  {{ range $index, $tag := . }}
-  {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag | urlize) -}}
-  <li>
-    <a href="{{ .Permalink }}">{{ $tag | urlize }}</a>
-  </li>
-  {{- end -}}
-  {{- end -}}
-</ul>
+  <ul class="post-categories">
+    {{ range $index, $tag := . }}
+      {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag | urlize) -}}
+        <li>
+          <a href="{{ .Permalink }}">{{ $tag | urlize }}</a>
+        </li>
+      {{- end -}}
+    {{- end -}}
+  </ul>
 {{ end }}

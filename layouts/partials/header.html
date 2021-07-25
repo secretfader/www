@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-<head>
-  {{ partial "header/meta.html" . }}
-  {{ partial "header/og.html" . }}
-  {{ partial "header/webmention.html" . }}
-  {{ partial "header/fonts.html" . }}
-  {{ partial "header/assets.html" . }}
-  {{ partial "header/title.html" . }}
-</head>
-<body class="{{if eq .Kind `page` }}single{{else}}list{{ if .IsHome }} home{{ end }}{{end}}">
-  <div class="page">
-    <header class="main">
-      <a href="{{ .Site.BaseURL }}" class="title">
-        {{- if .IsHome }}
-        <h1>{{ .Site.Title }}</h1>
-        {{- else -}}
-        <h2>{{ .Site.Title }}</h2>
-        {{- end }}
-      </a>
-      <nav class="menu">
-        {{ partial "menu.html" . }}
-      </nav>
-    </header>
-    <main class="content">
+  <head>
+    {{ partial "header/meta.html" . }}
+    {{ partial "header/og.html" . }}
+    {{ partial "header/webmention.html" . }}
+    {{ partial "header/fonts.html" . }}
+    {{ partial "header/assets.html" . }}
+    {{ partial "header/title.html" . }}
+  </head>
+  <body
+    class="{{ if eq .Kind `page` }}
+      single
+    {{ else }}
+      list{{ if .IsHome }}home{{ end }}
+    {{ end }}"
+  >
+    <div class="page">
+      <header class="main">
+        <a href="{{ .Site.BaseURL }}" class="title">
+          {{- if .IsHome }}
+            <h1>{{ .Site.Title }}</h1>
+          {{- else -}}
+            <h2>{{ .Site.Title }}</h2>
+          {{- end }}
+        </a>
+        <nav class="menu">
+          {{ partial "menu.html" . }}
+        </nav>
+      </header>
+      <main class="content"></main>
+    </div>
+  </body>
+</html>
