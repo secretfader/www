@@ -8,10 +8,15 @@ GITHUB="https://api.github.com/repos"
 KERNEL="$(uname -s)"
 BIT="$(getconf LONG_BIT)"
 LATEST_VERSION="select(.draft == false) | select(.prerelease == false) .assets[]"
+OS="$(uname -s)"
 
 LATEST_HUGO="$LATEST_VERSION |
 select(.name | contains(\"extended\")) |
 select(.name | contains(\"$KERNEL-${BIT}bit.tar.gz\"))"
+
+case "$OS" in 
+    Linux*) ./install-linux-dependencies.sh
+esac
 
 HUGO_RELEASES=$(curl -sS -H "$JSON" "$GITHUB/gohugoio/hugo/releases")
 

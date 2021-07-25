@@ -14,8 +14,6 @@ jobs:
     runs-on: ${{ matrix.os }}
     if: "!contains(github.event.head_commit.message, 'skip-ci')"
     steps:
-      - name: Install OS dependencies
-        run: sudo apt-get install -qy curl jq
       - uses: actions/checkout@v2
         with:
           lfs: true
