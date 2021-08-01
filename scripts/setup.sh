@@ -15,8 +15,8 @@ select(.name | contains(\"extended\")) |
 select(.name | contains(\"$KERNEL-${BIT}bit.tar.gz\"))"
 
 case "$OS" in 
-    Linux*) "$PWD/scripts/install-linux.sh"
-    Darwin*) "$PWD/scripts/install-macos.sh"
+    Linux*) "$PWD/scripts/install-linux.sh";;
+    Darwin*) "$PWD/scripts/install-macos.sh";;
 esac
 
 HUGO_RELEASES=$(curl -sS -H "$JSON" "$GITHUB/gohugoio/hugo/releases")
