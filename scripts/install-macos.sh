@@ -1,2 +1,2 @@
 #!/usr/bin/env /bin/sh
-brew install curl jq
+brew install jq

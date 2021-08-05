@@ -5,19 +5,23 @@ set -e
 
 JSON="Accept: application/json"
 GITHUB="https://api.github.com/repos"
-KERNEL="$(uname -s)"
-BIT="$(getconf LONG_BIT)"
 LATEST_VERSION="select(.draft == false) | select(.prerelease == false) .assets[]"
+BIT="$(getconf LONG_BIT)"
 OS="$(uname -s)"
 
-LATEST_HUGO="$LATEST_VERSION |
-select(.name | contains(\"extended\")) |
-select(.name | contains(\"$KERNEL-${BIT}bit.tar.gz\"))"
-
 case "$OS" in 
-    Linux*) "$PWD/scripts/install-linux.sh";;
-    Darwin*) "$PWD/scripts/install-macos.sh";;
+    Linux*)
+        "$PWD/scripts/install-linux.sh"
+    ;;
+    Darwin*)
+        "$PWD/scripts/install-macos.sh"
+        OS="macOS"
+    ;;
 esac
+
+LATEST_HUGO="$LATEST_VERSION |
+    select(.name | contains(\"extended\")) |
+    select(.name | contains(\"$OS-${BIT}bit.tar.gz\"))"
 
 HUGO_RELEASES=$(curl -sS -H "$JSON" "$GITHUB/gohugoio/hugo/releases")
 
