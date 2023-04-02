@@ -1,22 +1,15 @@
 {
-  "name": "@nicholaswyoung/www",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Digital home of engineer, educator, photographer, and activist Nicholas Young.",
-  "main": "index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nicholaswyoung/www.git"
+  "name": "nebulous-neutron",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nicholaswyoung/www/issues"
-  },
-  "homepage": "https://github.com/nicholaswyoung/www#readme",
-  "devDependencies": {
-    "stimulus": "^1.1.1",
-    "turbolinks": "^5.2.0"
+  "dependencies": {
+    "astro": "^2.1.9"
   }
 }
