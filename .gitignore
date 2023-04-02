@@ -26,3 +26,5 @@ resources/
 
 # Local Netlify folder
 .netlify
+
+.astro
