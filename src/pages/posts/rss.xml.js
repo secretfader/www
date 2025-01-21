@@ -8,7 +8,7 @@ export async function GET(ctx) {
     title: "Nicholas Young | Posts",
     description: "Posts from Nicholas Young's Blog",
     site: ctx.site,
-    items: [],
+    items: collection,
     customData: `<language>en-us</language>`,
   });
 }
