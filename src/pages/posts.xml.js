@@ -1,3 +1,4 @@
+import { join } from "path";
 import { getCollection } from "astro:content";
 import rss from "@astrojs/rss";
 
@@ -5,7 +6,7 @@ const collectionToRSSItems = async (posts) =>
   posts.map((post) => ({
     title: post.data.title,
     pubDate: post.data.pubDate,
-    link: post.slug,
+    link: join("posts/", post.slug),
   }));
 
 export async function GET(ctx) {
