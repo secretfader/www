@@ -1,6 +1,7 @@
 ---
 import profile from "../assets/profile.jpg";
 import youtube from "../assets/youtube.svg";
+import { YouTube } from "astro-embed";
 ---
 
 <div class="my-12">
@@ -9,11 +10,12 @@ import youtube from "../assets/youtube.svg";
     <h2 class="text-5xl font-bold text-zinc-500 inline">
         is a storyteller, educator, and creative hacker from denver, colorado.
     </h2>
-    <ul class="mt-12 flex flex-row justify-around">
+    <ul class="mt-12 mb-4 flex flex-row justify-around">
         <li>
             <a href="https://youtube.com/@secretfader">
                 <img class="w-12" src={youtube.src} />
             </a>
         </li>
     </ul>
+    <YouTube id="oLzNuQCZH3s" />
 </div>
