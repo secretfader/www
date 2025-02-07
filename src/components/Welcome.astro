@@ -4,7 +4,7 @@ import youtube from "../assets/youtube.svg";
 import { YouTube } from "astro-embed";
 ---
 
-<div class="my-12">
+<div class="max-w-4xl mx-auto">
     <img class="mx-auto mb-12 max-w-80 rounded-full" src={profile.src} />
     <h1 class="text-5xl font-bold inline pr-2">nicholas young</h1>
     <h2 class="text-5xl font-bold text-zinc-500 inline">
@@ -17,5 +17,17 @@ import { YouTube } from "astro-embed";
             </a>
         </li>
     </ul>
-    <YouTube id="oLzNuQCZH3s" />
+</div>
+<div class="w-full max-w-9xl mx-auto px-4 mt-12 mb-12">
+    <div class="xl:flex xl:justify-around">
+        <div class="w-full max-xl:mt-8 xl:mr-4">
+            <YouTube class="mx-auto" id="https://youtu.be/KpPj7xuiFKM" />
+        </div>
+        <div class="w-full max-xl:mt-8 xl:mr-4">
+            <YouTube class="mx-auto" id="https://youtu.be/oLzNuQCZH3s" />
+        </div>
+        <div class="w-full max-xl:mt-8">
+            <YouTube class="mx-auto" id="https://youtu.be/sWpzzRMRyro" />
+        </div>
+    </div>
 </div>
