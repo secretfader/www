@@ -16,12 +16,14 @@ function snippetIsOkay(video) {
   }
 }
 
+export const channelId = "UCRg-cd0XZe9FMVr_3DKGXEw";
+
 /// Get metadata about the supplied YouTube channel
 export async function getChannel() {
   const res = await yt.channels.list({
     auth,
     part: "contentDetails",
-    id: "UCRg-cd0XZe9FMVr_3DKGXEw",
+    id: channelId,
   });
 
   if (res.data.pageInfo.totalResults == 1) {
@@ -33,24 +35,39 @@ export async function getChannel() {
 
 /// Load recent videos from a provided channel
 export async function getRecentVideos(channelId, maxResults) {
-  const res = await yt.search.list({
-    auth,
-    channelId,
-    maxResults,
-    part: "snippet",
-    order: "date",
-  });
+  let results = [];
 
-  if (res.data.pageInfo.totalResults > 0) {
-    const filtered = res.data.items.filter((video) => {
-      if (snippetIsOkay(video)) {
-        return true;
-      } else {
-        return false;
-      }
+  let nextPageToken = 1;
+  let prevPageToken = 0;
+  while (results.length < maxResults) {
+    let totalResults = maxResults - results.length;
+
+    const res = await yt.search.list({
+      auth,
+      channelId,
+      maxResults: totalResults,
+      nextPageToken,
+      prevPageToken,
+      part: "snippet",
+      order: "date",
     });
-    return filtered;
-  } else {
-    return [];
+
+    if (res.data.pageInfo.totalResults > 0) {
+      const filtered = res.data.items.filter((video) => {
+        if (snippetIsOkay(video)) {
+          return true;
+        } else {
+          return false;
+        }
+      });
+
+      results.concat(filtered);
+      nextPageToken++;
+      if (prevPageToken <= 1) {
+        prevPageToken--;
+      }
+    }
   }
+
+  return results;
 }
