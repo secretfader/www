@@ -2,13 +2,13 @@
 import { channelId, getRecentVideos } from "../utils/youtube";
 import { YouTube } from "astro-embed";
 
-const videos = await getRecentVideos(channelId, 20);
+const videos = await getRecentVideos(channelId);
 ---
 
 <div>
     {
-        videos.slice(0, 4).map((v) => (
-            <div class="mb-12">
+        videos.slice(0, 10).map((v) => (
+            <div class="mb-16">
                 <YouTube
                     class="mx-auto"
                     posterQuality="max"
