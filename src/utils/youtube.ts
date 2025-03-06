@@ -1,73 +1,71 @@
 import youtube from "@googleapis/youtube";
 
 const auth = process.env.GOOGLE_APPLICATION_CREDENTIALS;
-const yt = youtube.youtube("v3");
+const client = youtube.youtube("v3");
 
-/// Helper to exclude shorts from results
-function snippetIsOkay(video) {
-  if (
-    video &&
-    video.snippet &&
-    video.snippet.description !== "" &&
-    video.snippet.title.indexOf("#") === -1 &&
-    video.id.kind === "youtube#video"
-  ) {
-    return true;
-  }
-}
+export const channelId =
+  process.env.YOUTUBE_CHANNEL_ID || "UCRg-cd0XZe9FMVr_3DKGXEw";
 
-export const channelId = "UCRg-cd0XZe9FMVr_3DKGXEw";
+export async function getRecentVideos(
+  channelId: string,
+  count: number | undefined,
+) {
+  let results = [];
+  let maxResults = count || 50;
+  let pageToken: string | undefined = undefined;
 
-/// Get metadata about the supplied YouTube channel
-export async function getChannel() {
-  const res = await yt.channels.list({
+  const {
+    data: {
+      pageInfo: { totalResults },
+      items,
+      nextPageToken,
+    },
+  } = await client.search.list({
     auth,
-    part: "contentDetails",
-    id: channelId,
+    channelId,
+    maxResults,
+    pageToken,
+    part: "snippet",
+    order: "date",
   });
 
-  if (res.data.pageInfo.totalResults == 1) {
-    return res.data.items[0];
-  } else {
-    return [];
-  }
-}
-
-/// Load recent videos from a provided channel
-export async function getRecentVideos(channelId, maxResults) {
-  let results = [];
-
-  let nextPageToken = 1;
-  let prevPageToken = 0;
-  while (results.length < maxResults) {
-    let totalResults = maxResults - results.length;
-
-    const res = await yt.search.list({
-      auth,
-      channelId,
-      maxResults: totalResults,
-      nextPageToken,
-      prevPageToken,
-      part: "snippet",
-      order: "date",
-    });
-
-    if (res.data.pageInfo.totalResults > 0) {
-      const filtered = res.data.items.filter((video) => {
-        if (snippetIsOkay(video)) {
-          return true;
-        } else {
-          return false;
-        }
-      });
-
-      results.concat(filtered);
-      nextPageToken++;
-      if (prevPageToken <= 1) {
-        prevPageToken--;
-      }
-    }
+  if (totalResults !== 0) {
+    results = results.concat(filterVideos(items));
+    pageToken = nextPageToken;
   }
 
   return results;
+}
+
+export async function getPlaylistVideos(playlistId: string) {
+  let results = [];
+  const {
+    data: {
+      pageInfo: { totalResults },
+      items,
+      nextPageToken,
+    },
+  } = await client.playlistItems.list({
+    auth,
+    playlistId,
+    part: "id,snippet,status",
+  });
+
+  if (totalResults !== 0) {
+    results = results.concat(filterVideos(items));
+    pageToken = nextPageToken;
+  }
+
+  return results;
+}
+
+function filterVideos(videos) {
+  return videos.filter(
+    (video) =>
+      video &&
+      video.snippet &&
+      video.snippet.description !== "" &&
+      video.snippet.title.indexOf("#") === -1 &&
+      video.id.kind === "youtube#video",
+  );
 }
