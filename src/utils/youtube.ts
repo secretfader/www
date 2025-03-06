@@ -6,6 +6,8 @@ const client = youtube.youtube("v3");
 export const channelId =
   process.env.YOUTUBE_CHANNEL_ID || "UCRg-cd0XZe9FMVr_3DKGXEw";
 
+export const podcastPlaylistId = "PLEkOaEkMOS01232QuKxydzBECkToCdOoR";
+
 export async function getRecentVideos(
   channelId: string,
   count: number | undefined,
@@ -39,6 +41,8 @@ export async function getRecentVideos(
 
 export async function getPlaylistVideos(playlistId: string) {
   let results = [];
+  let pageToken: string | undefined = undefined;
+
   const {
     data: {
       pageInfo: { totalResults },
@@ -48,11 +52,11 @@ export async function getPlaylistVideos(playlistId: string) {
   } = await client.playlistItems.list({
     auth,
     playlistId,
-    part: "id,snippet,status",
+    part: "id,snippet,status,contentDetails",
   });
 
   if (totalResults !== 0) {
-    results = results.concat(filterVideos(items));
+    results = results.concat(items);
     pageToken = nextPageToken;
   }
 
