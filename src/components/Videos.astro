@@ -1,20 +1,22 @@
 ---
-import { getChannel, getRecentVideos } from "../utils/youtube";
+import { channelId, getRecentVideos } from "../utils/youtube";
 import { YouTube } from "astro-embed";
 
-const { id } = await getChannel();
-const videos = await getRecentVideos(id, 20);
+const videos = await getRecentVideos(channelId, 20);
 ---
 
 <div>
     {
         videos.slice(0, 4).map((v) => (
-            <div class="mb-4">
+            <div class="mb-12">
                 <YouTube
                     class="mx-auto"
                     posterQuality="max"
                     id={v.id.videoId}
                 />
+                <h3 class="mt-4 text-center text-2xl text-gray-800">
+                    {v.snippet.title}
+                </h3>
             </div>
         ))
     }
