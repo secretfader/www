@@ -10,7 +10,11 @@ const videos = await getRecentVideos(id, 20);
     {
         videos.slice(0, 4).map((v) => (
             <div class="mb-4">
-                <YouTube class="mx-auto" id={v.id.videoId} />
+                <YouTube
+                    class="mx-auto"
+                    posterQuality="max"
+                    id={v.id.videoId}
+                />
             </div>
         ))
     }
