@@ -3,7 +3,7 @@ import { channelId, getRecentVideos } from "../utils/youtube";
 import { decode } from "html-entities";
 import { YouTube } from "astro-embed";
 
-const videos = await getRecentVideos(channelId);
+const videos = await getRecentVideos(channelId, 50);
 ---
 
 <div>
