@@ -13,7 +13,7 @@ export async function getRecentVideos(
   count: number | undefined,
 ) {
   let results = [];
-  let maxResults = count || 50;
+  let maxResults = clamp(count, 5, 50);
   let pageToken: string | undefined = undefined;
 
   const {
@@ -72,4 +72,8 @@ function filterVideos(videos) {
       video.snippet.title.indexOf("#") === -1 &&
       video.id.kind === "youtube#video",
   );
+}
+
+function clamp(num, min, max) {
+  return num <= min ? min : num >= max ? max : num;
 }
