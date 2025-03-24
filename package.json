@@ -9,7 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^6.0.0",
+    "@astrojs/tailwind": "^6.0.1",
     "@googleapis/youtube": "^22.0.0",
     "astro": "^5.5.2",
     "astro-embed": "^0.9.0",
