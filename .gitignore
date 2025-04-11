@@ -3,6 +3,7 @@ dist/
 
 # generated types
 .astro/
+.hugo_build.lock
 
 # dependencies
 node_modules/
