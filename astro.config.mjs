@@ -1,14 +1,10 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-
-const site =
-  process.env.CF_PAGES_URL !== ""
-    ? process.env.CF_PAGES_URL
-    : "https://secretfader.com";
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site,
-  integrations: [tailwind()],
+  site: process.env.CF_PAGES_URL || "https://secretfader.com",
+  integrations: [tailwind(), sitemap()],
 });
