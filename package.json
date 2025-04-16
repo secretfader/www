@@ -9,10 +9,15 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.3.0",
     "@astrojs/tailwind": "^6.0.2",
     "@googleapis/youtube": "^24.0.0",
     "astro": "^5.6.1",
     "astro-embed": "^0.9.0",
-    "html-entities": "^2.6.0"
+    "html-entities": "^2.6.0",
+    "truncate-html": "^1.2.1"
+  },
+  "devDependencies": {
+    "@astrojs/rss": "^4.0.11"
   }
 }
