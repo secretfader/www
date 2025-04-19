@@ -18,6 +18,7 @@ layout: show
 media:
   host: https://dn721806.ca.archive.org/0/items/machinefm
 title: Dispatch
+complete: true
 category: Arts
 subcategory: Society &amp; Culture
 ---

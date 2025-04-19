@@ -22,20 +22,25 @@ export async function GET(ctx) {
   const episodes = await findEpisodes(collection);
 
   const {
-    data: { title, authors, artwork: artworkFile, category, subcategory },
+    data: {
+      title,
+      authors,
+      artwork: artworkFile,
+      category,
+      subcategory,
+      complete,
+    },
     body: description,
   } = podcast;
 
   const artwork = await fetchPodcastImage(artworkFile);
-
-  let customData = `<image>${imageUrl(textToSlug(title))}</image>`;
-  customData += `<itunes:author>${humanize(authors)}</itunes:author>`;
-  customData += `<itunes:image>${imageUrl(textToSlug(title))}</itunes:image>`;
-  customData += `<itunes:category text="${encode(category)}"/>`;
-
-  if (subcategory) {
-    customData += `<itunes:category text="${encode(subcategory)}"/>`;
-  }
+  const customData = buildCustomData({
+    title,
+    authors,
+    category,
+    subcategory,
+    complete,
+  });
 
   return await rss({
     title,
@@ -52,6 +57,24 @@ export async function GET(ctx) {
 //
 function podcastCollectionFromContext(ctx) {
   return basename(ctx.originPathname).slice(0, -4);
+}
+
+function buildCustomData({ title, authors, category, subcategory, complete }) {
+  let customData = `<image>${imageUrl(textToSlug(title))}</image>`;
+
+  customData += `<itunes:author>${humanize(authors)}</itunes:author>`;
+  customData += `<itunes:image>${imageUrl(textToSlug(title))}</itunes:image>`;
+  customData += `<itunes:category text="${encode(category)}"/>`;
+
+  if (subcategory) {
+    customData += `<itunes:category text="${encode(subcategory)}"/>`;
+  }
+
+  if (complete) {
+    customData += `<itunes:complete>Yes</itunes:complete>`;
+  }
+
+  return customData;
 }
 
 function imageUrl(relativePath) {

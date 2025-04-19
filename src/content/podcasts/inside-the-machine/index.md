@@ -13,6 +13,7 @@ media:
 title: Inside the Machine
 category: Music
 subcategory: Music Interviews
+complete: true
 authors:
 - Nicholas Young
 ---

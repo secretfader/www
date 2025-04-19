@@ -15,6 +15,7 @@ const podcasts = defineCollection({
       subcategory: z.string(),
       media: z.object({ host: z.string() }),
       authors: z.array(z.string()),
+      complete: z.boolean(),
     }),
 });
 
