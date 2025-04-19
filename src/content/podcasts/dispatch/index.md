@@ -1,5 +1,5 @@
 ---
-artwork: artwork.jpg
+artwork: ./artwork.jpg
 authors:
 - Nicholas Young
 - Joshua Wentz

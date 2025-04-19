@@ -1,5 +1,5 @@
 ---
-artwork: artwork.jpg
+artwork: ./artwork.jpg
 copyright: 2013 - 2015 Nicholas Young
 date: "2013-07-01"
 draft: false

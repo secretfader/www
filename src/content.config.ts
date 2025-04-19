@@ -7,6 +7,12 @@ const posts = defineCollection({
 
 const podcasts = defineCollection({
   loader: glob({ pattern: "src/content/podcasts/**/index.md" }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      artwork: image(),
+      media: z.object({ host: z.string() }),
+    }),
 });
 
 const dispatchPodcast = defineCollection({

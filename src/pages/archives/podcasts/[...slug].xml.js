@@ -1,5 +1,6 @@
 import { basename } from "path";
 import { getCollection } from "astro:content";
+import { getImage } from "astro:assets";
 import rss from "@astrojs/rss";
 
 //
@@ -19,13 +20,25 @@ export async function GET(ctx) {
   const episodes = await findEpisodes(collection);
 
   const {
-    data: { title },
+    data: { title, artwork },
     body: description,
   } = podcast;
+
+  const art = await getImage({
+    src: artwork,
+    width: 3000,
+    height: 3000,
+    format: "jpg",
+  });
+
+  let customData = "<language>en-us</language>";
+  customData += customData + `<itunes:image>${art.src}</itunes:image>`;
 
   return await rss({
     title,
     description,
+    xmlns: { itunes: "http://www.itunes.com/dtds/podcast-1.0.dtd" },
+    customData,
     site: `${ctx.site}/archives/podcasts/${textToSlug(title)}`,
     items: episodesToRSSItems(podcast, episodes),
   });
@@ -53,14 +66,8 @@ function episodesToRSSItems(podcast, episodes) {
     .sort(byNumber)
     .map(
       ({
-        data: {
-          title,
-          number,
-          date: pubDate,
-          body: content,
-          description,
-          assets,
-        },
+        data: { title, number, date: pubDate, description, assets },
+        rendered,
       }) => {
         const link = `/archives/podcasts/${textToSlug(podcast.data.title)}/${number}`;
         const { length, url, format } = mediaUrl(podcast, assets);
@@ -70,6 +77,7 @@ function episodesToRSSItems(podcast, episodes) {
           pubDate,
           description,
           link,
+          content: rendered.html,
           enclosure: {
             url,
             length,
