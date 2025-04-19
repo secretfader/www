@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import { getImage } from "astro:assets";
 import rss from "@astrojs/rss";
 import { encode } from "html-entities";
+import humanize from "humanize-list";
 
 //
 // Astro APIs
@@ -21,13 +22,14 @@ export async function GET(ctx) {
   const episodes = await findEpisodes(collection);
 
   const {
-    data: { title, artwork: artworkFile, category, subcategory },
+    data: { title, authors, artwork: artworkFile, category, subcategory },
     body: description,
   } = podcast;
 
   const artwork = await fetchPodcastImage(artworkFile);
 
   let customData = `<image>${imageUrl(textToSlug(title))}</image>`;
+  customData += `<itunes:author>${humanize(authors)}</itunes:author>`;
   customData += `<itunes:image>${imageUrl(textToSlug(title))}</itunes:image>`;
   customData += `<itunes:category text="${encode(category)}"/>`;
 
