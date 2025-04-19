@@ -1,4 +1,4 @@
-import { basename } from "path";
+import { basename, join } from "path";
 import { getCollection } from "astro:content";
 import { getImage } from "astro:assets";
 import rss from "@astrojs/rss";
@@ -20,26 +20,23 @@ export async function GET(ctx) {
   const episodes = await findEpisodes(collection);
 
   const {
-    data: { title, artwork },
+    data: { title, artwork: artworkFile },
     body: description,
   } = podcast;
 
-  const art = await getImage({
-    src: artwork,
-    width: 3000,
-    height: 3000,
-    format: "jpg",
-  });
+  const artwork = await fetchPodcastImage(artworkFile);
 
   let customData = "<language>en-us</language>";
-  customData += customData + `<itunes:image>${art.src}</itunes:image>`;
+  customData +=
+    customData +
+    `<itunes:image>${pathFromContext(ctx, artwork.src)}</itunes:image>`;
 
   return await rss({
     title,
     description,
     xmlns: { itunes: "http://www.itunes.com/dtds/podcast-1.0.dtd" },
     customData,
-    site: `${ctx.site}/archives/podcasts/${textToSlug(title)}`,
+    site: pathFromContext(ctx, `/archives/podcasts/${textToSlug(title)}`),
     items: episodesToRSSItems(podcast, episodes),
   });
 }
@@ -51,6 +48,10 @@ function podcastCollectionFromContext(ctx) {
   return basename(ctx.originPathname).slice(0, -4);
 }
 
+function pathFromContext(ctx, relativePath) {
+  return join(ctx.site.toString(), relativePath);
+}
+
 async function findPodcast(slug) {
   return (await getCollection("podcasts")).find(
     ({ data: { title } }) => textToSlug(title) === slug,
@@ -59,6 +60,10 @@ async function findPodcast(slug) {
 
 async function findEpisodes(podcast) {
   return await getCollection(podcast);
+}
+
+async function fetchPodcastImage(src) {
+  return await getImage({ src, width: 3000, height: 3000, format: "jpg" });
 }
 
 function episodesToRSSItems(podcast, episodes) {
