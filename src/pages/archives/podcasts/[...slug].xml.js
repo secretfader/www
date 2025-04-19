@@ -27,6 +27,8 @@ export async function GET(ctx) {
   const artwork = await fetchPodcastImage(artworkFile);
 
   let customData = `<itunes:image>${pathFromContext(ctx, artwork.src)}</itunes:image>`;
+  customData +=
+    customData + `<image>${pathFromContext(ctx, artwork.src)}</image>`;
 
   return await rss({
     title,
