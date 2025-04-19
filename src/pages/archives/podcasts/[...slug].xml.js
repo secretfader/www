@@ -2,6 +2,7 @@ import { basename, join } from "path";
 import { getCollection } from "astro:content";
 import { getImage } from "astro:assets";
 import rss from "@astrojs/rss";
+import { encode } from "html-entities";
 
 //
 // Astro APIs
@@ -20,21 +21,26 @@ export async function GET(ctx) {
   const episodes = await findEpisodes(collection);
 
   const {
-    data: { title, artwork: artworkFile },
+    data: { title, artwork: artworkFile, category, subcategory },
     body: description,
   } = podcast;
 
   const artwork = await fetchPodcastImage(artworkFile);
 
-  let customData = `<image>${pathFromContext(ctx, artwork.src)}</image>`;
-  customData += `<itunes:image>${pathFromContext(ctx, artwork.src)}</itunes:image>`;
+  let customData = `<image>${imageUrl(textToSlug(title))}</image>`;
+  customData += `<itunes:image>${imageUrl(textToSlug(title))}</itunes:image>`;
+  customData += `<itunes:category text="${encode(category)}"/>`;
+
+  if (subcategory) {
+    customData += `<itunes:category text="${encode(subcategory)}"/>`;
+  }
 
   return await rss({
     title,
     description,
     xmlns: { itunes: "http://www.itunes.com/dtds/podcast-1.0.dtd" },
     customData,
-    site: pathFromContext(ctx, `/archives/podcasts/${textToSlug(title)}`),
+    site: join(ctx.site.toString(), `/archives/podcasts/${textToSlug(title)}`),
     items: episodesToRSSItems(podcast, episodes),
   });
 }
@@ -46,8 +52,10 @@ function podcastCollectionFromContext(ctx) {
   return basename(ctx.originPathname).slice(0, -4);
 }
 
-function pathFromContext(ctx, relativePath) {
-  return join(ctx.site.toString(), relativePath);
+function imageUrl(relativePath) {
+  return ["https://content.secretfader.com", `images/${relativePath}.jpg`].join(
+    "/",
+  );
 }
 
 async function findPodcast(slug) {

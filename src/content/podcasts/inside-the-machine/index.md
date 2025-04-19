@@ -11,5 +11,7 @@ layout: show
 media:
   host: https://dn721806.ca.archive.org/0/items/machinefm
 title: Inside the Machine
+category: Music
+subcategory: Music Interviews
 ---
 Your guide to the world of independent music. Nicholas Young gets the raw stories behind today's rising stars.

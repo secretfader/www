@@ -11,6 +11,8 @@ const podcasts = defineCollection({
     z.object({
       title: z.string(),
       artwork: image(),
+      category: z.string(),
+      subcategory: z.string(),
       media: z.object({ host: z.string() }),
     }),
 });
