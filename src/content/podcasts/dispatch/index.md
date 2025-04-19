@@ -16,7 +16,7 @@ feeds:
   url: https://itunes.apple.com/us/podcast/dispatch/id1265819315
 layout: show
 media:
-  host: https://ia801409.us.archive.org/26/items/machinefm
+  host: https://dn721806.ca.archive.org/0/items/machinefm
 title: Dispatch
 ---
-Co-created in 2013 by Joshua Wentz and Nicholas Young, Dispatch touches almost every aspect of the modern artist's career. Wentz, a label-owner and musician, brings a unique perspective from Chicago's underground. 
+Co-created in 2013 by Joshua Wentz and Nicholas Young, Dispatch touches almost every aspect of the modern artist's career. Wentz, a label-owner and musician, brings a unique perspective from Chicago's underground.

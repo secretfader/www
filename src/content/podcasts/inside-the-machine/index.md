@@ -9,7 +9,7 @@ feeds:
   url: /programs/inside-the-machine.xml
 layout: show
 media:
-  host: https://ia801409.us.archive.org/26/items/machinefm
+  host: https://dn721806.ca.archive.org/0/items/machinefm
 title: Inside the Machine
 ---
 Your guide to the world of independent music. Nicholas Young gets the raw stories behind today's rising stars.
