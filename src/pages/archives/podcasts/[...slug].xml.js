@@ -102,11 +102,18 @@ function episodesToRSSItems(podcast, episodes) {
     .sort(byNumber)
     .map(
       ({
-        data: { title, number, date: pubDate, description, assets },
+        data: { title, number, date: pubDate, description, assets, explicit },
         rendered,
       }) => {
         const link = `/archives/podcasts/${textToSlug(podcast.data.title)}/${number}`;
         const { length, url, format } = mediaUrl(podcast, assets);
+
+        let customData = "";
+        if (explicit) {
+          customData += `<itunes:explicit>yes</itunes:explicit>`;
+        } else {
+          customData += `<itunes:explicit>no</itunes:explicit>`;
+        }
 
         return {
           title,
@@ -114,6 +121,7 @@ function episodesToRSSItems(podcast, episodes) {
           description,
           link,
           content: rendered.html,
+          customData,
           enclosure: {
             url,
             length,
