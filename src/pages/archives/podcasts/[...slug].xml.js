@@ -63,7 +63,7 @@ function buildCustomData({ title, authors, category, subcategory, complete }) {
   let customData = `<image>${imageUrl(textToSlug(title))}</image>`;
 
   customData += `<itunes:author>${humanize(authors)}</itunes:author>`;
-  customData += `<itunes:image>${imageUrl(textToSlug(title))}</itunes:image>`;
+  customData += `<itunes:image href="${imageUrl(textToSlug(title))}"/>`;
   customData += `<itunes:category text="${encode(category)}"/>`;
 
   if (subcategory) {
