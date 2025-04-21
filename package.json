@@ -12,7 +12,7 @@
     "@astrojs/sitemap": "^3.3.0",
     "@astrojs/tailwind": "^6.0.2",
     "@googleapis/youtube": "^24.0.0",
-    "astro": "^5.6.1",
+    "astro": "^5.7.4",
     "astro-embed": "^0.9.0",
     "html-entities": "^2.6.0",
     "humanize-list": "^1.0.1",
