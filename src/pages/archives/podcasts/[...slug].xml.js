@@ -1,9 +1,16 @@
-import { basename, join } from "path";
+import { join } from "path";
 import { getCollection } from "astro:content";
-import { getImage } from "astro:assets";
 import rss from "@astrojs/rss";
-import { encode } from "html-entities";
-import humanize from "humanize-list";
+
+import {
+  podcastCollectionFromContext,
+  findPodcast,
+  findEpisodes,
+  buildCustomData,
+  fetchPodcastImage,
+  textToSlug,
+  episodesToRSSItems,
+} from "../../../utils/feed";
 
 //
 // Astro APIs
@@ -50,109 +57,4 @@ export async function GET(ctx) {
     site: join(ctx.site.toString(), `/archives/podcasts/${textToSlug(title)}`),
     items: episodesToRSSItems(podcast, episodes),
   });
-}
-
-//
-// Helpers and Custom Utilities
-//
-function podcastCollectionFromContext(ctx) {
-  return basename(ctx.originPathname).slice(0, -4);
-}
-
-function buildCustomData({ title, authors, category, subcategory, complete }) {
-  let customData = `<image>${imageUrl(textToSlug(title))}</image>`;
-
-  customData += `<itunes:author>${humanize(authors)}</itunes:author>`;
-  customData += `<itunes:image href="${imageUrl(textToSlug(title))}"/>`;
-  customData += `<itunes:category text="${encode(category)}"/>`;
-
-  if (subcategory) {
-    customData += `<itunes:category text="${encode(subcategory)}"/>`;
-  }
-
-  if (complete) {
-    customData += `<itunes:complete>Yes</itunes:complete>`;
-  }
-
-  return customData;
-}
-
-function imageUrl(relativePath) {
-  return ["https://content.secretfader.com", `images/${relativePath}.jpg`].join(
-    "/",
-  );
-}
-
-async function findPodcast(slug) {
-  return (await getCollection("podcasts")).find(
-    ({ data: { title } }) => textToSlug(title) === slug,
-  );
-}
-
-async function findEpisodes(podcast) {
-  return await getCollection(podcast);
-}
-
-async function fetchPodcastImage(src) {
-  return await getImage({ src, width: 3000, height: 3000, format: "jpg" });
-}
-
-function episodesToRSSItems(podcast, episodes) {
-  return (episodes || [])
-    .sort(byNumber)
-    .map(
-      ({
-        data: { title, number, date: pubDate, description, assets, explicit },
-        rendered,
-      }) => {
-        const link = `/archives/podcasts/${textToSlug(podcast.data.title)}/${number}`;
-        const { length, url, format } = mediaUrl(podcast, assets);
-
-        let customData = "";
-        if (explicit) {
-          customData += `<itunes:explicit>yes</itunes:explicit>`;
-        } else {
-          customData += `<itunes:explicit>no</itunes:explicit>`;
-        }
-
-        return {
-          title,
-          pubDate,
-          description,
-          link,
-          content: rendered.html,
-          customData,
-          enclosure: {
-            url,
-            length,
-            type: format,
-          },
-        };
-      },
-    );
-}
-
-function textToSlug(text) {
-  return text
-    .trim()
-    .replace(/[^A-Za-z0-9 ]/g, "")
-    .replace(/\s+/g, "-")
-    .replace(/^-+|-+$/g, "")
-    .toLowerCase();
-}
-
-function mediaUrl(podcast, assets) {
-  const asset = assets.find((a) => a.format === "mp3");
-  return {
-    url: [podcast.data.media.host, asset.filename].join("/"),
-    ...asset,
-  };
-}
-
-function byNumber(prev, next) {
-  if (next.data.number > prev.data.number) {
-    return 1;
-  }
-
-  return -1;
 }
