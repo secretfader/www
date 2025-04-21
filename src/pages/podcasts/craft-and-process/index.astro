@@ -1,0 +1,8 @@
+---
+import { getCollection } from "astro:content";
+import { textToSlug } from "../../../utils/feed";
+const content = await getCollection("craft-and-process");
+---
+{content.map(c => (
+  <a href={`/podcasts/craft-and-process/${c.data.episodeRef}`}>{c.data.title}</a>
+))}

@@ -1,0 +1,17 @@
+---
+import { getCollection } from "astro:content";
+import { textToSlug } from "../../../utils/feed";
+import { YouTube } from "astro-embed";
+
+export async function getStaticPaths() {
+ const episodes = await getCollection("craft-and-process");
+  return episodes.map(e => ({
+    params: { slug: e.data.episodeRef },
+    props: e,
+ }))
+}
+
+const { data: { title, youtubeId  } } = Astro.props
+---
+<h1>{title}</h1>
+<YouTube id={youtubeId}/>
