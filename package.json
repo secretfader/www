@@ -16,6 +16,7 @@
     "astro-embed": "^0.9.0",
     "html-entities": "^2.6.0",
     "humanize-list": "^1.0.1",
+    "resend": "^4.3.0",
     "truncate-html": "^1.2.1"
   },
   "devDependencies": {
