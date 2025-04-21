@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^12.5.0",
     "@astrojs/sitemap": "^3.3.0",
     "@astrojs/tailwind": "^6.0.2",
     "@googleapis/youtube": "^24.0.0",
@@ -16,6 +17,7 @@
     "astro-embed": "^0.9.0",
     "html-entities": "^2.6.0",
     "humanize-list": "^1.0.1",
+    "resend": "^4.3.0",
     "truncate-html": "^1.2.1"
   },
   "devDependencies": {
