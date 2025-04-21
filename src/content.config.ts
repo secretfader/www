@@ -13,6 +13,19 @@ const podcasts = defineCollection({
       artwork: image(),
       category: z.string(),
       subcategory: z.string(),
+      authors: z.array(z.string()),
+      complete: z.boolean(),
+    }),
+});
+
+const podcastArchives = defineCollection({
+  loader: glob({ pattern: "src/content/archives/podcasts/**/index.md" }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      artwork: image(),
+      category: z.string(),
+      subcategory: z.string(),
       media: z.object({ host: z.string() }),
       authors: z.array(z.string()),
       complete: z.boolean(),
@@ -21,18 +34,19 @@ const podcasts = defineCollection({
 
 const dispatchPodcast = defineCollection({
   loader: glob({
-    pattern: "src/content/podcasts/dispatch/episodes/*.md",
+    pattern: "src/content/archives/podcasts/dispatch/episodes/*.md",
   }),
 });
 
 const insideTheMachinePodcast = defineCollection({
   loader: glob({
-    pattern: "src/content/podcasts/inside-the-machine/episodes/*.md",
+    pattern: "src/content/archives/podcasts/inside-the-machine/episodes/*.md",
   }),
 });
 
 export const collections = {
   podcasts,
+  "podcast-archives": podcastArchives,
   dispatch: dispatchPodcast,
   "inside-the-machine": insideTheMachinePodcast,
 };

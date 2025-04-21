@@ -16,7 +16,7 @@ import {
 // Astro APIs
 //
 export async function getStaticPaths() {
-  const podcasts = await getCollection("podcast-archives");
+  const podcasts = await getCollection("podcasts");
   return podcasts.map((p) => ({
     params: { slug: textToSlug(p.data.title) },
     props: p,
@@ -54,7 +54,7 @@ export async function GET(ctx) {
     description,
     xmlns: { itunes: "http://www.itunes.com/dtds/podcast-1.0.dtd" },
     customData,
-    site: join(ctx.site.toString(), `/archives/podcasts/${textToSlug(title)}`),
+    site: join(ctx.site.toString(), `/podcasts/${textToSlug(title)}`),
     items: episodesToRSSItems(podcast, episodes),
   });
 }
