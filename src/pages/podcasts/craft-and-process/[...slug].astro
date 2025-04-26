@@ -1,0 +1,14 @@
+---
+import { getCollection } from "astro:content";
+import { textToSlug } from "../../../utils/feed";
+import { YouTube } from "astro-embed";
+
+export async function getStaticPaths() {
+ const episodes = await getCollection("craft-and-process");
+  return episodes.map(e => ({
+   params: { slug: textToSlug(e.data.title) },
+   props: e,
+ }))
+}
+---
+<h1>Go</h1>
