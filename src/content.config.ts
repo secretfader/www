@@ -44,9 +44,16 @@ const insideTheMachinePodcast = defineCollection({
   }),
 });
 
+const craftAndProcessPodcast = defineCollection({
+  loader: glob({
+    pattern: "src/content/podcasts/craft-and-process/episodes/*.md",
+  }),
+});
+
 export const collections = {
   podcasts,
   "podcast-archives": podcastArchives,
   dispatch: dispatchPodcast,
   "inside-the-machine": insideTheMachinePodcast,
+  "craft-and-process": craftAndProcessPodcast,
 };
