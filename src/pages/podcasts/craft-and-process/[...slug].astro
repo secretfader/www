@@ -10,5 +10,7 @@ export async function getStaticPaths() {
    props: e,
  }))
 }
+
+const { data: { title, youtube: { id: youtube_id } } } = Astro.props
 ---
-<h1>Go</h1>
+<YouTube id={youtube_id}/>
