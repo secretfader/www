@@ -48,6 +48,21 @@ const craftAndProcessPodcast = defineCollection({
   loader: glob({
     pattern: "src/content/podcasts/craft-and-process/episodes/*.md",
   }),
+  schema: z.object({
+    title: z.string(),
+    number: z.number(),
+    episodeRef: z.string(),
+    youtubeId: z.string(),
+    media: z.object({
+      host: z.string(),
+      assets: z.array(
+        z.object({
+          contentType: z.string(),
+          filename: z.string(),
+        }),
+      ),
+    }),
+  }),
 });
 
 export const collections = {

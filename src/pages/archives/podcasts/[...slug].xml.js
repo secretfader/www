@@ -24,8 +24,8 @@ export async function getStaticPaths() {
 }
 
 export async function GET(ctx) {
-  const collection = podcastCollectionFromContext(ctx);
-  const podcast = await findPodcast(collection);
+  const collection = podcastCollectionFromContext(ctx, "podcast-archives");
+  const podcast = await findPodcast(collection, "podcast-archives");
   const episodes = await findEpisodes(collection);
 
   const {

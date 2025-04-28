@@ -35,8 +35,8 @@ export function buildCustomData({
   return customData;
 }
 
-export async function findPodcast(slug) {
-  return (await getCollection("podcasts")).find(
+export async function findPodcast(slug, collection) {
+  return (await getCollection(collection)).find(
     ({ data: { title } }) => textToSlug(title) === slug,
   );
 }
@@ -49,39 +49,23 @@ export async function fetchPodcastImage(src) {
   return await getImage({ src, width: 3000, height: 3000, format: "jpg" });
 }
 
-export function episodesToRSSItems(podcast, episodes) {
-  return (episodes || [])
-    .sort(byNumber)
-    .map(
-      ({
-        data: { title, number, date: pubDate, description, assets, explicit },
-        rendered,
-      }) => {
-        const link = `/archives/podcasts/${textToSlug(podcast.data.title)}/${number}`;
-        const { length, url, format } = mediaUrl(podcast, assets);
+export function episodesToRSSItems(podcast, episodes, format) {
+  format = format || "mp3";
+  episodes = episodes || [];
 
-        let customData = "";
-        if (explicit) {
-          customData += `<itunes:explicit>yes</itunes:explicit>`;
-        } else {
-          customData += `<itunes:explicit>no</itunes:explicit>`;
-        }
-
-        return {
-          title,
-          pubDate,
-          description,
-          link,
-          content: rendered.html,
-          customData,
-          enclosure: {
-            url,
-            length,
-            type: format,
-          },
-        };
-      },
+  return episodes.sort(byNumber).map(({ data, rendered }) => {
+    const { url, contentType, length } = mediaUrl(
+      { ...podcast.media, ...data.media },
+      format,
     );
+
+    return {
+      title: data.title,
+      description: data.description,
+      link: "/podcasts/",
+      content: rendered.html(),
+    };
+  });
 }
 
 export function textToSlug(text) {
@@ -93,10 +77,10 @@ export function textToSlug(text) {
     .toLowerCase();
 }
 
-function mediaUrl(podcast, assets) {
-  const asset = assets.find((a) => a.format === "mp3");
+function mediaUrl(media, format) {
+  const asset = media.assets.find((a) => a.filename.endsWith(format));
   return {
-    url: [podcast.data.media.host, asset.filename].join("/"),
+    url: [media.host, asset.filename].join("/"),
     ...asset,
   };
 }

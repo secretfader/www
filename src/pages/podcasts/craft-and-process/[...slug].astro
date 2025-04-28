@@ -6,11 +6,12 @@ import { YouTube } from "astro-embed";
 export async function getStaticPaths() {
  const episodes = await getCollection("craft-and-process");
   return episodes.map(e => ({
-   params: { slug: textToSlug(e.data.title) },
-   props: e,
+    params: { slug: e.data.episodeRef },
+    props: e,
  }))
 }
 
-const { data: { title, youtube: { id: youtube_id } } } = Astro.props
+const { data: { title, youtubeId  } } = Astro.props
 ---
-<YouTube id={youtube_id}/>
+<h1>{title}</h1>
+<YouTube id={youtubeId}/>
