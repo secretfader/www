@@ -64,8 +64,15 @@ export function entriesToRSSItems(entries, format, defaults) {
       format,
     );
 
+    let prefix;
+    if (defaults.prefix) {
+      prefix = defaults.prefix + defaults.site.pathname;
+    } else {
+      prefix = defaults.site.pathname;
+    }
+
     const link = new URL(
-      `${defaults.site.pathname}/${data.episodeRef || data.number}`,
+      `${prefix}/${data.episodeRef || data.number}`,
       defaults.site.origin,
     ).href;
 
@@ -107,11 +114,13 @@ function byNumber(prev, next) {
 }
 
 function rewriteURLForPodtrac(url) {
+  /*
   if (import.meta.env.PROD) {
     url = url.replace("https://", "");
     url = url.replace("http://", "");
     url = `https://dts.podtrac.com/redirect.mp3/${url}`;
   }
+  */
 
   return url;
 }

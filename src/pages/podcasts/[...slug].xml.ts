@@ -35,7 +35,10 @@ export async function GET(ctx) {
     site,
     xmlns: { itunes: "http://www.itunes.com/dtds/podcast-1.0.dtd" },
     customData: buildCustomData({ id, title, authors, categories }),
-    items: entriesToRSSItems(entries, format, { media, site }),
+    items: entriesToRSSItems(entries, format, {
+      media,
+      site,
+    }),
   });
 }
 
