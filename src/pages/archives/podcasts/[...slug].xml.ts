@@ -42,7 +42,7 @@ export async function GET(ctx) {
     items: entriesToRSSItems(entries, "mp3", {
       media,
       site,
-      prefix: `/archives`,
+      //prefix: `/archives`,
     }),
   });
 }
