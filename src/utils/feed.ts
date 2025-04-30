@@ -114,13 +114,13 @@ function byNumber(prev, next) {
 }
 
 function rewriteURLForPodtrac(url) {
-  /*
+  const ext = url.endsWith("mp4") ? "mp4" : "mp3";
+
   if (import.meta.env.PROD) {
     url = url.replace("https://", "");
     url = url.replace("http://", "");
-    url = `https://dts.podtrac.com/redirect.mp3/${url}`;
+    url = `https://dts.podtrac.com/redirect.${ext}/${url}`;
   }
-  */
 
   return url;
 }
