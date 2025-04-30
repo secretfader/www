@@ -29,7 +29,7 @@ export async function GET(ctx) {
   }
 
   return await rss({
-    title,
+    title: format === "mp4" ? `${title}: Video` : title,
     description,
     site,
     xmlns: { itunes: "http://www.itunes.com/dtds/podcast-1.0.dtd" },
