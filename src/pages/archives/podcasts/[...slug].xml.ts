@@ -33,7 +33,7 @@ export async function GET(ctx) {
     xmlns: xmlns(),
     customData: buildCustomData({
       id,
-      site,
+      site: ctx.url,
       title,
       authors,
       categories,

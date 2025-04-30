@@ -63,7 +63,7 @@ export function buildCustomData({
   }
 
   if (site) {
-    customData += `<atom:link href="${site}.xml" rel="self" type="application/rss+xml"/>`;
+    customData += `<atom:link href="${site}" rel="self" type="application/rss+xml"/>`;
   }
 
   return customData;
