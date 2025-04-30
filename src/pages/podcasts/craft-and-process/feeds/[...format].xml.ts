@@ -6,7 +6,7 @@ import {
   getPodcast,
   buildCustomData,
   entriesToRSSItems,
-} from "../../utils/feed";
+} from "../../../../utils/feed";
 
 //
 // Astro APIs
@@ -18,14 +18,13 @@ export async function GET(ctx) {
     body: description,
     site,
     entries,
-  } = await getPodcast(ctx, getPodcasts());
+  } = await getPodcast(
+    { site: ctx.site, base: `/podcasts`, query: "craft-and-process" },
+    getPodcasts(),
+  );
 
   let format = "mp3";
-  if (
-    ctx.url &&
-    ctx.url.searchParams &&
-    ctx.url.searchParams.format === "video"
-  ) {
+  if (ctx.params.format && ctx.params.format == "video") {
     format = "mp4";
   }
 
@@ -43,8 +42,17 @@ export async function GET(ctx) {
 }
 
 export async function getStaticPaths() {
-  return (await getPodcasts()).map((p) => ({
-    params: { slug: basename(p.id) },
+  const podcasts = await getPodcasts();
+
+  const audio = podcasts.map((p) => ({
+    params: { format: "audio" },
     props: p,
   }));
+
+  const video = podcasts.map((p) => ({
+    params: { format: "video" },
+    props: p,
+  }));
+
+  return [...audio, ...video]; // disco
 }

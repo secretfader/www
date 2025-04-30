@@ -9,16 +9,16 @@ import humanize from "humanize-list";
 export const getPodcasts = () => getCollection("podcasts");
 export const getArchivedPodcasts = () => getCollection("podcast-archives");
 
-export async function getPodcast(ctx, data) {
-  const query = basename(ctx.originPathname).slice(0, -4);
+export async function getPodcast(options, data) {
+  //const query = basename(ctx.originPathname).slice(0, -4);
   const results = ((await data) || []).map((p) => ({
-    site: new URL(`podcasts/${basename(p.id)}`, ctx.site),
+    site: new URL(`${options.base}/${basename(p.id)}`, options.site),
     ...p,
   }));
 
-  const podcast = results.find((p) => basename(p.id) === query);
+  const podcast = results.find((p) => basename(p.id) === options.query);
   if (podcast) {
-    podcast.entries = await getCollection(query);
+    podcast.entries = await getCollection(options.query);
   }
 
   return podcast;

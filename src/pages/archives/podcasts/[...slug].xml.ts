@@ -12,13 +12,18 @@ import {
 // Astro APIs
 //
 export async function GET(ctx) {
+  const { slug } = ctx.params;
+
   const {
     id,
     data: { title, authors, categories, media },
     body: description,
     site,
     entries,
-  } = await getPodcast(ctx, getArchivedPodcasts());
+  } = await getPodcast(
+    { site: ctx.site, base: `/archives/podcasts`, query: slug },
+    getArchivedPodcasts(),
+  );
 
   return await rss({
     title,
