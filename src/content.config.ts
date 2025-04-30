@@ -55,6 +55,7 @@ const craftAndProcessPodcast = defineCollection({
     episodeRef: z.string(),
     youtubeId: z.string(),
     pubDate: z.date(),
+    duration: z.string(),
     media: z.object({
       host: z.string(),
       assets: z.array(

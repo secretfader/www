@@ -24,7 +24,15 @@ export async function getPodcast(options, data) {
   return podcast;
 }
 
-export function buildCustomData({ id, title, authors, categories, complete }) {
+export function buildCustomData({
+  id,
+  title,
+  authors,
+  categories,
+  explicit,
+  duration,
+  complete,
+}) {
   let customData = ``;
   if (id) {
     customData += `<image>${imageUrl(basename(id))}</image>`;
@@ -37,6 +45,16 @@ export function buildCustomData({ id, title, authors, categories, complete }) {
 
   for (const category of categories || []) {
     customData += `<itunes:category text="${encode(category)}"/>`;
+  }
+
+  if (explicit) {
+    customData += `<itunes:explicit>Yes</itunes:explicit>`;
+  } else {
+    customData += `<itunes:explicit>No</itunes:explicit>`;
+  }
+
+  if (duration) {
+    customData += `<itunes:duration>${duration}</itunes:duration>`;
   }
 
   if (complete) {

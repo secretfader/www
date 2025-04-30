@@ -10,5 +10,6 @@ categories:
   - Society &amp; Culture
   - Entrepreneurship
 title: Craft and Process
+explicit: false
 ---
 Craft and Process brings you inside the workshops, breweries, and creative spaces of artisans and makers. Each episode peels back the layers of their creative journey, exploring not just what they make, but how and why they make it.

@@ -16,7 +16,7 @@ export async function GET(ctx) {
 
   const {
     id,
-    data: { title, authors, categories, media },
+    data: { title, authors, categories, media, explicit },
     body: description,
     site,
     entries,
@@ -30,7 +30,7 @@ export async function GET(ctx) {
     description,
     site,
     xmlns: { itunes: "http://www.itunes.com/dtds/podcast-1.0.dtd" },
-    customData: buildCustomData({ id, title, authors, categories }),
+    customData: buildCustomData({ id, title, authors, categories, explicit }),
     items: entriesToRSSItems(entries, "mp3", {
       media,
       site,
