@@ -26,6 +26,7 @@ export async function getPodcast(options, data) {
 
 export function buildCustomData({
   id,
+  site,
   title,
   authors,
   categories,
@@ -59,6 +60,10 @@ export function buildCustomData({
 
   if (complete) {
     customData += `<itunes:complete>Yes</itunes:complete>`;
+  }
+
+  if (site) {
+    customData += `<atom:link href="${site}.xml" rel="self" type="application/rss+xml"/>`;
   }
 
   return customData;
@@ -110,6 +115,13 @@ export function entriesToRSSItems(entries, format, defaults) {
       enclosure,
     };
   });
+}
+
+export function xmlns() {
+  return {
+    itunes: "http://www.itunes.com/dtds/podcast-1.0.dtd",
+    atom: "http://www.w3.org/2005/Atom",
+  };
 }
 
 function mediaURL(media, format) {

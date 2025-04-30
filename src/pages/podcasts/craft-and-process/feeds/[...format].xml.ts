@@ -5,6 +5,7 @@ import {
   getPodcasts,
   getPodcast,
   buildCustomData,
+  xmlns,
   entriesToRSSItems,
 } from "../../../../utils/feed";
 
@@ -14,7 +15,7 @@ import {
 export async function GET(ctx) {
   const {
     id,
-    data: { title, authors, categories, media },
+    data: { title, authors, categories, media, explicit },
     body: description,
     site,
     entries,
@@ -32,8 +33,15 @@ export async function GET(ctx) {
     title: format === "mp4" ? `${title}: Video` : title,
     description,
     site,
-    xmlns: { itunes: "http://www.itunes.com/dtds/podcast-1.0.dtd" },
-    customData: buildCustomData({ id, title, authors, categories }),
+    xmlns: xmlns(),
+    customData: buildCustomData({
+      id,
+      site,
+      title,
+      authors,
+      categories,
+      explicit,
+    }),
     items: entriesToRSSItems(entries, format, {
       media,
       site,

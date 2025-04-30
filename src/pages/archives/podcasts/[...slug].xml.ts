@@ -5,6 +5,7 @@ import {
   getArchivedPodcasts,
   getPodcast,
   buildCustomData,
+  xmlns,
   entriesToRSSItems,
 } from "../../../utils/feed";
 
@@ -29,8 +30,15 @@ export async function GET(ctx) {
     title,
     description,
     site,
-    xmlns: { itunes: "http://www.itunes.com/dtds/podcast-1.0.dtd" },
-    customData: buildCustomData({ id, title, authors, categories, explicit }),
+    xmlns: xmlns(),
+    customData: buildCustomData({
+      id,
+      site,
+      title,
+      authors,
+      categories,
+      explicit,
+    }),
     items: entriesToRSSItems(entries, "mp3", {
       media,
       site,
