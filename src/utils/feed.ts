@@ -49,9 +49,9 @@ export function buildCustomData({
   }
 
   if (explicit) {
-    customData += `<itunes:explicit>Yes</itunes:explicit>`;
+    customData += `<itunes:explicit>True</itunes:explicit>`;
   } else {
-    customData += `<itunes:explicit>No</itunes:explicit>`;
+    customData += `<itunes:explicit>False</itunes:explicit>`;
   }
 
   if (duration) {
