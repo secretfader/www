@@ -17,7 +17,7 @@ export async function GET(ctx) {
 
   const {
     id,
-    data: { title, authors, categories, media, explicit },
+    data: { title, authors, categories, media, explicit, language },
     body: description,
     site,
     entries,
@@ -38,6 +38,7 @@ export async function GET(ctx) {
       authors,
       categories,
       explicit,
+      language,
     }),
     items: entriesToRSSItems(entries, "mp3", {
       media,

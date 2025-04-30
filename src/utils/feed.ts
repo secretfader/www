@@ -26,6 +26,7 @@ export async function getPodcast(options, data) {
 
 export function buildCustomData({
   id,
+  language,
   site,
   title,
   authors,
@@ -38,6 +39,10 @@ export function buildCustomData({
   if (id) {
     customData += `<image>${imageUrl(basename(id))}</image>`;
     customData += `<itunes:image href="${imageUrl(basename(id))}"/>`;
+  }
+
+  if (language) {
+    customData += `<language>${language}</language>`;
   }
 
   if (authors && authors.length > 0) {

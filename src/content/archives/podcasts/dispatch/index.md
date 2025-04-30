@@ -15,5 +15,7 @@ media:
   host: https://dn721806.ca.archive.org/0/items/machinefm
 title: Dispatch
 complete: true
+language: en-us
+explicit: false
 ---
 Co-created in 2013 by Joshua Wentz and Nicholas Young, Dispatch touches almost every aspect of the modern artist's career. Wentz, a label-owner and musician, brings a unique perspective from Chicago's underground.

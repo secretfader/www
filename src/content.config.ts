@@ -16,6 +16,8 @@ const podcasts = defineCollection({
       complete: z.boolean(),
       categories: z.array(z.string()),
       copyright: z.string(),
+      language: z.string(),
+      explicit: z.boolean(),
     }),
 });
 
@@ -29,6 +31,9 @@ const podcastArchives = defineCollection({
       media: z.object({ host: z.string() }),
       authors: z.array(z.string()),
       complete: z.boolean(),
+      explicit: z.boolean(),
+      language: z.string(),
+      copyright: z.string(),
     }),
 });
 

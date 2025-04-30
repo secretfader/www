@@ -17,5 +17,6 @@ categories:
 complete: true
 authors:
 - Nicholas Young
+language: en-us
 ---
 Your guide to the world of independent music. Nicholas Young gets the raw stories behind today's rising stars.
