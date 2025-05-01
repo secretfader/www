@@ -3,6 +3,7 @@ dist/
 
 # generated types
 .astro/
+.wrangler/
 .hugo_build.lock
 
 # dependencies
