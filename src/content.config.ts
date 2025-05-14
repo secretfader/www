@@ -1,9 +1,13 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
-import { deselectScripts } from "astro/virtual-modules/transitions-swap-functions.js";
 
 const posts = defineCollection({
   loader: glob({ pattern: "src/content/posts/**/*.md" }),
+  schema: ({ image }) =>
+    z.object({
+      image: image().optional(),
+      title: z.string(),
+    }),
 });
 
 const podcasts = defineCollection({
@@ -81,4 +85,5 @@ export const collections = {
   dispatch: dispatchPodcast,
   "inside-the-machine": insideTheMachinePodcast,
   "craft-and-process": craftAndProcessPodcast,
+  posts,
 };
