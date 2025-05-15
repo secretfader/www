@@ -21,7 +21,11 @@
     "truncate-html": "^1.2.1"
   },
   "devDependencies": {
+    "@astrojs/alpinejs": "^0.4.8",
     "@astrojs/rss": "^4.0.11",
+    "@tailwindcss/vite": "^4.1.6",
+    "@types/alpinejs": "^3.13.11",
+    "alpinejs": "^3.14.9",
     "front-matter": "^4.0.2"
   }
 }
