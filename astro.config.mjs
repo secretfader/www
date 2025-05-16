@@ -10,7 +10,7 @@ const site = import.meta.env.CF_PAGES_URL || "https://secretfader.com";
 // https://astro.build/config
 export default defineConfig({
   site,
-  integrations: [tailwind(), sitemap()],
+  integrations: [sitemap()],
   adapter: cloudflare(),
   vite: { plugins: [tailwind()] },
 });
