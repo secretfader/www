@@ -10,7 +10,7 @@ draft: false
 categories:
   - Arts
   - Design
-  - Society &;amp Culture
+  - Society &amp; Culture
 media:
   host: https://dn721806.ca.archive.org/0/items/machinefm
 title: Dispatch
