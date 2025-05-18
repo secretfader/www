@@ -42,7 +42,8 @@ export async function GET(ctx) {
     .sort((a, b) => b.data.number - a.data.number);
 
   return rss({
-    title,
+    title:
+      ctx.params.format.toLowercase() === "video" ? `${title} - Video` : title,
     description,
     site: new URL(`/podcasts/${ctx.params.show}`, ctx.site),
     customData: customData({
