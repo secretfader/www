@@ -4,11 +4,9 @@ import sitemap from "@astrojs/sitemap";
 import cloudflare from "@astrojs/cloudflare";
 import tailwind from "@tailwindcss/vite";
 
-const site = process.env.CF_PAGES_URL || "https://secretfader.com";
-
 // https://astro.build/config
 export default defineConfig({
-  site,
+  site: getSite(),
   integrations: [sitemap()],
   vite: { plugins: [tailwind()] },
   redirects: {
@@ -18,3 +16,11 @@ export default defineConfig({
   },
   adapter: cloudflare(),
 });
+
+function getSite() {
+  if (process.env.CUSTOM_DOMAIN) {
+    return process.env.CUSTOM_DOMAIN;
+  }
+
+  return "https://secretfader.com";
+}
