@@ -1,5 +1,7 @@
 import { getCollection } from "astro:content";
 import rss from "@astrojs/rss";
+import { encode } from "html-entities";
+import humanize from "humanize-list";
 
 export function getStaticPaths() {
   return [
@@ -24,7 +26,15 @@ export async function GET(ctx) {
 
   const {
     id,
-    data: { title, description, media },
+    data: {
+      title,
+      description,
+      media,
+      categories,
+      explicit,
+      complete,
+      authors,
+    },
   } = podcasts.find((p) => p.id === ctx.params.show);
 
   const entries = episodes
@@ -35,6 +45,13 @@ export async function GET(ctx) {
     title,
     description,
     site: new URL(`/podcasts/${ctx.params.show}`, ctx.site),
+    customData: customData({
+      id,
+      categories,
+      explicit,
+      complete,
+      authors,
+    }),
     xmlns: {
       itunes: "http://www.itunes.com/dtds/podcast-1.0.dtd",
       atom: "http://www.w3.org/2005/Atom",
@@ -60,6 +77,7 @@ const entriesToRSSItems = (entries, options) =>
       pubDate: data.pubDate || data.date,
       link: `/podcasts/${options.podcast}/${data.slug || data.number}`,
       content: rendered.html,
+      customData: customData(data),
       enclosure: {
         url,
         type: contentType,
@@ -67,6 +85,59 @@ const entriesToRSSItems = (entries, options) =>
       },
     };
   });
+
+const customData = ({
+  id,
+  language,
+  site,
+  authors,
+  categories,
+  explicit,
+  duration,
+  complete,
+}) => {
+  let customData = ``;
+
+  if (id) {
+    customData += `<image>${assetURL(id)}</image>`;
+    customData += `<itunes:image href="${assetURL(id)}"/>`;
+  }
+
+  if (language) {
+    customData += `<language>${language}</language>`;
+  }
+
+  if (authors && authors.length > 0) {
+    customData += `<itunes:author>${humanize(authors)}</itunes:author>`;
+  }
+
+  for (const category of categories || []) {
+    customData += `<itunes:category text="${encode(category)}"/>`;
+  }
+
+  if (explicit) {
+    customData += `<itunes:explicit>True</itunes:explicit>`;
+  } else {
+    customData += `<itunes:explicit>False</itunes:explicit>`;
+  }
+
+  if (duration) {
+    customData += `<itunes:duration>${duration}</itunes:duration>`;
+  }
+
+  if (complete) {
+    customData += `<itunes:complete>Yes</itunes:complete>`;
+  }
+
+  if (site) {
+    customData += `<atom:link href="${site}" rel="self" type="application/rss+xml"/>`;
+  }
+
+  return customData;
+};
+
+const assetURL = (relativePath) =>
+  ["https://content.secretfader.com", `images/${relativePath}.jpg`].join("/");
 
 const mediaURL = (media, format) => {
   if (format === "video") {

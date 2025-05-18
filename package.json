@@ -14,6 +14,8 @@
     "@astrojs/sitemap": "^3.4.0",
     "@tailwindcss/vite": "^4.1.7",
     "astro": "^5.7.13",
+    "html-entities": "^2.6.0",
+    "humanize-list": "^1.0.1",
     "tailwindcss": "^4.1.7"
   }
 }
