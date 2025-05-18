@@ -43,7 +43,7 @@ export async function GET(ctx) {
 
   return rss({
     title:
-      ctx.params.format.toLowercase() === "video" ? `${title} - Video` : title,
+      ctx.params.format.toLowerCase() === "video" ? `${title} - Video` : title,
     description,
     site: new URL(`/podcasts/${ctx.params.show}`, ctx.site),
     customData: customData({
