@@ -1,5 +1,15 @@
 ---
 import "../styles/site.css";
+import profile from "../assets/profile.jpg";
+
+interface Props {
+    title?: string;
+    description?: string;
+    image?: string;
+    classes?: string[];
+}
+
+const { title, description, image, classes } = Astro.props;
 ---
 
 <html lang="en">
@@ -8,9 +18,32 @@ import "../styles/site.css";
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>Nicholas Young</title>
+        {
+            image ? (
+                <meta name="og:image" content={image} />
+            ) : (
+                <meta name="og:image" content={profile.src} />
+            )
+        }
+        {
+            description ? (
+                <meta name="description" content={description} />
+            ) : (
+                <meta
+                    name="description"
+                    content="Nicholas Young is a filmmaker, designer, engineer, and interdisciplinary artist from Colorado."
+                />
+            )
+        }
+        {
+            title ? (
+                <title>{title} | Nicholas Young</title>
+            ) : (
+                <title>Nicholas Young</title>
+            )
+        }
     </head>
-    <body class="bg-gray-500">
+    <body class:list={["bg-natural-200", "font-humanist", ...(classes || [])]}>
         <slot />
     </body>
 </html>

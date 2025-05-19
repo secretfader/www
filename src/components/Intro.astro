@@ -1,7 +1,36 @@
 ---
-
+import profile from "../assets/profile.jpg";
 ---
 
-<div class="container mx-auto my-96 text-4xl text-center">
-    <h1>Coming Soon</h1>
+<div class="container mx-auto grid grid-cols-1 lg:grid-cols-12 lg:gap-8 mt-24">
+    <div
+        class="col-span-1 mb-8 lg:col-span-8 flex flex-col justify-center lg:mb-0"
+    >
+        <h2 class="text-3xl lg:text-7xl font-semibold mb-8">
+            Engineer, filmmaker, and creative director.
+        </h2>
+        <p class="text-xl lg:text-2xl font-light">
+            Hi, I'm Nicholas. I'm an interdisciplinary artist, entprenuer, and
+            consultant. I help brands make impactful films and live video events
+            at Fictive Flame Media, build and design products for the web, and
+            host the Craft and Process Podcast.
+        </p>
+    </div>
+    <div class="col-span-1 lg:col-span-4">
+        <img
+            src={profile.src}
+            alt="Profile photo of the author"
+            class="rounded-2xl"
+        />
+    </div>
+    <div class="col-span-1 mt-24 text-center lg:col-span-12">
+        <p class="text-2xl font-light">
+            This site is under active construction. Please visit:
+        </p>
+        <p class="text-2xl font-light">
+            <a href="https://links.secretfader.com"
+                >links.secretfader.com &rarr;</a
+            >
+        </p>
+    </div>
 </div>
