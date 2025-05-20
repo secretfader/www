@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from "astro/config";
+import alpine from "@astrojs/alpinejs";
 import sitemap from "@astrojs/sitemap";
 import cloudflare from "@astrojs/cloudflare";
 import tailwind from "@tailwindcss/vite";
@@ -9,7 +10,7 @@ const site = import.meta.env.CF_PAGES_URL || "https://secretfader.com";
 // https://astro.build/config
 export default defineConfig({
   site,
-  integrations: [sitemap()],
+  integrations: [alpine(), sitemap()],
   vite: { plugins: [tailwind()] },
   redirects: {
     "/archives/podcasts/dispatch.xml": "/podcasts/dispatch/feeds/audio.xml",

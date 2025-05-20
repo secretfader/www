@@ -1,43 +1,31 @@
 ---
 import profile from "../assets/profile.jpg";
+import { Image } from "astro:assets";
 ---
 
 <div
-    class="container mx-auto grid grid-cols-1 px-6 lg:px-0 lg:grid-cols-12 lg:gap-8 mt-24"
+    class="container mx-auto px-6 grid grid-cols-1 mt-12 lg:grid-cols-12 lg:gap-12 lg:px-0 lg:mt-24"
 >
-    <div
-        class="col-span-1 mb-8 lg:col-span-8 flex flex-col justify-center lg:mb-0"
-    >
-        <h2 class="text-3xl lg:text-7xl font-semibold mb-8">
-            Engineer, filmmaker, and creative director.
+    <div class="flex flex-col justify-center antialiased lg:col-span-8">
+        <h2 class="text-gray-500 font-bold text-6xl lg:text-8xl xl:text-9xl">
+            Design, create, broadcast. Repeat.
         </h2>
-        <p class="text-xl lg:text-2xl font-light">
-            Hi, I'm Nicholas. I'm an interdisciplinary artist and consultant. I
-            believe there's no boundary between art and science. On the
-            contrary, my work in one field influences the other.
-        </p>
-        <p class="text-xl mt-4 lg:text-2xl font-light">
-            I help brands make impactful films and live video events at <a
-                href="https://fictiveflame.co">Fictive Flame Media</a
-            >, build and design products for the web, and host the Craft and
-            Process Podcast.
-        </p>
-    </div>
-    <div class="col-span-1 lg:col-span-4">
-        <img
-            src={profile.src}
-            alt="Profile photo of the author"
-            class="rounded-2xl"
-        />
-    </div>
-    <div class="col-span-1 mt-24 text-center lg:col-span-12">
-        <p class="text-2xl font-light">
-            This site is under active construction. Please visit:
-        </p>
-        <p class="text-2xl font-light">
-            <a href="https://links.secretfader.com"
-                >links.secretfader.com &rarr;</a
+        <p class="text-xl mt-8 lg:text-3xl lg:mt-12">
+            I'm Nicholas, an interdisciplinary engineer, filmmaker, and creative
+            director from Colorado. I seamlessly blend art and science to share
+            stories and perspectives you've never heard before. <a
+                class="underline text-gray-700"
+                href="/about">Learn more about my work.</a
             >
         </p>
+    </div>
+    <div class="flex flex-col justify-center mt-8 lg:mt-0 lg:col-span-4">
+        <Image
+            src={profile}
+            alt="Profile photo of the author"
+            width="800"
+            height="800"
+            class="rounded-2xl shadow-gray-200 shadow-lg object-cover h-full max-h-80 lg:max-h-none"
+        />
     </div>
 </div>

@@ -1,11 +1,21 @@
 ---
-export function getStaticPaths() {
-    return [
-        { params: { show: "craft-and-process" } },
-        { params: { show: "dispatch" } },
-        { params: { show: "inside-the-machine" } },
-    ];
+import Layout from "../../../components/Layout.astro";
+import Nav from "../../../components/Nav.astro";
+import Header from "../../../components/Header.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+    return (await getCollection("podcasts")).map(({ id, data }) => ({
+        params: { show: id },
+        props: { ...data },
+    }));
 }
+
+const { title, description } = Astro.props;
 ---
 
-<h1>Podcast</h1>
+<Layout>
+    <Nav />
+    <Header title={title} description={description} />
+    <div class="container mx-auto px-6 antialiased lg:px-0"></div>
+</Layout>
