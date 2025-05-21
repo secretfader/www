@@ -42,9 +42,18 @@ const { title, description, image, classes } = Astro.props;
                 <title>Nicholas Young</title>
             )
         }
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/expand.min.css"
+        />
     </head>
     <body
-        class:list={["bg-natural-200", "font-geohumanist", ...(classes || [])]}
+        class:list={[
+            "bg-natural-200",
+            "dark:bg-neutral-800",
+            "font-geohumanist",
+            ...(classes || []),
+        ]}
     >
         <slot />
     </body>
