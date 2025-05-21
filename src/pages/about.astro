@@ -25,14 +25,24 @@ const images = [
     bayIPA,
     hifi,
 ];
+
+const links = [
+    {
+        title: "Double-Amputee Cyclist Finds a New Way to Ride",
+        source: "FOX 31 Denver, Colorado",
+        href: "https://kdvr.com/news/outdoor-colorado/outdoor-colorado-double-amputee-bicyclist-finds-a-new-way-to-ride/",
+    },
+];
 ---
 
 <Layout>
     <Nav />
     <Header title="About" />
-    <Container classes={["grid", "grid-cols-1", "lg:grid-cols-12"]}>
-        <div class="col-span-1 lg:col-span-8">
-            <p class="text lg:text-xl xl:text-2xl">
+    <Container
+        classes={["grid", "grid-cols-1", "lg:grid-cols-12", "lg:gap-12"]}
+    >
+        <div class="col-span-1 text-lg lg:text-xl xl:text-2xl lg:col-span-8">
+            <p>
                 Nicholas Young is a Colorado-based engineer, filmmaker,
                 designer, and creative director whose work bridges the worlds of
                 technology, art, and storytelling. As an early contributor to
@@ -42,20 +52,20 @@ const images = [
                 network of shows from Chicago, all of which were formative in
                 the medium's early growth.
             </p>
-            <p class="text mt-4 lg:mt-8 lg:text-xl xl:text-2xl">
+            <p class="mt-4 lg:mt-8">
                 Nicholas is the founder of Fictive Flame Media, a creative
                 studio focused on documentary storytelling and
                 cross-disciplinary collaboration. Through the company, he brings
                 bold, human-centered narratives to life, blending technical
                 precision with emotional depth.
             </p>
-            <p class="text mt-4 lg:mt-8 lg:text-xl xl:text-2xl">
+            <p class="mt-4 lg:mt-8">
                 Nicholas also works as an interdisciplinary design and
                 engineering consultant, where his ability to merge innovation
                 with aesthetic insight makes him a valued partner on projects
                 that demand both vision and versatility.
             </p>
-            <p class="text mt-4 lg:mt-8 lg:text-xl xl:text-2xl">
+            <p class="mt-4 lg:mt-8">
                 After moving to Colorado in 2016, Nicholas faced a life-altering
                 diagnosis that led to a double amputation. He has since become a
                 visible advocate and adaptive athlete&mdash;cycling, hiking, and
@@ -63,27 +73,50 @@ const images = [
                 featured in Bicycling Magazine and on local television for his
                 resilience and athleticism.
             </p>
-            <p class="text mt-4 lg:mt-8 lg:text-xl xl:text-2xl">
+            <p class="mt-4 lg:mt-8">
                 Today, Nicholas continues to tell stories that explore themes of
                 adaptation, creativity, and the interconnectedness of
                 disciplines&mdash;both through his work at Fictive Flame Media
                 and his broader creative practice.
             </p>
         </div>
-        <div class="col-span-1 mt-12 lg:col-span-4 lg:mt-0"></div>
+        <div class="text-gray-700 mt-12 col-span-1 lg:col-span-4 lg:mt-0">
+            <div>
+                <span
+                    class="font-semibold uppercase underline underline-offset-8"
+                    >Recent Media</span
+                >
+                <ul>
+                    {
+                        links.map((l) => (
+                            <li class="relative my-4">
+                                <a class="block mb-1" href={l.href}>
+                                    <span class="inset-0 absolute" />"{l.title}"
+                                </a>
+                                <span class="uppercase text-sm">
+                                    {l.source}
+                                </span>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
+        </div>
     </Container>
-
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8 lg:mt-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 lg:mt-16">
         {
-            images.map((p) => (
-                <div class="aspect-square">
-                    <img
-                        class="h-full max-w-full rounded-lg object-cover aspect-square"
-                        src={p.src}
-                        alt=""
-                    />
-                </div>
-            ))
+            images
+                .sort((a, b) => 0.5 - Math.random())
+                .slice(0, 6)
+                .map((p) => (
+                    <div class="aspect-square">
+                        <img
+                            class="max-w-full object-cover aspect-square"
+                            src={p.src}
+                            alt=""
+                        />
+                    </div>
+                ))
         }
     </div>
 </Layout>
