@@ -3,15 +3,28 @@ import { glob } from "astro/loaders";
 
 const podcasts = defineCollection({
   loader: glob({ pattern: "**/index.md", base: "./src/content/podcasts" }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      draft: z.boolean(),
+      authors: z.array(z.string()),
+      categories: z.array(z.string()),
+      artwork: image(),
+      language: z.string(),
+      copyright: z.string(),
+      complete: z.boolean().optional(),
+      explicit: z.boolean().optional(),
+      slug: z.string(),
+    }),
 });
 
 const episodes = defineCollection({
   loader: glob({ pattern: "**/episodes/*.md", base: "./src/content/podcasts" }),
-  /*
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    number: z.number().optional(),
+    number: z.number(),
     youtubeId: z.string().optional(),
     pubDate: z.date().optional(),
     date: z.string().optional(),
@@ -28,7 +41,6 @@ const episodes = defineCollection({
       ),
     }),
   }),
-  */
 });
 
 export const collections = {
