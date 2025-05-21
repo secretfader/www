@@ -1,6 +1,7 @@
 ---
 import "../styles/site.css";
 import profile from "../assets/profile.jpg";
+import Footer from "./Footer.astro";
 
 interface Props {
     title?: string;
@@ -56,5 +57,6 @@ const { title, description, image, classes } = Astro.props;
         ]}
     >
         <slot />
+        <Footer />
     </body>
 </html>

@@ -1,0 +1,117 @@
+---
+
+---
+
+<div
+    class="space-y-8 lg:outline-1 lg:outline-gray-300 mx-auto max-w-6xl px-6 lg:p-12 lg:rounded-2xl"
+>
+    <h3 class="text-center text-3xl text-gray-900 font-bold dark:text-white">
+        Get in Touch
+    </h3>
+    <p class="text-xl font-light text:gray-900 dark:text-gray-300">
+        If you need help with a video or other piece of content, reach out to <a
+            class="underline"
+            href="https://fictiveflame.co">Fictive Flame Media</a
+        >. Otherwise, feel free to use the contact box below for any other
+        ideas, proposals, or review requests.
+    </p>
+    <form
+        x-data="buildContactForm()"
+        @submit.prevent="submit"
+        action="https://www.formbackend.com/f/61a483e23fd551e1"
+        class="space-y-8"
+    >
+        <div
+            class="text-2xl dark:text-gray-300 font-bold text-center lg:text-4xl transition duration-300"
+            x-show="submitted"
+        >
+            We've received your request and will be in touch soon. Thank you!
+        </div>
+        <div>
+            <label
+                for="email"
+                class="block mb-2 text font-medium text-gray-900 dark:text-gray-300"
+                >Your Email Address</label
+            >
+            <input
+                type="email"
+                id="email"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="nicholas@fictiveflame.co"
+                required
+            />
+        </div>
+        <div>
+            <label
+                for="subject"
+                class="block mb-2 text font-medium text-gray-900 dark:text-gray-300"
+                >Subject</label
+            >
+            <input
+                type="text"
+                id="subject"
+                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="Hello"
+                required
+            />
+        </div>
+        <div class="sm:col-span-2">
+            <label
+                for="message"
+                class="block mb-2 text font-medium text-gray-900 dark:text-gray-300"
+                >Your Message</label
+            >
+            <textarea
+                id="message"
+                rows="6"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Leave a comment..."></textarea>
+        </div>
+        <button
+            type="submit"
+            class="py-3 px-5 text font-medium text-center text-gray-800 rounded-lg cursor-pointer sm:w-fit bg-gray-200"
+            >Send Message</button
+        >
+    </form>
+    <script is:inline>
+        function buildContactForm() {
+            return {
+                loading: false,
+                submitted: false,
+                data: {
+                    name: "",
+                    email: "",
+                    message: "",
+                },
+                submit() {
+                    this.loading = true;
+
+                    fetch("https://www.formbackend.com/f/61a483e23fd551e1", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            Accept: "application/json",
+                        },
+                        body: JSON.stringify(this.data),
+                    })
+                        .then((response) => {
+                            if (response.status === 422) {
+                                throw new Error("Validation error");
+                            } else if (!response.ok) {
+                                throw new Error("Something went wrong");
+                            }
+
+                            return response.json();
+                        })
+                        .then((data) => {
+                            this.submitted = true;
+                            this.loading = false;
+                        })
+                        .catch((error) => {
+                            console.error("Error:", error);
+                        });
+                },
+            };
+        }
+    </script>
+</div>
