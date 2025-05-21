@@ -2,6 +2,7 @@ import { getCollection } from "astro:content";
 import rss from "@astrojs/rss";
 import { encode } from "html-entities";
 import humanize from "humanize-list";
+import { buildMediaURL } from "../../../../data";
 
 export function getStaticPaths() {
   return [
@@ -147,12 +148,12 @@ const mediaURL = (media, format) => {
     format = "mp3";
   }
 
+  console.log(media);
   const asset = media.assets.find((a) => a.filename.endsWith(format));
-  const prefixPath = new URL(media.host).pathname;
-  const url = new URL(`${prefixPath}/${asset.filename}`, media.host);
+  const url = buildMediaURL(media.host, asset);
 
   return {
-    url: rewriteURLForPodtrac(url.href),
+    url: rewriteURLForPodtrac(url.toString()),
     ...asset,
   };
 };

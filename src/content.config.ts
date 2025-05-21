@@ -16,6 +16,11 @@ const podcasts = defineCollection({
       complete: z.boolean().optional(),
       explicit: z.boolean().optional(),
       slug: z.string(),
+      media: z
+        .object({
+          host: z.string(),
+        })
+        .optional(),
     }),
 });
 
@@ -27,7 +32,7 @@ const episodes = defineCollection({
     number: z.number(),
     youtubeId: z.string().optional(),
     pubDate: z.date().optional(),
-    date: z.string().optional(),
+    date: z.any().optional(),
     duration: z.string(),
     slug: z.string().optional(),
     explicit: z.boolean(),
