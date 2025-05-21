@@ -15,13 +15,68 @@ const nav = [
 
 <nav
     class="w-full py-6 bg-gray-100 dark:bg-gray-800 text-lg antialiased dark:text-gray-200"
+    x-data="{
+      open: false,
+      lockScroll() {
+          document.body.classList.add('overflow-hidden');
+      },
+      unlockScroll() {
+          document.body.classList.remove('overflow-hidden');
+      },
+      toggleMenu(state) {
+          this.open = state;
+          state ? this.lockScroll() : this.unlockScroll();
+      }
+    }"
 >
     <div class="container mx-auto px-6 flex justify-between lg:px-0">
         <span class="flex uppercase font-semibold">
             <a href="/">Nicholas Young</a>
         </span>
         <div class="flex justify-center">
-            <ul class="flex uppercase">
+            <button
+                class="inline-block text-gray-200 hover:text-gray-400 transition hover:scale-110 cursor-pointer lg:hidden -mt-0.5"
+                @click="toggleMenu(true)"
+            >
+                <svg
+                    id="menu-button"
+                    width="24px"
+                    height="24px"
+                    viewBox="-0.5 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M19 3.32001H16C14.8954 3.32001 14 4.21544 14 5.32001V8.32001C14 9.42458 14.8954 10.32 16 10.32H19C20.1046 10.32 21 9.42458 21 8.32001V5.32001C21 4.21544 20.1046 3.32001 19 3.32001Z"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    <path
+                        d="M8 3.32001H5C3.89543 3.32001 3 4.21544 3 5.32001V8.32001C3 9.42458 3.89543 10.32 5 10.32H8C9.10457 10.32 10 9.42458 10 8.32001V5.32001C10 4.21544 9.10457 3.32001 8 3.32001Z"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    <path
+                        d="M19 14.32H16C14.8954 14.32 14 15.2154 14 16.32V19.32C14 20.4246 14.8954 21.32 16 21.32H19C20.1046 21.32 21 20.4246 21 19.32V16.32C21 15.2154 20.1046 14.32 19 14.32Z"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    <path
+                        d="M8 14.32H5C3.89543 14.32 3 15.2154 3 16.32V19.32C3 20.4246 3.89543 21.32 5 21.32H8C9.10457 21.32 10 20.4246 10 19.32V16.32C10 15.2154 9.10457 14.32 8 14.32Z"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+                <style>
+                    #menu-button path {
+                        stroke: #000000;
+                    }
+                    :global(.dark) #menu-button path {
+                        fill: white;
+                    }
+                </style>
+            </button>
+            <ul class="hidden lg:flex uppercase">
                 {
                     nav.map((e, i, a) =>
                         i === a.length - 1 ? (
@@ -42,5 +97,31 @@ const nav = [
             </ul>
             <ThemeToggle />
         </div>
+    </div>
+    <div
+        x-show="open"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="opacity-0 scale-95"
+        x-transition:enter-end="opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-200"
+        x-transition:leave-start="opacity-100 scale-100"
+        x-transition:leave-end="opacity-0 scale-95"
+        class="fixed inset-0 z-50 bg-neutral-300 dark:bg-neutral-800 text-gray-700 dark:text-gray-200 flex flex-col items-center justify-center space-y-8 font-humanist font-bold uppercase overflow-hidden"
+    >
+        <button
+            @click="toggleMenu(false)"
+            class="absolute top-6 right-6 text-3xl hover:text-gray-400 cursor-pointer"
+            >✕</button
+        >
+        {
+            nav.map((e, i, a) => (
+                <a
+                    href="/"
+                    class="text-5xl hover:text-gray-400 transition duration-300"
+                >
+                    {e.title}
+                </a>
+            ))
+        }
     </div>
 </nav>
