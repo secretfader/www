@@ -6,3 +6,5 @@ export const byDate = (a, b) =>
 export const published = (e) => new Date(e.data.pubDate) < new Date();
 
 export const getPodcasts = async () => await getCollection("podcasts");
+
+export const formatDate = (date) => new Date(date).toLocaleDateString();

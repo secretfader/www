@@ -3,9 +3,9 @@ import Layout from "../components/Layout.astro";
 import Nav from "../components/Nav.astro";
 import Header from "../components/Header.astro";
 import Container from "../components/Container.astro";
+import { formatDate } from "../data";
 
 import podcast from "../assets/craft-and-process.jpg";
-import pedalTeam from "../assets/pedal-team.jpg";
 import trike from "../assets/trike.jpg";
 import redRocks from "../assets/running-red-rocks.jpg";
 import concert from "../assets/concert.jpg";
@@ -15,7 +15,6 @@ import bayIPA from "../assets/bayipa.jpg";
 import hifi from "../assets/hifi.jpg";
 
 const images = [
-    pedalTeam,
     podcast,
     concert,
     trike,
@@ -31,6 +30,13 @@ const links = [
         title: "Double-Amputee Cyclist Finds a New Way to Ride",
         source: "FOX 31 Denver, Colorado",
         href: "https://kdvr.com/news/outdoor-colorado/outdoor-colorado-double-amputee-bicyclist-finds-a-new-way-to-ride/",
+        pubDate: "2023-05-25",
+    },
+    {
+        title: "After Two Amputations, This Cyclist Started a Club for Athletes Like Him",
+        source: "Bicycling Magazine",
+        href: "https://www.bicycling.com/culture/a42555000/how-cycling-changed-me-nicholas-young/",
+        pubDate: "2023-01-20",
     },
 ];
 ---
@@ -94,7 +100,7 @@ const links = [
                                     <span class="inset-0 absolute" />"{l.title}"
                                 </a>
                                 <span class="uppercase text-sm">
-                                    {l.source}
+                                    {l.source} {formatDate(l.pubDate)}
                                 </span>
                             </li>
                         ))
