@@ -2,14 +2,37 @@
 import Layout from "../components/Layout.astro";
 import Nav from "../components/Nav.astro";
 import Header from "../components/Header.astro";
+import Container from "../components/Container.astro";
+
+import podcast from "../assets/craft-and-process.jpg";
+import pedalTeam from "../assets/pedal-team.jpg";
+import trike from "../assets/trike.jpg";
+import redRocks from "../assets/running-red-rocks.jpg";
+import concert from "../assets/concert.jpg";
+import superhero from "../assets/superhero.jpg";
+import vinyl from "../assets/vinyl.jpg";
+import bayIPA from "../assets/bayipa.jpg";
+import hifi from "../assets/hifi.jpg";
+
+const images = [
+    pedalTeam,
+    podcast,
+    concert,
+    trike,
+    redRocks,
+    vinyl,
+    superhero,
+    bayIPA,
+    hifi,
+];
 ---
 
 <Layout>
     <Nav />
     <Header title="About" />
-    <div class="container mx-auto px-6 antialiased lg:px-0">
-        <div class="max-w-6xl">
-            <p class="text-xl mt-4 lg:mt-8 lg:text-2xl">
+    <Container classes={["grid", "grid-cols-1", "lg:grid-cols-12"]}>
+        <div class="col-span-1 lg:col-span-8">
+            <p class="text lg:text-xl xl:text-2xl">
                 Nicholas Young is a Colorado-based engineer, filmmaker,
                 designer, and creative director whose work bridges the worlds of
                 technology, art, and storytelling. As an early contributor to
@@ -19,20 +42,20 @@ import Header from "../components/Header.astro";
                 network of shows from Chicago, all of which were formative in
                 the medium's early growth.
             </p>
-            <p class="text-xl mt-4 lg:mt-8 lg:text-2xl">
+            <p class="text mt-4 lg:mt-8 lg:text-xl xl:text-2xl">
                 Nicholas is the founder of Fictive Flame Media, a creative
                 studio focused on documentary storytelling and
                 cross-disciplinary collaboration. Through the company, he brings
                 bold, human-centered narratives to life, blending technical
                 precision with emotional depth.
             </p>
-            <p class="text-xl mt-4 lg:mt-8 lg:text-2xl">
+            <p class="text mt-4 lg:mt-8 lg:text-xl xl:text-2xl">
                 Nicholas also works as an interdisciplinary design and
                 engineering consultant, where his ability to merge innovation
                 with aesthetic insight makes him a valued partner on projects
                 that demand both vision and versatility.
             </p>
-            <p class="text-xl mt-4 lg:mt-8 lg:text-2xl">
+            <p class="text mt-4 lg:mt-8 lg:text-xl xl:text-2xl">
                 After moving to Colorado in 2016, Nicholas faced a life-altering
                 diagnosis that led to a double amputation. He has since become a
                 visible advocate and adaptive athlete&mdash;cycling, hiking, and
@@ -40,12 +63,27 @@ import Header from "../components/Header.astro";
                 featured in Bicycling Magazine and on local television for his
                 resilience and athleticism.
             </p>
-            <p class="text-xl mt-4 lg:mt-8 lg:text-2xl">
+            <p class="text mt-4 lg:mt-8 lg:text-xl xl:text-2xl">
                 Today, Nicholas continues to tell stories that explore themes of
                 adaptation, creativity, and the interconnectedness of
                 disciplines&mdash;both through his work at Fictive Flame Media
                 and his broader creative practice.
             </p>
         </div>
+        <div class="col-span-1 mt-12 lg:col-span-4 lg:mt-0"></div>
+    </Container>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8 lg:mt-12">
+        {
+            images.map((p) => (
+                <div class="aspect-square">
+                    <img
+                        class="h-full max-w-full rounded-lg object-cover aspect-square"
+                        src={p.src}
+                        alt=""
+                    />
+                </div>
+            ))
+        }
     </div>
 </Layout>
