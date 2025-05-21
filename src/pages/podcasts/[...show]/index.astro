@@ -2,7 +2,10 @@
 import Layout from "../../../components/Layout.astro";
 import Nav from "../../../components/Nav.astro";
 import Header from "../../../components/Header.astro";
+import { getEpisodesByShowID } from "../../../data";
+import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
+import { YouTube } from "@astro-community/astro-embed-youtube";
 
 export async function getStaticPaths() {
     return (await getCollection("podcasts")).map(({ id, data }) => ({
@@ -11,11 +14,55 @@ export async function getStaticPaths() {
     }));
 }
 
-const { title, description } = Astro.props;
+const { title, description, artwork, slug } = Astro.props;
+const episodes = await getEpisodesByShowID(Astro.params.show);
 ---
 
 <Layout>
     <Nav />
-    <Header title={title} description={description} />
-    <div class="container mx-auto px-6 antialiased lg:px-0"></div>
+    <div
+        class="container mx-auto px-6 my-8 grid grid-cols-1 lg:my-12 lg:px-0 lg:grid-cols-12"
+    >
+        <div
+            class="col-span-1 lg:col-span-8 flex mb-8 flex-col justify-center lg:mb-0"
+        >
+            <h1
+                class="text-gray-500 dark:text-gray-400 font-bold text-4xl lg:text-7xl xl:text-8xl"
+            >
+                {title}
+            </h1>
+            {
+                description ? (
+                    <div class="text-xl lg:text-2xl mt-8 dark:text-gray-400 max-w-4xl lg:mt-12">
+                        <span>{description}</span>
+                    </div>
+                ) : undefined
+            }
+        </div>
+        <div class="col-span-1 lg:col-span-4">
+            <Image
+                src={artwork}
+                alt={description}
+                width="600px"
+                class="shadow-gray-300 dark:shadow-gray-800 shadow-lg w-full"
+            />
+        </div>
+    </div>
+    <div
+        class="container mx-auto grid grid-cols-1 px-6 mt-12 lg:mt-24 lg:grid-cols-12 lg:gap-8 lg:px-0"
+    >
+        {
+            episodes.map((e) => (
+                <div class="col-span-1 mb-4 text-gray-700 dark:text-gray-300 lg:col-span-4 lg:mb-0">
+                    <YouTube id={e.data.youtubeId} />
+                    <a href={`/podcasts/${slug}/${e.id}`}>
+                        <span class="inset-0 absolute" />
+                        <h2 class="text-3xl font-semibold mt-4">
+                            {e.data.title}
+                        </h2>
+                    </a>
+                </div>
+            ))
+        }
+    </div>
 </Layout>

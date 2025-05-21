@@ -6,6 +6,11 @@ copyright: 2025 Nicholas Young and Fictive Flame Media.
 description: Tour the workshops, breweries, and creative spaces of artisans and makers with host Nicholas Young.
 draft: false
 complete: false
+links:
+  - title: Subscribe on Apple Podcasts (Audio)
+    href: ''
+  - title: Subscribe on Apple Podcasts (Video)
+    href: ''
 categories:
   - Society &amp; Culture
   - Entrepreneurship

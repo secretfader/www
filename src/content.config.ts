@@ -29,7 +29,16 @@ const episodes = defineCollection({
     pubDate: z.date().optional(),
     date: z.string().optional(),
     duration: z.string(),
+    slug: z.string().optional(),
     explicit: z.boolean(),
+    links: z
+      .array(
+        z.object({
+          title: z.string(),
+          href: z.string(),
+        }),
+      )
+      .optional(),
     media: z.object({
       host: z.string().optional(),
       assets: z.array(

@@ -1,11 +1,128 @@
 ---
-export function getStaticPaths() {
-    return [
-        { params: { show: "craft-and-process", episode: "1" } },
-        { params: { show: "dispatch", episode: "1" } },
-        { params: { show: "inside-the-machine", episode: "1" } },
-    ];
+import Layout from "../../../components/Layout.astro";
+import Nav from "../../../components/Nav.astro";
+import Header from "../../../components/Header.astro";
+import Container from "../../../components/Container.astro";
+import Prose from "../../../components/Prose.astro";
+import {
+    getPodcasts,
+    getEpisodesByShowID,
+    buildMediaURL,
+    rewriteURLForPodtrac,
+} from "../../../data";
+import { render } from "astro:content";
+
+export async function getStaticPaths() {
+    const inputs = (await getPodcasts()).map((p) => ({
+        show: p,
+        episodes: getEpisodesByShowID(p.id),
+    }));
+
+    let paths = [];
+    for (const { show, episodes } of inputs) {
+        for (const episode of await episodes) {
+            paths.push({
+                params: {
+                    show: show.id,
+                    episode: episode.data.slug || episode.data.number,
+                },
+                props: {
+                    show: {
+                        ...show,
+                        ...show.data,
+                    },
+                    episode: {
+                        ...episode,
+                        ...episode.data,
+                    },
+                },
+            });
+        }
+    }
+
+    return paths;
 }
+const {
+    episode: { title, description, links },
+} = Astro.props;
+
+const { host, assets } = {
+    ...Astro.props.show.media,
+    ...Astro.props.episode.media,
+};
+
+const media = assets.map((a) => ({
+    ...a,
+    url: rewriteURLForPodtrac(buildMediaURL(host, a).toString()),
+}));
+
+const video = media.filter((m) => m.url.includes("mp4"));
+const { Content } = await render(Astro.props.episode);
 ---
 
-<h2>Episode</h2>
+<Layout title={title} description={description}>
+    <Nav />
+    <div class="container mx-auto px-6 my-8 lg:my-12 lg:px-0">
+        <a href={`/podcasts/${Astro.props.show.id}`}>
+            <span
+                class="text text-gray-700 dark:text-gray-400 font-light mb-8 block underline underline-offset-2"
+            >
+                &larr; Back to {Astro.props.show.title}
+            </span>
+        </a>
+        <h1
+            class="text-gray-500 dark:text-gray-400 font-bold text-4xl lg:text-7xl xl:text-8xl"
+        >
+            {title}
+        </h1>
+        {
+            description ? (
+                <div class="text-xl lg:text-2xl mt-8 max-w-7xl dark:text-gray-400 lg:mt-12">
+                    <span>{description}</span>
+                </div>
+            ) : undefined
+        }
+    </div>
+    <Container
+        classes={[
+            "grid",
+            "grid-cols-1",
+            "lg:grid-cols-12",
+            "lg:gap-12",
+            "mb-20",
+        ]}
+    >
+        <div
+            class="col-span-1 text-lg lg:text-xl xl:text-2xl lg:col-span-10 dark:text-gray-100"
+        >
+            <video controls playsinline class="w-full aspect-video mb-12 block">
+                {video.map((m) => <source src={m.url} type={m.contentType} />)}
+                Your browser does not support the video tag.
+            </video>
+            <Prose>
+                <Content />
+            </Prose>
+        </div>
+        <div
+            class="text-gray-700 dark:text-gray-300 mt-12 col-span-1 lg:col-span-2 lg:mt-0"
+        >
+            <div>
+                <span
+                    class="font-semibold uppercase underline underline-offset-8"
+                    >Links</span
+                >
+                <ul>
+                    {
+                        links.map((l) => (
+                            <li class="relative my-4">
+                                <a class="block mb-1" href={l.href}>
+                                    {l.title}
+                                </a>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
+        </div>
+    </Container>
+</Layout>
