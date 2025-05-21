@@ -148,7 +148,6 @@ const mediaURL = (media, format) => {
     format = "mp3";
   }
 
-  console.log(media);
   const asset = media.assets.find((a) => a.filename.endsWith(format));
   const url = buildMediaURL(media.host, asset);
 
