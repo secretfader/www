@@ -13,6 +13,7 @@ export default defineConfig({
   integrations: [alpine(), sitemap()],
   vite: { plugins: [tailwind()] },
   redirects: {
+    "/podcasts": "/podcasts/craft-and-process",
     "/archives/podcasts/dispatch.xml": "/podcasts/dispatch/feeds/audio.xml",
     "/archives/podcasts/inside-the-machine.xml":
       "/podcasts/inside-the-machine/feeds/audio.xml",
