@@ -12,105 +12,11 @@
         If you need help with a video or other piece of content, reach out to <a
             class="underline"
             href="https://fictiveflame.co">Fictive Flame Media</a
-        >. Otherwise, feel free to use the form below for any other ideas,
-        proposals, or review requests.
+        >. Otherwise, feel free to use the email for any other ideas, proposals,
+        or review requests.
     </p>
-    <form id="contact-form" action="/" method="POST" class="space-y-8">
-        <div>
-            <label class="block mb-2 dark:text-gray-300">Name</label>
-            <input
-                type="text"
-                name="name"
-                x-model="data.name"
-                class="shadow-sm bg-gray-50 dark:bg-gray-900 dark:text-gray-300 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-                placeholder="Your Name"
-                required
-            />
-        </div>
-        <div>
-            <label class="block mb-2 dark:text-gray-300">Email Address</label>
-            <input
-                type="email"
-                name="email"
-                x-model="data.email"
-                class="shadow-sm bg-gray-50 dark:bg-gray-900 dark:text-gray-300 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-                placeholder="nicholas@fictiveflame.co"
-                required
-            />
-        </div>
-        <div>
-            <label class="block mb-2 dark:text-gray-300">Message</label>
-            <textarea
-                name="message"
-                x-model="data.message"
-                rows="6"
-                class="block p-2.5 w-full text-sm bg-gray-50 dark:bg-gray-900 dark:text-gray-300 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
-                placeholder="Tell us about your needs..."></textarea>
-        </div>
-        <button
-            type="submit"
-            class="py-3 px-5 outline-1 outline-gray-900 dark:outline-gray-400 dark:text-gray-200 rounded-lg cursor-pointer sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300"
-            >Send</button
-        >
-    </form>
-    <script>
-        import { actions, isInputError } from "astro:actions";
-
-        function clearMessage(id: string) {
-            const element = document.getElementById(id);
-            if (element) {
-                element.remove();
-            }
-        }
-
-        function addMessage(
-            message: string,
-            type: "error" | "success",
-            element: HTMLElement,
-        ) {
-            const p = document.createElement("p");
-            p.id = "message";
-            p.className = `message text-3xl font-bold text-center ${type === "success" ? "text-gray-700 dark:text-gray-300" : "text-gray-600 dark:text-gray-200"}`;
-            p.innerText = message;
-            element.prepend(p);
-        }
-
-        function clearInput(id: string) {
-            const emailInput = document.getElementById(id) as HTMLInputElement;
-            if (emailInput) emailInput.value = "";
-        }
-
-        function renderMessage(error: any, data: any, form: HTMLFormElement) {
-            if (error && isInputError(error)) {
-                const message = error.fields.email && error.fields.email[0];
-                addMessage(message || "", "error", form);
-            } else {
-                if (data?.strapiErrors) {
-                    const message = data?.strapiErrors.message;
-                    addMessage(message, "error", form);
-                } else {
-                    const message = "Form submitted, thank you.";
-                    clearInput("email");
-                    addMessage(message, "success", form);
-                }
-            }
-        }
-
-        const form = document.getElementById("contact-form") as HTMLFormElement;
-        form.addEventListener("submit", handleFormSubmit);
-
-        async function handleFormSubmit(e: Event) {
-            e.preventDefault();
-
-            const formData = new FormData(form);
-            const { data, error } = await actions.contact({
-                email: "test@test.com",
-                message: "X@test.com",
-                name: "HKLO",
-            });
-
-            clearMessage("message");
-            renderMessage(error, data, form);
-        }
-    </script>
+    <span class="text">
+        <pre
+            class="text-center text-gray-700 dark:text-gray-300">hello@secretfader.com</pre>
+    </span>
 </div>
