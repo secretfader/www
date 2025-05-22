@@ -54,7 +54,7 @@
         >
     </form>
     <script>
-        import { actions, isInputError } from "astro:actions";
+        import { actions, isInputError, isActionError } from "astro:actions";
 
         function clearMessage(id: string) {
             const element = document.getElementById(id);
@@ -84,15 +84,14 @@
             if (error && isInputError(error)) {
                 const message = error.fields.email && error.fields.email[0];
                 addMessage(message || "", "error", form);
+            }
+            if (error && isActionError(error)) {
+                const message = error.message;
+                addMessage(message, "error", form);
             } else {
-                if (data?.strapiErrors) {
-                    const message = data?.strapiErrors.message;
-                    addMessage(message, "error", form);
-                } else {
-                    const message = "Form submitted, thank you.";
-                    clearInput("email");
-                    addMessage(message, "success", form);
-                }
+                const message = "Form submitted, thank you.";
+                clearInput("email");
+                addMessage(message, "success", form);
             }
         }
 
@@ -103,12 +102,15 @@
             e.preventDefault();
 
             const formData = new FormData(form);
-            const { data, error } = await actions.contact({
-                email: "test@test.com",
-                message: "X@test.com",
-                name: "HKLO",
-            });
+            const values = Array.from(formData.entries()).reduce(
+                (memo, [key, value]) => ({
+                    ...memo,
+                    [key]: value,
+                }),
+                {},
+            );
 
+            const { data, error } = await actions.contact(values);
             clearMessage("message");
             renderMessage(error, data, form);
         }

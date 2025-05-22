@@ -9,8 +9,8 @@ const input = z.object({
   message: z.string(),
 });
 
-const handler = async ({ name, email, message }) => {
-  const response = await fetch(webhook, {
+const handler = async ({ name, email, message }, ctx) => {
+  const response = await fetch(ctx.locals.runtime.env.DISCORD_WEBHOOK, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -22,8 +22,16 @@ const handler = async ({ name, email, message }) => {
   });
 
   if (!response.ok) {
-    throw new ActionError({ code: "INTERNAL_SERVER_ERROR" });
+    throw new ActionError({
+      message: response.statusText,
+      code: "INTERNAL_SERVER_ERROR",
+    });
   }
+
+  return {
+    ok: true,
+    message: "Thanks for submitting the form.",
+  };
 };
 
 export const action = defineAction({
