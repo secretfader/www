@@ -56,8 +56,12 @@ const episodes = await getEpisodesByShowID(Astro.params.show);
         {
             episodes.map((e) => (
                 <div class="relative z-10 col-span-1 mb-4 text-gray-700 dark:text-gray-300 lg:col-span-4 lg:mb-0">
-                    <YouTube id={e.data.youtubeId} />
-                    <a href={`/podcasts/${slug}/${e.id}`}>
+                    {e.data.youtubeId ? (
+                        <YouTube id={e.data.youtubeId} />
+                    ) : undefined}
+                    <a
+                        href={`/podcasts/${slug}/${e.data.slug || e.data.number}`}
+                    >
                         <span class="inset-0 absolute" />
                         <h2 class="text-3xl font-semibold mt-4">
                             {e.data.title}
