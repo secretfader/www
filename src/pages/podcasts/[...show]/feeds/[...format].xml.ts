@@ -4,6 +4,8 @@ import { encode } from "html-entities";
 import humanize from "humanize-list";
 import { buildMediaURL } from "../../../../data";
 
+export const prerender = true;
+
 export function getStaticPaths() {
   return [
     {
