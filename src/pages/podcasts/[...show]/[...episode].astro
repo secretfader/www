@@ -12,6 +12,8 @@ import {
 } from "../../../data";
 import { render } from "astro:content";
 
+export const prerender = true;
+
 export async function getStaticPaths() {
     const inputs = (await getPodcasts()).map((p) => ({
         show: p,
