@@ -108,6 +108,10 @@
         async function handleFormSubmit(e: Event) {
             e.preventDefault();
 
+            const form = document.getElementById(
+                "contact-form",
+            ) as HTMLFormElement;
+
             const formData = new FormData(form);
             const values = Array.from(formData.entries()).reduce(
                 (memo, [key, value]) => ({
