@@ -2,6 +2,7 @@
 import "../styles/site.css";
 import profile from "../assets/profile.jpg";
 import Footer from "./Footer.astro";
+import { ClientRouter } from "astro:transitions";
 
 interface Props {
     title?: string;
@@ -19,6 +20,7 @@ const { title, description, image, classes } = Astro.props;
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
+        <ClientRouter />
         {
             image ? (
                 <meta name="og:image" content={image} />
@@ -47,6 +49,48 @@ const { title, description, image, classes } = Astro.props;
             defer
             src="https://cloud.umami.is/script.js"
             data-website-id="1d43dc8a-52a5-41ee-a3ef-acc0badb7398"></script>
+        <script is:inline>
+            function setDarkMode(document) {
+                const getThemePreference = () => {
+                    if (
+                        typeof localStorage !== "undefined" &&
+                        localStorage.getItem("theme")
+                    ) {
+                        return localStorage.getItem("theme");
+                    }
+                    return window.matchMedia("(prefers-color-scheme: dark)")
+                        .matches
+                        ? "dark"
+                        : "theme-light";
+                };
+                const isDark = getThemePreference() === "dark";
+                document.documentElement.classList[isDark ? "add" : "remove"](
+                    "dark",
+                );
+
+                if (typeof localStorage !== "undefined") {
+                    const observer = new MutationObserver(() => {
+                        const isDark =
+                            document.documentElement.classList.contains("dark");
+                        localStorage.setItem(
+                            "theme",
+                            isDark ? "dark" : "theme-light",
+                        );
+                    });
+                    observer.observe(document.documentElement, {
+                        attributes: true,
+                        attributeFilter: ["class"],
+                    });
+                }
+            }
+
+            setDarkMode(document);
+
+            document.addEventListener("astro:before-swap", (ev) => {
+                // Pass the incoming document to set the theme on it
+                setDarkMode(ev.newDocument);
+            });
+        </script>
     </head>
     <body
         class:list={[
