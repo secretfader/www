@@ -92,8 +92,18 @@
             }
         }
 
-        const form = document.getElementById("contact-form") as HTMLFormElement;
-        form.addEventListener("submit", handleFormSubmit);
+        function setFormListener() {
+            const form = document.getElementById(
+                "contact-form",
+            ) as HTMLFormElement;
+            form.addEventListener("submit", handleFormSubmit);
+        }
+
+        document.addEventListener("astro:page-load", () => {
+            setFormListener();
+        });
+
+        setFormListener();
 
         async function handleFormSubmit(e: Event) {
             e.preventDefault();
