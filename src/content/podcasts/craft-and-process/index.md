@@ -3,14 +3,18 @@ artwork: ./artwork.jpg
 authors:
 - Nicholas Young
 copyright: 2025 Nicholas Young and Fictive Flame Media.
-description: Tour the workshops, breweries, and creative spaces of artisans and makers with host Nicholas Young.
+description: Taking you behind-the-scenes to understand the creative spaces and unique businesses of artisans and makers from across Colorado.
 draft: false
 complete: false
 links:
   - title: Subscribe on Apple Podcasts (Audio)
-    href: ''
+    href: https://podcasts.apple.com/us/podcast/craft-and-process/id1793611508
   - title: Subscribe on Apple Podcasts (Video)
-    href: ''
+    href: https://podcasts.apple.com/us/podcast/craft-and-process-video/id1811656281
+  - title: Follow on iHeart
+    href: https://www.iheart.com/podcast/269-craft-and-process-263890236/
+  - title: Listen on Audible
+    href: https://www.amazon.com/Craft-and-Process/dp/B0DVV59QDZ
 categories:
   - Society &amp; Culture
   - Entrepreneurship

@@ -2,6 +2,7 @@
 import Layout from "../../../components/Layout.astro";
 import Nav from "../../../components/Nav.astro";
 import Header from "../../../components/Header.astro";
+import SubscribeMenu from "../../../components/SubscribeMenu.astro";
 import { getEpisodesByShowID } from "../../../data";
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
@@ -16,7 +17,7 @@ export async function getStaticPaths() {
     }));
 }
 
-const { title, description, artwork, slug } = Astro.props;
+const { title, description, artwork, slug, links } = Astro.props;
 const episodes = await getEpisodesByShowID(Astro.params.show);
 ---
 
@@ -40,6 +41,7 @@ const episodes = await getEpisodesByShowID(Astro.params.show);
                     </div>
                 ) : undefined
             }
+            {links ? <SubscribeMenu title="Follow &amp; Subscribe" links={links} /> : undefined}
         </div>
         <div class="col-span-1 lg:col-span-4">
             <Image

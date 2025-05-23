@@ -16,6 +16,14 @@ const podcasts = defineCollection({
       complete: z.boolean().optional(),
       explicit: z.boolean().optional(),
       slug: z.string(),
+      links: z
+        .array(
+          z.object({
+            title: z.string(),
+            href: z.string(),
+          }),
+        )
+        .optional(),
       media: z
         .object({
           host: z.string(),
