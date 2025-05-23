@@ -111,7 +111,12 @@ const links = [
                     {
                         links.map((l) => (
                             <li class="relative my-4">
-                                <a class="block mb-1" href={l.href}>
+                                <a
+                                    class="block mb-1"
+                                    target="_blank"
+                                    rel="noopener"
+                                    href={l.href}
+                                >
                                     "{l.title}"
                                 </a>
                                 <span class="uppercase text-sm">
