@@ -7,6 +7,10 @@ description: Taking you behind-the-scenes to understand the creative spaces and 
 draft: false
 complete: false
 links:
+  - title: RSS (Audio)
+    href: /podcasts/craft-and-process/feeds/audio.xml
+  - title: RSS (Video)
+    href: /podcasts/craft-and-process/feeds/video.xml
   - title: Subscribe on Apple Podcasts (Audio)
     href: https://podcasts.apple.com/us/podcast/craft-and-process/id1793611508
   - title: Subscribe on Apple Podcasts (Video)
