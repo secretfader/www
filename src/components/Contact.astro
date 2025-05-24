@@ -3,7 +3,7 @@
 ---
 
 <form id="contact-form" action="/" method="POST" class="space-y-8 w-full">
-    <div class="w-full">
+    <div>
         <label class="block mb-2 dark:text-gray-300">Name</label>
         <input
             type="text"
@@ -19,7 +19,7 @@
             type="email"
             name="email"
             class="shadow-sm bg-gray-50 dark:bg-gray-900 dark:text-gray-300 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-            placeholder="nicholas@fictiveflame.co"
+            placeholder="hello@secretfader.com"
             required
         />
     </div>
@@ -54,7 +54,7 @@
     ) {
         const p = document.createElement("p");
         p.id = "message";
-        p.className = `message text-3xl font-bold text-center ${type === "success" ? "text-gray-700 dark:text-gray-300" : "text-gray-600 dark:text-gray-200"}`;
+        p.className = `message text-3xl font-bold ${type === "success" ? "text-gray-700 dark:text-gray-300" : "text-gray-600 dark:text-gray-200"}`;
         p.innerText = message;
         element.prepend(p);
     }
