@@ -1,5 +1,42 @@
 ---
+import apple from "../assets/podcasts-ios.svg";
+import iheart from "../assets/podcasts-iheart.svg";
+import audible from "../assets/podcasts-audible.svg";
+import rss from "../assets/podcasts-rss.svg";
+
 const { title, links } = Astro.props;
+
+function getImage(title) {
+    if (title.includes("Apple")) {
+        return apple.src;
+    }
+
+    if (title.includes("iHeart")) {
+        return iheart.src;
+    }
+
+    if (title.includes("Audible")) {
+        return audible.src;
+    }
+
+    return rss.src;
+}
+
+function getAlt(title) {
+    if (title.includes("Apple")) {
+        return "Subscribe on Apple Podcasts";
+    }
+
+    if (title.includes("iHeart")) {
+        return "Follow on iHeart Media";
+    }
+
+    if (title.includes("Audible")) {
+        return "Listen on Audible";
+    }
+
+    return "Subscribe via RSS";
+}
 ---
 
 <nav class="flex mt-8 z-20">
@@ -31,7 +68,6 @@ const { title, links } = Astro.props;
                     ></path>
                 </svg>
             </button>
-            <!-- 2nd level menu -->
             <ul
                 class="origin-top-right absolute top-full left-1/12 -translate-x-1/12 min-w-[240px] bg-white border border-slate-200 p-2 rounded-lg shadow-xl [&[x-cloak]]:hidden"
                 x-show="open"
@@ -54,6 +90,12 @@ const { title, links } = Astro.props;
                                       rel="noopener"
                                       href={l.href}
                                   >
+                                      <div class="flex items-center justify-center bg-white rounded shadow-sm h-7 w-7 shrink-0 mr-3">
+                                          <img
+                                              src={getImage(l.title)}
+                                              alt={getAlt(l.title)}
+                                          />
+                                      </div>
                                       <span class="whitespace-nowrap">
                                           {l.title}
                                       </span>
