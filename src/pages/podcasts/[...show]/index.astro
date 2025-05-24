@@ -43,12 +43,12 @@ const episodes = await getEpisodesByShowID(Astro.params.show);
             }
             {links ? <SubscribeMenu title="Follow &amp; Subscribe" links={links} /> : undefined}
         </div>
-        <div class="col-span-1 lg:col-span-3 flex justify-center flex-row">
+        <div class="col-span-1 lg:col-span-3 flex justify-center flex-row relative">
             <Image
                 src={artwork}
                 alt={description}
                 width=500px"
-                class="shadow-gray-300 dark:shadow-gray-800 shadow-lg w-full"
+                class="shadow-gray-300 dark:shadow-gray-800 shadow-lg w-full max-h-96 aspect-video rounded-2xl object-cover lg:max-h-none lg:aspect-square"
             />
         </div>
     </div>
@@ -57,7 +57,7 @@ const episodes = await getEpisodesByShowID(Astro.params.show);
     >
         {
             episodes.map((e) => (
-                <div class="relative z-10 col-span-1 mb-4 text-gray-700 dark:text-gray-300 lg:col-span-4 lg:mb-0">
+                <div class="relative z-10 col-span-1 mb-8 text-gray-700 dark:text-gray-300 lg:col-span-4 lg:mb-0 hover:text-gray-500">
                     {e.data.youtubeId ? (
                         <YouTube id={e.data.youtubeId} />
                     ) : undefined}
@@ -69,6 +69,9 @@ const episodes = await getEpisodesByShowID(Astro.params.show);
                             {e.data.title}
                         </h2>
                     </a>
+                    <p class="mt-4">
+                        {e.data.description}
+                    </p>
                 </div>
             ))
         }
