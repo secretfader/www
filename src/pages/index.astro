@@ -3,15 +3,22 @@ import Layout from "../components/Layout.astro";
 import Nav from "../components/Nav.astro";
 import Intro from "../components/Intro.astro";
 import Container from "../components/Container.astro";
+import RecentVideos from "../components/RecentVideos.astro";
 ---
 
 <Layout description="Design, create, broadcast. Repeat.">
     <Nav />
     <Intro />
     <Container classes={["mt-12", "lg:mt-24"]}>
-        <div
-            class="container mx-auto grid grid-cols-1 px-6 mt-12 lg:mt-24 lg:grid-cols-12 lg:gap-8 lg:px-0"
+        <h3
+            class="text-4xl font-semibold text-gray-500 underline underline-offset-8"
         >
+            Recent Videos
+        </h3>
+        <div
+            class="container mx-auto grid grid-cols-1 px-6 mt-12 lg:grid-cols-12 lg:gap-8 lg:px-0"
+        >
+            <RecentVideos />
         </div>
     </Container>
 </Layout>

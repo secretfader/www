@@ -11,6 +11,7 @@ export const published = (e) => new Date(e.data.pubDate) < new Date();
 
 export const getPodcasts = async () => await getCollection("podcasts");
 export const getEpisodes = async () => await getCollection("episodes");
+export const getVideos = async () => await getCollection("videos");
 
 export const formatDate = (date) => new Date(date).toLocaleDateString();
 

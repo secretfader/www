@@ -65,6 +65,10 @@ const episodes = defineCollection({
   }),
 });
 
+const videos = defineCollection({
+  loader: glob({ pattern: "**/**/*.md", base: "./src/content/videos" }),
+});
+
 const pages = defineCollection({
   loader: glob({ pattern: "*.md", base: "./src/content" }),
 });
@@ -72,5 +76,6 @@ const pages = defineCollection({
 export const collections = {
   podcasts,
   episodes,
+  videos,
   pages,
 };
