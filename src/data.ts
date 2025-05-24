@@ -1,4 +1,6 @@
-import { getCollection } from "astro:content";
+import { getCollection, getEntry, render as astroRender } from "astro:content";
+
+export const render = astroRender;
 
 export const byDate = (a, b) =>
   new Date(b.data.pubDate) - new Date(a.data.pubDate);
@@ -19,6 +21,8 @@ export const getEpisodesByShowID = async (id: string) =>
   (await getEpisodes())
     .filter(({ filePath }) => filePath && filePath.split("/").includes(id))
     .sort(byDescNumber);
+
+export const getPage = async (id: string) => await getEntry("pages", id);
 
 export const buildMediaURL = (host, asset) => {
   const parsed = new URL(host);

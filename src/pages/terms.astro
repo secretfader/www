@@ -8,16 +8,15 @@ import Prose from "../components/Prose.astro";
 import LinksList from "../components/LinksList.astro";
 import { formatDate, getPage, render } from "../data";
 
-const page = await getPage("about");
+const page = await getPage("terms");
+const about = await getPage("about");
+
 const { Content } = await render(page);
 ---
 
-<Layout
-    title="About"
-    description="Nicholas Young is a Colorado-based engineer, filmmaker, designer, and creative director."
->
+<Layout title={page.data.title}>
     <Nav />
-    <Header title="About" />
+    <Header title={page.data.title} />
     <Container
         classes={["grid", "grid-cols-1", "lg:grid-cols-12", "lg:gap-12"]}
     >
@@ -29,7 +28,7 @@ const { Content } = await render(page);
         <div
             class="text-gray-700 dark:text-gray-300 mt-12 col-span-1 lg:col-span-4 lg:mt-0"
         >
-            <LinksList links={page.data.links} />
+            <LinksList links={about.data.links} />
             <div class="mt-8">
                 <span
                     class="font-semibold uppercase underline underline-offset-8"
@@ -37,7 +36,7 @@ const { Content } = await render(page);
                 >
                 <ul>
                     {
-                        (page.data.media || []).map((l) => (
+                        (about.data.media || []).map((l) => (
                             <li class="relative my-4">
                                 <a
                                     class="block mb-1"

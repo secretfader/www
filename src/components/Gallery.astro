@@ -1,0 +1,30 @@
+---
+import podcast from "../assets/craft-and-process.jpg";
+import trike from "../assets/trike.jpg";
+import redRocks from "../assets/running-red-rocks.jpg";
+import superhero from "../assets/superhero.jpg";
+import profile from "../assets/redrocksrelax.jpg";
+import dillon from "../assets/dillon.jpg";
+
+import { Image } from "astro:assets";
+
+const images = [podcast, trike, redRocks, profile, superhero, dillon];
+---
+
+<div class:list={Astro.props.classes}>
+    {
+        images
+            .sort((a, b) => 0.5 - Math.random())
+            .slice(0, 6)
+            .map((p) => (
+                <div class="aspect-square">
+                    <Image
+                        class="w-full object-cover aspect-square"
+                        src={p}
+                        alt=""
+                    />
+                </div>
+            ))
+    }
+    <div></div>
+</div>
