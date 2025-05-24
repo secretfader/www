@@ -1,0 +1,96 @@
+---
+import Layout from "../components/Layout.astro";
+import Nav from "../components/Nav.astro";
+import Header from "../components/Header.astro";
+import Container from "../components/Container.astro";
+import Contact from "../components/Contact.astro";
+import { Image } from "astro:assets";
+import { formatDate } from "../data";
+
+import podcast from "../assets/craft-and-process.jpg";
+import trike from "../assets/trike.jpg";
+import redRocks from "../assets/running-red-rocks.jpg";
+import superhero from "../assets/superhero.jpg";
+import profile from "../assets/redrocksrelax.jpg";
+import blades from "../assets/runningblades.jpg";
+import dillon from "../assets/dillon.jpg";
+import bayipa from "../assets/bayipa.jpg";
+
+const images = [podcast, trike, redRocks, profile, superhero, dillon];
+
+const links = [
+    {
+        title: "Double-Amputee Cyclist Finds a New Way to Ride",
+        source: "FOX 31 Denver, Colorado",
+        href: "https://kdvr.com/news/outdoor-colorado/outdoor-colorado-double-amputee-bicyclist-finds-a-new-way-to-ride/",
+        pubDate: "2023-05-25",
+    },
+    {
+        title: "After Two Amputations, This Cyclist Started a Club for Athletes Like Him",
+        source: "Bicycling Magazine",
+        href: "https://www.bicycling.com/culture/a42555000/how-cycling-changed-me-nicholas-young/",
+        pubDate: "2023-01-20",
+    },
+];
+---
+
+<Layout title="Contact">
+    <Nav />
+    <div class="container mx-auto px-6 my-8 lg:my-12 lg:px-0">
+        <h1
+            class="text-gray-500 dark:text-gray-400 font-bold text-4xl lg:text-7xl xl:text-8xl"
+        >
+            Contact
+        </h1>
+        <div
+            class="text-xl lg:text-2xl mt-8 max-w-7xl dark:text-gray-300 lg:mt-12"
+        >
+            <span>
+                If you need help with a video or other piece of content, reach
+                out to
+                <a
+                    class="underline"
+                    target="_blank"
+                    rel="noopener"
+                    href="https://fictiveflame.co"
+                >
+                    Fictive Flame Media
+                </a>
+                . Otherwise, feel free to use the form below for any other ideas,
+                proposals, or review requests.
+            </span>
+        </div>
+    </div>
+    <Container
+        classes={["grid", "grid-cols-1", "lg:grid-cols-12", "lg:gap-12"]}
+    >
+        <div class="col-span-1 mb-12 lg:col-span-8 lg:mb-0">
+            <Contact />
+        </div>
+        <div class="col-span-1 lg:col-span-4">
+            <Image
+                src={bayipa}
+                alt="IPA Beer in San Francisco"
+                width="800"
+                height="800"
+                class="rounded-2xl shadow-gray-300 dark:shadow-gray-800 shadow-lg object-cover h-full max-h-72 lg:max-h-none lg:aspect-square"
+            />
+        </div>
+    </Container>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 lg:mt-16">
+        {
+            images
+                .sort((a, b) => 0.5 - Math.random())
+                .slice(0, 6)
+                .map((p) => (
+                    <div class="aspect-square">
+                        <img
+                            class="max-w-full object-cover aspect-square"
+                            src={p.src}
+                            alt=""
+                        />
+                    </div>
+                ))
+        }
+    </div>
+</Layout>

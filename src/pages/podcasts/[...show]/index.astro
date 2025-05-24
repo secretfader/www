@@ -27,7 +27,7 @@ const episodes = await getEpisodesByShowID(Astro.params.show);
         class="container mx-auto px-6 my-8 grid grid-cols-1 lg:my-12 lg:px-0 lg:grid-cols-12"
     >
         <div
-            class="col-span-1 lg:col-span-8 flex mb-8 flex-col justify-center lg:mb-0"
+            class="col-span-1 lg:col-span-9 flex mb-8 flex-col justify-center lg:mb-0"
         >
             <h1
                 class="text-gray-500 dark:text-gray-400 font-bold text-4xl lg:text-7xl xl:text-8xl"
@@ -43,11 +43,11 @@ const episodes = await getEpisodesByShowID(Astro.params.show);
             }
             {links ? <SubscribeMenu title="Follow &amp; Subscribe" links={links} /> : undefined}
         </div>
-        <div class="col-span-1 lg:col-span-4">
+        <div class="col-span-1 lg:col-span-3 flex justify-center flex-row">
             <Image
                 src={artwork}
                 alt={description}
-                width="600px"
+                width=500px"
                 class="shadow-gray-300 dark:shadow-gray-800 shadow-lg w-full"
             />
         </div>
