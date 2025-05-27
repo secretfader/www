@@ -6,7 +6,6 @@ import SubscribeMenu from "../../../components/SubscribeMenu.astro";
 import { getEpisodesByShowID } from "../../../data";
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
-import { YouTube } from "@astro-community/astro-embed-youtube";
 
 export const prerender = true;
 
@@ -59,7 +58,15 @@ const episodes = await getEpisodesByShowID(Astro.params.show);
             episodes.map((e) => (
                 <div class="relative z-10 col-span-1 mb-8 text-gray-700 dark:text-gray-300 lg:col-span-4 lg:mb-0 hover:text-gray-500">
                     {e.data.youtubeId ? (
-                        <YouTube id={e.data.youtubeId} />
+                        <media-controller class="w-full aspect-video">
+                            <youtube-video
+                                src={`https://www.youtube.com/watch?v=${e.data.youtubeId}`}
+                                slot="media"
+                                crossorigin
+                                muted
+                            />
+                            <media-loading-indicator slot="centered-chrome" noautohide />
+                        </media-controller>
                     ) : undefined}
                     <a
                         href={`/podcasts/${slug}/${e.data.slug || e.data.number}`}
