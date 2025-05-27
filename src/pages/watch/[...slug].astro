@@ -3,7 +3,6 @@ import Layout from "../../components/Layout.astro";
 import Nav from "../../components/Nav.astro";
 import Container from "../../components/Container.astro";
 import Prose from "../../components/Prose.astro";
-import { YouTube } from "@astro-community/astro-embed-youtube";
 import { getVideos } from "../../data";
 import { render } from "astro:content";
 
@@ -41,15 +40,17 @@ const { Content } = await render(Astro.props);
         <div
             class="col-span-1 text-lg lg:text-xl xl:text-2xl lg:col-span-10 dark:text-gray-100"
         >
-            {
-                youtubeId ? (
-                    <YouTube
-                        class="w-full min-w-full mb-4"
-                        posterQuality="high"
-                        id={youtubeId}
-                    />
-                ) : undefined
-            }
+            <div class="mb-4">
+                <media-controller class="w-full aspect-video">
+                    <youtube-video
+                        src={`https://www.youtube.com/watch?v=${youtubeId}`}
+                        slot="media"
+                        controls
+                        crossorigin></youtube-video>
+                    <media-loading-indicator slot="centered-chrome" noautohide
+                    ></media-loading-indicator>
+                </media-controller>
+            </div>
             <Prose>
                 <Content />
             </Prose>

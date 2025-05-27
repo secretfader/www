@@ -49,6 +49,13 @@ const { title, description, image, classes } = Astro.props;
             defer
             src="https://cloud.umami.is/script.js"
             data-website-id="1d43dc8a-52a5-41ee-a3ef-acc0badb7398"></script>
+        <script
+            type="module"
+            src="https://cdn.jsdelivr.net/npm/media-chrome@4/+esm"></script>
+        <script
+            type="module"
+            src="https://cdn.jsdelivr.net/npm/youtube-video-element@1.1/+esm"
+        ></script>
         <script is:inline>
             function setDarkMode(document) {
                 const getThemePreference = () => {
