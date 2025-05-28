@@ -1,7 +1,13 @@
 {
   "name": "www",
-  "compatibility_date": "2025-04-01",
+  "main": "./dist/_worker.js/index.js",
+  "compatibility_date": "2025-05-27",
+  "compatibility_flags": ["nodejs_compat"],
   "assets": {
-    "directory": "./dist/_worker.js/"
+    "binding": "ASSETS",
+    "directory": "./dist"
+  },
+  "observability": {
+    "enabled": true
   }
 }
