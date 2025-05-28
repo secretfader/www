@@ -12,10 +12,9 @@ const input = z.object({
   firstName: z.string(),
   lastName: z.string(),
   email: z.string(),
-  afterAction: z.string().optional(),
 });
 
-const handler = async ({ firstName, lastName, email, afterAction }, ctx) => {
+const handler = async ({ firstName, lastName, email }, ctx) => {
   const container = await experimental_AstroContainer.create();
 
   const html = await container.renderToString(LutsTemplate, {
