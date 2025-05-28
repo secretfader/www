@@ -1,14 +1,7 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "eccentric-equator",
-  "main": "./dist/_worker.js/index.js",
-  "compatibility_date": "2025-05-22",
-  "compatibility_flags": ["nodejs_compat"],
+  "name": "www",
+  "compatibility_date": "2025-04-01",
   "assets": {
-    "binding": "ASSETS",
-    "directory": "./dist"
-  },
-  "observability": {
-    "enabled": true
+    "directory": "./dist/_worker.js/"
   }
 }
