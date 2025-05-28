@@ -1,0 +1,117 @@
+---
+
+---
+
+<form id="subscribe-form" action="/" method="POST" class="space-y-8 w-full">
+    <div>
+        <label class="block mb-2 dark:text-gray-300">First Name</label>
+        <input
+            type="text"
+            name="firstName"
+            class="shadow-sm bg-gray-50 dark:bg-gray-900 dark:text-gray-300 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+            placeholder="First Name"
+            required
+        />
+    </div>
+    <div>
+        <label class="block mb-2 dark:text-gray-300">Last Name</label>
+        <input
+            type="text"
+            name="lastName"
+            class="shadow-sm bg-gray-50 dark:bg-gray-900 dark:text-gray-300 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+            placeholder="Last Name"
+            required
+        />
+    </div>
+    <div>
+        <label class="block mb-2 dark:text-gray-300">Email Address</label>
+        <input
+            type="email"
+            name="email"
+            class="shadow-sm bg-gray-50 dark:bg-gray-900 dark:text-gray-300 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+            placeholder="hello@secretfader.com"
+            required
+        />
+    </div>
+    <button
+        type="submit"
+        class="py-3 px-5 outline-1 outline-gray-900 dark:outline-gray-400 dark:text-gray-200 rounded-lg cursor-pointer sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300"
+        >Subscribe</button
+    >
+</form>
+<script>
+    import { actions, isInputError, isActionError } from "astro:actions";
+
+    function clearMessage(id: string) {
+        const element = document.getElementById(id);
+        if (element) {
+            element.remove();
+        }
+    }
+
+    function addMessage(
+        message: string,
+        type: "error" | "success",
+        element: HTMLElement,
+    ) {
+        const p = document.createElement("p");
+        p.id = "message";
+        p.className = `message text-center text-3xl font-bold ${type === "success" ? "text-gray-700 dark:text-gray-300" : "text-gray-600 dark:text-gray-200"}`;
+        p.innerText = message;
+        element.prepend(p);
+    }
+
+    function clearInput(id: string) {
+        const emailInput = document.getElementById(id) as HTMLInputElement;
+        if (emailInput) emailInput.value = "";
+    }
+
+    function renderMessage(error: any, data: any, form: HTMLFormElement) {
+        if (error && isInputError(error)) {
+            const message = error.fields.email && error.fields.email[0];
+            addMessage(message || "", "error", form);
+        }
+        if (error && isActionError(error)) {
+            const message = error.message;
+            addMessage(message, "error", form);
+        } else {
+            const message = "Form submitted, thank you.";
+            clearInput("email");
+            addMessage(message, "success", form);
+        }
+    }
+
+    function setFormListener() {
+        const form = document.getElementById(
+            "subscribe-form",
+        ) as HTMLFormElement;
+        form.addEventListener("submit", handleFormSubmit);
+    }
+
+    document.addEventListener("astro:page-load", () => {
+        setFormListener();
+    });
+
+    setFormListener();
+
+    async function handleFormSubmit(e: Event) {
+        e.preventDefault();
+
+        const form = document.getElementById(
+            "subscribe-form",
+        ) as HTMLFormElement;
+
+        const formData = new FormData(form);
+        const values = Array.from(formData.entries()).reduce(
+            (memo, [key, value]) => ({
+                ...memo,
+                [key]: value,
+            }),
+            {},
+        );
+
+        const { data, error } = await actions.subscribe(values);
+        clearMessage("message");
+        renderMessage(error, data, form);
+    }
+</script>
