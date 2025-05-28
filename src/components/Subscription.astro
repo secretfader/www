@@ -110,6 +110,7 @@
             {},
         );
 
+        values.afterAction = "luts";
         const { data, error } = await actions.subscribe(values);
         clearMessage("message");
         renderMessage(error, data, form);

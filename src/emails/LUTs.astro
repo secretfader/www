@@ -1,0 +1,26 @@
+---
+interface Props {
+    firstName: string;
+}
+
+const { firstName } = Astro.props;
+---
+
+<div>
+    <p>Welcome, {firstName}</p>
+    <p>
+        Thanks for joining the email list, and for your interest in these LUTs.
+        Hopefully they're as useful to your production workflow as they are to
+        mine.
+    </p>
+    <p>
+        Of course, this isn't the final version; I'll keep updating them as new
+        HDR standards come out, so make sure you check back soon.
+    </p>
+    <p>
+        <a
+            href="https://content.secretfader.com/luts/hdr-st-2084-sdr-rec-709-2025-05-27.zip"
+            >Download HDR ST.2048-SDR Rec.709 LUTs</a
+        >.
+    </p>
+</div>
