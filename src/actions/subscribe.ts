@@ -38,7 +38,9 @@ const handler = async ({ firstName, lastName, email }, ctx) => {
 
       If you have any questions, just hit reply.
 
-      ${lutsURL}`,
+      ${lutsURL}`
+      .replace(/\s{2,}/g, " ")
+      .trim(),
   });
 
   return {
