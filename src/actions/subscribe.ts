@@ -33,15 +33,8 @@ const handler = async ({ firstName, lastName, email, afterAction }, ctx) => {
     from: `Nicholas Young <hi@secretfader.com>`,
     to: [email],
     subject: `Download your HDR to SDR LUTs`,
-    html: sanitize(html),
+    html: html.toString(),
   });
-
-  if (send.error) {
-    throw new ActionError({
-      message: "Send error",
-      code: "INTERNAL_SERVER_ERROR",
-    });
-  }
 
   return {
     ok: true,
