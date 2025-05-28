@@ -23,26 +23,24 @@ const handler = async ({ firstName, lastName, email, afterAction }, ctx) => {
     email,
   });
 
-  if (afterAction && afterAction === "luts") {
-    const container = await experimental_AstroContainer.create();
+  const container = await experimental_AstroContainer.create();
 
-    const html = await container.renderToString(LutsTemplate, {
-      props: { firstName },
+  const html = await container.renderToString(LutsTemplate, {
+    props: { firstName },
+  });
+
+  const send = await resend.emails.send({
+    from: `Nicholas Young <hi@secretfader.com>`,
+    to: [email],
+    subject: `Download your HDR to SDR LUTs`,
+    html: sanitize(html),
+  });
+
+  if (send.error) {
+    throw new ActionError({
+      message: "Send error",
+      code: "INTERNAL_SERVER_ERROR",
     });
-
-    const send = await resend.emails.send({
-      from: `Nicholas Young <hi@secretfader.com>`,
-      to: [email],
-      subject: `Download your HDR to SDR LUTs`,
-      html: sanitize(html),
-    });
-
-    if (send.error) {
-      throw new ActionError({
-        message: "Send error",
-        code: "INTERNAL_SERVER_ERROR",
-      });
-    }
   }
 
   return {
