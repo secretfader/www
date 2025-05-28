@@ -4,9 +4,5 @@ pages_build_output_dir = "./dist"
 compatibility_date = "2025-05-22"
 compatibility_flags = ["nodejs_compat"]
 
-[assets]
-binding = "ASSETS"
-directory = "./dist"
-
 [observability]
 enabled = true
