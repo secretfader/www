@@ -30,7 +30,10 @@ const handler = async ({ firstName, lastName, email }, ctx) => {
     to: [email],
     from: `Nicholas Young <hi@secretfader.com>`,
     subject: `The LUTs You Requested`,
-    text: `Hey ${firstName}, \r\nNicholas, here. I have the LUTs I promised, in exchange for your subscription. Thanks for that.\r\nIf you have any questions, just hit reply.\r\nhttps://content.secretfader.com/luts/hdr-st-2084-sdr-rec-709-2025-05-27.zip`,
+    text: `Hey ${firstName}, \r\n\r\nNicholas, here. I have the LUTs
+           I promised, in exchange for your subscription. Thanks for
+           that.\r\n\r\nIf you have any questions, just hit reply.
+           \r\n\r\nhttps://content.secretfader.com/luts/hdr-st-2084-sdr-rec-709-2025-05-27.zip`,
   });
 
   return {
