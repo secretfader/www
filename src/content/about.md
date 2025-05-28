@@ -4,12 +4,16 @@ slug: about
 links:
   - title: Fictive Flame Media
     href: https://fictiveflame.co
+  - title: Press Kit
+    href: https://content.secretfader.com/press-kit.zip
 media:
   - title: Double Amputee Cyclist Finds a New Way to Ride
     source: Fox 31 - Denver, Colorado
+    href: https://kdvr.com/news/outdoor-colorado/outdoor-colorado-double-amputee-bicyclist-finds-a-new-way-to-ride/
     pubDate: 2023/05/23
   - title: After Two Amputations, This Cyclist Started a Club for Athletes Like Him
     source: Bicycling Magazine
+    href: http://bicycling.com/culture/a42555000/how-cycling-changed-me-nicholas-young/
     pubDate: 2023/01/19
 ---
 Nicholas Young is a Colorado-based engineer, filmmaker, designer, and creative director whose work bridges the worlds of technology, art, and storytelling. As an early contributor to both the Rust and Node.js programming ecosystems, he helped shape the world of modern open source development. He was also among the first wave of podcasters, and went on to launch a network of shows from Chicago, all of which were formative in the medium's early growth.
