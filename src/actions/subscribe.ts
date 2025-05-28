@@ -1,5 +1,6 @@
 import { defineAction, ActionError } from "astro:actions";
 import { z } from "astro:schema";
+import { experimental_AstroContainer } from "astro/container";
 import { Resend } from "resend";
 import lutsTemplate from "../emails/LUTs.astro";
 
@@ -14,6 +15,8 @@ const input = z.object({
 });
 
 const handler = async ({ firstName, lastName, email, afterAction }, ctx) => {
+  const container = await experimental_AstroContainer.create();
+
   const response = await resend.contacts.create({
     audienceId,
     firstName,
@@ -33,7 +36,9 @@ const handler = async ({ firstName, lastName, email, afterAction }, ctx) => {
       from: `Nicholas Young <hi@secretfader.com>`,
       to: [email],
       subject: `Download your HDR to SDR LUTs`,
-      html: "<p>Hey</p>",
+      html: await container.renderToString(lutsTemplate, {
+        props: { firstName },
+      }),
     });
 
     if (send.error) {
