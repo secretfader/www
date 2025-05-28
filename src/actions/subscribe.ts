@@ -36,7 +36,7 @@ const handler = async ({ firstName, lastName, email, afterAction }, ctx) => {
       html: "<p>Hey</p>",
     });
 
-    if (!send.error) {
+    if (send.error) {
       throw new ActionError({
         message: "Send error",
         code: "INTERNAL_SERVER_ERROR",
