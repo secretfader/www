@@ -11,7 +11,7 @@ const input = z.object({
   email: z.string(),
 });
 
-const handler = async ({ firstname, lastname, email }, ctx) => {
+const handler = async ({ firstName, lastName, email }, ctx) => {
   const response = await resend.contacts.create({
     audienceId,
     firstName,
