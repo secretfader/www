@@ -16,13 +16,6 @@ const input = z.object({
 });
 
 const handler = async ({ firstName, lastName, email, afterAction }, ctx) => {
-  const response = await resend.contacts.create({
-    audienceId,
-    firstName,
-    lastName,
-    email,
-  });
-
   const container = await experimental_AstroContainer.create();
 
   const html = await container.renderToString(LutsTemplate, {
