@@ -2,43 +2,57 @@
 
 ---
 
-<form id="subscribe-form" action="/" method="POST" class="space-y-8 w-full">
-    <div>
-        <label class="block mb-2 dark:text-gray-300">First Name</label>
-        <input
-            type="text"
-            name="firstName"
-            class="shadow-sm bg-gray-50 dark:bg-gray-900 dark:text-gray-300 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-            placeholder="First Name"
-            required
-        />
-    </div>
-    <div>
-        <label class="block mb-2 dark:text-gray-300">Last Name</label>
-        <input
-            type="text"
-            name="lastName"
-            class="shadow-sm bg-gray-50 dark:bg-gray-900 dark:text-gray-300 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-            placeholder="Last Name"
-            required
-        />
-    </div>
-    <div>
-        <label class="block mb-2 dark:text-gray-300">Email Address</label>
-        <input
-            type="email"
-            name="email"
-            class="shadow-sm bg-gray-50 dark:bg-gray-900 dark:text-gray-300 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-            placeholder="hello@secretfader.com"
-            required
-        />
-    </div>
-    <button
-        type="submit"
-        class="py-3 px-5 outline-1 outline-gray-900 dark:outline-gray-400 dark:text-gray-200 rounded-lg cursor-pointer sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300"
-        >Subscribe</button
+<div>
+    <div
+        id="message"
+        class="mt-4 mb-8 text-center text-gray-700 dark:text-gray-300"
     >
-</form>
+        <h4 class="text-2xl font-bold mb-4">
+            Filmmaking Tips, Tools &amp; Techniques
+        </h4>
+        <p class="text-center">
+            Production tips, LUTs, tools and more&mdash;delivered straight to
+            your inbox. Level up your filmmaking game today.
+        </p>
+    </div>
+    <form id="subscribe-form" action="/" method="POST" class="space-y-8 w-full">
+        <div>
+            <label class="block mb-2 dark:text-gray-300">First Name</label>
+            <input
+                type="text"
+                name="firstName"
+                class="shadow-sm bg-gray-50 dark:bg-gray-900 dark:text-gray-300 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                placeholder="First Name"
+                required
+            />
+        </div>
+        <div>
+            <label class="block mb-2 dark:text-gray-300">Last Name</label>
+            <input
+                type="text"
+                name="lastName"
+                class="shadow-sm bg-gray-50 dark:bg-gray-900 dark:text-gray-300 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                placeholder="Last Name"
+                required
+            />
+        </div>
+        <div>
+            <label class="block mb-2 dark:text-gray-300">Email Address</label>
+            <input
+                type="email"
+                name="email"
+                class="shadow-sm bg-gray-50 dark:bg-gray-900 dark:text-gray-300 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                placeholder="hello@secretfader.com"
+                required
+            />
+        </div>
+        <button
+            type="submit"
+            class="py-3 px-5 outline-1 outline-gray-900 dark:outline-gray-400 dark:text-gray-200 rounded-lg cursor-pointer sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300"
+            >Subscribe</button
+        >
+    </form>
+</div>
 <script>
     import { actions, isInputError, isActionError } from "astro:actions";
 
