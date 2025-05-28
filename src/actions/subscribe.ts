@@ -28,19 +28,22 @@ const handler = async ({ firstName, lastName, email }, ctx) => {
 
   const lutsURL =
     "https://content.secretfader.com/luts/hdr-st-2084-sdr-rec-709-2025-05-27.zip";
+
+  const message = `
+    Hey, ${firstName},
+
+    Nicholas, here. I have the LUTs I promised, in exchange for your subscription. Thanks for that, by the way.
+
+    If you have any questions, just hit reply.
+
+    ${lutsURL}
+    `;
+
   await resend.emails.create({
     to: [email],
     from: `Nicholas Young <hi@secretfader.com>`,
     subject: `The LUTs You Requested`,
-    text: `Hey ${firstName},
-
-      Nicholas, here. I have the LUTs I promised in exchange for your subscription. Thanks for that, by the way.
-
-      If you have any questions, just hit reply.
-
-      ${lutsURL}`
-      .replace(/\s{2,}/g, " ")
-      .trim(),
+    text: message,
   });
 
   return {
