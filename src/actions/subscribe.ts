@@ -1,6 +1,7 @@
 import { defineAction, ActionError } from "astro:actions";
 import { z } from "astro:schema";
 import { experimental_AstroContainer } from "astro/container";
+import sanitize from "sanitize-html";
 import { Resend } from "resend";
 import LutsTemplate from "../emails/LUTs.astro";
 
@@ -22,13 +23,6 @@ const handler = async ({ firstName, lastName, email, afterAction }, ctx) => {
     email,
   });
 
-  if (!response.data) {
-    throw new ActionError({
-      message: "Submission error",
-      code: "INTERNAL_SERVER_ERROR",
-    });
-  }
-
   if (afterAction && afterAction === "luts") {
     const container = await experimental_AstroContainer.create();
 
@@ -40,7 +34,7 @@ const handler = async ({ firstName, lastName, email, afterAction }, ctx) => {
       from: `Nicholas Young <hi@secretfader.com>`,
       to: [email],
       subject: `Download your HDR to SDR LUTs`,
-      html,
+      html: sanitize(html),
     });
 
     if (send.error) {

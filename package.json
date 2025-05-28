@@ -9,7 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.8.0"
+    "astro": "^5.8.0",
+    "sanitize-html": "^2.17.0"
   },
   "devDependencies": {
     "@astrojs/alpinejs": "^0.4.8",
@@ -20,6 +21,7 @@
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "4.0.9",
     "@types/alpinejs": "^3.13.11",
+    "@types/sanitize-html": "^2.16.0",
     "alpinejs": "^3.14.9",
     "html-entities": "^2.6.0",
     "humanize-list": "^1.0.1",
