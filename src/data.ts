@@ -25,6 +25,11 @@ export const getEpisodesByShowID = async (id: string) =>
 
 export const getPage = async (id: string) => await getEntry("pages", id);
 
+export const getLinks = async (id: string) =>
+  (await getEntry("pages", id)).data.links;
+
+export const isLast = (i: number, l: Array<any>) => i == l.length - 1;
+
 export const buildMediaURL = (host, asset) => {
   const parsed = new URL(host);
   const assetPath = [parsed.pathname, asset.filename].join("/");

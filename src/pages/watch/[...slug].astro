@@ -3,7 +3,8 @@ import Layout from "../../components/Layout.astro";
 import Nav from "../../components/Nav.astro";
 import Container from "../../components/Container.astro";
 import Prose from "../../components/Prose.astro";
-import { getVideos } from "../../data";
+import LinksList from "../../components/LinksList.astro";
+import { getVideos, getLinks } from "../../data";
 import { render } from "astro:content";
 
 export const prerender = true;
@@ -15,8 +16,9 @@ export async function getStaticPaths() {
         props: { ...v.data, ...v },
     }));
 }
-const { title, body, youtubeId, links } = Astro.props;
+const { title, body, youtubeId } = Astro.props;
 const { Content } = await render(Astro.props);
+const links = { ...Astro.props.links, ...(await getLinks("about")) };
 ---
 
 <Layout title={title}>
@@ -58,29 +60,7 @@ const { Content } = await render(Astro.props);
         <div
             class="text-gray-700 dark:text-gray-300 mt-12 col-span-1 lg:col-span-2 lg:mt-0"
         >
-            {
-                links && links.length > 0 ? (
-                    <div>
-                        <span class="font-semibold uppercase underline underline-offset-8">
-                            Links
-                        </span>
-                        <ul>
-                            {links.map((l) => (
-                                <li class="relative my-4">
-                                    <a
-                                        class="block mb-1"
-                                        target="_blank"
-                                        rel="noopener"
-                                        href={l.href}
-                                    >
-                                        {l.title}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                ) : undefined
-            }
+            <LinksList links={links} />
         </div>
     </Container>
 </Layout>

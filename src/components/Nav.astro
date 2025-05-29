@@ -1,5 +1,6 @@
 ---
 import ThemeToggle from "./ThemeToggle.astro";
+import { isLast } from "../data";
 
 const nav = [
     {
@@ -83,7 +84,7 @@ const nav = [
             <ul class="hidden lg:flex uppercase">
                 {
                     nav.map((e, i, a) =>
-                        i === a.length - 1 ? (
+                        isLast(i, a) ? (
                             <li>
                                 <a href={e.href} class="hover:text-gray-400">
                                     {e.title}
