@@ -2,7 +2,7 @@ import { defineAction, ActionError } from "astro:actions";
 import { z } from "astro:schema";
 import { Resend } from "resend";
 
-const resend = new Resend(import.meta.env.RESEND_API_KEY);
+const resend = new Resend(import.meta.env.RESEND_API_KEY || "re_example");
 const audienceId = "b5840c4f-4aa9-4c90-820e-6e283bb342a9";
 
 const input = z.object({

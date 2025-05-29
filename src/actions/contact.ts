@@ -1,8 +1,6 @@
 import { defineAction, ActionError } from "astro:actions";
 import { z } from "astro:schema";
 
-const webhook = import.meta.env.DISCORD_WEBHOOK;
-
 const input = z.object({
   name: z.string(),
   email: z.string(),

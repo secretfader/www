@@ -15,7 +15,7 @@ export async function getStaticPaths() {
         props: { ...v.data, ...v },
     }));
 }
-const { title, youtubeId, links } = Astro.props;
+const { title, body, youtubeId, links } = Astro.props;
 const { Content } = await render(Astro.props);
 ---
 
