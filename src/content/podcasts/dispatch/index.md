@@ -13,6 +13,9 @@ categories:
   - Society &amp; Culture
 media:
   host: https://dn721806.ca.archive.org/0/items/machinefm
+links:
+  - title: RSS (Audio)
+    href: /podcasts/dispatch/feeds/audio.xml
 title: Dispatch
 complete: true
 language: en-us

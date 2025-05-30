@@ -11,6 +11,7 @@ import {
     buildMediaURL,
     rewriteURLForPodtrac,
     hasMP3,
+    formatDate,
 } from "../../../data";
 import { render } from "astro:content";
 
@@ -48,8 +49,10 @@ export async function getStaticPaths() {
 }
 const {
     show: { links: showLinks, complete, title: showTitle },
-    episode: { title, description, links, youtubeId },
+    episode: { title, description, links, youtubeId, },
 } = Astro.props;
+
+const pubDate = Astro.props.episode.pubDate || Astro.props.episode.date;
 
 const { host, assets } = {
     ...Astro.props.show.media,
@@ -74,20 +77,31 @@ const { Content } = await render(Astro.props.episode);
                 &larr; Back to {Astro.props.show.title}
             </span>
         </a>
-         {complete && (<div class="p-6 bg-gray-100 dark:bg-gray-900 dark:text-gray-300 mb-8 max-w-5xl"><p>Hey! Just so you're aware, this show, {showTitle}, is complete and no longer producing episodes. Please enjoy the archives.</p></div>)}
-        <h1
-            class="text-gray-500 dark:text-gray-400 font-bold text-4xl lg:text-7xl xl:text-8xl"
-        >
-            {title}
-        </h1>
-        {
-            description ? (
-                <div class="text-xl lg:text-2xl mt-8 max-w-7xl dark:text-gray-300 lg:mt-12">
-                    <span>{description}</span>
-                </div>
-            ) : undefined
-        }
-         {showLinks ? <SubscribeMenu title="Follow &amp; Subscribe" links={showLinks} /> : undefined}
+         {complete && (<div class="p-6 bg-gray-100 dark:bg-gray-900 dark:text-gray-300 mb-8 max-w-5xl"><p>Hey friend! Just so you're aware, <span class="italic">{showTitle}</span> is complete and no longer producing episodes. Please enjoy the archives, and maybe take a listen to my <a class="underline" href="/">current work</a>.</p></div>)}
+         {complete ? (
+          <h1
+              class="text-gray-500 dark:text-gray-400 font-bold text-4xl lg:text-7xl xl:text-8xl"
+          >
+            #{Astro.props.episode.number}: {title}
+          </h1>
+         ) : (
+            <h1 class="text-gray-500 dark:text-gray-400 font-bold text-4xl lg:text-7xl xl:text-8xl"
+            >
+                {title}
+            </h1>
+         )}
+        {description && !complete && (
+            <div class="text-xl lg:text-2xl mt-8 max-w-7xl dark:text-gray-300 lg:mt-12">
+                <span>{description}</span>
+            </div>
+        )}
+        <div class="flex justify-between max-w-xl">
+            {showLinks ? <SubscribeMenu title="Follow &amp; Subscribe" links={showLinks} /> : undefined}
+            <div class="mt-8 font-semibold antialiased text-sm text-gray-700 dark:text-gray-400">
+                <span class="uppercase">Published On</span>
+                <time datetime={pubDate} pubdate="pubdate">{formatDate(pubDate)}</time>
+            </div>
+        </div>
     </div>
     <Container
         classes={[
@@ -108,7 +122,7 @@ const { Content } = await render(Astro.props.episode);
                   src={media[0].url}
                 ></audio>
                 <media-control-bar class="w-full">
-                  <media-play-button></media-play-button>
+                    <media-play-button class="p-2 mr-2"></media-play-button>
                   <media-time-display showduration></media-time-display>
                   <media-time-range></media-time-range>
                   <media-playback-rate-button></media-playback-rate-button>

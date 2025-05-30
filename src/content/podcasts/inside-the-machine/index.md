@@ -17,6 +17,9 @@ categories:
   - Music
   - Music Interviews
 complete: true
+links:
+  - title: RSS (Audio)
+    href: /podcasts/inside-the-machine/feeds/audio.xml
 authors:
 - Nicholas Young
 language: en-us
