@@ -30,6 +30,15 @@ export const getLinks = async (id: string) =>
 
 export const isLast = (i: number, l: Array<any>) => i == l.length - 1;
 
+export const hasMP3 = (media) => {
+  const found = media.find((m) => m.filename.includes("mp3"));
+  if (found) {
+    return true;
+  }
+
+  return false;
+};
+
 export const buildMediaURL = (host, asset) => {
   const parsed = new URL(host);
   const assetPath = [parsed.pathname, asset.filename].join("/");

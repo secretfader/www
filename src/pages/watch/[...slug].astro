@@ -16,9 +16,10 @@ export async function getStaticPaths() {
         props: { ...v.data, ...v },
     }));
 }
-const { title, body, youtubeId } = Astro.props;
+const { title, body, youtubeId, links: entryLinks } = Astro.props;
 const { Content } = await render(Astro.props);
-const links = { ...Astro.props.links, ...(await getLinks("about")) };
+const allLinks = await getLinks("about");
+const links = [...(entryLinks || []), ...allLinks];
 ---
 
 <Layout title={title}>
