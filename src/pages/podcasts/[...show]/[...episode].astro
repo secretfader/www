@@ -95,12 +95,12 @@ const { Content } = await render(Astro.props.episode);
                 <span>{description}</span>
             </div>
         )}
-        <div class="flex justify-between max-w-xl">
-            {showLinks ? <SubscribeMenu title="Follow &amp; Subscribe" links={showLinks} /> : undefined}
-            <div class="mt-8 font-semibold antialiased text-sm text-gray-700 dark:text-gray-400">
+        <div>
+            <div class="mt-6 mb-6 font-semibold text-xs text-slate-700 dark:text-gray-400">
                 <span class="uppercase">Published On</span>
                 <time datetime={pubDate} pubdate="pubdate">{formatDate(pubDate)}</time>
             </div>
+            {showLinks ? <SubscribeMenu title="Follow &amp; Subscribe" links={showLinks} /> : undefined}
         </div>
     </div>
     <Container
@@ -122,7 +122,7 @@ const { Content } = await render(Astro.props.episode);
                   src={media[0].url}
                 ></audio>
                 <media-control-bar class="w-full">
-                    <media-play-button class="p-2 mr-2"></media-play-button>
+                    <media-play-button class="p-2"></media-play-button>
                   <media-time-display showduration></media-time-display>
                   <media-time-range></media-time-range>
                   <media-playback-rate-button></media-playback-rate-button>

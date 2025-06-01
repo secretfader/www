@@ -40,7 +40,7 @@ const episodes = await getEpisodesByShowID(Astro.params.show);
                     </div>
                 ) : undefined
             }
-            {links ? <SubscribeMenu title="Follow &amp; Subscribe" links={links} /> : undefined}
+            {links ? <div class="mt-8 z-20"><SubscribeMenu title="Follow &amp; Subscribe" links={links} /></div> : undefined}
         </div>
         <div class="col-span-1 lg:col-span-3 flex justify-center flex-row relative">
             <Image
