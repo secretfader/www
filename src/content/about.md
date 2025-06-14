@@ -15,6 +15,9 @@ media:
     source: Bicycling Magazine
     href: http://bicycling.com/culture/a42555000/how-cycling-changed-me-nicholas-young/
     pubDate: 2023/01/19
+  - title: Meet Nicholas Young, Creative Director
+    href: https://shoutoutcolorado.com/meet-nicholas-young-creative-director/
+    pubDate: 2025/06/11
 ---
 Nicholas Young is a Colorado-based engineer, filmmaker, designer, and creative director whose work bridges the worlds of technology, art, and storytelling. As an early contributor to both the Rust and Node.js programming ecosystems, he helped shape the world of modern open source development. He was also among the first wave of podcasters, and went on to launch a network of shows from Chicago, all of which were formative in the medium's early growth.
 
