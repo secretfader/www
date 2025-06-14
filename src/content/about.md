@@ -16,6 +16,7 @@ media:
     href: http://bicycling.com/culture/a42555000/how-cycling-changed-me-nicholas-young/
     pubDate: 2023/01/19
   - title: Meet Nicholas Young, Creative Director
+    source: Shoutout Colorado
     href: https://shoutoutcolorado.com/meet-nicholas-young-creative-director/
     pubDate: 2025/06/11
 ---
