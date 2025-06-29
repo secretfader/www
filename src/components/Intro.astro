@@ -8,26 +8,30 @@ import { Image } from "astro:assets";
 >
     <div class="flex flex-col justify-center antialiased lg:col-span-8">
         <h2
-            class="text-gray-500 dark:text-gray-400 font-bold text-4xl sm:text-6xl lg:text-8xl xl:text-9xl"
+            class="text-gray-500 font-bold text-5xl mb-8 dark:text-gray-400 lg:text-8xl"
         >
             Design, create, broadcast. Repeat.
         </h2>
-        <p
-            class="text-xl mt-8 sm:text-2xl lg:text-3xl lg:mt-12 dark:text-gray-300"
-        >
-            I'm Nicholas, an engineer, filmmaker, and creative director from
-            Colorado.
-        </p>
-        <p
-            class="text-xl mt-4 sm:text-2xl lg:text-3xl lg:mt-8 dark:text-gray-300"
-        >
-            I use interdisciplinary methods to blend art and science; capturing
-            stories, creating experiences, and sharing perspectives you've never
-            heard before.
-            <a class="underline text-gray-700 dark:text-gray-400" href="/about"
-                >Learn more about my work.</a
-            >
-        </p>
+        <div class="text-xl lg:text-2xl dark:text-gray-300">
+            <p>
+                I'm Nicholas, a filmmaker, engineer, and creative director from
+                Colorado.
+            </p>
+            <p class="mt-4 xl:mt-8">
+                I use interdisciplinary methods to blend art and science;
+                capturing stories, creating experiences, and sharing
+                perspectives you've never heard before.
+            </p>
+            <p class="mt-4 xl:mt-8">
+                Do you or your project need a creative upgrade?
+                <a
+                    class="underline text-gray-700 dark:text-gray-400"
+                    href="/about"
+                >
+                    Let's chat about how I can help</a
+                >.
+            </p>
+        </div>
     </div>
     <div class="flex flex-col justify-center mt-8 lg:mt-0 lg:col-span-4">
         <Image
