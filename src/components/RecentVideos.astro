@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 
 import { getVideos, byDate } from "../data";
-const videos = (await getVideos()).sort(byDate).slice(0, 3);
+const videos = (await getVideos()).sort(byDate).slice(0, 1);
 ---
 
 {
@@ -10,18 +10,13 @@ const videos = (await getVideos()).sort(byDate).slice(0, 3);
         <div class="relative z-10 col-span-1 mb-8 text-gray-700 dark:text-gray-300 lg:col-span-4 lg:mb-0 hover:text-gray-500">
             <media-controller class="w-full aspect-video">
                 <youtube-video
-                    src={`https://www.youtube.com/watch?v=${e.data.youtubeId}`}
+                    src={`https://www.youtube.com/watch?v=${e.data.youtubeId}&hd=1`}
                     slot="media"
                     crossorigin
                     muted
                 />
                 <media-loading-indicator slot="centered-chrome" noautohide />
             </media-controller>
-            <a href={`/watch/${e.id}`}>
-                <span class="inset-0 absolute" />
-                <h2 class="text-3xl font-semibold mt-4">{e.data.title}</h2>
-            </a>
-            <p class="mt-4">{e.data.description}</p>
         </div>
     ))
 }

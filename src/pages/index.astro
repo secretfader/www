@@ -9,16 +9,7 @@ import RecentVideos from "../components/RecentVideos.astro";
 <Layout description="Design, create, broadcast. Repeat.">
     <Nav />
     <Intro />
-    <Container classes={["mt-12", "lg:mt-24"]}>
-        <h3
-            class="text-xl uppercase font-bold text-gray-700 dark:text-gray-300 underline underline-offset-8"
-        >
-            Recent Videos
-        </h3>
-        <div
-            class="container mx-auto grid grid-cols-1 mt-8 lg:grid-cols-12 lg:gap-8 lg:px-0"
-        >
-            <RecentVideos />
-        </div>
+    <Container classes={["mt-12", "lg:mt-24", "max-w-5xl"]}>
+        <RecentVideos />
     </Container>
 </Layout>
