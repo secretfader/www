@@ -22,7 +22,7 @@ media:
 ---
 Nicholas Young is a Colorado-based filmmaker, designer, engineer, certified remote pilot, and creative director. His work bridges the worlds of technology, art, and storytelling.
 
-He is the founder of [Fictive Flame](https://fictiveflame.co), a storytelling, film, and design studio which draws techniques from the world of documentary filmmaking to craft bold, human-centric narratives for clients of all sizes.
+He is the founder of [Fictive Flame](https://fictiveflame.co), a brand development and filmmaking studio, which draws techniques from the world of documentary filmmaking to craft bold, human-centric narratives for clients of all sizes.
 
 An early contributor to both the Rust and Node.js programming language ecosystems, Nicholas helped shape the landscape of modern open source development, ensuring security and ease of use at each stage. He was also part of the first wave of podcasters, launching a network of shows and a ssupporting creative agency from Chicago&mdash;efforts that played a formative role in the medium's early development.
 
