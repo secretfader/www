@@ -13,7 +13,6 @@ const videos = (await getVideos()).sort(byDate).slice(0, 1);
                     src={`https://www.youtube.com/watch?v=${e.data.youtubeId}&hd=1`}
                     slot="media"
                     crossorigin
-                    muted
                 />
                 <media-loading-indicator slot="centered-chrome" noautohide />
             </media-controller>
