@@ -20,12 +20,12 @@ media:
     href: https://shoutoutcolorado.com/meet-nicholas-young-creative-director/
     pubDate: 2025/06/11
 ---
-Nicholas Young is a Colorado-based engineer, filmmaker, designer, and creative director whose work bridges the worlds of technology, art, and storytelling. As an early contributor to both the Rust and Node.js programming ecosystems, he helped shape the world of modern open source development. He was also among the first wave of podcasters, and went on to launch a network of shows from Chicago, all of which were formative in the medium's early growth.
+Nicholas Young is a Colorado-based filmmaker, designer, engineer, certified remote pilot, and creative director. His work bridges the worlds of technology, art, and storytelling.
 
-Nicholas is the founder of [Fictive Flame Media](https://fictiveflame.co), a visual and interactive design studio focused on documentary storytelling and cross-disciplinary collaboration. Through the company, he brings bold, human-centered narratives to life, blending technical precision with emotional depth. He is also a certified Part 107 remote pilot, providing aerial imaging across the country.
+He is the founder of [Fictive Flame](https://fictiveflame.co), a storytelling, film, and design studio which draws techniques from the world of documentary filmmaking to craft bold, human-centric narratives for clients of all sizes.
 
-Nicholas also works as an interdisciplinary design and engineering consultant, where his ability to merge innovation with aesthetic insight makes him a valued partner on projects that demand both vision and versatility.
+An early contributor to both the Rust and Node.js programming language ecosystems, Nicholas helped shape the landscape of modern open source development, ensuring security and ease of use at each stage. He was also part of the first wave of podcasters, launching a network of shows and a ssupporting creative agency from Chicago&mdash;efforts that played a formative role in the medium's early development.
 
-After moving to Colorado in 2016, Nicholas faced a life-altering diagnosis that led to a double amputation. He has since become a visible advocate and adaptive athlete&mdash;cycling, hiking, and running across the rugged Colorado landscape. His story has been featured in Bicycling Magazine and on local television for his resilience and athleticism.
+In 2016, shortly after relocating to Colorado in 2016, Nicholas received a life-altering diagnosis that led to a double amputation. Since then, he has become a visible advocate and adaptive athlete: cycling, hiking, and running across Colorado's rugged terrain.
 
 Today, Nicholas continues to tell stories that explore themes of adaptation, creativity, and the interconnectedness of disciplines&mdash;both through his work at Fictive Flame Media and his broader creative practice.
