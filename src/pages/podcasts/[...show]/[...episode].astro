@@ -136,13 +136,19 @@ const { Content } = await render(Astro.props.episode);
                     class="w-full aspect-video mb-4 lg:mb-8 relative isolate z-1"
                 >
                     <youtube-video
-                        src={`https://www.youtube.com/watch?v=${youtubeId}`}
+                        src={`https://www.youtube.com/watch?v=${youtubeId}&hd=1`}
                         slot="media"
-                        class="isolate"
-                        controls
+                        class="absolute w-full h-full isolate"
                         crossorigin></youtube-video>
                     <media-loading-indicator slot="centered-chrome" noautohide
                     ></media-loading-indicator>
+                    <media-control-bar class="w-full bottom-0 absolute">
+                      <media-play-button class="p-2" />
+                      <media-mute-button />
+                      <media-volume-range />
+                      <media-time-range />
+                      <media-fullscreen-button class="p-2" />
+                    </media-control-bar>
                 </media-controller>
             )}
             <Prose>
