@@ -9,13 +9,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.10.1"
+    "astro": "^5.12.8"
   },
   "devDependencies": {
     "@astrojs/alpinejs": "^0.4.8",
-    "@astrojs/cloudflare": "^12.6.0",
+    "@astrojs/cloudflare": "^12.6.2",
     "@astrojs/rss": "^4.0.12",
-    "@astrojs/sitemap": "^3.4.1",
+    "@astrojs/sitemap": "^3.4.2",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "4.1.11",
     "@types/alpinejs": "^3.13.11",
@@ -23,10 +23,10 @@
     "html-entities": "^2.6.0",
     "humanize-list": "^1.0.1",
     "install": "^0.13.0",
-    "npm": "^11.4.2",
-    "resend": "^4.6.0",
-    "sharp": "^0.34.2",
+    "npm": "^11.5.2",
+    "resend": "^4.8.0",
+    "sharp": "^0.34.3",
     "tailwindcss": "4.1.11",
-    "wrangler": "^4.22.0"
+    "wrangler": "^4.28.0"
   }
 }
