@@ -12,7 +12,7 @@
     "astro": "^5.13.5"
   },
   "devDependencies": {
-    "@astrojs/alpinejs": "^0.4.8",
+    "@astrojs/alpinejs": "^0.4.9",
     "@astrojs/cloudflare": "^12.6.8",
     "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.5.1",
