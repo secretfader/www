@@ -9,7 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.13.9"
+    "astro": "^5.13.10"
   },
   "devDependencies": {
     "@astrojs/alpinejs": "^0.4.9",
