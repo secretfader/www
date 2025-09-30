@@ -24,7 +24,7 @@
     "humanize-list": "^1.0.1",
     "install": "^0.13.0",
     "npm": "^11.6.1",
-    "resend": "^6.1.0",
+    "resend": "^6.1.1",
     "sharp": "^0.34.4",
     "tailwindcss": "4.1.13",
     "wrangler": "^4.39.0"
