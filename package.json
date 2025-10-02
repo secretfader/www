@@ -17,7 +17,7 @@
     "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.6.0",
     "@tailwindcss/typography": "^0.5.19",
-    "@tailwindcss/vite": "4.1.13",
+    "@tailwindcss/vite": "4.1.14",
     "@types/alpinejs": "^3.13.11",
     "alpinejs": "^3.15.0",
     "html-entities": "^2.6.0",
