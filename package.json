@@ -6,10 +6,12 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
-    "astro": "^5.14.1"
+    "astro": "^5.14.1",
+    "wrangler": "^4.42.1"
   },
   "devDependencies": {
     "@astrojs/alpinejs": "^0.4.9",
@@ -26,7 +28,6 @@
     "npm": "^11.6.1",
     "resend": "^6.1.2",
     "sharp": "^0.34.4",
-    "tailwindcss": "4.1.14",
-    "wrangler": "^4.39.0"
+    "tailwindcss": "4.1.14"
   }
 }
