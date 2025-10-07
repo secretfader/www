@@ -4,8 +4,10 @@ slug: about
 links:
   - title: Fictive Flame Media
     href: https://fictiveflame.co
-  - title: Press Kit
-    href: https://content.secretfader.com/press-kit.zip
+  - title: YouTube
+    href: https://youtube.com/@secretfader
+  - title: Instagram
+    href: https://instagram.com/secretfader
 media:
   - title: Double Amputee Cyclist Finds a New Way to Ride
     source: Fox 31 - Denver, Colorado
@@ -23,7 +25,7 @@ media:
 
 Nicholas Young is a Colorado-based filmmaker, designer, engineer, certified remote pilot, custom drone builder, and creative director. His work bridges the worlds of technology, art, and storytelling.
 
-He is the founder of [Fictive Flame](https://fictiveflame.co) a creative studio which draws techniques from the world of documentary filmmaking to craft bold, human-centric narratives for clients of all sizes. He is also an [FAA Part 107](https://www.faa.gov/uas/commercial_operators) certificate holder, accomplished professional drone pilot, and the designer behind the [Fictive Air series of high-performance, sub-250g cinematic aircraft](https://fictiveflame.co/blog/fictive-air-an-american-made-sub250g-cinematic-aircraft/); making Nicholas a valued asset to high-stakes productions where safety, reliability, and creativity are required.
+He is the founder of [Fictive Flame](https://fictiveflame.co) a creative studio which draws techniques from the world of documentary filmmaking to craft bold, human-centric narratives for clients of all sizes. He is also an [FAA Part 107](https://www.faa.gov/uas/commercial_operators) certificate holder, accomplished professional drone pilot, and the designer behind the [Fictive Air series of high-performance, sub-250g FPV cinematic aircraft](https://fictiveflame.co/blog/fictive-air-an-american-made-sub250g-cinematic-aircraft/); making Nicholas a valued asset to high-stakes productions where safety, reliability, and creativity are required.
 
 An early contributor to both the Rust and Node.js programming language ecosystems, Nicholas helped shape the landscape of modern open source development, ensuring security and ease of use at each stage. He was also part of the first wave of podcasters, launching a network of shows and a supporting creative agency from Chicago&mdash;efforts that played a formative role in the medium's early development.
 
