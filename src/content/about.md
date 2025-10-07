@@ -28,6 +28,8 @@ He is the founder of [Fictive Flame](https://fictiveflame.co) a creative studio 
 
 An early contributor to both the Rust and Node.js programming language ecosystems, Nicholas helped shape the landscape of modern open source development, ensuring security and ease of use at each stage. He was also part of the first wave of podcasters, launching a network of shows and a supporting creative agency from Chicago&mdash;efforts that played a formative role in the medium's early development.
 
-In 2016, shortly after relocating to Colorado, Nicholas received a life-altering diagnosis, which eventually led to the amputation of his right leg below the knee in late 2018. Efforts to remain active only damaged the remaining sound limb, which was amputated in early 2020. Since then, he has become a visible advocate and adaptive athlete; cycling, hiking, and running across rugged terrain.
+In 2016, shortly after relocating to Colorado, Nicholas received a life-altering diagnosis, which eventually led to the amputation of his right leg below the knee in late 2018. Over the next two years, his fight to remain active with a newfound disability would damage the remaining sound limb, which was amputated in early 2020.
+
+Since then, he has become a visible advocate and adaptive athlete; cycling, hiking, and running across Colorado's rugged terrain.
 
 Today, Nicholas continues to tell stories that explore themes of adaptation, creativity, and the interconnectedness of disciplines&mdash;both through his work at Fictive Flame Media and his broader creative practice.
