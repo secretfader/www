@@ -22,8 +22,7 @@ media:
     href: https://shoutoutcolorado.com/meet-nicholas-young-creative-director/
     pubDate: 2025/06/11
 ---
-
-Nicholas Young is a Colorado-based filmmaker, designer, engineer, certified remote pilot, custom drone builder, and creative director. His work bridges the worlds of technology, art, and storytelling.
+Nicholas Young is a storyteller and creative director whose work bridges the worlds of technology and the humanities.
 
 He is the founder of [Fictive Flame](https://fictiveflame.co) a creative studio which draws techniques from the world of documentary filmmaking to craft bold, human-centric narratives for clients of all sizes. He is also an [FAA Part 107](https://www.faa.gov/uas/commercial_operators) certificate holder, accomplished professional drone pilot, and the designer behind the [Fictive Air series of high-performance, sub-250g FPV cinematic aircraft](https://fictiveflame.co/blog/fictive-air-an-american-made-sub250g-cinematic-aircraft/); making Nicholas a valued asset to high-stakes productions where safety, reliability, and creativity are required.
 
