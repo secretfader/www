@@ -49,8 +49,8 @@ importers:
         specifier: ^0.13.0
         version: 0.13.0
       npm:
-        specifier: ^11.6.1
-        version: 11.6.1
+        specifier: ^11.6.2
+        version: 11.6.2
       resend:
         specifier: ^6.1.2
         version: 6.1.2(@react-email/render@1.1.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
@@ -1800,8 +1800,8 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
 
-  npm@11.6.1:
-    resolution: {integrity: sha512-7iDSHDoup6uMQJ37yWrhfqcbMhF0UEfGRap6Nv+aKQcrIJXlCi2cKbj75WBmiHlcwsQCy/U0zEwDZdAx6H/Vaw==}
+  npm@11.6.2:
+    resolution: {integrity: sha512-7iKzNfy8lWYs3zq4oFPa8EXZz5xt9gQNKJZau3B1ErLBb6bF7sBJ00x09485DOvRT2l5Gerbl3VlZNT57MxJVA==}
     engines: {node: ^20.17.0 || >=22.9.0}
     hasBin: true
     bundledDependencies:
@@ -1847,7 +1847,6 @@ packages:
       - ms
       - node-gyp
       - nopt
-      - normalize-package-data
       - npm-audit-report
       - npm-install-checks
       - npm-package-arg
@@ -4270,7 +4269,7 @@ snapshots:
 
   normalize-path@3.0.0: {}
 
-  npm@11.6.1: {}
+  npm@11.6.2: {}
 
   ofetch@1.4.1:
     dependencies:
