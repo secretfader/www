@@ -10,7 +10,7 @@
     "deploy": "wrangler deploy"
   },
   "dependencies": {
-    "astro": "^5.14.6",
+    "astro": "^5.14.7",
     "wrangler": "^4.43.0"
   },
   "devDependencies": {
