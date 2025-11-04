@@ -1,4 +1,4 @@
-#
+# 
 
 # diff all
 
@@ -15,7 +15,7 @@ defaults nosave
 board_name FLYWOOF405S_AIO
 manufacturer_id FLWO
 mcu_id 004400233034511530333939
-signature
+signature 
 
 # name: Spark
 
@@ -148,9 +148,9 @@ profile 0
 rateprofile 0
 
 # rateprofile 0
-set rateprofile_name = 730
-set thr_expo = 40
-set thr_hover = 60
+set rateprofile_name = Flow
+set thr_expo = 20
+set thr_hover = 70
 set roll_rc_rate = 17
 set pitch_rc_rate = 17
 set yaw_rc_rate = 14
@@ -164,24 +164,7 @@ set yaw_srate = 63
 rateprofile 1
 
 # rateprofile 1
-set rateprofile_name = 830
-set thr_expo = 30
-set thr_hover = 70
-set roll_rc_rate = 17
-set pitch_rc_rate = 17
-set yaw_rc_rate = 14
-set roll_expo = 60
-set pitch_expo = 60
-set yaw_expo = 50
-set roll_srate = 83
-set pitch_srate = 83
-set yaw_srate = 73
-
-rateprofile 2
-
-# rateprofile 2
-set rateprofile_name = 930
-set thr_expo = 30
+set rateprofile_name = Flow 75
 set thr_hover = 70
 set roll_rc_rate = 17
 set pitch_rc_rate = 17
@@ -192,15 +175,35 @@ set yaw_expo = 50
 set roll_srate = 73
 set pitch_srate = 73
 set yaw_srate = 63
+set throttle_limit_type = CLIP
+set throttle_limit_percent = 75
+
+rateprofile 2
+
+# rateprofile 2
+set rateprofile_name = Flow 65
+set thr_expo = 20
+set thr_hover = 70
+set roll_rc_rate = 17
+set pitch_rc_rate = 17
+set yaw_rc_rate = 14
+set roll_expo = 60
+set pitch_expo = 60
+set yaw_expo = 50
+set roll_srate = 73
+set pitch_srate = 73
+set yaw_srate = 63
+set throttle_limit_type = CLIP
+set throttle_limit_percent = 65
 
 rateprofile 3
 
 # rateprofile 3
-set rateprofile_name = 67 Stock
+set rateprofile_name = Defaults
 
 # restore original rateprofile selection
-rateprofile 0
+rateprofile 2
 
 # save configuration
 save
-#
+# 
