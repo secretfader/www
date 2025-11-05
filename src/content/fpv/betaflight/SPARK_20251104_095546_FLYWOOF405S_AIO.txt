@@ -1,4 +1,4 @@
-# 
+Entering CLI Mode, type 'exit' to reboot, or 'hel
 
 # diff all
 
