@@ -1,4 +1,4 @@
-Entering CLI Mode, type 'exit' to reboot, or 'hel
+#
 
 # diff all
 
@@ -15,7 +15,7 @@ defaults nosave
 board_name FLYWOOF405S_AIO
 manufacturer_id FLWO
 mcu_id 004400233034511530333939
-signature 
+signature
 
 # name: Spark
 
@@ -70,26 +70,38 @@ set small_angle = 180
 set pid_process_denom = 4
 set ledstrip_brightness = 8
 set osd_units = IMPERIAL
-set osd_warn_bitmask = 270207
+set osd_warn_bitmask = 421887
+set osd_rssi_dbm_alarm = -90
 set osd_vbat_pos = 483
 set osd_link_quality_pos = 7277
 set osd_link_tx_power_pos = 7213
 set osd_rssi_dbm_pos = 7245
-set osd_tim_2_pos = 6690
+set osd_rsnr_pos = 382
+set osd_tim_2_pos = 6722
 set osd_flymode_pos = 6178
-set osd_throttle_pos = 6274
+set osd_throttle_pos = 6242
 set osd_crosshairs_pos = 238
 set osd_ah_sbar_pos = 4410
 set osd_ah_pos = 4282
-set osd_current_pos = 6721
-set osd_craft_name_pos = 6200
-set osd_altitude_pos = 6306
+set osd_current_pos = 6728
+set osd_craft_name_pos = 14392
+set osd_gps_speed_pos = 162
+set osd_gps_lon_pos = 546
+set osd_gps_lat_pos = 514
+set osd_gps_sats_pos = 482
+set osd_home_dir_pos = 488
+set osd_home_dist_pos = 490
+set osd_flight_dist_pos = 1197
+set osd_altitude_pos = 6274
 set osd_warnings_pos = 14421
 set osd_avg_cell_voltage_pos = 385
 set osd_disarmed_pos = 394
+set osd_nheading_pos = 514
+set osd_rtc_date_time_pos = 16674
 set osd_core_temp_pos = 464
-set osd_rate_profile_name_pos = 6242
-set osd_pid_profile_name_pos = 6210
+set osd_rate_profile_name_pos = 6210
+set osd_pid_profile_name_pos = 195
+set osd_stat_bitmask = 1073889068
 set pinio_box = 40,41,255,255
 set craft_name = Spark
 
@@ -206,4 +218,4 @@ rateprofile 3
 
 # save configuration
 save
-# 
+#
