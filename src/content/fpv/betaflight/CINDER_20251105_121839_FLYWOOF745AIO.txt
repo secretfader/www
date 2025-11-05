@@ -1,5 +1,3 @@
-Entering CLI Mo
-
 # diff all
 
 # version
@@ -15,7 +13,7 @@ defaults nosave
 board_name FLYWOOF745AIO
 manufacturer_id FLWO
 mcu_id 0032003c3433510731353536
-signature 
+signature
 
 # name: Cinder
 
@@ -216,4 +214,4 @@ rateprofile 2
 
 # save configuration
 save
-# 
+#

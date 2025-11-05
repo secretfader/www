@@ -1,5 +1,3 @@
-# 
-
 # diff all
 
 # version
@@ -15,7 +13,7 @@ defaults nosave
 board_name FLYWOOF745AIO
 manufacturer_id FLWO
 mcu_id 0045001c3433510731353536
-signature 
+signature
 
 # name: Flare
 
@@ -200,4 +198,4 @@ rateprofile 0
 
 # save configuration
 save
-# 
+#
