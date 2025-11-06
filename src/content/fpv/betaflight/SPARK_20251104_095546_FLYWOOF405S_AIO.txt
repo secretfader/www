@@ -1,8 +1,10 @@
+# 
+
 # diff all
 
 # version
-# Betaflight / STM32F405 (F405) 2025.12.0-RC2 Nov  2 2025 / 01:47:00 (9c1a6bfab) MSP API: 1.47
-# config rev: c940ae8
+# Betaflight / STM32F405 (F405) 2025.12.0-beta Nov  6 2025 / 01:38:49 (af70928ae) MSP API: 1.47
+# config rev: 38e51b0
 
 # start the command batch
 batch start
@@ -13,7 +15,7 @@ defaults nosave
 board_name FLYWOOF405S_AIO
 manufacturer_id FLWO
 mcu_id 004400233034511530333939
-signature
+signature 
 
 # name: Spark
 
@@ -40,14 +42,16 @@ led 3 11,8::CB:8
 aux 0 0 0 1550 2100 0 0
 aux 1 1 3 1300 1700 0 0
 aux 2 2 3 1700 2100 0 0
-aux 3 13 7 1500 2100 0 0
-aux 4 28 1 1500 2100 0 0
-aux 5 35 6 1500 2100 0 0
+aux 3 3 4 1300 1700 0 0
+aux 4 11 4 1675 2100 0 0
+aux 5 26 0 1500 2100 0 0
+aux 6 28 1 1500 2100 0 0
+aux 7 31 7 1500 2100 0 0
+aux 8 35 6 1500 2100 0 0
 
 # adjrange
 adjrange 0 0 2 900 2100 12 2 0 0
-adjrange 1 0 4 900 2100 29 4 0 0
-adjrange 2 0 5 900 2075 31 5 0 0
+adjrange 1 0 5 900 2100 29 5 0 0
 
 # master
 set dyn_notch_count = 1
@@ -65,11 +69,12 @@ set vbat_warning_cell_voltage = 330
 set ibata_scale = 600
 set yaw_motors_reversed = ON
 set small_angle = 180
+set gps_sbas_mode = AUTO
 set pid_process_denom = 4
 set ledstrip_brightness = 8
 set osd_units = IMPERIAL
-set osd_warn_bitmask = 421887
-set osd_rssi_dbm_alarm = -90
+set osd_warn_bitmask = 421749
+set osd_rssi_dbm_alarm = -95
 set osd_vbat_pos = 483
 set osd_link_quality_pos = 7277
 set osd_link_tx_power_pos = 7213
@@ -91,7 +96,7 @@ set osd_home_dir_pos = 488
 set osd_home_dist_pos = 490
 set osd_flight_dist_pos = 1197
 set osd_altitude_pos = 6274
-set osd_warnings_pos = 14421
+set osd_warnings_pos = 14773
 set osd_avg_cell_voltage_pos = 385
 set osd_disarmed_pos = 394
 set osd_nheading_pos = 514
@@ -159,7 +164,6 @@ rateprofile 0
 
 # rateprofile 0
 set rateprofile_name = 730
-set thr_expo = 20
 set thr_hover = 70
 set roll_rc_rate = 17
 set pitch_rc_rate = 17
@@ -174,7 +178,7 @@ set yaw_srate = 63
 rateprofile 1
 
 # rateprofile 1
-set rateprofile_name = 730 75
+set rateprofile_name = 530
 set thr_hover = 70
 set roll_rc_rate = 17
 set pitch_rc_rate = 17
@@ -182,17 +186,14 @@ set yaw_rc_rate = 14
 set roll_expo = 60
 set pitch_expo = 60
 set yaw_expo = 50
-set roll_srate = 73
-set pitch_srate = 73
-set yaw_srate = 63
-set throttle_limit_type = CLIP
-set throttle_limit_percent = 75
+set roll_srate = 53
+set pitch_srate = 53
+set yaw_srate = 43
 
 rateprofile 2
 
 # rateprofile 2
-set rateprofile_name = 730 65
-set thr_expo = 20
+set rateprofile_name = 930
 set thr_hover = 70
 set roll_rc_rate = 17
 set pitch_rc_rate = 17
@@ -200,11 +201,9 @@ set yaw_rc_rate = 14
 set roll_expo = 60
 set pitch_expo = 60
 set yaw_expo = 50
-set roll_srate = 73
-set pitch_srate = 73
-set yaw_srate = 63
-set throttle_limit_type = CLIP
-set throttle_limit_percent = 65
+set roll_srate = 93
+set pitch_srate = 93
+set yaw_srate = 83
 
 rateprofile 3
 
@@ -212,8 +211,8 @@ rateprofile 3
 set rateprofile_name = Defaults
 
 # restore original rateprofile selection
-rateprofile 3
+rateprofile 0
 
 # save configuration
 save
-#
+# 
