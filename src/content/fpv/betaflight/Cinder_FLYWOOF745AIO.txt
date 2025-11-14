@@ -142,22 +142,25 @@ set dterm_lpf1_dyn_expo = 7
 set dterm_lpf1_type = BIQUAD
 set dterm_lpf2_static_hz = 0
 set vbat_sag_compensation = 100
-set p_pitch = 61
-set i_pitch = 109
-set d_pitch = 44
-set f_pitch = 162
-set p_roll = 58
-set i_roll = 104
-set d_roll = 39
-set f_roll = 156
-set p_yaw = 58
-set i_yaw = 104
-set f_yaw = 156
-set d_max_roll = 42
-set d_max_pitch = 48
+set crash_recovery = ON
+set p_pitch = 62
+set i_pitch = 110
+set d_pitch = 42
+set f_pitch = 149
+set p_roll = 59
+set i_roll = 105
+set d_roll = 35
+set f_roll = 143
+set p_yaw = 59
+set i_yaw = 105
+set f_yaw = 143
+set d_max_roll = 39
+set d_max_pitch = 47
 set dyn_idle_min_rpm = 38
-set simplified_master_multiplier = 130
-set simplified_d_max_gain = 25
+set simplified_master_multiplier = 120
+set simplified_pi_gain = 110
+set simplified_d_max_gain = 30
+set simplified_pitch_d_gain = 105
 set simplified_dterm_filter = OFF
 
 profile 1
@@ -172,27 +175,27 @@ profile 0
 rateprofile 0
 
 # rateprofile 0
-set rateprofile_name = 730
-set roll_rc_rate = 17
-set pitch_rc_rate = 17
-set yaw_rc_rate = 14
-set roll_expo = 60
-set pitch_expo = 60
-set yaw_expo = 50
-set roll_srate = 73
-set pitch_srate = 73
+set rateprofile_name = 530
+set roll_rc_rate = 14
+set pitch_rc_rate = 14
+set yaw_rc_rate = 11
+set roll_expo = 57
+set pitch_expo = 57
+set yaw_expo = 47
+set roll_srate = 53
+set pitch_srate = 53
 set yaw_srate = 63
 
 rateprofile 1
 
 # rateprofile 1
 set rateprofile_name = 630
-set roll_rc_rate = 17
-set pitch_rc_rate = 17
-set yaw_rc_rate = 14
-set roll_expo = 60
-set pitch_expo = 60
-set yaw_expo = 50
+set roll_rc_rate = 15
+set pitch_rc_rate = 15
+set yaw_rc_rate = 12
+set roll_expo = 57
+set pitch_expo = 57
+set yaw_expo = 47
 set roll_srate = 63
 set pitch_srate = 63
 set yaw_srate = 53
@@ -200,16 +203,16 @@ set yaw_srate = 53
 rateprofile 2
 
 # rateprofile 2
-set rateprofile_name = 430
-set roll_rc_rate = 17
-set pitch_rc_rate = 17
-set yaw_rc_rate = 14
-set roll_expo = 60
-set pitch_expo = 60
-set yaw_expo = 50
-set roll_srate = 53
-set pitch_srate = 53
-set yaw_srate = 43
+set rateprofile_name = 730
+set roll_rc_rate = 18
+set pitch_rc_rate = 18
+set yaw_rc_rate = 15
+set roll_expo = 57
+set pitch_expo = 57
+set yaw_expo = 47
+set roll_srate = 73
+set pitch_srate = 73
+set yaw_srate = 63
 
 rateprofile 3
 
@@ -224,7 +227,7 @@ set pitch_srate = 70
 set yaw_srate = 70
 
 # restore original rateprofile selection
-rateprofile 0
+rateprofile 3
 
 # save configuration
 save

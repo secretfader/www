@@ -1,4 +1,4 @@
-#
+# 
 
 # diff all
 
@@ -15,7 +15,7 @@ defaults nosave
 board_name FLYWOOF405S_AIO
 manufacturer_id FLWO
 mcu_id 004400233034511530333939
-signature
+signature 
 
 # name: Spark
 
@@ -131,38 +131,42 @@ set ap_hover_throttle = 1410
 profile 0
 
 # profile 0
-set profile_name = Flywoo
-set dterm_lpf1_dyn_min_hz = 63
-set dterm_lpf1_dyn_max_hz = 127
+set profile_name = Cine65
+set dterm_lpf1_dyn_min_hz = 80
+set dterm_lpf1_dyn_max_hz = 110
+set dterm_lpf1_dyn_expo = 7
+set dterm_lpf1_type = BIQUAD
 set dterm_lpf1_static_hz = 0
-set dterm_lpf2_static_hz = 127
+set dterm_lpf2_static_hz = 0
 set vbat_sag_compensation = 100
 set crash_recovery = ON
 set iterm_relax_cutoff = 25
-set p_pitch = 92
-set i_pitch = 164
-set d_pitch = 76
-set f_pitch = 185
-set p_roll = 88
-set i_roll = 156
-set d_roll = 74
-set f_roll = 178
-set p_yaw = 88
-set i_yaw = 156
-set f_yaw = 178
+set p_pitch = 62
+set i_pitch = 110
+set d_pitch = 42
+set f_pitch = 149
+set p_roll = 59
+set i_roll = 105
+set d_roll = 35
+set f_roll = 143
+set p_yaw = 59
+set i_yaw = 105
+set f_yaw = 143
 set horizon_level_strength = 50
-set d_max_roll = 81
-set d_max_pitch = 83
+set d_max_roll = 39
+set d_max_pitch = 47
 set d_max_advance = 0
 set thrust_linear = 30
 set feedforward_jitter_factor = 5
-set dyn_idle_min_rpm = 70
-set simplified_master_multiplier = 135
+set dyn_idle_min_rpm = 38
+set simplified_pids_mode = OFF
+set simplified_master_multiplier = 120
 set simplified_d_gain = 185
-set simplified_pi_gain = 145
-set simplified_d_max_gain = 25
+set simplified_pi_gain = 110
+set simplified_d_max_gain = 30
 set simplified_feedforward_gain = 110
-set simplified_pitch_d_gain = 90
+set simplified_pitch_d_gain = 105
+set simplified_dterm_filter = OFF
 set simplified_dterm_filter_multiplier = 85
 
 profile 1
@@ -184,16 +188,16 @@ profile 0
 rateprofile 0
 
 # rateprofile 0
-set rateprofile_name = 730
+set rateprofile_name = 530
 set thr_hover = 70
-set roll_rc_rate = 17
-set pitch_rc_rate = 17
-set yaw_rc_rate = 14
-set roll_expo = 60
-set pitch_expo = 60
-set yaw_expo = 50
-set roll_srate = 73
-set pitch_srate = 73
+set roll_rc_rate = 14
+set pitch_rc_rate = 14
+set yaw_rc_rate = 11
+set roll_expo = 57
+set pitch_expo = 57
+set yaw_expo = 47
+set roll_srate = 53
+set pitch_srate = 53
 set yaw_srate = 63
 
 rateprofile 1
@@ -201,39 +205,46 @@ rateprofile 1
 # rateprofile 1
 set rateprofile_name = 630
 set thr_hover = 70
-set roll_rc_rate = 17
-set pitch_rc_rate = 17
-set yaw_rc_rate = 14
-set roll_expo = 60
-set pitch_expo = 60
-set yaw_expo = 50
+set roll_rc_rate = 15
+set pitch_rc_rate = 15
+set yaw_rc_rate = 12
+set roll_expo = 57
+set pitch_expo = 57
+set yaw_expo = 47
 set roll_srate = 63
 set pitch_srate = 63
-set yaw_srate = 63
+set yaw_srate = 53
 
 rateprofile 2
 
 # rateprofile 2
-set rateprofile_name = 530
+set rateprofile_name = 730
 set thr_hover = 70
-set roll_rc_rate = 17
-set pitch_rc_rate = 17
-set yaw_rc_rate = 14
-set roll_expo = 60
-set pitch_expo = 60
-set yaw_expo = 50
-set roll_srate = 53
-set pitch_srate = 53
-set yaw_srate = 43
+set roll_rc_rate = 18
+set pitch_rc_rate = 18
+set yaw_rc_rate = 15
+set roll_expo = 57
+set pitch_expo = 57
+set yaw_expo = 47
+set roll_srate = 73
+set pitch_srate = 73
+set yaw_srate = 63
 
 rateprofile 3
 
 # rateprofile 3
-set rateprofile_name = Defaults
+set rateprofile_name = 667
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 100
+set pitch_rc_rate = 100
+set yaw_rc_rate = 100
+set roll_srate = 70
+set pitch_srate = 70
+set yaw_srate = 70
 
 # restore original rateprofile selection
-rateprofile 0
+rateprofile 2
 
 # save configuration
 save
-#
+# 
