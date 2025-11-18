@@ -17,7 +17,7 @@ importers:
     devDependencies:
       '@astrojs/alpinejs':
         specifier: ^0.4.9
-        version: 0.4.9(@types/alpinejs@3.13.11)(alpinejs@3.15.1)
+        version: 0.4.9(@types/alpinejs@3.13.11)(alpinejs@3.15.2)
       '@astrojs/cloudflare':
         specifier: ^12.6.10
         version: 12.6.10(@types/node@24.10.1)(astro@5.15.6(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.2)(typescript@5.8.3))(jiti@2.6.1)(lightningcss@1.30.2)
@@ -37,8 +37,8 @@ importers:
         specifier: ^3.13.11
         version: 3.13.11
       alpinejs:
-        specifier: ^3.15.1
-        version: 3.15.1
+        specifier: ^3.15.2
+        version: 3.15.2
       html-entities:
         specifier: ^2.6.0
         version: 2.6.0
@@ -1225,8 +1225,8 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
-  alpinejs@3.15.1:
-    resolution: {integrity: sha512-HLO1TtiE92VajFHtLLPK8BWaK1YepV/uj31UrfoGnQ00lyFOJZ+oVY3F0DghPAwvg8sLU79pmjGQSytERa2gEg==}
+  alpinejs@3.15.2:
+    resolution: {integrity: sha512-2kYF2aG+DTFkE6p0rHG5XmN4VEb6sO9b02aOdU4+i8QN6rL0DbRZQiypDE1gBcGO65yDcqMz5KKYUYgMUxgNkw==}
 
   ansi-align@3.0.1:
     resolution: {integrity: sha512-IOfwwBF5iczOjp/WeY4YxyjqAFMQoZufdQWDd19SEExbVLNXqvpzSJ/M7Za4/sCPmQ0+GRquoA7bGcINcxew6w==}
@@ -2625,10 +2625,10 @@ packages:
 
 snapshots:
 
-  '@astrojs/alpinejs@0.4.9(@types/alpinejs@3.13.11)(alpinejs@3.15.1)':
+  '@astrojs/alpinejs@0.4.9(@types/alpinejs@3.13.11)(alpinejs@3.15.2)':
     dependencies:
       '@types/alpinejs': 3.13.11
-      alpinejs: 3.15.1
+      alpinejs: 3.15.2
 
   '@astrojs/cloudflare@12.6.10(@types/node@24.10.1)(astro@5.15.6(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.2)(typescript@5.8.3))(jiti@2.6.1)(lightningcss@1.30.2)':
     dependencies:
@@ -3480,7 +3480,7 @@ snapshots:
 
   acorn@8.15.0: {}
 
-  alpinejs@3.15.1:
+  alpinejs@3.15.2:
     dependencies:
       '@vue/reactivity': 3.1.5
 
