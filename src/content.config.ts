@@ -77,10 +77,15 @@ const fpvResources = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/fpv" }),
 });
 
+const aircraft = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/aircraft" }),
+});
+
 export const collections = {
   podcasts,
   episodes,
   videos,
   pages,
+  aircraft,
   fpvResources,
 };

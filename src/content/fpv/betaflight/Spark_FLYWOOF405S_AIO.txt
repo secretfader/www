@@ -124,6 +124,7 @@ set osd_stick_overlay_right_pos = 478
 set osd_rate_profile_name_pos = 14403
 set osd_pid_profile_name_pos = 195
 set osd_stat_bitmask = 1073889068
+set osd_profile = 2
 set pinio_box = 40,41,255,255
 set craft_name = Spark
 set ap_hover_throttle = 1410
@@ -143,23 +144,22 @@ set crash_recovery = ON
 set iterm_relax_cutoff = 25
 set p_pitch = 62
 set i_pitch = 110
-set d_pitch = 42
-set f_pitch = 149
+set d_pitch = 79
+set f_pitch = 164
 set p_roll = 59
 set i_roll = 105
-set d_roll = 35
-set f_roll = 143
+set d_roll = 66
+set f_roll = 158
 set p_yaw = 59
 set i_yaw = 105
-set f_yaw = 143
+set f_yaw = 158
 set horizon_level_strength = 50
-set d_max_roll = 39
-set d_max_pitch = 47
+set d_max_roll = 73
+set d_max_pitch = 87
 set d_max_advance = 0
 set thrust_linear = 30
 set feedforward_jitter_factor = 5
 set dyn_idle_min_rpm = 38
-set simplified_pids_mode = OFF
 set simplified_master_multiplier = 120
 set simplified_d_gain = 185
 set simplified_pi_gain = 110
@@ -188,62 +188,69 @@ profile 0
 rateprofile 0
 
 # rateprofile 0
-set rateprofile_name = 530
+set rateprofile_name = 490
+set thr_mid = 43
 set thr_hover = 70
-set roll_rc_rate = 14
-set pitch_rc_rate = 14
-set yaw_rc_rate = 11
-set roll_expo = 57
-set pitch_expo = 57
-set yaw_expo = 47
-set roll_srate = 53
-set pitch_srate = 53
-set yaw_srate = 63
+set roll_rc_rate = 15
+set pitch_rc_rate = 15
+set yaw_rc_rate = 13
+set roll_expo = 53
+set pitch_expo = 53
+set yaw_expo = 43
+set roll_srate = 49
+set pitch_srate = 49
+set yaw_srate = 40
 
 rateprofile 1
 
 # rateprofile 1
-set rateprofile_name = 630
+set rateprofile_name = 690
+set thr_mid = 43
 set thr_hover = 70
-set roll_rc_rate = 15
-set pitch_rc_rate = 15
-set yaw_rc_rate = 12
-set roll_expo = 57
-set pitch_expo = 57
-set yaw_expo = 47
-set roll_srate = 63
-set pitch_srate = 63
-set yaw_srate = 53
+set roll_rc_rate = 17
+set pitch_rc_rate = 17
+set yaw_rc_rate = 15
+set roll_expo = 53
+set pitch_expo = 53
+set yaw_expo = 43
+set roll_srate = 69
+set pitch_srate = 69
+set yaw_srate = 60
 
 rateprofile 2
 
 # rateprofile 2
-set rateprofile_name = 730
+set rateprofile_name = 890
+set thr_mid = 43
 set thr_hover = 70
 set roll_rc_rate = 18
 set pitch_rc_rate = 18
-set yaw_rc_rate = 15
-set roll_expo = 57
-set pitch_expo = 57
-set yaw_expo = 47
-set roll_srate = 73
-set pitch_srate = 73
-set yaw_srate = 63
+set yaw_rc_rate = 16
+set roll_expo = 53
+set pitch_expo = 53
+set yaw_expo = 43
+set roll_srate = 89
+set pitch_srate = 89
+set yaw_srate = 80
 
 rateprofile 3
 
 # rateprofile 3
 set rateprofile_name = 667
-set rates_type = BETAFLIGHT
-set roll_rc_rate = 100
-set pitch_rc_rate = 100
-set yaw_rc_rate = 100
-set roll_srate = 70
-set pitch_srate = 70
-set yaw_srate = 70
+set thr_mid = 47
+set thr_hover = 70
+set roll_rc_rate = 20
+set pitch_rc_rate = 20
+set yaw_rc_rate = 20
+set roll_expo = 43
+set pitch_expo = 43
+set yaw_expo = 43
+set roll_srate = 49
+set pitch_srate = 49
+set yaw_srate = 49
 
 # restore original rateprofile selection
-rateprofile 2
+rateprofile 0
 
 # save configuration
 save
