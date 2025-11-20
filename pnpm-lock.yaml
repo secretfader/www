@@ -49,8 +49,8 @@ importers:
         specifier: ^0.13.0
         version: 0.13.0
       npm:
-        specifier: ^11.6.2
-        version: 11.6.2
+        specifier: ^11.6.3
+        version: 11.6.3
       resend:
         specifier: ^6.5.2
         version: 6.5.2(@react-email/render@1.1.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
@@ -1795,8 +1795,8 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
 
-  npm@11.6.2:
-    resolution: {integrity: sha512-7iKzNfy8lWYs3zq4oFPa8EXZz5xt9gQNKJZau3B1ErLBb6bF7sBJ00x09485DOvRT2l5Gerbl3VlZNT57MxJVA==}
+  npm@11.6.3:
+    resolution: {integrity: sha512-QIWnYxYuDjrNGaTp0jrTqgl45QHM+UfdcjPBKmia4LsBkHY8TvEjZpkAVrNO7EOJA//tOP3k+9cioXwqdAfukg==}
     engines: {node: ^20.17.0 || >=22.9.0}
     hasBin: true
     bundledDependencies:
@@ -1805,6 +1805,7 @@ packages:
       - '@npmcli/config'
       - '@npmcli/fs'
       - '@npmcli/map-workspaces'
+      - '@npmcli/metavuln-calculator'
       - '@npmcli/package-json'
       - '@npmcli/promise-spawn'
       - '@npmcli/redact'
@@ -4259,7 +4260,7 @@ snapshots:
 
   normalize-path@3.0.0: {}
 
-  npm@11.6.2: {}
+  npm@11.6.3: {}
 
   ofetch@1.5.1:
     dependencies:
