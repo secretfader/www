@@ -1,9 +1,9 @@
-Entering CLI Mode, type 'exit' to reboot,
+# 
 
 # diff all
 
 # version
-# Betaflight / STM32F405 (F405) 2025.12.0-RC3 Dec  3 2025 / 17:34:00 (f64c183dd) MSP API: 1.47
+# Betaflight / STM32F745 (F745) 2025.12.0-RC3 Dec  3 2025 / 18:53:58 (f64c183dd) MSP API: 1.47
 # config rev: 5b6c702
 
 # start the command batch
@@ -12,15 +12,12 @@ batch start
 # reset configuration to default settings
 defaults nosave
 
-board_name FLYWOOF405S_AIO
+board_name FLYWOOF745AIO
 manufacturer_id FLWO
-mcu_id 004400233034511530333939
+mcu_id 0032003c3433510731353536
 signature 
 
-# name: Spark
-
-# resources
-resource PINIO 2 C08
+# name: Cinder
 
 # feature
 feature -AIRMODE
@@ -30,62 +27,69 @@ feature LED_STRIP
 feature OSD
 
 # serial
-serial UART3 64 115200 57600 0 115200
-serial UART4 131073 115200 57600 0 115200
-serial UART6 2 115200 57600 0 115200
+serial UART2 64 115200 57600 0 115200
+serial UART3 131073 115200 57600 0 115200
+serial UART6 1 57600 57600 0 115200
 
 # led
-led 0 8,8::CB:8
-led 1 9,8::CB:8
-led 2 10,8::CB:8
-led 3 11,8::CB:8
+led 0 0,0::CB:2
+led 1 0,1::C:2
+led 2 0,2::C:2
+led 3 0,3::C:0
+led 4 0,4::C:0
+led 5 0,5::C:6
+led 6 0,6::C:6
+led 7 0,7::CB:6
 
 # aux
-aux 0 0 0 1550 2100 0 0
-aux 1 1 3 1300 1700 0 0
-aux 2 2 3 1700 2100 0 0
-aux 3 3 4 1300 1700 0 0
-aux 4 11 4 1675 2100 0 0
-aux 5 26 0 1500 2100 0 0
-aux 6 28 1 1500 2100 0 0
-aux 7 31 7 1500 2100 0 0
-aux 8 35 6 1500 2100 0 0
+aux 0 0 0 1500 2100 0 0
+aux 1 1 1 1300 1700 0 0
+aux 2 2 1 1700 2100 0 0
+aux 3 3 2 1300 1700 0 0
+aux 4 11 2 1700 2100 0 0
+aux 5 15 9 900 1050 0 0
+aux 6 26 0 1500 2100 0 0
+aux 7 28 3 1600 2100 0 0
+aux 8 31 7 1600 2100 0 0
+aux 9 35 6 1600 2100 0 0
 
 # adjrange
-adjrange 0 0 2 900 2100 29 2 0 0
-adjrange 1 0 5 900 2100 12 5 0 0
-
-# rxfail
-rxfail 3 s 1400
+adjrange 0 0 4 900 2100 29 4 0 0
+adjrange 1 0 8 900 2100 30 8 0 0
+adjrange 2 0 9 900 2100 31 9 0 0
+adjrange 3 0 5 900 2100 12 5 0 0
 
 # master
-set dyn_notch_count = 1
-set dyn_notch_q = 500
-set acc_calibration = 20,4,-20,1
-set mag_hardware = NONE
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 1000
+set dyn_notch_count = 2
+set dyn_notch_q = 400
+set dyn_notch_max_hz = 800
+set gyro_lpf1_dyn_min_hz = 0
+set acc_calibration = 26,4,59,1
+set align_mag = CW180FLIP
+set mag_align_pitch = 1800
+set mag_align_yaw = 1800
+set mag_calibration = -179,78,147
 set dshot_bidir = ON
-set dshot_bitbang = OFF
-set motor_pwm_protocol = DSHOT300
-set motor_poles = 12
-set motor_output_reordering = 2,0,3,1,4,5,6,7
+set motor_output_reordering = 3,2,1,0,4,5,6,7
 set failsafe_landing_time = 80
-set failsafe_throttle = 1400
+set failsafe_throttle = 1530
 set failsafe_procedure = AUTO-LAND
+set align_board_yaw = 45
 set vbat_max_cell_voltage = 435
-set vbat_min_cell_voltage = 310
-set vbat_warning_cell_voltage = 330
-set ibata_scale = 600
+set vbat_sag_lpf_period = 5
 set yaw_motors_reversed = ON
-set crashflip_rate = 170
-set crashflip_auto_rearm = ON
 set small_angle = 180
-set gps_sbas_mode = AUTO
-set gps_ublox_use_galileo = ON
-set gps_rescue_min_sats = 5
+set mag_declination = 76
+set gps_provider = MSP
+set gps_rescue_min_start_dist = 10
+set gps_rescue_min_sats = 6
 set yaw_deadband = 5
-set pos_hold_without_mag = ON
-set pid_process_denom = 4
-set ledstrip_brightness = 8
+set simplified_gyro_filter_multiplier = 200
+set ledstrip_grb_rgb = GRBW
+set ledstrip_race_color = WHITE
+set ledstrip_brightness = 49
 set osd_units = IMPERIAL
 set osd_warn_bitmask = 421759
 set osd_rssi_dbm_alarm = -95
@@ -128,49 +132,44 @@ set osd_rate_profile_name_pos = 14403
 set osd_pid_profile_name_pos = 195
 set osd_stat_bitmask = 1073889068
 set debug_mode = FFT_FREQ
-set pinio_box = 40,41,255,255
-set craft_name = Spark
-set ap_hover_throttle = 1410
+set craft_name = Cinder
+set ap_hover_throttle = 1415
+set ap_throttle_min = 1200
 
 profile 0
 
 # profile 0
-set profile_name = Flywoo
-set dterm_lpf1_dyn_min_hz = 80
-set dterm_lpf1_dyn_max_hz = 110
+set profile_name = Fictive
 set dterm_lpf1_dyn_expo = 7
 set dterm_lpf1_type = BIQUAD
 set dterm_lpf1_static_hz = 0
 set dterm_lpf2_static_hz = 0
 set vbat_sag_compensation = 100
 set crash_recovery = ON
-set iterm_relax_cutoff = 25
+set iterm_relax_cutoff = 30
 set p_pitch = 62
 set i_pitch = 110
-set d_pitch = 79
-set f_pitch = 164
-set p_roll = 59
-set i_roll = 105
-set d_roll = 66
-set f_roll = 158
-set p_yaw = 59
-set i_yaw = 105
-set f_yaw = 158
+set d_pitch = 44
+set f_pitch = 197
+set p_roll = 53
+set i_roll = 95
+set d_roll = 39
+set f_roll = 172
+set p_yaw = 53
+set i_yaw = 95
+set f_yaw = 172
 set horizon_level_strength = 50
-set d_max_roll = 73
-set d_max_pitch = 87
+set d_max_roll = 42
+set d_max_pitch = 48
 set d_max_advance = 0
 set thrust_linear = 30
 set feedforward_jitter_factor = 5
 set dyn_idle_min_rpm = 38
 set simplified_master_multiplier = 120
-set simplified_d_gain = 185
-set simplified_pi_gain = 110
-set simplified_d_max_gain = 30
-set simplified_feedforward_gain = 110
-set simplified_pitch_d_gain = 105
-set simplified_dterm_filter = OFF
-set simplified_dterm_filter_multiplier = 85
+set simplified_d_gain = 110
+set simplified_d_max_gain = 20
+set simplified_feedforward_gain = 120
+set simplified_pitch_pi_gain = 110
 
 profile 1
 
@@ -192,8 +191,6 @@ rateprofile 0
 
 # rateprofile 0
 set rateprofile_name = 720
-set thr_mid = 43
-set thr_hover = 70
 set roll_rc_rate = 14
 set pitch_rc_rate = 14
 set yaw_rc_rate = 14
@@ -208,8 +205,6 @@ rateprofile 1
 
 # rateprofile 1
 set rateprofile_name = 540
-set thr_mid = 43
-set thr_hover = 70
 set roll_rc_rate = 10
 set pitch_rc_rate = 10
 set yaw_rc_rate = 10
@@ -224,15 +219,11 @@ rateprofile 2
 
 # rateprofile 2
 set rateprofile_name = BFD
-set thr_mid = 43
-set thr_hover = 70
 
 rateprofile 3
 
 # rateprofile 3
 set rateprofile_name = BFD
-set thr_mid = 43
-set thr_hover = 70
 set rates_type = BETAFLIGHT
 set roll_rc_rate = 100
 set pitch_rc_rate = 100
@@ -242,7 +233,7 @@ set pitch_srate = 70
 set yaw_srate = 70
 
 # restore original rateprofile selection
-rateprofile 0
+rateprofile 1
 
 # save configuration
 save
