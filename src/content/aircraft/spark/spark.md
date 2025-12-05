@@ -18,8 +18,6 @@ components:
 
 Spark began life as a stock Flywoo Firefly 18 Nano Baby 1S V3 bind-and-fly drone. Once in Colorado, it was upgraded with a new filter and PID tune, 3D printed PETG prop guards to replace the brittle stock ones, 40mm tri-blade props (it arrived with 45mm bi-blades), and a non-standard canopy with GPS.
 
-All of these features were tested as part of an extensive YouTube review.
-
 Built mostly for fun and freestyle practice, Spark is often referred to as a "therapy drone," since it forces the pilot into a state of flow with it's agility and highly reactive flight style.
 
-Spark is also a development tool for my FPV racing and build club, [Prop Culture](https://propculturefpv.com), since it allows me to experiment with new features on micro builds without worrying about grounding an existing aircraft.
+Spark is also a development tool for [Prop Culture](https://propculturefpv.com), a Colorado-based FPV drone building and racing club, where it serves as a testing platform for new parts and specification development.

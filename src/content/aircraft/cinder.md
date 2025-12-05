@@ -23,7 +23,7 @@ components:
     value: Phoenix UAS
 ---
 
-Designed to equally well before and after nightfall, Cinder is the second cinewhoop in the fleet. It has permanently installed navigation LEDs and mounting points for brighter strobe packages, neither of which push it over the sub-250g limit. If necessary, it can be operated with full ducts, providing enhanced safety even over prop guards.
+Designed to fly equally well before and after nightfall, Cinder is the second cinewhoop in the fleet (commissioned shortly after [Flare](/aircraft/flare)). It has permanently installed navigation LEDs and mounting points for brighter strobe packages, neither of which push it over the sub-250g limit. If necessary, it can be operated with full ducts, providing enhanced safety even over prop guards.
 
 Built on a highly customized Cinequads' frame, this drone is also capable of carrying dual action cameras, in the front and rear, enabling dynamic chase sequences in a single flight.
 
