@@ -23,8 +23,8 @@ components:
     value: Phoenix UAS
 ---
 
-The first in the Fictive Air fleet, Flare is the result of extreme engineering in service of sports broadcasting. Designed to fly indoors and out, this drone's first full day of work was at the 2025 Littleton Twilight Criterium, a massive stage on which to debut our newest flight technologies.
+As the first aircraft in the fleet, Flare has a high bar to maintain. The result of extreme engineering in service of sports broadcasting, this drone's first full day of work was at the 2025 Littleton Twilight Criterium, a massive stage on which to debut our newest flight technologies.
 
-Permitted to fly 25" or less off the race course and capable of giving viewers a front-row seat to all of the action, this drone set a new bar for speed, agility, and safety in aerial imaging.
+Permitted to fly at 25' (and lower) over the race course, this drone and its expert pilot flew amongst the action, giving viewers a front-row seat and setting a new bar for speed, agility, and safety in aerial imaging.
 
-Powered by DJI's latest O4 Air Unit Pro and Radiomaster's high-reliablity ELRS diversity reciever, this drone is the aircraft to choose when the show must go on.
+It was also the tool used to showcase architecture at the Jefferson County Library, and the craftmanship at many local businesses around the Denver metro. When time is of the essence and the shot counts, send up Flare.
