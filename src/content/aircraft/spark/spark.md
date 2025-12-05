@@ -16,7 +16,7 @@ components:
     value: Flywoo GOKU 405 HD AIO
 ---
 
-Spark began life as a stock Flywoo Firefly 18 Nano Baby 1S V3 bind-and-fly drone. Once in my fleet, it was upgraded with a new filter and PID tune, 3D printed PETG prop guards to replace the brittle stock ones, 40mm tri-blade props (it arrived with 45mm bi-bladed ones), and a non-standard canopy with a GPS mount.
+Spark began life as a stock Flywoo Firefly 18 Nano Baby 1S V3 bind-and-fly drone. Once in Colorado, it was upgraded with a new filter and PID tune, 3D printed PETG prop guards to replace the brittle stock ones, 40mm tri-blade props (it arrived with 45mm bi-blades), and a non-standard canopy with GPS.
 
 All of these features were tested as part of an extensive YouTube review.
 
