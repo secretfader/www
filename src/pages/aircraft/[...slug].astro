@@ -22,7 +22,7 @@ const page = await getEntry("aircraft", "spark");
 const { Content } = await render(page);
 const { title, stats, components } = Astro.props;
 
-const images = Astro.props.photos.map((a) => a.src);
+const images = (Astro.props.photos || []).map((a) => a.src);
 ---
 
 <Layout title={title}>
