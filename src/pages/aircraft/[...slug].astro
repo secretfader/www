@@ -3,10 +3,59 @@ import Layout from "../../components/Layout.astro";
 import Nav from "../../components/Nav.astro";
 import Header from "../../components/Header.astro";
 import Container from "../../components/Container.astro";
+import Prose from "../../components/Prose.astro";
+import Gallery from "../../components/Gallery.astro";
+import LinksList from "../../components/LinksList.astro";
+
+import { getCollection, getEntry, render } from "astro:content";
 
 export const prerender = true;
 
 export async function getStaticPaths() {
-    return [];
+    return (await getCollection("aircraft")).map(({ id, data }) => ({
+        params: { slug: id },
+        props: { ...data },
+    }));
 }
+
+const page = await getEntry("aircraft", Astro.params.slug);
+const Content = await render(page);
+const { title } = Astro.props;
 ---
+
+<Layout title={title}>
+    <Nav />
+    <Header title={title} subtitle="Drones/" />
+    <Container
+        classes={["grid", "grid-cols-1", "lg:grid-cols-12", "lg:gap-12"]}
+    >
+        <div
+            class="col-span-1 text-lg lg:text-xl lg:col-span-8 dark:text-gray-100"
+        >
+            <Prose><Content /></Prose>
+        </div>
+        <div
+            class="text-gray-700 dark:text-gray-300 mt-12 col-span-1 lg:col-span-4 lg:mt-0"
+        >
+            <div class="mt-8">
+                <span
+                    class="font-semibold uppercase underline underline-offset-8"
+                    >Recent Media</span
+                >
+                <ul class="mt-4">
+                    {}
+                </ul>
+            </div>
+        </div>
+    </Container>
+    <Gallery
+        classes={[
+            "grid",
+            "grid-cols-1",
+            "md:grid-cols-2",
+            "lg:grid-cols-3",
+            "mt-12",
+            "lg:mt-16",
+        ]}
+    />
+</Layout>
