@@ -20,4 +20,4 @@ Spark began life as a stock Flywoo Firefly 18 Nano Baby 1S V3 bind-and-fly drone
 
 Built mostly for fun and freestyle practice, Spark is often referred to as a "therapy drone," since it forces the pilot into a state of flow with it's agility and highly reactive flight style.
 
-Spark is also a development tool for [Prop Culture](https://propculturefpv.com), a Colorado-based FPV drone building and racing club, where it serves as a testing platform for new parts and specification development.
+Spark is also a development platform for [Prop Culture](https://propculturefpv.com), a Colorado-based FPV drone building and racing club.
