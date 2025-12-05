@@ -27,4 +27,4 @@ Designed to fly even after nightfall, Cinder was the second design in the Fictiv
 
 These features, along with the agility that is only offered by the Fictive Air series of cinewhoops, make it the ultimate FPV aerial system, day or night.
 
-Built on Cinequads' QAV-Pro frame, this drone is also capable of carrying dual action cameras: one in the front and rear, enabling dynamic chase sequences to be captured in a single pass.
+Built on a highly customized Cinequads' frame, this drone is also capable of carrying dual action cameras: one in the front and rear, enabling dynamic chase sequences to be captured in a single pass.
