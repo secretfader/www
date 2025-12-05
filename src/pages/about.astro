@@ -5,8 +5,17 @@ import Header from "../components/Header.astro";
 import Container from "../components/Container.astro";
 import Gallery from "../components/Gallery.astro";
 import Prose from "../components/Prose.astro";
-import linkslist from "../components/linkslist.astro";
+import LinksList from "../components/linkslist.astro";
 import { formatDate, getPage, render } from "../data";
+
+import podcast from "../assets/craft-and-process.jpg";
+import trike from "../assets/trike.jpg";
+import redRocks from "../assets/running-red-rocks.jpg";
+import superhero from "../assets/superhero.jpg";
+import profile from "../assets/redrocksrelax.jpg";
+import dillon from "../assets/dillon.jpg";
+
+const images = [podcast, trike, redRocks, profile, superhero, dillon];
 
 const page = await getPage("about");
 const { Content } = await render(page);
@@ -67,5 +76,6 @@ const { Content } = await render(page);
             "mt-12",
             "lg:mt-16",
         ]}
+        images={images}
     />
 </Layout>

@@ -79,6 +79,17 @@ const fpvResources = defineCollection({
 
 const aircraft = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/aircraft" }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      stats: z
+        .array(z.object({ title: z.string(), value: z.string() }))
+        .optional(),
+      components: z
+        .array(z.object({ title: z.string(), value: z.string() }))
+        .optional(),
+      photos: z.array(z.object({ title: z.string(), src: image() })).optional(),
+    }),
 });
 
 export const collections = {
