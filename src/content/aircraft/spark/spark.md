@@ -16,8 +16,10 @@ components:
     value: Flywoo GOKU 405 HD AIO
 ---
 
-Spark is one of a few modified bind-and-fly drones in the fleet. What began as a stock Firefly 18 Nano Baby 1S V3 has been modified with a new filter and PID tune, 3D printed PETG prop guards, new props, and a non-standard canopy with a GPS mount.
+Spark began life as a stock Flywoo Firefly 18 Nano Baby 1S V3 bind-and-fly drone. Once in my fleet, it was upgraded with a new filter and PID tune, 3D printed PETG prop guards to replace the brittle stock ones, 40mm tri-blade props (it arrived with 45mm bi-bladed ones), and a non-standard canopy with a GPS mount.
 
-Built mostly for fun and freestyle practice, Spark is often referred to as a "therapy drone," since it forces the pilot into a state of flow with the tiny props and highly reactive flight style.
+All of these features were tested as part of an extensive YouTube review.
+
+Built mostly for fun and freestyle practice, Spark is often referred to as a "therapy drone," since it forces the pilot into a state of flow with it's agility and highly reactive flight style.
 
 Spark is also a development tool for my FPV racing and build club, [Prop Culture](https://propculturefpv.com), since it allows me to experiment with new features on micro builds without worrying about grounding an existing aircraft.
