@@ -25,6 +25,6 @@ components:
 
 Designed to fly even after nightfall, Cinder was the second drone in the Fictive Air fleet. It has permanently installed navigation LEDs and mounting points for brighter strobe packages, neither of which push it over the sub-250g limit.
 
-Built on a highly customized Cinequads' frame, this drone is also capable of carrying dual action cameras: both in the front and rear, enabling dynamic chase sequences in a single flight.
+Built on a highly customized Cinequads' frame, this drone is also capable of carrying dual action cameras, in the front and rear, enabling dynamic chase sequences in a single flight.
 
 These features, along with the agility that is only offered by the Fictive Air series of cinewhoops, make it the ultimate FPV aerial system, day or night.
