@@ -24,13 +24,20 @@ const pages = await getCollection("aircraft");
         classes={["grid", "grid-cols-1", "lg:grid-cols-12", "lg:gap-12"]}
     >
         <div class="col-span-1 mb-12 lg:col-span-8 lg:mb-0">
-            {
-                pages.map((p) => (
-                    <li>
-                        <a href={`/aircraft/${p.id}`}>{p.data.title}</a>
-                    </li>
-                ))
-            }
+            <ul>
+                {
+                    pages.map((p) => (
+                        <li>
+                            <a
+                                class="dark:text-gray-100"
+                                href={`/aircraft/${p.id}`}
+                            >
+                                {p.data.title}
+                            </a>
+                        </li>
+                    ))
+                }
+            </ul>
         </div>
         <div class="col-span-1 lg:col-span-4 text-gray-700 dark:text-gray-300">
         </div>
