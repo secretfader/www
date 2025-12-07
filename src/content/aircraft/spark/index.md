@@ -1,5 +1,6 @@
 ---
 title: Spark
+birthday: 2025-10-30
 youtubeId: 0Z8xpqX0SXw
 stats:
   - title: Weight

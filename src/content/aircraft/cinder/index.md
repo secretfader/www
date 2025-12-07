@@ -1,5 +1,6 @@
 ---
 title: Cinder
+birthday: 2025-07-28
 stats:
   - title: Weight
     value: 185g 

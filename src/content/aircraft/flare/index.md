@@ -1,5 +1,6 @@
 ---
 title: Flare
+birthday: 2025-07-24
 stats:
   - title: Weight
     value: 175g
