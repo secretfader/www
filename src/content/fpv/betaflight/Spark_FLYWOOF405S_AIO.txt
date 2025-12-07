@@ -1,4 +1,4 @@
-Entering CLI Mode, type 'exit' to reboot,
+# 
 
 # diff all
 
@@ -61,7 +61,7 @@ rxfail 3 s 1400
 # master
 set dyn_notch_count = 1
 set dyn_notch_q = 500
-set acc_calibration = 20,4,-20,1
+set acc_calibration = 4,-42,-17,1
 set mag_hardware = NONE
 set dshot_bidir = ON
 set dshot_bitbang = OFF
@@ -87,8 +87,10 @@ set pos_hold_without_mag = ON
 set pid_process_denom = 4
 set ledstrip_brightness = 8
 set osd_units = IMPERIAL
-set osd_warn_bitmask = 421759
+set osd_warn_bitmask = 413567
+set osd_link_quality_alarm = 70
 set osd_rssi_dbm_alarm = -95
+set osd_alt_alarm = 250
 set osd_vbat_pos = 483
 set osd_link_quality_pos = 15468
 set osd_link_tx_power_pos = 15404

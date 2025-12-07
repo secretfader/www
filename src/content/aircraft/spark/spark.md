@@ -14,6 +14,9 @@ photos:
 components:
   - title: Flight Controller/ESC
     value: Flywoo GOKU 405 HD AIO
+  - title: Props
+    value: HQ Ultralight 40mm Tri-blade
+    href: https://webleedfpv.com/products/hq-ultralight-whoop-prop-1-6x1x3-40mm
 ---
 
 Spark began life as a stock Flywoo Firefly 18 Nano Baby 1S V3 bind-and-fly drone. Once in Colorado, it was upgraded with a new filter and PID tune, 3D printed PETG prop guards to replace the brittle stock ones, 40mm tri-blade props (it arrived with 45mm bi-blades), and a non-standard canopy with GPS.
