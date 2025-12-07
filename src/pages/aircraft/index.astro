@@ -1,0 +1,38 @@
+---
+import Layout from "../../components/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Container from "../../components/Container.astro";
+import { getCollection } from "astro:content";
+const pages = await getCollection("aircraft");
+---
+
+<Layout title="Aircraft">
+    <Nav />
+    <div class="container mx-auto px-6 my-4 lg:my-8 lg:px-0">
+        <h1
+            class="text-gray-500 dark:text-gray-400 font-bold text-4xl lg:text-7xl xl:text-8xl"
+        >
+            Aircraft
+        </h1>
+        <div
+            class="text-xl lg:text-2xl mt-8 max-w-7xl dark:text-gray-300 lg:mt-12"
+        >
+            <span>My fleet of custom, high-performance, cinematic drones.</span>
+        </div>
+    </div>
+    <Container
+        classes={["grid", "grid-cols-1", "lg:grid-cols-12", "lg:gap-12"]}
+    >
+        <div class="col-span-1 mb-12 lg:col-span-8 lg:mb-0">
+            {
+                pages.map((p) => (
+                    <li>
+                        <a href={`/aircraft/${p.id}`}>{p.data.title}</a>
+                    </li>
+                ))
+            }
+        </div>
+        <div class="col-span-1 lg:col-span-4 text-gray-700 dark:text-gray-300">
+        </div>
+    </Container>
+</Layout>
