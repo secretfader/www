@@ -2,9 +2,9 @@
 title: Flare
 stats:
   - title: Weight
-    value: 190g
+    value: 175g
   - title: Flight Time
-    value: 6 minutes
+    value: 7 minutes
   - title: Top Speed
     value: 88 km/h
 components:

@@ -1,5 +1,8 @@
 ---
 title: Ember
+stats:
+  - title: Weight
+    value: 91g
 components:
   - title: Frame
     value: Flylens 85 Pro

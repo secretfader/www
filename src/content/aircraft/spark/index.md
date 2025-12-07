@@ -1,6 +1,10 @@
 ---
 title: Spark
 stats:
+  - title: Weight
+    value: 45g
+  - title: Flight Time
+    value: 6 minutes
   - title: Top Speed
     value: 56 km/h
 photos:

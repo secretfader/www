@@ -2,7 +2,7 @@
 title: Cinder
 stats:
   - title: Weight
-    value: 195g 
+    value: 185g 
   - title: Flight Time
     value: 8 minutes
   - title: Top Speed
