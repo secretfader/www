@@ -1,5 +1,6 @@
 ---
 title: Spark
+youtubeId: 0Z8xpqX0SXw
 stats:
   - title: Weight
     value: 45g

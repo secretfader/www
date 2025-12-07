@@ -82,6 +82,7 @@ const aircraft = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string(),
+      youtubeId: z.string().optional(),
       stats: z
         .array(z.object({ title: z.string(), value: z.string() }))
         .optional(),

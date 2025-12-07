@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 
 const page = await getEntry("aircraft", Astro.params.slug);
 const { Content } = await render(page);
-const { title, stats, components } = Astro.props;
+const { title, youtubeId, stats, components } = Astro.props;
 
 const images = (Astro.props.photos || []).map((a) => a.src);
 ---
@@ -35,6 +35,29 @@ const images = (Astro.props.photos || []).map((a) => a.src);
             class="col-span-1 text-lg lg:text-xl lg:col-span-8 dark:text-gray-100"
         >
             <Prose><Content /></Prose>
+            {
+                youtubeId ? (
+                    <media-controller class="w-full aspect-video mt-8 relative isolate z-1">
+                        <youtube-video
+                            src={`https://www.youtube.com/watch?v=${youtubeId}&hd=1`}
+                            slot="media"
+                            class="absolute w-full h-full isolate"
+                            crossorigin
+                        />
+                        <media-loading-indicator
+                            slot="centered-chrome"
+                            noautohide
+                        />
+                        <media-control-bar class="w-full bottom-0 absolute">
+                            <media-play-button class="p-2" />
+                            <media-mute-button />
+                            <media-volume-range />
+                            <media-time-range />
+                            <media-fullscreen-button class="p-2" />
+                        </media-control-bar>
+                    </media-controller>
+                ) : undefined
+            }
         </div>
         <div
             class="text-gray-700 dark:text-gray-300 mt-12 col-span-1 lg:col-span-4 lg:mt-0"
