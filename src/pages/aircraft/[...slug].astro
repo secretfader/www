@@ -34,10 +34,9 @@ const images = (Astro.props.photos || []).map((a) => a.src);
         <div
             class="col-span-1 text-lg lg:text-xl lg:col-span-8 dark:text-gray-100"
         >
-            <Prose><Content /></Prose>
             {
                 youtubeId ? (
-                    <media-controller class="w-full aspect-video mt-8 relative isolate z-1">
+                    <media-controller class="w-full aspect-video mb-8 relative isolate z-1">
                         <youtube-video
                             src={`https://www.youtube.com/watch?v=${youtubeId}&hd=1`}
                             slot="media"
@@ -58,6 +57,7 @@ const images = (Astro.props.photos || []).map((a) => a.src);
                     </media-controller>
                 ) : undefined
             }
+            <Prose><Content /></Prose>
         </div>
         <div
             class="text-gray-700 dark:text-gray-300 mt-12 col-span-1 lg:col-span-4 lg:mt-0"
