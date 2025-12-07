@@ -1,6 +1,5 @@
 ---
 title: Cinder
-slug: cinder 
 stats:
   - title: Weight
     value: 195g 
@@ -11,16 +10,20 @@ stats:
 components:
   - title: Frame
     value: QAV-Pro Whoop 2.5"
+  - title: AIO Flight Controller, ESC
+    value: GOKU GN745 V3 2-6S 45A
   - title: Video Transmission System
     value: DJI O4 Pro
-  - title: Flight Controller/ESC
-    value: Flywoo GOKU GN745 AIO
   - title: Receiver
-    value: Radiomaster RP4-TD
+    value: Radiomaster RP1
   - title: GPS and Compass
     value: Foxeer M10 120
   - title: Remote ID
     value: Phoenix UAS
+  - title: Motors
+    value: Brother Hobby 1404 4600KV
+  - title: Props
+    value: HQ 2.5" tri-blade, 2.5 pitch
 ---
 
 Designed to fly equally well before and after nightfall, Cinder is the second cinewhoop in the fleet (commissioned shortly after [Flare](/aircraft/flare)). It has permanently installed navigation LEDs and mounting points for brighter strobe packages, neither of which push it over the sub-250g limit. If necessary, it can be operated with full ducts, providing enhanced safety even over prop guards.

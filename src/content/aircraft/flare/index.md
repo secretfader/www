@@ -1,6 +1,5 @@
 ---
 title: Flare
-slug: flare
 stats:
   - title: Weight
     value: 190g
@@ -11,16 +10,20 @@ stats:
 components:
   - title: Frame
     value: AOS RC Cine25
-  - title: Video Transmission System
+  - title: AIO Flight Controller, ESC
+    value: GOKU GN745 V3 2-6S 45A
+  - title: Video Transmission
     value: DJI O4 Pro
-  - title: Flight Controller/ESC
-    value: Flywoo GOKU GN745 AIO
+  - title: GPS, Compass
+    value: Foxeer M10 120
   - title: Receiver
     value: Radiomaster RP4-TD
-  - title: GPS and Compass
-    value: Foxeer M10 120
   - title: Remote ID
     value: Phoenix UAS
+  - title: Motors
+    value: Lumenier ZIP 1404 4600KV
+  - title: Props
+    value: HQ 2.5" tri-blade, 2.5 pitch
 ---
 
 As the first aircraft in the fleet, Flare has a high bar to maintain. The result of extreme engineering in service of sports broadcasting, this drone's first full day of work was at the 2025 Littleton Twilight Criterium, a massive stage on which to debut our newest flight technologies.

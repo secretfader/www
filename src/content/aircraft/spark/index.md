@@ -1,6 +1,5 @@
 ---
 title: Spark
-slug: spark
 stats:
   - title: Top Speed
     value: 56 km/h
@@ -12,8 +11,16 @@ photos:
   - title: Spark 3
     src: ./3.jpg
 components:
-  - title: Flight Controller/ESC
-    value: Flywoo GOKU 405 HD AIO
+  - title: Frame
+    value: Firefly 18 1S Nano Baby V3
+  - title: AIO Flight Controller, ESC, Receiver
+    value: GOKU F405 HD 1S 5A, TXCO ELRS
+  - title: GPS
+    value: GOKU GM10 Nano 3.1
+  - title: Video Transmission
+    value: DJI O4 Air Unit with Wide Angle Lens
+  - title: Motors
+    value: ROBO 1002 19800KV
   - title: Props
     value: HQ Ultralight 40mm Tri-blade
     href: https://webleedfpv.com/products/hq-ultralight-whoop-prop-1-6x1x3-40mm
