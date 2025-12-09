@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 
 const page = await getEntry("aircraft", Astro.params.slug);
 const { Content } = await render(page);
-const { title, youtubeId, stats, components } = Astro.props;
+const { title, youtubeId, stats, components, resources } = Astro.props;
 
 const images = (Astro.props.photos || []).map((a) => a.src);
 ---
@@ -75,6 +75,36 @@ const images = (Astro.props.photos || []).map((a) => a.src);
                                     {l.title}
                                 </span>
                                 <span>{l.value}</span>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
+            <div class="mt-8">
+                <span
+                    class="font-semibold uppercase underline underline-offset-8"
+                    >Resources</span
+                >
+                <ul class="mt-4">
+                    {
+                        (resources || []).map((l) => (
+                            <li class="relative mb-2">
+                                {l.href != "" ? (
+                                    <a
+                                        href="https://test.com"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        <span class="uppercase text-sm font-medium">
+                                            {l.title}
+                                        </span>
+                                        &rarr;
+                                    </a>
+                                ) : (
+                                    <span class="uppercase text-sm font-medium block mb-2">
+                                        {l.title}
+                                    </span>
+                                )}
                             </li>
                         ))
                     }

@@ -16,6 +16,9 @@ photos:
     src: ./2.jpg
   - title: Spark 3
     src: ./3.jpg
+resources:
+  - title: Prop Guards
+    href: https://cults3d.com/en/3d-model/gadget/improved-flywoo-firefly18-1s-nano-baby-v3-drone-prop-guard-bumpers
 components:
   - title: Frame
     value: Firefly 18 1S Nano Baby V3
