@@ -1,0 +1,197 @@
+# 
+
+# diff all
+
+# version
+# Betaflight / STM32F405 (F405) 2025.12.0-RC4 Dec 13 2025 / 00:43:31 (37800445d) MSP API: 1.47
+# config rev: 0e6d506
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name FLYWOOF405S_AIO
+manufacturer_id FLWO
+mcu_id 002a003a3034511530333939
+signature 
+
+# name: Ember
+
+# resources
+resource MOTOR 1 B01
+resource MOTOR 2 B00
+resource MOTOR 3 A02
+resource MOTOR 4 A03
+resource MOTOR 8 NONE
+resource SERIAL_RX 2 NONE
+resource PINIO 1 D06
+resource PINIO 2 C08
+
+# feature
+feature -AIRMODE
+feature LED_STRIP
+feature OSD
+
+# serial
+serial UART1 64 115200 57600 0 115200
+serial UART6 131073 115200 57600 0 115200
+
+# aux
+aux 0 0 0 1250 2100 0 0
+aux 1 1 1 1300 1700 0 0
+aux 2 2 1 1700 2100 0 0
+aux 3 28 3 1400 2075 0 0
+aux 4 35 6 1700 2100 0 0
+aux 5 40 9 900 1100 0 0
+
+# adjrange
+adjrange 0 0 4 900 2100 29 4 0 0
+
+# master
+set gyro_lpf1_static_hz = 0
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set gyro_lpf1_dyn_min_hz = 0
+set acc_calibration = -18,-20,-4,1
+set mag_hardware = NONE
+set blackbox_sample_rate = 1/1
+set blackbox_disable_bat = ON
+set blackbox_disable_alt = ON
+set blackbox_disable_rssi = ON
+set blackbox_disable_acc = ON
+set blackbox_disable_debug = ON
+set blackbox_disable_motors = ON
+set blackbox_disable_gps = ON
+set dshot_bidir = ON
+set dshot_bitbang = OFF
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set vbat_max_cell_voltage = 440
+set yaw_motors_reversed = ON
+set pid_process_denom = 4
+set osd_units = IMPERIAL
+set osd_warn_bitmask = 421759
+set osd_rssi_dbm_alarm = -95
+set osd_vbat_pos = 483
+set osd_link_quality_pos = 15468
+set osd_link_tx_power_pos = 15404
+set osd_rssi_dbm_pos = 15436
+set osd_rsnr_pos = 382
+set osd_tim_1_pos = 14915
+set osd_tim_2_pos = 14922
+set osd_flymode_pos = 14371
+set osd_throttle_pos = 14435
+set osd_crosshairs_pos = 238
+set osd_ah_sbar_pos = 8506
+set osd_ah_pos = 8378
+set osd_current_pos = 15425
+set osd_mah_drawn_pos = 1090
+set osd_craft_name_pos = 14392
+set osd_gps_speed_pos = 12365
+set osd_gps_lon_pos = 12771
+set osd_gps_lat_pos = 12739
+set osd_gps_sats_pos = 12835
+set osd_home_dir_pos = 12602
+set osd_home_dist_pos = 12842
+set osd_flight_dist_pos = 1197
+set osd_compass_bar_pos = 118
+set osd_altitude_pos = 14380
+set osd_warnings_pos = 14773
+set osd_avg_cell_voltage_pos = 15394
+set osd_disarmed_pos = 394
+set osd_nheading_pos = 109
+set osd_nvario_pos = 41
+set osd_rtc_date_time_pos = 16674
+set osd_flip_arrow_pos = 8282
+set osd_core_temp_pos = 427
+set osd_log_status_pos = 546
+set osd_stick_overlay_left_pos = 464
+set osd_stick_overlay_right_pos = 478
+set osd_rate_profile_name_pos = 14403
+set osd_pid_profile_name_pos = 195
+set osd_stat_bitmask = 1073889068
+set pinio_box = 40,41,255,255
+set craft_name = Ember
+set box_user_1_name = LED BEC
+set box_user_2_name = 9V BEC
+
+profile 0
+
+# profile 0
+set profile_name = Flywoo
+set p_pitch = 67
+set i_pitch = 108
+set d_pitch = 66
+set f_pitch = 138
+set p_roll = 64
+set i_roll = 102
+set d_roll = 58
+set f_roll = 132
+set p_yaw = 64
+set i_yaw = 102
+set f_yaw = 132
+set d_max_roll = 78
+set d_max_pitch = 89
+set thrust_linear = 20
+set feedforward_averaging = 3_POINT
+set feedforward_smooth_factor = 30
+set feedforward_jitter_factor = 12
+set dyn_idle_min_rpm = 50
+set simplified_master_multiplier = 130
+set simplified_i_gain = 90
+set simplified_d_gain = 150
+set simplified_pi_gain = 110
+set simplified_feedforward_gain = 85
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set rateprofile_name = 720
+set roll_rc_rate = 14
+set pitch_rc_rate = 14
+set yaw_rc_rate = 14
+set roll_expo = 60
+set pitch_expo = 60
+set yaw_expo = 60
+set roll_srate = 72
+set pitch_srate = 72
+set yaw_srate = 72
+
+rateprofile 1
+
+# rateprofile 1
+set rateprofile_name = 540
+set roll_rc_rate = 10
+set pitch_rc_rate = 10
+set yaw_rc_rate = 10
+set roll_expo = 60
+set pitch_expo = 60
+set yaw_expo = 60
+set roll_srate = 54
+set pitch_srate = 54
+set yaw_srate = 54
+
+rateprofile 2
+
+# rateprofile 2
+set rateprofile_name = BFD
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 
