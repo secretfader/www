@@ -1,4 +1,4 @@
-Entering CLI Mode, type 'exit' to reboot, or 'help'
+# 
 
 # dump all
 
@@ -701,9 +701,9 @@ set osd_tim2 = 2561
 set osd_vbat_pos = 483
 set osd_rssi_pos = 341
 set osd_link_quality_pos = 14627
-set osd_link_tx_power_pos = 14595
-set osd_rssi_dbm_pos = 14563
-set osd_rsnr_pos = 382
+set osd_link_tx_power_pos = 14563
+set osd_rssi_dbm_pos = 14595
+set osd_rsnr_pos = 12611
 set osd_tim_1_pos = 579
 set osd_tim_2_pos = 14915
 set osd_remaining_time_estimate_pos = 341
@@ -713,10 +713,10 @@ set osd_g_force_pos = 341
 set osd_throttle_pos = 14435
 set osd_vtx_channel_pos = 341
 set osd_crosshairs_pos = 238
-set osd_ah_sbar_pos = 8506
-set osd_ah_pos = 8378
-set osd_current_pos = 14754
-set osd_mah_drawn_pos = 451
+set osd_ah_sbar_pos = 314
+set osd_ah_pos = 186
+set osd_current_pos = 14786
+set osd_mah_drawn_pos = 14820
 set osd_wh_drawn_pos = 341
 set osd_motor_diag_pos = 341
 set osd_craft_name_pos = 14392
@@ -725,8 +725,8 @@ set osd_gps_speed_pos = 13387
 set osd_gps_lon_pos = 9381
 set osd_gps_lat_pos = 9350
 set osd_gps_sats_pos = 12419
-set osd_home_dir_pos = 12378
-set osd_home_dist_pos = 12874
+set osd_home_dir_pos = 8282
+set osd_home_dist_pos = 8778
 set osd_flight_dist_pos = 1197
 set osd_compass_bar_pos = 118
 set osd_altitude_pos = 15403
@@ -738,7 +738,7 @@ set osd_debug2_pos = 341
 set osd_power_pos = 341
 set osd_pidrate_profile_pos = 341
 set osd_warnings_pos = 14773
-set osd_avg_cell_voltage_pos = 14723
+set osd_avg_cell_voltage_pos = 14755
 set osd_pit_ang_pos = 341
 set osd_rol_ang_pos = 341
 set osd_battery_usage_pos = 341

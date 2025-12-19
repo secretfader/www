@@ -7,7 +7,7 @@ stats:
   - title: Flight Time
     value: 8 minutes
   - title: Top Speed
-    value: 50 km/h
+    value: 72 km/h
 components:
   - title: Frame
     value: QAV-Pro Whoop 2.5"
