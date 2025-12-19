@@ -21,5 +21,8 @@ components:
   - title: Props
     value: Gemfan bi-blade, 2025-2 1.5mm shaft
 ---
+Weighing less than your typical remote at takeoff and able to fly anywhere, Ember is the flying camera putting viewers in the middle of the action.
 
-Currently under development, Ember is intended to fly in even tighter spaces than [Cinder](../cinder) or [Flare](../flare). With just 2" props, and the ability to carry a full DJI O4 Pro camera system, Ember is a moving camera that can go anywhere.
+With smaller props (2" vs 2.5"), it's noticably quieter than [Cinder](../cinder) or [Flare](../flare), both of which were engineered to lift an action camera in addition to their dry weight.
+
+Built around the DJI O4 Air Unit and carrying a full Remote ID and GPS package, this drone is designed as the perfect all-rounder for cinematic FPV.
