@@ -91,7 +91,7 @@ const images = (Astro.props.photos || []).map((a) => a.src);
                             <li class="relative mb-2">
                                 {l.href != "" ? (
                                     <a
-                                        href="https://test.com"
+                                        href={l.href}
                                         target="_blank"
                                         rel="noopener"
                                     >

@@ -8,6 +8,9 @@ stats:
     value: 7 minutes
   - title: Top Speed
     value: 88 km/h
+resources:
+    - title: Betaflight Config
+      href: /betaflight/flare/2025.12_FLYWOOF745AIO.txt
 components:
   - title: Frame
     value: AOS RC Cine25

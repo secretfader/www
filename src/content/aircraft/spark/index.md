@@ -17,7 +17,9 @@ photos:
   - title: Spark 3
     src: ./3.jpg
 resources:
-  - title: Prop Guards
+  - title: Betaflight Config
+    href: /betaflight/spark/2025.12_FLYWOOF405S_AIO.txt
+  - title: Prop Guard
     href: https://cults3d.com/en/3d-model/gadget/improved-flywoo-firefly18-1s-nano-baby-v3-drone-prop-guard-bumpers
 components:
   - title: Frame
@@ -33,6 +35,7 @@ components:
   - title: Props
     value: HQ Ultralight 45mm Tri-blade
     href: https://webleedfpv.com/products/hq-micro-whoop-prop-45mmx3-2cw-2ccw-poly-carbonate-1-5mm-shaft?srsltid=AfmBOoqV3x8-_09lHpsHAM2lv34m8y7zb06wRLMGJvcrwGvxvwnhZ2EE
+  
 ---
 
 Spark began life as a stock Flywoo Firefly 18 Nano Baby 1S V3 bind-and-fly drone. Once in Colorado, it was upgraded with a new filter and PID tune, 3D printed PETG prop guards to replace the brittle stock ones, 40mm tri-blade props (it arrived with 45mm bi-blades), and a non-standard canopy with GPS.

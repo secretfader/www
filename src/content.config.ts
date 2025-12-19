@@ -87,10 +87,21 @@ const aircraft = defineCollection({
         .array(z.object({ title: z.string(), value: z.string() }))
         .optional(),
       components: z
-        .array(z.object({ title: z.string(), value: z.string() }))
+        .array(
+          z.object({
+            title: z.string(),
+            value: z.string().optional(),
+            href: z.string().optional(),
+          }),
+        )
         .optional(),
       resources: z
-        .array(z.object({ title: z.string(), href: z.string() }))
+        .array(
+          z.object({
+            title: z.string(),
+            href: z.string().optional(),
+          }),
+        )
         .optional(),
       photos: z.array(z.object({ title: z.string(), src: image() })).optional(),
     }),
