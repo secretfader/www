@@ -91,16 +91,16 @@ const images = (Astro.props.photos || []).map((a) => a.src);
                             l.href && l.href !== "" ? (
                                 <li class="relative mb-2 text-sm font-medium">
                                     <span class="mb-2">{l.title}</span>
-                                    <span>
-                                        <a
-                                            href={l.href}
-                                            target="_blank"
-                                            rel="noopener"
-                                        >
+                                    <a
+                                        href={l.href}
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        <span>
                                             <span>{l.value}</span>
                                             &rarr;
-                                        </a>
-                                    </span>
+                                        </span>
+                                    </a>
                                 </li>
                             ) : (
                                 <li class="relative mb-2">
@@ -129,16 +129,16 @@ const images = (Astro.props.photos || []).map((a) => a.src);
                                     <span class="uppercase block mb-2">
                                         {l.title}
                                     </span>
-                                    <span>
-                                        <a
-                                            href={l.href}
-                                            target="_blank"
-                                            rel="noopener"
-                                        >
+                                    <a
+                                        href={l.href}
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        <span>
                                             <span>{l.value}</span>
                                             &rarr;
-                                        </a>
-                                    </span>
+                                        </span>
+                                    </a>
                                 </li>
                             ) : (
                                 <li class="relative mb-2 text-sm font-medium">
