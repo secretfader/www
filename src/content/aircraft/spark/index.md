@@ -31,14 +31,13 @@ components:
   - title: Video Transmission
     value: DJI O4 Air Unit with Wide Angle Lens
   - title: Motors
-    value: ROBO 1002 19800KV
+    value: BetaFPV 1102 23500KV
   - title: Props
-    value: HQ Ultralight 45mm Tri-blade
-    href: https://webleedfpv.com/products/hq-micro-whoop-prop-45mmx3-2cw-2ccw-poly-carbonate-1-5mm-shaft?srsltid=AfmBOoqV3x8-_09lHpsHAM2lv34m8y7zb06wRLMGJvcrwGvxvwnhZ2EE
-  
+    value: HQ Ultralight 40mm Tri-blade
+    href: https://webleedfpv.com/products/hq-ultralight-whoop-prop-40mmx3-1-5mm-shafts?srsltid=AfmBOoqRPitOZbJ9oLe_TdeJlJX3zSHbfPrt6VUu_pjZYvp2ka_2pJKX
 ---
 
-Spark began life as a stock Flywoo Firefly 18 Nano Baby 1S V3 bind-and-fly drone. Once in Colorado, it was upgraded with a new filter and PID tune, 3D printed PETG prop guards to replace the brittle stock ones, 40mm tri-blade props (it arrived with 45mm bi-blades), and a non-standard canopy with GPS.
+Spark began life as a stock Flywoo Firefly 18 Nano Baby 1S V3 bind-and-fly drone. Once in Colorado, it was upgraded with a new filter and PID tune, 3D printed PETG prop guards to replace the brittle stock ones, 40mm tri-blade props (it arrived with 45mm bi-blades), and a non-standard canopy with GPS. After about a month, the motors were replaced to support speedier indoor maneuvers.
 
 Built mostly for fun and freestyle practice, Spark is often referred to as a "therapy drone," since it forces the pilot into a state of flow with it's agility and highly reactive flight style.
 
