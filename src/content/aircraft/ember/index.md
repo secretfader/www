@@ -3,6 +3,10 @@ title: Ember
 stats:
   - title: Weight
     value: 91g
+  - title: Flight Time
+    value: 5 minutes
+  - title: Top Speed
+    value: 64 km/h
 components:
   - title: Frame
     value: Flylens 85 Pro
