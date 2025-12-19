@@ -87,26 +87,32 @@ const images = (Astro.props.photos || []).map((a) => a.src);
                 >
                 <ul class="mt-4">
                     {
-                        (resources || []).map((l) => (
-                            <li class="relative mb-2">
-                                {l.href != "" ? (
-                                    <a
-                                        href={l.href}
-                                        target="_blank"
-                                        rel="noopener"
-                                    >
-                                        <span class="uppercase text-sm font-medium">
-                                            {l.title}
-                                        </span>
-                                        &rarr;
-                                    </a>
-                                ) : (
-                                    <span class="uppercase text-sm font-medium block mb-2">
+                        (resources || []).map((l) =>
+                            l.href && l.href !== "" ? (
+                                <li class="relative mb-2 text-sm font-medium">
+                                    <span class="mb-2">{l.title}</span>
+                                    <span>
+                                        <a
+                                            href={l.href}
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            <span>{l.value}</span>
+                                            &rarr;
+                                        </a>
+                                    </span>
+                                </li>
+                            ) : (
+                                <li class="relative mb-2">
+                                    <span class="uppercase block mb-2">
                                         {l.title}
                                     </span>
-                                )}
-                            </li>
-                        ))
+                                    <span>
+                                        <span>{l.value}</span>
+                                    </span>
+                                </li>
+                            ),
+                        )
                     }
                 </ul>
             </div>
@@ -117,14 +123,34 @@ const images = (Astro.props.photos || []).map((a) => a.src);
                 >
                 <ul class="mt-4">
                     {
-                        (components || []).map((l) => (
-                            <li class="relative mb-2">
-                                <span class="uppercase text-sm font-medium block mb-2">
-                                    {l.title}
-                                </span>
-                                <span>{l.value}</span>
-                            </li>
-                        ))
+                        (components || []).map((l) =>
+                            l.href && l.href !== "" ? (
+                                <li class="relative mb-2 text-sm font-medium">
+                                    <span class="uppercase block mb-2">
+                                        {l.title}
+                                    </span>
+                                    <span>
+                                        <a
+                                            href={l.href}
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            <span>{l.value}</span>
+                                            &rarr;
+                                        </a>
+                                    </span>
+                                </li>
+                            ) : (
+                                <li class="relative mb-2 text-sm font-medium">
+                                    <span class="uppercase block mb-2">
+                                        {l.title}
+                                    </span>
+                                    <span>
+                                        <span>{l.value}</span>
+                                    </span>
+                                </li>
+                            ),
+                        )
                     }
                 </ul>
             </div>
