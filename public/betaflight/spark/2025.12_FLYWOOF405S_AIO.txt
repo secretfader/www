@@ -3,8 +3,8 @@
 # dump all
 
 # version
-# Betaflight / STM32F405 (F405) 2025.12.0-RC4 Dec 10 2025 / 15:00:43 (37800445d) MSP API: 1.47
-# config rev: 0e6d506
+# Betaflight / STM32F405 (F405) 2025.12.0-beta Dec 20 2025 / 04:30:39 (0b06a4369) MSP API: 1.47
+# config rev: e9f8d23
 
 # start the command batch
 batch start
@@ -71,8 +71,6 @@ resource ADC_EXT 1 NONE
 resource BARO_CS 1 NONE
 resource BARO_EOC 1 NONE
 resource BARO_XCLR 1 NONE
-resource COMPASS_CS 1 NONE
-resource COMPASS_EXTI 1 NONE
 resource PINIO 1 NONE
 resource PINIO 2 C08
 resource PINIO 3 NONE
@@ -447,16 +445,6 @@ set acc_lpf_hz = 25
 set acc_trim_pitch = 0
 set acc_trim_roll = 0
 set acc_calibration = 4,-42,-17,1
-set align_mag = DEFAULT
-set mag_align_roll = 0
-set mag_align_pitch = 0
-set mag_align_yaw = 0
-set mag_bustype = I2C
-set mag_i2c_device = 1
-set mag_i2c_address = 0
-set mag_spi_device = 0
-set mag_hardware = NONE
-set mag_calibration = 0,0,0
 set baro_bustype = I2C
 set baro_spi_device = 0
 set baro_i2c_device = 1
@@ -499,7 +487,6 @@ set blackbox_disable_pids = OFF
 set blackbox_disable_rc = OFF
 set blackbox_disable_setpoint = OFF
 set blackbox_disable_bat = OFF
-set blackbox_disable_mag = OFF
 set blackbox_disable_alt = OFF
 set blackbox_disable_rssi = OFF
 set blackbox_disable_gyro = OFF
@@ -544,7 +531,7 @@ set bat_capacity = 0
 set vbat_max_cell_voltage = 435
 set vbat_full_cell_voltage = 410
 set vbat_min_cell_voltage = 310
-set vbat_warning_cell_voltage = 330
+set vbat_warning_cell_voltage = 320
 set vbat_hysteresis = 1
 set current_meter = ADC
 set battery_meter = ADC
@@ -588,7 +575,6 @@ set imu_dcm_kp = 2500
 set imu_dcm_ki = 0
 set small_angle = 180
 set imu_process_denom = 2
-set mag_declination = 0
 set auto_disarm_delay = 5
 set gyro_cal_on_first_arm = OFF
 set prearm_allow_rearm = OFF
@@ -625,7 +611,6 @@ set gps_rescue_velocity_p = 8
 set gps_rescue_velocity_i = 40
 set gps_rescue_velocity_d = 12
 set gps_rescue_yaw_p = 20
-set gps_rescue_use_mag = ON
 set deadband = 0
 set yaw_deadband = 5
 set yaw_control_reversed = OFF
@@ -680,11 +665,11 @@ set ledstrip_rainbow_freq = 120
 set osd_units = IMPERIAL
 set osd_warn_bitmask = 421759
 set osd_rssi_alarm = 20
-set osd_link_quality_alarm = 80
+set osd_link_quality_alarm = 85
 set osd_rssi_dbm_alarm = -95
 set osd_rsnr_alarm = 4
-set osd_cap_alarm = 2200
-set osd_alt_alarm = 100
+set osd_cap_alarm = 1000
+set osd_alt_alarm = 200
 set osd_distance_alarm = 0
 set osd_esc_temp_alarm = 0
 set osd_esc_rpm_alarm = -1
@@ -699,12 +684,12 @@ set osd_arming_logo = 0
 set osd_tim1 = 2560
 set osd_tim2 = 2561
 set osd_vbat_pos = 483
-set osd_rssi_pos = 341
-set osd_link_quality_pos = 14627
-set osd_link_tx_power_pos = 14563
-set osd_rssi_dbm_pos = 14595
-set osd_rsnr_pos = 12611
-set osd_tim_1_pos = 579
+set osd_rssi_pos = 328
+set osd_link_quality_pos = 14563
+set osd_link_tx_power_pos = 14595
+set osd_rssi_dbm_pos = 14627
+set osd_rsnr_pos = 8515
+set osd_tim_1_pos = 14883
 set osd_tim_2_pos = 14915
 set osd_remaining_time_estimate_pos = 341
 set osd_flymode_pos = 14371
@@ -715,21 +700,21 @@ set osd_vtx_channel_pos = 341
 set osd_crosshairs_pos = 238
 set osd_ah_sbar_pos = 314
 set osd_ah_pos = 186
-set osd_current_pos = 14786
-set osd_mah_drawn_pos = 14820
+set osd_current_pos = 14755
+set osd_mah_drawn_pos = 453
 set osd_wh_drawn_pos = 341
 set osd_motor_diag_pos = 341
 set osd_craft_name_pos = 14392
 set osd_pilot_name_pos = 341
-set osd_gps_speed_pos = 13387
-set osd_gps_lon_pos = 9381
-set osd_gps_lat_pos = 9350
+set osd_gps_speed_pos = 12365
+set osd_gps_lon_pos = 8788
+set osd_gps_lat_pos = 8756
 set osd_gps_sats_pos = 12419
 set osd_home_dir_pos = 8282
-set osd_home_dist_pos = 8778
+set osd_home_dist_pos = 8780
 set osd_flight_dist_pos = 1197
 set osd_compass_bar_pos = 118
-set osd_altitude_pos = 15403
+set osd_altitude_pos = 12333
 set osd_pid_roll_pos = 341
 set osd_pid_pitch_pos = 341
 set osd_pid_yaw_pos = 341
@@ -738,7 +723,7 @@ set osd_debug2_pos = 341
 set osd_power_pos = 341
 set osd_pidrate_profile_pos = 341
 set osd_warnings_pos = 14773
-set osd_avg_cell_voltage_pos = 14755
+set osd_avg_cell_voltage_pos = 14723
 set osd_pit_ang_pos = 341
 set osd_rol_ang_pos = 341
 set osd_battery_usage_pos = 341
@@ -912,10 +897,6 @@ set pidsum_limit_yaw = 400
 set yaw_lowpass_hz = 100
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
-set acro_trainer_angle_limit = 20
-set acro_trainer_lookahead_ms = 50
-set acro_trainer_debug_axis = ROLL
-set acro_trainer_gain = 75
 set p_pitch = 98
 set i_pitch = 176
 set d_pitch = 82
@@ -1041,10 +1022,6 @@ set pidsum_limit_yaw = 400
 set yaw_lowpass_hz = 100
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
-set acro_trainer_angle_limit = 20
-set acro_trainer_lookahead_ms = 50
-set acro_trainer_debug_axis = ROLL
-set acro_trainer_gain = 75
 set p_pitch = 47
 set i_pitch = 84
 set d_pitch = 34
@@ -1170,10 +1147,6 @@ set pidsum_limit_yaw = 400
 set yaw_lowpass_hz = 100
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
-set acro_trainer_angle_limit = 20
-set acro_trainer_lookahead_ms = 50
-set acro_trainer_debug_axis = ROLL
-set acro_trainer_gain = 75
 set p_pitch = 47
 set i_pitch = 84
 set d_pitch = 34
@@ -1299,10 +1272,6 @@ set pidsum_limit_yaw = 400
 set yaw_lowpass_hz = 100
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
-set acro_trainer_angle_limit = 20
-set acro_trainer_lookahead_ms = 50
-set acro_trainer_debug_axis = ROLL
-set acro_trainer_gain = 75
 set p_pitch = 47
 set i_pitch = 84
 set d_pitch = 34
@@ -1396,9 +1365,9 @@ rateprofile 0
 
 # rateprofile 0
 set rateprofile_name = 720
-set thr_mid = 43
+set thr_mid = 45
 set thr_expo = 0
-set thr_hover = 70
+set thr_hover = 65
 set rates_type = ACTUAL
 set quickrates_rc_expo = OFF
 set roll_rc_rate = 14
@@ -1420,9 +1389,9 @@ rateprofile 1
 
 # rateprofile 1
 set rateprofile_name = 540
-set thr_mid = 43
+set thr_mid = 45
 set thr_expo = 0
-set thr_hover = 70
+set thr_hover = 65
 set rates_type = ACTUAL
 set quickrates_rc_expo = OFF
 set roll_rc_rate = 10
@@ -1444,9 +1413,9 @@ rateprofile 2
 
 # rateprofile 2
 set rateprofile_name = BFD
-set thr_mid = 43
+set thr_mid = 50
 set thr_expo = 0
-set thr_hover = 70
+set thr_hover = 50
 set rates_type = ACTUAL
 set quickrates_rc_expo = OFF
 set roll_rc_rate = 7

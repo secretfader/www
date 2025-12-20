@@ -90,7 +90,9 @@ const images = (Astro.props.photos || []).map((a) => a.src);
                         (resources || []).map((l) =>
                             l.href && l.href !== "" ? (
                                 <li class="relative mb-2 text-sm font-medium">
-                                    <span class="mb-2">{l.title}</span>
+                                    <span class="uppercase block mb-2">
+                                        {l.title}
+                                    </span>
                                     <a
                                         href={l.href}
                                         target="_blank"
@@ -103,7 +105,7 @@ const images = (Astro.props.photos || []).map((a) => a.src);
                                     </a>
                                 </li>
                             ) : (
-                                <li class="relative mb-2">
+                                <li class="relative mb-2 text-sm font-medium">
                                     <span class="uppercase block mb-2">
                                         {l.title}
                                     </span>

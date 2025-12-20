@@ -1,5 +1,5 @@
 ---
-title: Ash
+title: Torch 
 components:
   - title: Frame
     value: Firefly 18 1S Nano Baby V3
