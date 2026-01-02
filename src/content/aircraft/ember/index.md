@@ -1,5 +1,6 @@
 ---
 title: Ember
+youtubeId: udcBWKKMmrw
 stats:
   - title: Weight
     value: 91g
