@@ -15,8 +15,6 @@ photos:
     src: ./photos/2.jpg
   - title: ember
     src: ./photos/3.jpg
-  - title: ember
-    src: ./photos/4.jpg
 resources:
     - title: Betaflight Config
       href: /betaflight/cinder/2025.12_FLYWOOF745AIO.txt

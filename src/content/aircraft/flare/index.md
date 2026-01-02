@@ -15,8 +15,6 @@ photos:
     src: ./photos/2.jpg
   - title: Flare 3
     src: ./photos/3.jpg
-  - title: Flare 4
-    src: ./photos/4.jpg
 resources:
     - title: Betaflight Config
       href: /betaflight/flare/2025.12_FLYWOOF745AIO.txt

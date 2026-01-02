@@ -14,8 +14,6 @@ photos:
     src: ./photos/2.jpg
   - title: ember
     src: ./photos/3.jpg
-  - title: ember
-    src: ./photos/4.jpg
 components:
   - title: Frame
     value: Flylens 85 Pro

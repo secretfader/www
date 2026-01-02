@@ -16,8 +16,6 @@ photos:
     src: ./photos/2.jpg
   - title: Spark 3
     src: ./photos/3.jpg
-  - title: Spark 4
-    src: ./photos/4.jpg
 resources:
   - title: Betaflight Config
     href: /betaflight/spark/2025.12_FLYWOOF405S_AIO.txt
