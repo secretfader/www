@@ -8,6 +8,15 @@ stats:
     value: 7 minutes
   - title: Top Speed
     value: 88 km/h
+photos:
+  - title: Flare
+    src: ./photos/1.jpg
+  - title: Flare 2
+    src: ./photos/2.jpg
+  - title: Flare 3
+    src: ./photos/3.jpg
+  - title: Flare 4
+    src: ./photos/4.jpg
 resources:
     - title: Betaflight Config
       href: /betaflight/flare/2025.12_FLYWOOF745AIO.txt

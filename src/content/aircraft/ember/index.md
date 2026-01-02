@@ -7,6 +7,15 @@ stats:
     value: 5 minutes
   - title: Top Speed
     value: 64 km/h
+photos:
+  - title: ember
+    src: ./photos/1.jpg
+  - title: ember
+    src: ./photos/2.jpg
+  - title: ember
+    src: ./photos/3.jpg
+  - title: ember
+    src: ./photos/4.jpg
 components:
   - title: Frame
     value: Flylens 85 Pro

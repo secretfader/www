@@ -11,11 +11,13 @@ stats:
     value: 56 km/h
 photos:
   - title: Spark
-    src: ./1.jpg
+    src: ./photos/1.jpg
   - title: Spark 2
-    src: ./2.jpg
+    src: ./photos/2.jpg
   - title: Spark 3
-    src: ./3.jpg
+    src: ./photos/3.jpg
+  - title: Spark 4
+    src: ./photos/4.jpg
 resources:
   - title: Betaflight Config
     href: /betaflight/spark/2025.12_FLYWOOF405S_AIO.txt

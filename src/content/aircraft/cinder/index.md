@@ -8,6 +8,15 @@ stats:
     value: 8 minutes
   - title: Top Speed
     value: 72 km/h
+photos:
+  - title: ember
+    src: ./photos/1.jpg
+  - title: ember
+    src: ./photos/2.jpg
+  - title: ember
+    src: ./photos/3.jpg
+  - title: ember
+    src: ./photos/4.jpg
 resources:
     - title: Betaflight Config
       href: /betaflight/cinder/2025.12_FLYWOOF745AIO.txt
