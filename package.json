@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "astro": "^5.16.4",
-    "wrangler": "^4.51.0"
+    "wrangler": "^4.59.1"
   },
   "devDependencies": {
     "@astrojs/alpinejs": "^0.4.9",
